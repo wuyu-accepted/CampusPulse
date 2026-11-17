@@ -1,0 +1,5 @@
+/src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json text eol=lf
+/src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.sha256 text eol=lf
+
+# Preserve the sealed byte format of this existing public asset.
+/src/frontend/public/campus-pulse-data/private-channel-summary-public-v1.json text eol=crlf

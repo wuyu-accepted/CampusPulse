@@ -1,0 +1,37 @@
+{
+  "schema_version": "campus-pulse-final-project-results-index-v1",
+  "projects": [
+    {
+      "project_id": "housing-allocation-legitimacy",
+      "status": "primary_result",
+      "plain_result": "治理 D 没有压低讨论量，但把 Claim 从 17 个收拢到 10 个，将服务积压风险从 0.70 降到 0，并消除了新的无依据 Claim；跨群触达和最终信任仍未改善。",
+      "canonical_result": "../../src/frontend/public/campus-pulse-data/resource-v5-formal-summary-v1.json",
+      "persona_diagnostic_result": "persona-opportunity-review-result-v1.json",
+      "latest_persona_diagnostic": {
+        "resident_slots_completed": 24,
+        "validated_historical_slots_reused": 21,
+        "new_provider_requests": 7,
+        "new_provider_tokens": 39497,
+        "expression_cases": 6,
+        "profile_matches_in_expression_cases": 3,
+        "context_uptake_in_expression_cases": 6,
+        "unsupported_fact_cases": 0,
+        "template_like_cases": 0
+      }
+    },
+    {
+      "project_id": "century-gym-ghost-booking",
+      "status": "live_demo_result",
+      "plain_result": "Natural 与 D 均完成 Tick 0–10；D 形成 111 条公开消息、100 条回复、5 个 Claim 和 6 条治理消息，用于展示实时机制和运行闭环。",
+      "canonical_result": "../century-gym-live-v1/public-progress/latest.json"
+    },
+    {
+      "project_id": "lecture-incident-governance",
+      "status": "transfer_result",
+      "plain_result": "治理分支发言量略增、Claim 从 22 收敛至 4，并形成 4 条居民直接承接治理消息的链路。",
+      "canonical_result": "../lecture-incident-v1/result.json",
+      "case_summary": "../lecture-incident-v1/case-summary.json",
+      "public_evidence_manifest": "../lecture-incident-v1/manifest.json"
+    }
+  ]
+}

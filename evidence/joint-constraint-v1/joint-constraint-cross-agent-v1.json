@@ -1,0 +1,45 @@
+{
+  "schema_version": "campus-pulse-joint-constraint-cross-agent-v1",
+  "analysis_kind": "post_hoc_zero_provider_leave_one_agent_out_audit",
+  "agent_count": 12,
+  "condition_count": 4,
+  "settled_turn_count": 48,
+  "feature_count": 32,
+  "classifier": "standardized nearest condition centroid trained on the other 11 Agents",
+  "permutation_test": {
+    "count": 999,
+    "seed": 20260904,
+    "scheme": "shuffle four condition labels independently within each Agent"
+  },
+  "metrics": {
+    "exact_four_condition": {
+      "held_out_accuracy": 0.520833,
+      "chance_accuracy": 0.25,
+      "permutation_null_mean": 0.250542,
+      "permutation_95pct_quantile": 0.375,
+      "one_sided_permutation_p": 0.001
+    },
+    "profile_factor": {
+      "held_out_accuracy": 0.708333,
+      "chance_accuracy": 0.5,
+      "permutation_null_mean": 0.498478,
+      "permutation_95pct_quantile": 0.625,
+      "one_sided_permutation_p": 0.002
+    },
+    "previous_state_factor": {
+      "held_out_accuracy": 0.708333,
+      "chance_accuracy": 0.5,
+      "permutation_null_mean": 0.503504,
+      "permutation_95pct_quantile": 0.625,
+      "one_sided_permutation_p": 0.002
+    }
+  },
+  "interpretation": "Profile and previous-state condition effects are recognizable on a held-out Agent within this controlled 12-Agent panel. This supports cross-Agent repetition of the constraint effect; it does not establish population-wide prediction of each Agent's exact action in an unconstrained forum run.",
+  "privacy": {
+    "agent_ids_persisted": false,
+    "texts_persisted": false,
+    "prompts_or_responses_persisted": false,
+    "provider_calls": 0
+  },
+  "content_sha256": "54abc725e1fb66dc238ff5297b457bf2e0eea7c0016e6faf50cc2e6c84f12e5f"
+}

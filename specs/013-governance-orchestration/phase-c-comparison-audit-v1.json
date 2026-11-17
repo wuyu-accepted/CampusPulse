@@ -1,0 +1,138 @@
+{
+  "schema_version": "campus-pulse-governance-phase-c-comparison-audit-v1",
+  "audited_at_utc": "2026-07-27T05:35:13Z",
+  "release_status": "phase_c_comparison_core_internal_only",
+  "scope": {
+    "completed_tasks": [
+      "T200",
+      "T220"
+    ],
+    "partially_implemented_tasks": [
+      "T210",
+      "T230"
+    ],
+    "deferred_tasks": [
+      "T240",
+      "T300",
+      "T310",
+      "T320",
+      "T400",
+      "T410",
+      "T420"
+    ],
+    "source_result_schema": "campus-pulse-live-aggregate-result-v2",
+    "governance_snapshot_schema": "campus-pulse-governance-run-snapshot-v1",
+    "comparison_schema": "campus-pulse-governance-comparison-v1",
+    "gap_schema": "campus-pulse-governance-gap-result-v1",
+    "explanation_draft_schema": "campus-pulse-governance-explanation-draft-v1",
+    "explanation_review_schema": "campus-pulse-governance-explanation-review-v1"
+  },
+  "matched_design": {
+    "branch_grid": "same_seed_same_phase",
+    "pre_intervention_state": "one_shared_baseline_row_per_seed",
+    "branch_specific_pre_intervention_rows_allowed": false,
+    "decision_epoch_source": "previous_sealed_checkpoint_only",
+    "paired_dimensions": [
+      "action",
+      "stance"
+    ],
+    "paired_metric": "total_variation_distance_ppm",
+    "seed_sensitivity_reported": true,
+    "causal_effect_identified": false
+  },
+  "governance_gap_boundary": {
+    "allowed_sources": [
+      "sealed_aggregate_gap_fields",
+      "terminal_action_reason_codes",
+      "conserved_modeled_resource_accounts",
+      "paired_seed_variation"
+    ],
+    "privacy_suppressed_values_exposed": false,
+    "privacy_suppression_yields": "evidence_gap",
+    "cohort_need_satisfaction_status": "not_available_in_current_public_result",
+    "cohort_need_satisfaction_fabricated": false,
+    "observed_real_world_deficiency_claimed": false
+  },
+  "explanation_boundary": {
+    "draft_content": "controlled_message_codes_only",
+    "language_model_generated": false,
+    "direct_human_review_decisions": [
+      "approved",
+      "revised",
+      "rejected"
+    ],
+    "underlying_comparison_or_gap_codes_editable": false,
+    "review_disagreements_retained": true
+  },
+  "automated_gates": {
+    "targeted_local": {
+      "command": "PYTHONPATH=<repo>;<repo>/src python -W error::ResourceWarning -m unittest -v backend.tests.test_campus_pulse_governance_compiler backend.tests.test_campus_pulse_governance_runtime backend.tests.test_campus_pulse_governance_comparison",
+      "tests_passed": 32,
+      "tests_failed": 0,
+      "elapsed_seconds": 9.084
+    },
+    "targeted_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest -v src.backend.tests.test_campus_pulse_governance_compiler src.backend.tests.test_campus_pulse_governance_runtime src.backend.tests.test_campus_pulse_governance_comparison",
+      "tests_passed": 32,
+      "tests_failed": 0,
+      "elapsed_seconds": 2.84
+    },
+    "backend_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest discover -q -s src/backend/tests -p test_*.py",
+      "tests_passed": 331,
+      "tests_failed": 0,
+      "elapsed_seconds": 133.801
+    },
+    "simulation_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest discover -q -s src/envs/campus_pulse_governance/tests -p test_*.py",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "elapsed_seconds": 7.186
+    },
+    "frontend_contract_authorized_server": {
+      "command": "node --test src/frontend/tests/*.test.mjs",
+      "tests_passed": 11,
+      "tests_failed": 0
+    },
+    "frontend_production_build_authorized_server": {
+      "command": "cd src/frontend && npm run build",
+      "modules_transformed": 2154,
+      "status": "passed"
+    },
+    "provider_calls": 0
+  },
+  "negative_cases_proved": [
+    "missing_seed_phase_pair",
+    "cross_project_result_snapshot_mismatch",
+    "baseline_and_intervention_identity_collision",
+    "aggregate_result_fingerprint_tamper",
+    "governance_snapshot_fingerprint_tamper",
+    "nonterminal_action_snapshot",
+    "unsettled_or_nonconserved_resource_snapshot",
+    "privacy_suppressed_hidden_value_release",
+    "manual_gap_result_mutation",
+    "manual_explanation_statement_mutation",
+    "approved_review_with_unresolved_disagreement",
+    "fixture_comparison_external_export"
+  ],
+  "non_claims": [
+    "The paired branch difference is a model-conditional simulation result, not a causal policy effect.",
+    "The current public result has no cohort-safe need dimension, so Phase C v1 does not report cohort need satisfaction.",
+    "The comparison, gap and explanation artifacts are not yet persisted or exposed through an authenticated API.",
+    "No governance comparison view has been released in the frontend.",
+    "No real governance action, pilot outcome or observed policy effect is represented.",
+    "No Provider credential was read and no Provider request was made."
+  ],
+  "audited_files": {
+    "src/backend/campus_pulse/governance/comparison.py": "8b093f5255bd86d368af480bb724bcacbe4baba5c42e8810f50e130850ed95b0",
+    "src/backend/campus_pulse/governance/gaps.py": "23b9cad8bfd90eaaf74a58ab1ad26337410a4ea40bb638a7888225a23625ea36",
+    "src/backend/campus_pulse/governance/explanation.py": "9ca533070844dc37b55f49952cab1d26e4d50cf19534cd40e344b4eb278c56ad",
+    "src/backend/campus_pulse/governance/sqlite_repository.py": "d60c56caf03981966a0a4c5076fed52cf0a977df173260a88e7a148eb76bb5d4",
+    "src/backend/campus_pulse/governance/__init__.py": "3ca25a1d8ab13541c47320c563fc10160555f242e28d0f79d722550806d74381",
+    "src/backend/tests/test_campus_pulse_governance_comparison.py": "31490a560bd2ced70555c09dc752b798d884391b572dd440beec182f08acca90",
+    "src/backend/tests/test_campus_pulse_governance_runtime.py": "61d70b7134156e046aad714d46bbbf4b7d5e49299585989c638ae981f7da02eb",
+    "specs/013-governance-orchestration/spec.md": "3ed424c511207d69be3cfc81b38e0aaac25abb410efa5f2cd4a67feac0665045",
+    "specs/013-governance-orchestration/plan.md": "68ca429748e38ef5640db5640dc4a645c9386fb8c60ddd3548b8e67d7323e90d",
+    "specs/013-governance-orchestration/tasks.md": "75285b9984484a2f50f76089a16d9349dc443194ce1caec61fa0143126109112"
+  }
+}

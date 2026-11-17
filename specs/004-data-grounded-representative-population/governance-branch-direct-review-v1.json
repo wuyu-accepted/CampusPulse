@@ -1,0 +1,113 @@
+{
+  "schema_version": "governance-branch-direct-review-v1",
+  "source_artifact": {
+    "path_persisted": false,
+    "sha256": "8392fa5344fdc7d64f9d4d59f4361e24957974d4c2ec7765d168f58547274bc4",
+    "scenario_id": "tongzhou_governance_information_shock",
+    "population_seed": 20260722,
+    "compared_policies": [
+      "baseline",
+      "combined"
+    ],
+    "comparison_phase": "spread"
+  },
+  "review_method": {
+    "reviewer": "direct_semantic_reading_by_development_agent",
+    "unit": "common burst-phase root plus the same synthetic agent's baseline and combined spread-phase public reactions, trust delta, satisfaction flag, and persona variant",
+    "pairing_is_direct_reply_claim": false,
+    "model_conditional_difference_is_causal_claim": false,
+    "ratings": [
+      "clear",
+      "partial_non_regressive",
+      "fail"
+    ]
+  },
+  "root_reviews": [
+    {
+      "case_id": "course",
+      "root_agent": "sim-agent-022",
+      "rating": "clear",
+      "note": "The shared root establishes incomplete course-continuity information and anxiety; both selected agents' later reactions remain within that problem space."
+    },
+    {
+      "case_id": "feedback",
+      "root_agent": "sim-agent-032",
+      "rating": "clear",
+      "note": "The shared root asks for an intake channel, response deadline, and follow-up; both later governance reactions directly elaborate those service-accountability needs."
+    }
+  ],
+  "agent_pair_reviews": [
+    {
+      "case_id": "course",
+      "agent_id": "sim-agent-001",
+      "archetype": "课程规则核实者",
+      "rating": "clear",
+      "note": "The baseline reaction asks whether adjustment rules exist; the combined reaction recognizes the offered options and narrows the unresolved need to application entry and review timing. The agent remains unsatisfied in both branches, so the display does not overstate resolution."
+    },
+    {
+      "case_id": "course",
+      "agent_id": "sim-agent-022",
+      "archetype": "情绪承接者",
+      "rating": "clear",
+      "note": "The combined branch plausibly reduces immediate uncertainty while preserving concern about update and processing delays; positive trust movement and an unsatisfied flag are semantically compatible."
+    },
+    {
+      "case_id": "feedback",
+      "agent_id": "sim-agent-002",
+      "archetype": "公共规范讨论者",
+      "rating": "clear",
+      "note": "The agent moves from demanding a response mechanism to auditing priority and surge-capacity standards. This is a governance-aware next question rather than generic praise."
+    },
+    {
+      "case_id": "feedback",
+      "agent_id": "sim-agent-032",
+      "archetype": "公共服务投诉者",
+      "rating": "clear",
+      "note": "The service-escalation persona consistently shifts from missing intake and escalation paths to requesting named responsibility, updates, progress, and capacity disclosure."
+    }
+  ],
+  "interpretation_label_reviews": [
+    {
+      "case_id": "course",
+      "agent_id": "sim-agent-001",
+      "rating": "clear",
+      "label": "问题从“有没有调整规则”收窄为“入口与审核节点”"
+    },
+    {
+      "case_id": "course",
+      "agent_id": "sim-agent-022",
+      "rating": "clear",
+      "label": "不确定性下降，但仍然等待更新时间与处理进度"
+    },
+    {
+      "case_id": "feedback",
+      "agent_id": "sim-agent-002",
+      "rating": "clear",
+      "label": "从要求建立机制，转向审查紧迫度与扩容标准"
+    },
+    {
+      "case_id": "feedback",
+      "agent_id": "sim-agent-032",
+      "rating": "clear",
+      "label": "从找不到受理路径，转向追问责任方、更新与扩容"
+    }
+  ],
+  "summary": {
+    "shared_root_case_count": 2,
+    "same_agent_policy_pair_count": 4,
+    "public_reaction_count": 8,
+    "clear_pair_count": 4,
+    "partial_non_regressive_pair_count": 0,
+    "fail_pair_count": 0,
+    "all_combined_branch_agents_marked_satisfied": false,
+    "verdict": "accepted_same_agent_policy_branch_demo_with_noncausal_boundary"
+  },
+  "claim_boundary": {
+    "same_high_level_population_and_shared_baseline": true,
+    "same_synthetic_agent_compared_across_policies": true,
+    "direct_parent_reply_sequence_claimed": false,
+    "observational_causal_effect_claimed": false,
+    "individual_real_student_twin_claimed": false,
+    "supported_claim": "Under the model's fixed population and shared baseline, the combined service contract changes what representative agents ask next while leaving documented unresolved needs."
+  }
+}

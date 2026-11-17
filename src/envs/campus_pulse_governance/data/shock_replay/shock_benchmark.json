@@ -1,0 +1,657 @@
+{
+  "analysis_snapshot_id": "b99df3cb436403efb9961cf4f4d03e82f3ad55fd3d27994f1c6a55066abae365",
+  "benchmark_fingerprint": "9a6df04f17f95f11a29c1d8067a4bac6ab22dc641d863163e5cd7d45a5994e4b",
+  "benchmark_schema_version": "1.0.0",
+  "data_audit": {
+    "comment_rows_scanned": 454053,
+    "duplicate_post_code_rows_excluded": 0,
+    "empty_post_codes": 0,
+    "event_window_known_gap_dates": [],
+    "event_windows_intersect_known_gaps": false,
+    "invalid_post_dates": 4,
+    "known_gap_dates": [
+      "2026-03-04",
+      "2026-04-03",
+      "2026-04-04",
+      "2026-04-20",
+      "2026-06-25"
+    ],
+    "linked_comment_rows_to_declared_topics": 1914,
+    "post_rows_scanned": 132917,
+    "posts_in_any_declared_event_window": 6165,
+    "valid_unique_post_rows": 132913
+  },
+  "dataset_snapshot_id": "99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6",
+  "definition_fingerprint": "0edf65a3f5d668ebd4a7be4685a0e8e94b36452af49452eee73558c40fb1d57b",
+  "engine_evidence": {
+    "bytes": 69390,
+    "note": "执行引擎源文件指纹；不持久化源文件路径。",
+    "sha256": "271628540e00b9c77455304d15db0200aebc98a760db39426d76404295efdda7"
+  },
+  "events": [
+    {
+      "anchor": "2026-03-18T20:10:16",
+      "anchor_resolution": "second",
+      "anchor_source": {
+        "evidence": "官方网站记录的发布时间为2026-03-18 20:10:16。",
+        "publisher": "中国人民大学研究生院",
+        "url": "https://grs.ruc.edu.cn/info/1033/3328.htm"
+      },
+      "anchor_timezone": "Asia/Shanghai",
+      "comment_collection_regime": "pre_2026_04_crawl_break",
+      "first_hour_primary_posts": 20,
+      "first_hour_primary_posts_suppressed": false,
+      "first_related_post_delay_bucket": {
+        "lower_inclusive": 0,
+        "unit": "minutes",
+        "upper_exclusive": 15
+      },
+      "identification": {
+        "causal_status": "not_identified",
+        "claim_boundary": "不识别搬迁的福利效应，也不识别任何后续治理策略的效果。",
+        "estimand": "公开信息发布后，通州相关论坛发帖份额的短期变化。",
+        "evidence_stage": "externally_anchored_pre_post_attention_discontinuity",
+        "identification_strength": "weak_temporal_ordering_signal"
+      },
+      "observed_share_shift": {
+        "baseline_all_posts": 411,
+        "baseline_primary_posts": 2,
+        "baseline_primary_share": 0.004866180048661801,
+        "burst_all_posts": 161,
+        "burst_minus_baseline_share": 0.2249474845476115,
+        "burst_primary_posts": 37,
+        "burst_primary_share": 0.22981366459627328,
+        "burst_to_baseline_share_multiplier": 47.22670807453416,
+        "counterfactual_limit": "外部锚点固定了事件时点，但没有未处理对照组，因而不能识别福利效应或治理干预效果。",
+        "evidence_use": "descriptive_post_anchor_discontinuity_not_policy_effect",
+        "interval_warning": "Exploratory only: the approximation treats posts as independent and is not a formal causal confidence interval under time clustering.",
+        "naive_independent_post_95pct_multiplier_interval": {
+          "lower": 11.516824685053106,
+          "method": "large_sample_log_risk_ratio_approximation",
+          "upper": 193.66118843954482
+        },
+        "status": "estimable",
+        "temporal_interpretation": "爆发窗从外部可核验的公开发布时间开始。"
+      },
+      "phases": [
+        {
+          "all_posts_exposure": 411,
+          "duration_minutes": 1440,
+          "end_offset_minutes": 0,
+          "label": "公告前24小时",
+          "phase_id": "baseline",
+          "start_offset_minutes": -1440,
+          "topics": {
+            "course_continuity": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "课程与培养衔接",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "feedback_channel": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "反馈与协商渠道",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "housing": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "住宿安排",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "student_organizations": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "学生组织运行",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "tongzhou": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 2,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "通州与双校区",
+              "posts": 2,
+              "share_of_all_posts": 0.004866180048661801
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 161,
+          "duration_minutes": 360,
+          "end_offset_minutes": 360,
+          "label": "公告后0—6小时",
+          "phase_id": "burst",
+          "start_offset_minutes": 0,
+          "topics": {
+            "course_continuity": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 9,
+                "mean_linked_comments_per_post": 3.3333333333333335,
+                "nonzero_linked_comment_rate": 0.8888888888888888,
+                "posts_with_linked_comments": 8,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 30
+              },
+              "label": "课程与培养衔接",
+              "posts": 9,
+              "share_of_all_posts": 0.055900621118012424
+            },
+            "feedback_channel": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 1,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "反馈与协商渠道",
+              "posts": 1,
+              "share_of_all_posts": 0.006211180124223602
+            },
+            "housing": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 5,
+                "mean_linked_comments_per_post": 11.8,
+                "nonzero_linked_comment_rate": 1.0,
+                "posts_with_linked_comments": 5,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 59
+              },
+              "label": "住宿安排",
+              "posts": 5,
+              "share_of_all_posts": 0.031055900621118012
+            },
+            "student_organizations": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 4,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "学生组织运行",
+              "posts": 4,
+              "share_of_all_posts": 0.024844720496894408
+            },
+            "tongzhou": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 37,
+                "mean_linked_comments_per_post": 6.648648648648648,
+                "nonzero_linked_comment_rate": 0.9459459459459459,
+                "posts_with_linked_comments": 35,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 246
+              },
+              "label": "通州与双校区",
+              "posts": 37,
+              "share_of_all_posts": 0.22981366459627328
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 276,
+          "duration_minutes": 1080,
+          "end_offset_minutes": 1440,
+          "label": "公告后6—24小时",
+          "phase_id": "spread",
+          "start_offset_minutes": 360,
+          "topics": {
+            "course_continuity": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 1,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "课程与培养衔接",
+              "posts": 1,
+              "share_of_all_posts": 0.0036231884057971015
+            },
+            "feedback_channel": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 2,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "反馈与协商渠道",
+              "posts": 2,
+              "share_of_all_posts": 0.007246376811594203
+            },
+            "housing": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 1,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "住宿安排",
+              "posts": 1,
+              "share_of_all_posts": 0.0036231884057971015
+            },
+            "student_organizations": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "学生组织运行",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "tongzhou": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 11,
+                "mean_linked_comments_per_post": 6.2727272727272725,
+                "nonzero_linked_comment_rate": 1.0,
+                "posts_with_linked_comments": 11,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 69
+              },
+              "label": "通州与双校区",
+              "posts": 11,
+              "share_of_all_posts": 0.03985507246376811
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 502,
+          "duration_minutes": 1440,
+          "end_offset_minutes": 2880,
+          "label": "公告后24—48小时",
+          "phase_id": "decay",
+          "start_offset_minutes": 1440,
+          "topics": {
+            "course_continuity": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "课程与培养衔接",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "feedback_channel": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "反馈与协商渠道",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "housing": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "住宿安排",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "student_organizations": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 0,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "学生组织运行",
+              "posts": 0,
+              "share_of_all_posts": 0.0
+            },
+            "tongzhou": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 7,
+                "mean_linked_comments_per_post": 3.857142857142857,
+                "nonzero_linked_comment_rate": 1.0,
+                "posts_with_linked_comments": 7,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 27
+              },
+              "label": "通州与双校区",
+              "posts": 7,
+              "share_of_all_posts": 0.013944223107569721
+            }
+          }
+        }
+      ],
+      "primary_topic_id": "tongzhou",
+      "scenario_id": "tongzhou_governance_information_shock",
+      "shock_origin": "governance_action",
+      "shock_origin_definition": "由校方在论坛系统之外发布的治理信息；不表示随机分配。",
+      "shock_type": "governance_information",
+      "title": "通州入驻公告：治理型信息冲击",
+      "topic_rules_version": "1.0.0"
+    },
+    {
+      "anchor": "2026-06-03T00:00:00",
+      "anchor_resolution": "day",
+      "anchor_source": {
+        "evidence": "该二手报道于2026-06-04发布，并回溯称讲座事件发生于前一日；不提供小时级事件时点。",
+        "publisher": "IT之家二手报道（转述当事企业致歉）",
+        "url": "https://m.ithome.com/html/959662.htm"
+      },
+      "anchor_timezone": "Asia/Shanghai",
+      "comment_collection_regime": "post_2026_04_crawl_break",
+      "first_hour_primary_posts": null,
+      "first_hour_primary_posts_suppressed": false,
+      "first_related_post_delay_bucket": null,
+      "identification": {
+        "causal_status": "not_identified",
+        "claim_boundary": "讲座精确开始时间未经外部证实；次日道歉具有内生性，不作为因果干预。",
+        "estimand": "围绕事件所在日及随后数日，直接事件关注及相邻职业议题讨论的短期变化。",
+        "evidence_stage": "externally_anchored_event_day_attention_association",
+        "identification_strength": "external_anchor_association"
+      },
+      "observed_share_shift": {
+        "baseline_all_posts": 1442,
+        "baseline_primary_posts": 1,
+        "baseline_primary_share": 0.0006934812760055479,
+        "burst_all_posts": 1333,
+        "burst_minus_baseline_share": 0.06457283530313924,
+        "burst_primary_posts": 87,
+        "burst_primary_share": 0.06526631657914479,
+        "burst_to_baseline_share_multiplier": 94.11402850712679,
+        "counterfactual_limit": "外部锚点固定了事件时点，但没有未处理对照组，因而不能识别福利效应或治理干预效果。",
+        "evidence_use": "descriptive_event_day_association_not_post_event_effect",
+        "interval_warning": "Exploratory only: the approximation treats posts as independent and is not a formal causal confidence interval under time clustering.",
+        "naive_independent_post_95pct_multiplier_interval": {
+          "lower": 13.127619438647686,
+          "method": "large_sample_log_risk_ratio_approximation",
+          "upper": 674.7187030547179
+        },
+        "status": "estimable",
+        "temporal_interpretation": "爆发窗是事件所在自然日，不能整体解释为事件发生之后。"
+      },
+      "phases": [
+        {
+          "all_posts_exposure": 1442,
+          "duration_minutes": 2880,
+          "end_offset_minutes": 0,
+          "label": "事件前两日",
+          "phase_id": "baseline",
+          "start_offset_minutes": -2880,
+          "topics": {
+            "career_spillover": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 9,
+                "mean_linked_comments_per_post": 2.7777777777777777,
+                "nonzero_linked_comment_rate": 0.8888888888888888,
+                "posts_with_linked_comments": 8,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 25
+              },
+              "label": "职业议题外溢（剔除直接事件词）",
+              "posts": 9,
+              "share_of_all_posts": 0.0062413314840499305
+            },
+            "direct_event": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 1,
+                "mean_linked_comments_per_post": null,
+                "nonzero_linked_comment_rate": null,
+                "posts_with_linked_comments": null,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": true,
+                "total_linked_comments": null
+              },
+              "label": "直接事件讨论",
+              "posts": 1,
+              "share_of_all_posts": 0.0006934812760055479
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 1333,
+          "duration_minutes": 1440,
+          "end_offset_minutes": 1440,
+          "label": "事件当日",
+          "phase_id": "burst",
+          "start_offset_minutes": 0,
+          "topics": {
+            "career_spillover": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 16,
+                "mean_linked_comments_per_post": 3.625,
+                "nonzero_linked_comment_rate": 0.8125,
+                "posts_with_linked_comments": 13,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 58
+              },
+              "label": "职业议题外溢（剔除直接事件词）",
+              "posts": 16,
+              "share_of_all_posts": 0.012003000750187547
+            },
+            "direct_event": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 87,
+                "mean_linked_comments_per_post": 8.367816091954023,
+                "nonzero_linked_comment_rate": 0.8390804597701149,
+                "posts_with_linked_comments": 73,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 728
+              },
+              "label": "直接事件讨论",
+              "posts": 87,
+              "share_of_all_posts": 0.06526631657914479
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 909,
+          "duration_minutes": 1440,
+          "end_offset_minutes": 2880,
+          "label": "次日扩散",
+          "phase_id": "spread",
+          "start_offset_minutes": 1440,
+          "topics": {
+            "career_spillover": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 26,
+                "mean_linked_comments_per_post": 8.384615384615385,
+                "nonzero_linked_comment_rate": 0.8846153846153846,
+                "posts_with_linked_comments": 23,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 218
+              },
+              "label": "职业议题外溢（剔除直接事件词）",
+              "posts": 26,
+              "share_of_all_posts": 0.028602860286028604
+            },
+            "direct_event": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 69,
+                "mean_linked_comments_per_post": 5.869565217391305,
+                "nonzero_linked_comment_rate": 0.7246376811594203,
+                "posts_with_linked_comments": 50,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 405
+              },
+              "label": "直接事件讨论",
+              "posts": 69,
+              "share_of_all_posts": 0.07590759075907591
+            }
+          }
+        },
+        {
+          "all_posts_exposure": 1131,
+          "duration_minutes": 2880,
+          "end_offset_minutes": 5760,
+          "label": "后续两日",
+          "phase_id": "decay",
+          "start_offset_minutes": 2880,
+          "topics": {
+            "career_spillover": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 13,
+                "mean_linked_comments_per_post": 3.230769230769231,
+                "nonzero_linked_comment_rate": 0.9230769230769231,
+                "posts_with_linked_comments": 12,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 42
+              },
+              "label": "职业议题外溢（剔除直接事件词）",
+              "posts": 13,
+              "share_of_all_posts": 0.011494252873563218
+            },
+            "direct_event": {
+              "final_comment_attention": {
+                "evidence_use": "descriptive_final_attention_only_not_scored",
+                "matched_posts": 24,
+                "mean_linked_comments_per_post": 3.625,
+                "nonzero_linked_comment_rate": 0.6666666666666666,
+                "posts_with_linked_comments": 16,
+                "privacy_minimum_matched_posts": 5,
+                "suppressed": false,
+                "total_linked_comments": 87
+              },
+              "label": "直接事件讨论",
+              "posts": 24,
+              "share_of_all_posts": 0.021220159151193633
+            }
+          }
+        }
+      ],
+      "primary_topic_id": "direct_event",
+      "scenario_id": "lecture_external_incident_shock",
+      "shock_origin": "exogenous_event",
+      "shock_origin_definition": "事件发生于论坛系统之外；不表示统计意义上的随机或准随机冲击。",
+      "shock_type": "external_incident",
+      "title": "讲座争议：外生舆情冲击",
+      "topic_rules_version": "1.0.0"
+    }
+  ],
+  "generated_at_utc": "2026-07-21T19:29:21.873006+00:00",
+  "input_evidence": {
+    "comments_csv": {
+      "bytes": 139282569,
+      "sha256": "a418f3936a520b857ea5e4796588d6d33faf8435d1426f19874dfb6fc0e89ec9"
+    },
+    "note": "文件指纹绑定聚合基准；不持久化原始输入路径。",
+    "posts_csv": {
+      "bytes": 93350184,
+      "sha256": "c72c1b3dc321aa4f12075b1e0006675c48eb8a141024e165696fd3c7ce14a0bd"
+    }
+  },
+  "methodology": {
+    "comment_regime_boundary": "两个事件分别标注各自采集制度；不跨3月与6月事件比较评论关注度。",
+    "comment_use": "评论仅作最终关注度聚合；不用于响应时延或传播时间",
+    "design": "外部锚定的四阶段离线历史复演",
+    "post_outcome": "各阶段预声明议题代理帖占全部有效帖的份额",
+    "privacy": "仅输出聚合结果；不含原文、帖子编号、评论编号或源路径",
+    "simulation_time": "合成阶段索引；不等待墙上时间，也不接入实时数据"
+  }
+}

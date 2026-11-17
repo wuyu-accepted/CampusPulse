@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CampusPulse 双冲击离线复演</title>
+<style>
+:root{--ink:#152238;--muted:#617089;--line:#dfe6ef;--panel:#fff;--bg:#f4f7fb;--accent:#f26b38;--blue:#2f6fed}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1120px;margin:auto;padding:40px 20px 64px} h1{font-size:34px;margin:0 0 8px} h2{font-size:22px;margin:4px 0 8px}
+.lead{color:var(--muted);max-width:850px} .notice{background:#fff4ed;border-left:4px solid var(--accent);padding:14px 16px;margin:24px 0;border-radius:8px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin:18px 0;box-shadow:0 8px 25px rgba(30,55,90,.05);overflow:auto}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+table{width:100%;border-collapse:collapse;min-width:760px;margin-top:14px} th,td{text-align:left;border-bottom:1px solid var(--line);padding:10px 8px} th{color:var(--muted);font-size:13px}
+.metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .metrics span{background:#edf3ff;border-radius:999px;padding:6px 10px}
+.boundary{color:var(--muted);font-size:13px} code{background:#eef2f7;padding:2px 6px;border-radius:5px;overflow-wrap:anywhere} a{color:var(--blue)}
+</style></head><body><main>
+<div class="eyebrow">historical replay · aggregate only</div>
+<h1>双冲击离线历史复演</h1>
+<p class="lead">真实时间戳只负责切分历史阶段；程序用四个合成步骤立即完成复演，不接实时流、不等待真实时间，也不调用大模型。</p>
+<div class="notice"><strong>证据状态：</strong><code>retrospective_in_sample_replay</code>。这是样本内蒙特卡洛重构拟合，不是模型外部验证或样本外预测，也不验证角色机制，不识别 FAQ、回应、道歉、分流、容量、成本或福利效果。双事件样本内重构采用较弱等级 <strong>strong</strong>；数据快照 <code>99cf3df5dafe5954</code>，分析快照 <code>b99df3cb436403ef</code>。</div>
+
+            <section class="card">
+              <div class="eyebrow">治理行动信息冲击</div>
+              <h2>通州入驻公告：治理型信息冲击</h2>
+              <p class="boundary">冲击口径：由校方在论坛系统之外发布的治理信息；不表示随机分配。</p>
+              <p class="boundary">外部锚点：<code>2026-03-18T20:10:16</code>（Asia/Shanghai，秒级）；来源：<a href="https://grs.ruc.edu.cn/info/1033/3328.htm" target="_blank" rel="noreferrer">中国人民大学研究生院</a>；议题规则版本：<code>1.0.0</code>。</p>
+              <p>首条命中代理规则的帖子出现在外部锚点后0—15分钟区间内。 锚点后首小时共有 20 条主议题代理帖。</p>
+              <p>论坛主议题份额由基线 0.49% 升至爆发期 22.98%，增加 22.49 个百分点，约为 47.2 倍（把帖子朴素视为独立时的探索性95%近似区间 11.5—193.7 倍，不作正式推断）；这是外部定时锚点下的描述性突变。 基线仅有 2 条代理帖，倍数估计不稳定，且不代表治理干预效果。</p>
+              <table>
+                <thead><tr><th>阶段</th><th>全部帖子暴露量</th><th>观测主议题代理</th><th>模拟 p50 [p05, p95]</th><th>占比误差</th></tr></thead>
+                <tbody><tr><td>公告前24小时</td><td>411</td><td>2 (0.49%)</td><td>3.0 [0.0, 6.0]</td><td>0.24 pp</td></tr><tr><td>公告后0—6小时</td><td>161</td><td>37 (22.98%)</td><td>37.0 [30.0, 46.0]</td><td>0.00 pp</td></tr><tr><td>公告后6—24小时</td><td>276</td><td>11 (3.99%)</td><td>11.0 [6.0, 18.0]</td><td>0.00 pp</td></tr><tr><td>公告后24—48小时</td><td>502</td><td>7 (1.39%)</td><td>8.0 [3.0, 12.0]</td><td>0.20 pp</td></tr></tbody>
+              </table>
+              <div class="metrics">
+                <span>样本内重构等级：strong</span>
+                <span>阶段规模 WAPE：3.5%</span>
+                <span>议题命中次数结构 TVD：0.7%</span>
+                <span>峰值阶段距离：0</span>
+                <span>尾部份额误差：1.3%</span>
+              </div>
+              <p class="boundary">评论采集制度：2026年4月采集断点前；评论仅作事件内最终关注度描述，不跨事件比较。</p>
+              <p class="boundary">识别边界：不识别搬迁的福利效应，也不识别任何后续治理策略的效果。</p>
+            </section>
+
+            <section class="card">
+              <div class="eyebrow">外生事件冲击</div>
+              <h2>讲座争议：外生舆情冲击</h2>
+              <p class="boundary">冲击口径：事件发生于论坛系统之外；不表示统计意义上的随机或准随机冲击。</p>
+              <p class="boundary">外部锚点：<code>2026-06-03T00:00:00</code>（Asia/Shanghai，日级）；来源：<a href="https://m.ithome.com/html/959662.htm" target="_blank" rel="noreferrer">IT之家二手报道（转述当事企业致歉）</a>；议题规则版本：<code>1.0.0</code>。</p>
+              <p>公开来源仅支持日级锚点，报告不伪造小时级起点。</p>
+              <p>论坛主议题份额由基线 0.07% 升至事件日 6.53%，增加 6.46 个百分点，约为 94.1 倍（把帖子朴素视为独立时的探索性95%近似区间 13.1—674.7 倍，不作正式推断）；这只是事件日关联，全天不能解释为事件发生之后。 基线仅有 1 条代理帖，倍数估计不稳定，且不代表治理干预效果。</p>
+              <table>
+                <thead><tr><th>阶段</th><th>全部帖子暴露量</th><th>观测主议题代理</th><th>模拟 p50 [p05, p95]</th><th>占比误差</th></tr></thead>
+                <tbody><tr><td>事件前两日</td><td>1442</td><td>1 (0.07%)</td><td>2.0 [0.0, 4.0]</td><td>0.07 pp</td></tr><tr><td>事件当日</td><td>1333</td><td>87 (6.53%)</td><td>87.5 [71.9, 104.0]</td><td>0.04 pp</td></tr><tr><td>次日扩散</td><td>909</td><td>69 (7.59%)</td><td>67.0 [55.0, 80.0]</td><td>0.22 pp</td></tr><tr><td>后续两日</td><td>1131</td><td>24 (2.12%)</td><td>24.0 [17.0, 33.0]</td><td>0.00 pp</td></tr></tbody>
+              </table>
+              <div class="metrics">
+                <span>样本内重构等级：strong</span>
+                <span>阶段规模 WAPE：1.9%</span>
+                <span>议题命中次数结构 TVD：0.2%</span>
+                <span>峰值阶段距离：0</span>
+                <span>尾部份额误差：0.0%</span>
+              </div>
+              <p class="boundary">评论采集制度：2026年4月采集断点后；评论仅作事件内最终关注度描述，不跨事件比较。</p>
+              <p class="boundary">识别边界：讲座精确开始时间未经外部证实；次日道歉具有内生性，不作为因果干预。</p>
+            </section>
+
+<section class="card"><h2>可复核证据链</h2><p class="boundary">两张输入表、事件定义、聚合基准与执行引擎分别固定；这里只展示指纹，不展示原始路径、正文或逐条标识。</p><table><tbody><tr><th>帖子表 SHA-256</th><td><code>c72c1b3dc321aa4f12075b1e0006675c48eb8a141024e165696fd3c7ce14a0bd</code></td></tr><tr><th>评论表 SHA-256</th><td><code>a418f3936a520b857ea5e4796588d6d33faf8435d1426f19874dfb6fc0e89ec9</code></td></tr><tr><th>事件定义指纹</th><td><code>0edf65a3f5d668ebd4a7be4685a0e8e94b36452af49452eee73558c40fb1d57b</code></td></tr><tr><th>聚合 benchmark 指纹</th><td><code>9a6df04f17f95f11a29c1d8067a4bac6ab22dc641d863163e5cd7d45a5994e4b</code></td></tr><tr><th>执行引擎指纹</th><td><code>271628540e00b9c77455304d15db0200aebc98a760db39426d76404295efdda7</code></td></tr><tr><th>纯数据快照</th><td><code>99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6</code></td></tr><tr><th>数据＋定义＋引擎分析快照</th><td><code>b99df3cb436403efb9961cf4f4d03e82f3ad55fd3d27994f1c6a55066abae365</code></td></tr></tbody></table></section>
+<section class="card"><h2>共同引擎边界</h2><p>同一个离线阶段引擎在经验校准后，可复演两个外部锚定冲击的聚合需求曲线。</p><p class="boundary">不支持：实时预测、个体行为、持续社交网络，以及FAQ、道歉、分流、容量或其他干预的因果效果。</p></section>
+</main></body></html>

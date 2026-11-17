@@ -1,0 +1,248 @@
+{
+  "schema_version": "direct-transcript-review-v1",
+  "review_date": "2026-07-22",
+  "reviewer": "primary_agent_direct_semantic_reading",
+  "decision_rule": {
+    "decisive_evidence": "Direct semantic reading of every accepted simulation decision in its event phase, persona variant, prior-turn memory, and policy context.",
+    "diagnostic_only": [
+      "primary-topic phase-shape comparison",
+      "weighted mean absolute error",
+      "near-duplicate text screening",
+      "public-action and satisfaction counts"
+    ],
+    "explicit_rejection": "No mechanical score is treated as the fidelity verdict. A run can pass a phase-shape diagnostic and still fail direct reading because of story carryover, generic voices, implausible exposure, or missing temporal evolution."
+  },
+  "evidence_scope": {
+    "dataset_snapshot_id": "99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6",
+    "persona_release_sha256": "baebf3653a9a78f2cbdf6b994c196dfcc9d02f918e0d6bef7d8b7fd15e2c84d4",
+    "persona_evidence_sha256": "a410253677533feae3d2c3a05b4eb942497a5200a3b709d865d3257bda5e2a90",
+    "accepted_unique_decisions_read": 912,
+    "accepted_unique_public_messages_read": 620,
+    "counting_note": "Four 192-turn baseline runs contribute 768 decisions. The combined-policy branch contributes 144 additional post-baseline decisions; its cached common baseline is not counted again. Public messages exclude read and ignore decisions.",
+    "source_text_in_review_manifest": false,
+    "historical_targets_sent_to_agents": false
+  },
+  "accepted_runs": [
+    {
+      "artifact": "_run/representative-v18-48-lecture-seed-20260722.json",
+      "scenario": "lecture controversy external event",
+      "seed": 20260722,
+      "decisions_read": 192,
+      "public_messages_read": 105,
+      "public_message_counts_by_phase": {
+        "baseline": 47,
+        "burst": 6,
+        "spread": 39,
+        "decay": 13
+      },
+      "direct_reading_verdict": "accept_mechanism_and_text_reject_point_forecast_claim",
+      "direct_findings": [
+        "Only a small early-exposed minority reacts in burst; the larger population enters during spread, which fits an externally originating event better than a universal broadcast.",
+        "Spread speech differentiates source checking, career implications, emotional reaction, fairness and boundary discussion, peer support, and unrelated daily activity.",
+        "Decay retains a plausible minority of unresolved career, feedback, and emotional concerns instead of forcing every agent to continue discussing the event.",
+        "No event story is transplanted from each persona's ordinary baseline episode."
+      ],
+      "diagnostics": {
+        "observed_peak_phase": "spread",
+        "simulated_peak_phase": "spread",
+        "primary_topic_share_mae": 0.04138743327224462,
+        "near_duplicate_pairs_by_phase": {
+          "baseline": 1,
+          "burst": 0,
+          "spread": 1,
+          "decay": 0
+        }
+      },
+      "limitations": [
+        "The absolute phase amplitudes are not calibrated.",
+        "The synthetic decay primary-post proxy is zero although real retained posts remain nonzero."
+      ]
+    },
+    {
+      "artifact": "_run/representative-v17-48-lecture-seed-20261731.json",
+      "scenario": "lecture controversy external event",
+      "seed": 20261731,
+      "decisions_read": 192,
+      "public_messages_read": 104,
+      "public_message_counts_by_phase": {
+        "baseline": 47,
+        "burst": 6,
+        "spread": 37,
+        "decay": 14
+      },
+      "direct_reading_verdict": "accept_mechanism_and_text_reject_point_forecast_claim",
+      "direct_findings": [
+        "The staged-exposure pattern survives a second population seed without making the same people repeat a fixed script.",
+        "Observable speech-act and stance evidence prevents same-archetype agents from collapsing into one generic voice.",
+        "The community-experience variants separate complex reaction, question or complaint, supportive short response, and hyperbolic critique while remaining within the same broad archetype.",
+        "Late attention exits are semantically coherent: most agents return to daily topics while a small affected minority continues."
+      ],
+      "diagnostics": {
+        "observed_peak_phase": "spread",
+        "simulated_peak_phase": "spread",
+        "primary_topic_share_mae": 0.02081768327224462,
+        "near_duplicate_pairs_by_phase": {
+          "baseline": 2,
+          "burst": 0,
+          "spread": 0,
+          "decay": 0
+        }
+      },
+      "limitations": [
+        "The event has only a day-level external anchor, so the early-exposure share is a declared qualitative mechanism rather than an estimated real-time diffusion rate.",
+        "The synthetic decay primary-post proxy is zero."
+      ]
+    },
+    {
+      "artifact": "_run/representative-v20-48-tongzhou-seed-20260722.json",
+      "scenario": "Tongzhou governance information shock",
+      "seed": 20260722,
+      "decisions_read": 192,
+      "public_messages_read": 152,
+      "public_message_counts_by_phase": {
+        "baseline": 47,
+        "burst": 38,
+        "spread": 43,
+        "decay": 24
+      },
+      "direct_reading_verdict": "accept_mechanism_and_text_reject_point_forecast_claim",
+      "direct_findings": [
+        "A direct governance announcement produces broad immediate exposure, unlike the lecture event's limited early exposure.",
+        "Burst concerns are heterogeneous and actionable: course continuity, commuting, housing, student organizations, feedback channels, and procedural fairness.",
+        "Spread messages evolve into add-drop deadlines, housing reversibility, online collaboration, and response-service-level questions rather than merely repeating the announcement.",
+        "Decay retains unresolved governance tasks but releases low-relevance agents from event attention."
+      ],
+      "diagnostics": {
+        "observed_peak_phase": "burst",
+        "simulated_peak_phase": "burst",
+        "primary_topic_share_mae": 0.011489202755931589,
+        "near_duplicate_pairs_by_phase": {
+          "baseline": 0,
+          "burst": 0,
+          "spread": 0,
+          "decay": 0
+        }
+      },
+      "limitations": [
+        "The output supports event-shape resemblance, not a calibrated forecast of how many real posts would appear.",
+        "The synthetic decay primary-post proxy is zero."
+      ]
+    },
+    {
+      "artifact": "_run/representative-v21-48-tongzhou-seed-20261731.json",
+      "scenario": "Tongzhou governance information shock",
+      "seed": 20261731,
+      "decisions_read": 192,
+      "public_messages_read": 150,
+      "public_message_counts_by_phase": {
+        "baseline": 48,
+        "burst": 38,
+        "spread": 42,
+        "decay": 22
+      },
+      "direct_reading_verdict": "accept_mechanism_and_text_reject_point_forecast_claim",
+      "direct_findings": [
+        "The second seed preserves broad-burst then issue-specific-spread behavior without copying the first seed's wording.",
+        "Two similar housing questions are a plausible repetition of a common need, not evidence that the whole population collapsed to one template.",
+        "Agent-level roles retain different information thresholds and response demands across course, commute, housing, organization, and fairness concerns.",
+        "Decay again leaves a smaller, substantively unresolved subset."
+      ],
+      "diagnostics": {
+        "observed_peak_phase": "burst",
+        "simulated_peak_phase": "burst",
+        "primary_topic_share_mae": 0.03322816652404753,
+        "near_duplicate_pairs_by_phase": {
+          "baseline": 0,
+          "burst": 1,
+          "spread": 0,
+          "decay": 0
+        }
+      },
+      "limitations": [
+        "Seed robustness is qualitative over two seeds, not a sampling-theory confidence interval.",
+        "The output cannot identify persistent real users or silent readers."
+      ]
+    },
+    {
+      "artifact": "_run/representative-v24-48-tongzhou-policy-seed-20260722.json",
+      "scenario": "Tongzhou governance counterfactual stress test",
+      "seed": 20260722,
+      "decisions_read": 144,
+      "public_messages_read": 109,
+      "public_message_counts_by_phase": {
+        "burst": 40,
+        "spread": 45,
+        "decay": 24
+      },
+      "direct_reading_verdict": "accept_counterfactual_stress_test_reject_causal_effect_claim",
+      "direct_findings": [
+        "The combined policy is a substantive hypothetical service contract, not a policy label: it freezes course campus and time before add-drop, provides conflict remedies, publishes commute service windows before housing decisions, protects organization exit or online participation, and assigns feedback owners and update times.",
+        "The policy does not unrealistically silence the forum. Public activity remains high while some planning, coordination, organization, and low-cost-observer roles become satisfied.",
+        "Persistent dissatisfaction is coherent and diagnostic: exact dates, individual eligibility, precise schedules, housing-window length, and priority fairness remain unresolved.",
+        "The branch reveals which missing service details keep each representative group active; that is its governance value."
+      ],
+      "diagnostics": {
+        "baseline_satisfied_weight": {
+          "spread": 0.0,
+          "decay": 0.0
+        },
+        "combined_satisfied_weight": {
+          "spread": 0.084064,
+          "decay": 0.158626
+        },
+        "combined_primary_topic_share_mae": 0.020070666524047532
+      },
+      "limitations": [
+        "Satisfaction and trust are model-generated latent states with no observed ground truth in the supplied tables.",
+        "The difference between policy branches is model-conditional and is not an identified causal effect.",
+        "The service package is hypothetical and must not be presented as a real university commitment."
+      ]
+    }
+  ],
+  "invalidated_iterations": [
+    {
+      "versions": ["v1", "v2"],
+      "failure": "Underactivity followed by overactivity and repetitive voices in Tongzhou."
+    },
+    {
+      "versions": ["v3", "v4", "v5"],
+      "failure": "Probe runs exposed role drift, evidence leakage, and ordinary-story carryover into the shock."
+    },
+    {
+      "versions": ["v8"],
+      "failure": "The lecture event was treated as a universal broadcast and the simulated peak occurred in the wrong phase."
+    },
+    {
+      "versions": ["v9", "v10", "v11", "v13"],
+      "failure": "Intermediate exposure and attention mechanisms were still too broad or too persistent."
+    },
+    {
+      "versions": ["v16"],
+      "failure": "Low-relevance agents spoke too early and same-archetype variants collapsed into similar reactions."
+    },
+    {
+      "versions": ["v19"],
+      "failure": "Tongzhou decay retained 44 of 48 agents, which direct reading judged implausibly persistent."
+    },
+    {
+      "versions": ["v22", "v23"],
+      "failure": "The intervention was initially a label, then only a procedural contract; direct reading found too little substantive reason for agents to update."
+    }
+  ],
+  "cross_run_conclusion": {
+    "verdict": "release_candidate_for_representative_forum_behavior_simulation",
+    "why": [
+      "The same frozen 17-archetype, 51-variant population produces different but event-appropriate dynamics for a governance announcement and an externally originating controversy.",
+      "Within each event, two seeds preserve the qualitative stage mechanism while varying wording, affected roles, and local trajectories.",
+      "Direct reading confirms meaningful within-archetype variation and rejects multiple earlier runs that would have passed some aggregate checks.",
+      "A substantive governance branch yields heterogeneous and incomplete updates rather than an implausible universal resolution."
+    ],
+    "remaining_nonclaims": [
+      "No real student is reconstructed.",
+      "The population represents observable forum episodes, not campus demographics or all students.",
+      "Absolute posting volume, silent-reader exposure, true propagation speed, and response latency are not identified.",
+      "No policy treatment effect is causally identified.",
+      "The accepted result is a qualitatively reviewed simulation mechanism, not a point forecast."
+    ]
+  }
+}

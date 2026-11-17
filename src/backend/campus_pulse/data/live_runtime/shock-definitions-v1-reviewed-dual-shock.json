@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "description": "比赛双冲击案例的外部锚定、仅聚合历史复演定义。",
+  "role_models": {
+    "governance_information": {
+      "source_type": "assumption",
+      "limitations": "功能性模拟角色，不代表观察到的人口结构或可持续追踪的个人身份。",
+      "roles": {
+        "stakeholder": {"weight": 0.40, "response_multiplier": 1.40},
+        "information_seeker": {"weight": 0.30, "response_multiplier": 1.20},
+        "amplifier": {"weight": 0.10, "response_multiplier": 1.10},
+        "observer": {"weight": 0.20, "response_multiplier": 0.40}
+      }
+    },
+    "external_incident": {
+      "source_type": "assumption",
+      "limitations": "功能性模拟角色，不代表观察到的人口结构或可持续追踪的个人身份。",
+      "roles": {
+        "stakeholder": {"weight": 0.15, "response_multiplier": 1.40},
+        "information_seeker": {"weight": 0.20, "response_multiplier": 1.20},
+        "amplifier": {"weight": 0.25, "response_multiplier": 1.50},
+        "observer": {"weight": 0.40, "response_multiplier": 0.45}
+      }
+    }
+  },
+  "events": [
+    {
+      "scenario_id": "tongzhou_governance_information_shock",
+      "title": "通州入驻公告：治理型信息冲击",
+      "shock_type": "governance_information",
+      "shock_origin": "governance_action",
+      "shock_origin_definition": "由校方在论坛系统之外发布的治理信息；不表示随机分配。",
+      "anchor": "2026-03-18T20:10:16",
+      "anchor_timezone": "Asia/Shanghai",
+      "anchor_resolution": "second",
+      "comment_collection_regime": "pre_2026_04_crawl_break",
+      "topic_rules_version": "1.0.0",
+      "anchor_source": {
+        "publisher": "中国人民大学研究生院",
+        "url": "https://grs.ruc.edu.cn/info/1033/3328.htm",
+        "evidence": "官方网站记录的发布时间为2026-03-18 20:10:16。"
+      },
+      "identification": {
+        "evidence_stage": "externally_anchored_pre_post_attention_discontinuity",
+        "causal_status": "not_identified",
+        "identification_strength": "weak_temporal_ordering_signal",
+        "estimand": "公开信息发布后，通州相关论坛发帖份额的短期变化。",
+        "claim_boundary": "不识别搬迁的福利效应，也不识别任何后续治理策略的效果。"
+      },
+      "primary_topic_id": "tongzhou",
+      "phases": [
+        {"phase_id": "baseline", "label": "公告前24小时", "start_offset_minutes": -1440, "end_offset_minutes": 0},
+        {"phase_id": "burst", "label": "公告后0—6小时", "start_offset_minutes": 0, "end_offset_minutes": 360},
+        {"phase_id": "spread", "label": "公告后6—24小时", "start_offset_minutes": 360, "end_offset_minutes": 1440},
+        {"phase_id": "decay", "label": "公告后24—48小时", "start_offset_minutes": 1440, "end_offset_minutes": 2880}
+      ],
+      "topics": [
+        {
+          "topic_id": "tongzhou",
+          "label": "通州与双校区",
+          "include_any": ["通州", "双校区", "两校区", "新校区", "潞城", "通运门", "通勤", "专线", "校车"]
+        },
+        {
+          "topic_id": "course_continuity",
+          "label": "课程与培养衔接",
+          "requires_topic": "tongzhou",
+          "include_any": ["课程", "上课", "选课", "辅修", "补修", "转专业", "重修", "教学"]
+        },
+        {
+          "topic_id": "housing",
+          "label": "住宿安排",
+          "requires_topic": "tongzhou",
+          "include_any": ["宿舍", "寝室", "四人寝", "六人寝", "住宿"]
+        },
+        {
+          "topic_id": "student_organizations",
+          "label": "学生组织运行",
+          "requires_topic": "tongzhou",
+          "include_any": ["社团", "学生工作", "学生组织", "青协", "招新"]
+        },
+        {
+          "topic_id": "feedback_channel",
+          "label": "反馈与协商渠道",
+          "requires_topic": "tongzhou",
+          "include_any": ["反馈", "建议", "反映", "渠道", "联系", "修改"]
+        }
+      ]
+    },
+    {
+      "scenario_id": "lecture_external_incident_shock",
+      "title": "讲座争议：外生舆情冲击",
+      "shock_type": "external_incident",
+      "shock_origin": "exogenous_event",
+      "shock_origin_definition": "事件发生于论坛系统之外；不表示统计意义上的随机或准随机冲击。",
+      "anchor": "2026-06-03T00:00:00",
+      "anchor_timezone": "Asia/Shanghai",
+      "anchor_resolution": "day",
+      "comment_collection_regime": "post_2026_04_crawl_break",
+      "topic_rules_version": "1.0.0",
+      "anchor_source": {
+        "publisher": "IT之家二手报道（转述当事企业致歉）",
+        "url": "https://m.ithome.com/html/959662.htm",
+        "evidence": "该二手报道于2026-06-04发布，并回溯称讲座事件发生于前一日；不提供小时级事件时点。"
+      },
+      "identification": {
+        "evidence_stage": "externally_anchored_event_day_attention_association",
+        "causal_status": "not_identified",
+        "identification_strength": "external_anchor_association",
+        "estimand": "围绕事件所在日及随后数日，直接事件关注及相邻职业议题讨论的短期变化。",
+        "claim_boundary": "讲座精确开始时间未经外部证实；次日道歉具有内生性，不作为因果干预。"
+      },
+      "primary_topic_id": "direct_event",
+      "phases": [
+        {"phase_id": "baseline", "label": "事件前两日", "start_offset_minutes": -2880, "end_offset_minutes": 0},
+        {"phase_id": "burst", "label": "事件当日", "start_offset_minutes": 0, "end_offset_minutes": 1440},
+        {"phase_id": "spread", "label": "次日扩散", "start_offset_minutes": 1440, "end_offset_minutes": 2880},
+        {"phase_id": "decay", "label": "后续两日", "start_offset_minutes": 2880, "end_offset_minutes": 5760}
+      ],
+      "topics": [
+        {
+          "topic_id": "direct_event",
+          "label": "直接事件讨论",
+          "include_any": ["张小龙", "粉笔", "混吃等死"],
+          "include_regexes": ["活该.{0,4}找不到工作"]
+        },
+        {
+          "topic_id": "career_spillover",
+          "label": "职业议题外溢（剔除直接事件词）",
+          "include_any": ["考公", "公务员", "考编", "就业", "择业", "职业规划", "求职", "找工作", "炒股", "美股"],
+          "exclude_topics": ["direct_event"]
+        }
+      ]
+    }
+  ]
+}

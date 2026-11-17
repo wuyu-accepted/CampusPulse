@@ -1,0 +1,2083 @@
+{
+  "schema_version": "campus-pulse-metric-provenance-v2",
+  "report": "EXPERIMENT_REPORT.md",
+  "coverage_rule": "Every non-heading, non-code-fence line containing an Arabic numeric token has a line hash and at least one existing code and evidence path.",
+  "numeric_claim_line_count": 116,
+  "numeric_claims": [
+    {
+      "report_line": 5,
+      "report_section": "1",
+      "line_sha256": "680cb1756e5cf5700aa962aa1c8adea45538908659df1fb7af8c37b52006f566",
+      "numeric_tokens": [
+        "1",
+        "000"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 15,
+      "report_section": "2.1",
+      "line_sha256": "e63f9ac5371bfeb721f1dff6c6fcb3173ae34f3b581c1aaf9c03c772e00576a6",
+      "numeric_tokens": [
+        "132",
+        "917",
+        "454",
+        "053",
+        "582",
+        "408",
+        "3",
+        "000",
+        "131",
+        "604"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 17,
+      "report_section": "2.1",
+      "line_sha256": "d051fce083db3d6a9ec08f8b7f1d9bc14bdcabf9ef5ca4ea005c0a5a7aeeb183",
+      "numeric_tokens": [
+        "17"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 18,
+      "report_section": "2.1",
+      "line_sha256": "e296a66cd5df0f6d58cd25ee974ee012e658ce90498a3792ce0b7f2c6bf72399",
+      "numeric_tokens": [
+        "120"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 19,
+      "report_section": "2.1",
+      "line_sha256": "3033514f2e49aabe9c6c0f35ff14e1f608e53adb39ac9d099dc9e0f7af9f2e8e",
+      "numeric_tokens": [
+        "22",
+        "477"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 20,
+      "report_section": "2.1",
+      "line_sha256": "c55b858973d341cf19c86fa5ecd686330912a1d904fcb1091a3deb341a1803d6",
+      "numeric_tokens": [
+        "1",
+        "000"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 21,
+      "report_section": "2.1",
+      "line_sha256": "a2e0d8140ed494c970d4d377ad63a4ff446152234312151cd34d8bab71c900aa",
+      "numeric_tokens": [
+        "10"
+      ],
+      "code": [
+        "scripts/campus_pulse/compile_forum_twin_releases.py",
+        "scripts/campus_pulse/build_forum_twin_formal_release.py"
+      ],
+      "evidence": [
+        "data/campus_pulse_workspace/forumtwin/releases/semantic-llm-forum-agent-population-v2.json",
+        "data/campus_pulse_workspace/forumtwin/releases/micro-role-release.json"
+      ]
+    },
+    {
+      "report_line": 31,
+      "report_section": "2.2",
+      "line_sha256": "2ef7afd768ebacd2a4e6bf10029cdcf13c0b2d5d6ee4d56fcadff108d17e8b41",
+      "numeric_tokens": [
+        "3",
+        "10"
+      ],
+      "code": [
+        "src/envs/campus_pulse_governance/forum_pilot.py",
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 32,
+      "report_section": "2.2",
+      "line_sha256": "6aa29e98ba0d7058ee2f3af5e73e845635805ec4c5ff2adf1247ecb9809d577c",
+      "numeric_tokens": [
+        "1",
+        "000"
+      ],
+      "code": [
+        "src/envs/campus_pulse_governance/forum_pilot.py",
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 33,
+      "report_section": "2.2",
+      "line_sha256": "13c77e65581308708450e0510a66fb5b4737cbce8f2cd9a0366a3015971122c7",
+      "numeric_tokens": [
+        "10",
+        "10",
+        "000"
+      ],
+      "code": [
+        "src/envs/campus_pulse_governance/forum_pilot.py",
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 34,
+      "report_section": "2.2",
+      "line_sha256": "594c2fb356adaf55c87bb6c055f21b6221d075649346dc7ed5a556bf4637b39c",
+      "numeric_tokens": [
+        "360",
+        "6"
+      ],
+      "code": [
+        "src/envs/campus_pulse_governance/forum_pilot.py",
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 44,
+      "report_section": "3.1",
+      "line_sha256": "2a18a81d1319ee5462dd1dd9f4c78ea6d3cefb0ab40a8b85948c6e3dace45b76",
+      "numeric_tokens": [
+        "320",
+        "536"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 50,
+      "report_section": "3.1",
+      "line_sha256": "8b951c9c663c6cf5fac2d385daccd09628cb15751d4568f127a47162be1f5395",
+      "numeric_tokens": [
+        "10"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 52,
+      "report_section": "3.1",
+      "line_sha256": "7d8e601cc51b5c7b463336ba451793dfb561a09bb0a846d67e661dc3a4f4668b",
+      "numeric_tokens": [
+        "73",
+        "76"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 53,
+      "report_section": "3.1",
+      "line_sha256": "4b4ff0071ab69ac8c3b1dca8a1a249a13aed828ad55345ef75d8f2d796bb561f",
+      "numeric_tokens": [
+        "57",
+        "61"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 54,
+      "report_section": "3.1",
+      "line_sha256": "044fee5fb90b2f7c2c7cb75ccd86bcc94529206239f61c499e4967d73688c799",
+      "numeric_tokens": [
+        "16",
+        "8"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 55,
+      "report_section": "3.1",
+      "line_sha256": "7d7ac7ce1e6bc0ba9e50099bda84463748b32cf79b0c90b514c52f31d655c4d8",
+      "numeric_tokens": [
+        "17",
+        "10",
+        "7"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 56,
+      "report_section": "3.1",
+      "line_sha256": "07544fcb1ce6de764aff1e2f6477107785f33497fc312ab0bf2c78bfcb6dfe60",
+      "numeric_tokens": [
+        "0",
+        "2"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 57,
+      "report_section": "3.1",
+      "line_sha256": "ab6c9cd15cf529e9c9fb82d076e9d942c5d1240afe23bc42e1e5546f42f2024b",
+      "numeric_tokens": [
+        "0.70",
+        "0"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 58,
+      "report_section": "3.1",
+      "line_sha256": "383524a2fc0053292c7ccf567894af0e34a5024d34d693af0c5746edad5e0057",
+      "numeric_tokens": [
+        "0.111",
+        "0"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 59,
+      "report_section": "3.1",
+      "line_sha256": "24154cc56975e9816b65593cd25a8abef23c7bcfff70e0152ca6f63183001711",
+      "numeric_tokens": [
+        "0.911",
+        "0.950"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 60,
+      "report_section": "3.1",
+      "line_sha256": "0a1a5fd89912178e469957c7339dd4c752868fa924d8dbbb66589845fe2e8599",
+      "numeric_tokens": [
+        "0.429",
+        "0.375"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 68,
+      "report_section": "3.2",
+      "line_sha256": "fb227490af018dc2df86363e2d595b4e53f220e22453cdb0f9e0c7078a61417a",
+      "numeric_tokens": [
+        "10",
+        "108",
+        "103",
+        "9",
+        "111",
+        "100",
+        "5",
+        "6"
+      ],
+      "code": [
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-demo-v2/public-progress/latest.json",
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 74,
+      "report_section": "3.3",
+      "line_sha256": "ca7ea51868b54e1c1fae5ef0b5b9a80017c1e6b926d257f09bdd98933406230b",
+      "numeric_tokens": [
+        "167",
+        "173",
+        "22",
+        "4",
+        "3.2",
+        "2.6",
+        "4"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json"
+      ]
+    },
+    {
+      "report_line": 80,
+      "report_section": "4.1",
+      "line_sha256": "cf0e500af5cf0f1a7b678392453e64cbfc52ba4ce3c7ab4479ab5b5c48e840f9",
+      "numeric_tokens": [
+        "48",
+        "3",
+        "254",
+        "70.7%",
+        "77.1%",
+        "6.4",
+        "2",
+        "0.005",
+        "0"
+      ],
+      "code": [
+        "scripts/build_forum_ecology_calibration.py",
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json"
+      ]
+    },
+    {
+      "report_line": 82,
+      "report_section": "4.1",
+      "line_sha256": "f7b1b08d13bc67c7f0c0cd88f502a060bfe735457b1f9cb09cfc7b54fcb2f0b9",
+      "numeric_tokens": [
+        "11",
+        "15"
+      ],
+      "code": [
+        "scripts/build_forum_ecology_calibration.py",
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json"
+      ]
+    },
+    {
+      "report_line": 86,
+      "report_section": "4.2",
+      "line_sha256": "80af3f8db67b0275e65cae88069784c6bbb8e109a752ed7e32d45f1ef633800e",
+      "numeric_tokens": [
+        "24",
+        "95.8%"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "src/envs/campus_pulse_governance/forum_fidelity_v2.py",
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py",
+        "scripts/score_forum_joint_constraint_blind_review.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json"
+      ]
+    },
+    {
+      "report_line": 88,
+      "report_section": "4.2",
+      "line_sha256": "f695166be298b0cd95ffd6f5322dd16709a6dbea26f00e387cc08ce124107cb9",
+      "numeric_tokens": [
+        "12",
+        "75.0%",
+        "91.7%",
+        "66.7%",
+        "4.10"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "src/envs/campus_pulse_governance/forum_fidelity_v2.py",
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py",
+        "scripts/score_forum_joint_constraint_blind_review.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-blind-score-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 90,
+      "report_section": "4.2",
+      "line_sha256": "9487f226915b4cb55a8a8c61d96278bf5808823a8f2c209fea53770b396f149d",
+      "numeric_tokens": [
+        "32",
+        "0.578",
+        "0.550"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "src/envs/campus_pulse_governance/forum_fidelity_v2.py",
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py",
+        "scripts/score_forum_joint_constraint_blind_review.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json"
+      ]
+    },
+    {
+      "report_line": 94,
+      "report_section": "4.3",
+      "line_sha256": "39db027656588b33309599f615b1947c1c821b40a0a78f9f3e2f7b3378ee5b67",
+      "numeric_tokens": [
+        "14",
+        "1",
+        "000",
+        "8%",
+        "15%"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "src/envs/campus_pulse_governance/forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 96,
+      "report_section": "4.3",
+      "line_sha256": "4dfd3ae71a6e3e6c2317ca776da6d25551a6b2b7bc8b436ad904c322fa28b616",
+      "numeric_tokens": [
+        "122",
+        "63",
+        "52",
+        "4",
+        "3",
+        "9",
+        "4.13"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "src/envs/campus_pulse_governance/forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 100,
+      "report_section": "4.4",
+      "line_sha256": "40e42138d8463675a24d6b47f00c9f32afc0493ba94851ca4eaadc3fbf14710e",
+      "numeric_tokens": [
+        "6",
+        "3",
+        "0.70",
+        "0",
+        "0.351",
+        "0.265"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 102,
+      "report_section": "4.4",
+      "line_sha256": "431cfa864b3b8aea11c7a0a9cc5fcd84b0b4c63e80fe77fe38216bb6f3a3ec1f",
+      "numeric_tokens": [
+        "0.911",
+        "0.950",
+        "0.054"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 110,
+      "report_section": "4.5",
+      "line_sha256": "681c71ac320a7abdf652abb0e3452cada8195adc37c640f04b7ac83c7a47e307",
+      "numeric_tokens": [
+        "48",
+        "3",
+        "254",
+        "6.4"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py",
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_reply_count_detail.py",
+        "scripts/analyze_forum_joint_constraint.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json",
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 111,
+      "report_section": "4.5",
+      "line_sha256": "d6b43c1e4ca0bfa33d5fa6567b0eea35b6733707add5d63be27f770aace777c4",
+      "numeric_tokens": [
+        "312",
+        "24",
+        "95.8%"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py",
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_reply_count_detail.py",
+        "scripts/analyze_forum_joint_constraint.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json",
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 112,
+      "report_section": "4.5",
+      "line_sha256": "1eada6753198383de6e072ea793a717104ca9a912f87aa6b1f2198b05ebde365",
+      "numeric_tokens": [
+        "1",
+        "000",
+        "14",
+        "14.5%"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py",
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_reply_count_detail.py",
+        "scripts/analyze_forum_joint_constraint.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json",
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 113,
+      "report_section": "4.5",
+      "line_sha256": "53e50992182a7c0ac17be5059ec92795dd4f97b9d742a8d5ffed91ba8dcad386",
+      "numeric_tokens": [
+        "6",
+        "3"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py",
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_reply_count_detail.py",
+        "scripts/analyze_forum_joint_constraint.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json",
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 117,
+      "report_section": "4.6",
+      "line_sha256": "fe5cfcdf733f8dec5694c2ae57d221bda3cbe55173f66390c96c496adc38628a",
+      "numeric_tokens": [
+        "3"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 121,
+      "report_section": "4.6",
+      "line_sha256": "1586555e0cb010691097e1027a3c8340d8788e172da173a24812339f865cb4a7",
+      "numeric_tokens": [
+        "3",
+        "4",
+        "0",
+        "4",
+        "0",
+        "4",
+        "4",
+        "4",
+        "4",
+        "0.677",
+        "0.346",
+        "0.677",
+        "0.346"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 122,
+      "report_section": "4.6",
+      "line_sha256": "5899bc42234a3afe9f3a7e405acb85876524168d1199c3ba514a09d8a7664850",
+      "numeric_tokens": [
+        "4",
+        "15",
+        "7",
+        "17",
+        "11",
+        "8",
+        "8",
+        "5",
+        "6",
+        "0.588",
+        "0.406",
+        "0.588",
+        "0.407"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 123,
+      "report_section": "4.6",
+      "line_sha256": "6c562fbffa9f87984d2cf34391c99c21c6d7fcb4324f69d981a297afc66924e6",
+      "numeric_tokens": [
+        "5",
+        "25",
+        "13",
+        "31",
+        "20",
+        "12",
+        "12",
+        "7",
+        "8",
+        "0.533",
+        "0.437",
+        "0.515",
+        "0.460"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 124,
+      "report_section": "4.6",
+      "line_sha256": "3c2db7d736e9b38f45362c3bd361853e693b6df3cdf271064e57d4331ac12d00",
+      "numeric_tokens": [
+        "6",
+        "39",
+        "25",
+        "38",
+        "27",
+        "14",
+        "14",
+        "7",
+        "9",
+        "0.492",
+        "0.446",
+        "0.470",
+        "0.471"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 125,
+      "report_section": "4.6",
+      "line_sha256": "dcdb6869c8cc2853c300c528a5c985dbbca0e88516f87383574ca831541bc06b",
+      "numeric_tokens": [
+        "7",
+        "52",
+        "38",
+        "47",
+        "33",
+        "14",
+        "14",
+        "7",
+        "9",
+        "0.467",
+        "0.432",
+        "0.438",
+        "0.462"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 126,
+      "report_section": "4.6",
+      "line_sha256": "f8d8a8a8783b8eb3a9be198b2426d792a41758c338e4723791287d70abd2cdc4",
+      "numeric_tokens": [
+        "8",
+        "60",
+        "45",
+        "57",
+        "42",
+        "15",
+        "16",
+        "8",
+        "10",
+        "0.451",
+        "0.401",
+        "0.415",
+        "0.439"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 127,
+      "report_section": "4.6",
+      "line_sha256": "8fd48e70cf54cfcf3201b7bb41aba18883111c678dc728b913b0a7f88e5bab1e",
+      "numeric_tokens": [
+        "9",
+        "64",
+        "49",
+        "68",
+        "53",
+        "15",
+        "16",
+        "8",
+        "10",
+        "0.439",
+        "0.368",
+        "0.384",
+        "0.428"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 128,
+      "report_section": "4.6",
+      "line_sha256": "eb23cbe8685f785e77f3e5316ebf85a31104ce30830a5a1506f0bf76f01bb2ee",
+      "numeric_tokens": [
+        "10",
+        "73",
+        "57",
+        "76",
+        "61",
+        "16",
+        "17",
+        "8",
+        "10",
+        "0.429",
+        "0.335",
+        "0.375",
+        "0.390"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 130,
+      "report_section": "4.6",
+      "line_sha256": "4cf140cb0f1f856ac7f0bfae43153f87a010505e2ad51ed23271bf182e727100",
+      "numeric_tokens": [
+        "3",
+        "4",
+        "8",
+        "10",
+        "16",
+        "17"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 132,
+      "report_section": "4.6",
+      "line_sha256": "687cc1678cb6402b3dca86ae8a9725dfc024618aa64c8f73ae1e469576b8e160",
+      "numeric_tokens": [
+        "10"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 134,
+      "report_section": "4.6",
+      "line_sha256": "71fb16537f03a765717c86e22958b3b5b56c1f98001cf9ad88fde882dcd83b18",
+      "numeric_tokens": [
+        "0.111",
+        "0.000",
+        "-0.111"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 135,
+      "report_section": "4.6",
+      "line_sha256": "8f188d0eaeb2c07a7bd14f780a1abed8709d93758c43681402e0abd3e0789b39",
+      "numeric_tokens": [
+        "0.824",
+        "0.800",
+        "-0.024"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 136,
+      "report_section": "4.6",
+      "line_sha256": "fa93499280d2653e8bd534ee1e16b3d89368d89a622521902e34a529fb807d75",
+      "numeric_tokens": [
+        "0.911",
+        "0.950",
+        "+0.039"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 137,
+      "report_section": "4.6",
+      "line_sha256": "b3fa73e187d65f0372579d487eb9b433c6d457253fc6dc9509a663880eb9e832",
+      "numeric_tokens": [
+        "0.700",
+        "0.000",
+        "-0.700"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 138,
+      "report_section": "4.6",
+      "line_sha256": "588280fd2536095b1aede6a4423852d63ccedeb1c66f19528f66be0c1a58af84",
+      "numeric_tokens": [
+        "0.351",
+        "0.265",
+        "-0.085"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 142,
+      "report_section": "4.7",
+      "line_sha256": "617ff16bec98f0055aa733b9b32fece9707a22bef02d364844a53804b076b124",
+      "numeric_tokens": [
+        "10",
+        "10"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 146,
+      "report_section": "4.7",
+      "line_sha256": "e377dee14d2aa78d09f87b6312af8b82da9bbd88b029f078ec6935d5560e1582",
+      "numeric_tokens": [
+        "3",
+        "4"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 147,
+      "report_section": "4.7",
+      "line_sha256": "57ce3fb849fd17c996126db984885af5745d6c9c6925dcea8f66b9c6fb204935",
+      "numeric_tokens": [
+        "4"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 148,
+      "report_section": "4.7",
+      "line_sha256": "7977b4c977bed523e3c129c30586215867f204cc425ec1a3b107b0630a84047a",
+      "numeric_tokens": [
+        "5",
+        "3"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 149,
+      "report_section": "4.7",
+      "line_sha256": "a1cc162983d00ba86ad1f4633dee2c591a1eb4e54d0a3e6d85ec10c4bbc8ac2a",
+      "numeric_tokens": [
+        "6"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 150,
+      "report_section": "4.7",
+      "line_sha256": "550b2788f89a0bf4a772dabbde5521af4ede9f514a858407aef2131819e6e941",
+      "numeric_tokens": [
+        "7"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 151,
+      "report_section": "4.7",
+      "line_sha256": "480cecdfb4c8c21433811582ce95665941916b298fd9871b1d41dbc1ad34d315",
+      "numeric_tokens": [
+        "8"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 152,
+      "report_section": "4.7",
+      "line_sha256": "c8785f0bf34d96dbec28c5ed7bfa497409aa3ac812208522a145031459743b5b",
+      "numeric_tokens": [
+        "9",
+        "2"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 153,
+      "report_section": "4.7",
+      "line_sha256": "8418c456e8570a44421b5039eb4a43dc7176ee322c57d4756c0e95dd0b27e765",
+      "numeric_tokens": [
+        "10"
+      ],
+      "code": [
+        "scripts/build_public_agent_decision_trace.py"
+      ],
+      "evidence": [
+        "evidence/century-gym-live-v1/public-agent-trace-FT-0084.json",
+        "src/frontend/public/campus-pulse-data/forum-agent-world-public-v1.json"
+      ]
+    },
+    {
+      "report_line": 159,
+      "report_section": "4.8",
+      "line_sha256": "924f26bb2465bf18840426a6a8941a0e126cdf5ac8d0569c6da5ca5bf548a623",
+      "numeric_tokens": [
+        "6",
+        "2",
+        "2",
+        "2"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 163,
+      "report_section": "4.8",
+      "line_sha256": "88ffc720c4850dd2230273ff3d4ac035aebaa67618c40457ad28f67d6b2fa5ce",
+      "numeric_tokens": [
+        "320",
+        "536"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 164,
+      "report_section": "4.8",
+      "line_sha256": "b6b09b391b4ebb80d85baa8789e79306a8c0d555697600fc54cf197c41d41f76",
+      "numeric_tokens": [
+        "48"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 167,
+      "report_section": "4.8",
+      "line_sha256": "1cd68234e95a257a699925a6c0597b8b8fd631e6731a9deffd838babe2321c48",
+      "numeric_tokens": [
+        "0.70",
+        "0",
+        "10",
+        "0.054"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 173,
+      "report_section": "4.9",
+      "line_sha256": "b3863d5b38beea1fd4e61e9f9f10a0c938dd240edb23cf5fa2463b9cd74ed783",
+      "numeric_tokens": [
+        "16",
+        "8"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 174,
+      "report_section": "4.9",
+      "line_sha256": "7d7ac7ce1e6bc0ba9e50099bda84463748b32cf79b0c90b514c52f31d655c4d8",
+      "numeric_tokens": [
+        "17",
+        "10",
+        "7"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 175,
+      "report_section": "4.9",
+      "line_sha256": "f7c1b2cb8bdf92dab636d3a373df9fc46aeea013ca25518a538eaee95c6afb33",
+      "numeric_tokens": [
+        "0",
+        "2"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 176,
+      "report_section": "4.9",
+      "line_sha256": "c7870ece7e13a71f998f690b199c394292f36032df080b7a217f72478fd03521",
+      "numeric_tokens": [
+        "57",
+        "61"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 177,
+      "report_section": "4.9",
+      "line_sha256": "3fba9ccb29ef0c05874c168517fc40bcb38efc47486a806c917d2dcc2f4486cc",
+      "numeric_tokens": [
+        "114",
+        "105"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 178,
+      "report_section": "4.9",
+      "line_sha256": "3d49f909605acc377a6ee9b846b75cd9ee3d6f4c2da340e497257748f3a8702d",
+      "numeric_tokens": [
+        "67",
+        "68"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 179,
+      "report_section": "4.9",
+      "line_sha256": "840a2678b0d40e025d9866cfd7db1065e859636eaab8d74d9f92049c21ffec15",
+      "numeric_tokens": [
+        "83",
+        "83"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 181,
+      "report_section": "4.9",
+      "line_sha256": "7021b2eb5c746d475a6d0a48167c7d32bdaeea4836fd4e3de5d0e79aff9a517b",
+      "numeric_tokens": [
+        "9"
+      ],
+      "code": [
+        "scripts/analyze_forum_parallel_result.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/public-summary-v1.json"
+      ]
+    },
+    {
+      "report_line": 187,
+      "report_section": "4.10",
+      "line_sha256": "8a4ba47d9408a6e03e49feb2a0a02ab4e367bd092c754eaf455f88985e701045",
+      "numeric_tokens": [
+        "12"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 191,
+      "report_section": "4.10",
+      "line_sha256": "9f9f2ea69983b6cd8aaeb0cb7020cc54702821838d49eec91cbd9c16acefd94b",
+      "numeric_tokens": [
+        "2",
+        "12",
+        "1",
+        "3",
+        "2"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 192,
+      "report_section": "4.10",
+      "line_sha256": "45f4f2fbf732efea110b50380d8d9b8c4e8aecb8056323491b4001d77a845fe2",
+      "numeric_tokens": [
+        "6",
+        "12",
+        "5",
+        "3",
+        "6"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 193,
+      "report_section": "4.10",
+      "line_sha256": "a2a48ada3faac5d3fe32a5789eef345c0d9cd5e9a6aec333ed36ab87705d0a35",
+      "numeric_tokens": [
+        "5",
+        "12",
+        "5",
+        "4",
+        "5"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 194,
+      "report_section": "4.10",
+      "line_sha256": "8f79b94953875554c193445368a0828c23b347080252d512c8f75e2be87befc1",
+      "numeric_tokens": [
+        "10",
+        "12",
+        "11",
+        "4",
+        "10"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 196,
+      "report_section": "4.10",
+      "line_sha256": "de94a9f5509700b0396a86a3a2701e641775f8ad0666774b0d23f14980487e45",
+      "numeric_tokens": [
+        "75.0%",
+        "91.7%",
+        "66.7%"
+      ],
+      "code": [
+        "scripts/analyze_forum_joint_constraint.py",
+        "scripts/analyze_joint_constraint_cross_agent.py"
+      ],
+      "evidence": [
+        "evidence/joint-constraint-v1/joint-constraint-summary-v1.json",
+        "evidence/joint-constraint-v1/joint-constraint-cross-agent-v1.json"
+      ]
+    },
+    {
+      "report_line": 200,
+      "report_section": "4.11",
+      "line_sha256": "804ce57c2f9b18a268c6bbcae7d5d95b9b4c34cc43e003fe80fa01e9bd1d55bb",
+      "numeric_tokens": [
+        "3",
+        "254",
+        "48"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 204,
+      "report_section": "4.11",
+      "line_sha256": "97017077e60c1d9f8e5c4f3e64e6797d4b2f68f795eaccb01a71766cfe8f3d94",
+      "numeric_tokens": [
+        "0",
+        "953",
+        "29.3%",
+        "11",
+        "22.9%"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 205,
+      "report_section": "4.11",
+      "line_sha256": "5c038ba18147c14ebb66e46b317ce2c19e6c1960dcbef9e0eaef6264f95ef582",
+      "numeric_tokens": [
+        "1",
+        "2",
+        "1",
+        "096",
+        "33.7%",
+        "14",
+        "29.2%"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 206,
+      "report_section": "4.11",
+      "line_sha256": "c1caa2a93cf81d40cb2226976600d74501b3419d372061e92168a218928a5dd2",
+      "numeric_tokens": [
+        "3",
+        "9",
+        "915",
+        "28.1%",
+        "18",
+        "37.5%"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 207,
+      "report_section": "4.11",
+      "line_sha256": "490cbf9dc3b233ba0479bd17f8eeffe0059c7543febcd45e526e68517199fcf0",
+      "numeric_tokens": [
+        "10",
+        "290",
+        "8.9%",
+        "5",
+        "10.4%"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 211,
+      "report_section": "4.11",
+      "line_sha256": "7c610deaaa9555e70c443237db9efbf810c613a907f0e74bb951a113e72d2d09",
+      "numeric_tokens": [
+        "70.7%",
+        "77.1%"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 212,
+      "report_section": "4.11",
+      "line_sha256": "df18d13d923345906a17b129843b1469c898193a788ec133fca7302cfb5555b3",
+      "numeric_tokens": [
+        "2",
+        "2"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 213,
+      "report_section": "4.11",
+      "line_sha256": "fd98a73f740b9259e0a4ad1e7fe7ff991b1250bd6a9263849de7af4facc34516",
+      "numeric_tokens": [
+        "90%",
+        "9",
+        "9",
+        "10"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 214,
+      "report_section": "4.11",
+      "line_sha256": "0e1a46ba587d5e5728305eb9d6d6eceadf26ad318d19d0adc65f94d7dc4016a5",
+      "numeric_tokens": [
+        "0.005"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 216,
+      "report_section": "4.11",
+      "line_sha256": "119944bd4c70adc3896f1803858b98d6dafb0c1589672e0481e96265f3310d50",
+      "numeric_tokens": [
+        "0"
+      ],
+      "code": [
+        "scripts/build_reply_count_detail.py",
+        "src/envs/campus_pulse_governance/forum_ecology_calibration.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/reply-count-detail-v2.json",
+        "evidence/four-dimension-v5-formal-v1/forum-ecology-benchmark-v2.json"
+      ]
+    },
+    {
+      "report_line": 222,
+      "report_section": "4.12",
+      "line_sha256": "78cd052dc797f007ceee08c6ae96f3e4262a7b4cf99311dc169136c00ece82e8",
+      "numeric_tokens": [
+        "10"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 224,
+      "report_section": "4.12",
+      "line_sha256": "159f5c9395faa9cb6a1ea6215cc33813f93a418f0d19b5b79128079d9d6a14d2",
+      "numeric_tokens": [
+        "167",
+        "173",
+        "+6"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 225,
+      "report_section": "4.12",
+      "line_sha256": "fcb07249ee7dfd14b53cbb139e38bc0ddb35d650466daeb739f50eeb7cae8021",
+      "numeric_tokens": [
+        "158",
+        "161",
+        "+3"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 226,
+      "report_section": "4.12",
+      "line_sha256": "ebda84b7a1364be6945eca6d87fe0eb31a9e3bf35e1e2c7d07b65ca7ba4ebe0e",
+      "numeric_tokens": [
+        "22",
+        "4",
+        "-18"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 227,
+      "report_section": "4.12",
+      "line_sha256": "6ec500c1b60f05abfa3eedf3dbadd89cb6ec6d011187fd78c2e6fbaba6f3ce5b",
+      "numeric_tokens": [
+        "48",
+        "54",
+        "+6"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 228,
+      "report_section": "4.12",
+      "line_sha256": "bf7d85d13e450fdddee6ef3a33a7d257f8d6361859cc86351e3fb864a397e3ad",
+      "numeric_tokens": [
+        "0.392",
+        "0.424",
+        "+0.032"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 229,
+      "report_section": "4.12",
+      "line_sha256": "90dbdd3a286d52511aa67966dfec085e7d42dd650a9506567a86c55af69b215e",
+      "numeric_tokens": [
+        "0.100",
+        "0.118",
+        "+0.018"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py"
+      ],
+      "evidence": [
+        "evidence/lecture-incident-v1/case-summary.json",
+        "evidence/lecture-incident-v1/analysis/parallel-forum-series.json"
+      ]
+    },
+    {
+      "report_line": 235,
+      "report_section": "4.13",
+      "line_sha256": "d902ca2c8c235c270858f96742d0095996c5a6f6d7e6a1b5737f6529530fece5",
+      "numeric_tokens": [
+        "10",
+        "10",
+        "1",
+        "000"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 237,
+      "report_section": "4.13",
+      "line_sha256": "280e6187e2d1438271c865a795235cf8ab06c6068ec3cc98e83ee266788e088a",
+      "numeric_tokens": [
+        "3",
+        "9",
+        "9"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 239,
+      "report_section": "4.13",
+      "line_sha256": "0855b77bab0b8d7ddb67caa65aaf5a497004a1585393f4d6c897bc2c8c70d22d",
+      "numeric_tokens": [
+        "0.786",
+        "0.104",
+        "0.677",
+        "0.084",
+        "0.439",
+        "0.154",
+        "0.384",
+        "0.130"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 240,
+      "report_section": "4.13",
+      "line_sha256": "cf1466f3820c0acc61aa7147aba0e271a5fdcfaf1579df8bc23ebb9243209882",
+      "numeric_tokens": [
+        "0.300",
+        "0.043",
+        "0.346",
+        "0.051",
+        "0.368",
+        "0.197",
+        "0.428",
+        "0.182"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 241,
+      "report_section": "4.13",
+      "line_sha256": "d572f36dddc46877029465e8cc62fc688452b81887a03f653488db4996b4c73a",
+      "numeric_tokens": [
+        "0.000",
+        "0.000",
+        "0.309",
+        "0.047",
+        "0.136",
+        "0.217",
+        "0.054",
+        "0.187"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 242,
+      "report_section": "4.13",
+      "line_sha256": "36e11c4432f0d7e3eee754429a5aeeaf07ec54e012a74c5185a196bc33648812",
+      "numeric_tokens": [
+        "1",
+        "1",
+        "2",
+        "1"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 244,
+      "report_section": "4.13",
+      "line_sha256": "a23f7a1b45f362dbebbdb9d0963ed5af1d64e5d4f2f0c4dd254fb18667498af3",
+      "numeric_tokens": [
+        "9"
+      ],
+      "code": [
+        "scripts/evaluate_forum_fidelity_v2.py",
+        "scripts/build_public_particle_panel.py"
+      ],
+      "evidence": [
+        "evidence/four-dimension-v5-formal-v1/fidelity-evaluation-v3.json",
+        "evidence/four-dimension-v5-formal-v1/anonymous-particle-panel-v1.manifest.json"
+      ]
+    },
+    {
+      "report_line": 256,
+      "report_section": "5",
+      "line_sha256": "4cf0b8b2a75af5a2c3087eab0e640cc64f2d8f7659a29978b137d8c3fcfffabd",
+      "numeric_tokens": [
+        "1",
+        "1",
+        "000"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 257,
+      "report_section": "5",
+      "line_sha256": "227507d6680b1f792bd2ff0f62662fc7989b9028fe75188e6e867b9e86cdc47e",
+      "numeric_tokens": [
+        "2"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 258,
+      "report_section": "5",
+      "line_sha256": "4ae8b107733c3ed2afd02129954e21ac2439ce93ef02bb8006746c6224ab67cb",
+      "numeric_tokens": [
+        "3"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 259,
+      "report_section": "5",
+      "line_sha256": "d16992bd1fb0282f32905e84f01750e8e646a667e0abd43cfe7aabe6528a4f3f",
+      "numeric_tokens": [
+        "4",
+        "10"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 260,
+      "report_section": "5",
+      "line_sha256": "204a3710663e42bdf038473e42cbd26c89fc04f12c7283ca774f196e95d0ff87",
+      "numeric_tokens": [
+        "5",
+        "5"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 261,
+      "report_section": "5",
+      "line_sha256": "68401c4a3fae5da6cf8401ed61f0bce67be6c07eabdceb21e212cac8d025bc2d",
+      "numeric_tokens": [
+        "6",
+        "10"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 262,
+      "report_section": "5",
+      "line_sha256": "4c5e9f35b4959e9c5107ccc6d60e846ca87712bb6e4e33640ffe3f07ed73dbc2",
+      "numeric_tokens": [
+        "7"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 268,
+      "report_section": "5.1",
+      "line_sha256": "5102e77d2aca80c0dffc8adcedea104c8fdf06741b672c807260f0145ff093c0",
+      "numeric_tokens": [
+        "1",
+        "000"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 269,
+      "report_section": "5.1",
+      "line_sha256": "13c77e65581308708450e0510a66fb5b4737cbce8f2cd9a0366a3015971122c7",
+      "numeric_tokens": [
+        "10",
+        "10",
+        "000"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 271,
+      "report_section": "5.1",
+      "line_sha256": "122087ce8ae330ff5fb241f68bec71e639a72d5598bb5b8d7aa261e094d7bc3c",
+      "numeric_tokens": [
+        "3",
+        "10"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 272,
+      "report_section": "5.1",
+      "line_sha256": "e4418a576a6660f31af8cb6f6eb9738c3bcbf8afa0cb53e1b6598898b1411551",
+      "numeric_tokens": [
+        "360"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    },
+    {
+      "report_line": 273,
+      "report_section": "5.1",
+      "line_sha256": "e3b586765e1aa354be5d0d71eae64006868b72cabd894125bd9037259045abc0",
+      "numeric_tokens": [
+        "6"
+      ],
+      "code": [
+        "scripts/restore_lecture_case_evidence.py",
+        "scripts/build_century_gym_demo_replay.py"
+      ],
+      "evidence": [
+        "evidence/final-projects/index.json"
+      ]
+    }
+  ]
+}

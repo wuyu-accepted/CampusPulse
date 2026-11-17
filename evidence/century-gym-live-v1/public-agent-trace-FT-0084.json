@@ -1,0 +1,411 @@
+{
+  "schema_version": "campus-pulse-public-agent-decision-trace-v1",
+  "evidence_scope": "committed_public_ledger",
+  "input_record_status": "provable_context_reconstruction",
+  "input_record_note": "The historical run did not publish provider prompt bodies. Context in this file is limited to the thread root, direct parent and quote proven by the ledger.",
+  "scenario_id": "century_gym_ghost_booking_dispute",
+  "branch": "D",
+  "through_tick": 10,
+  "agent_display_id": "FT-0084",
+  "profile": {
+    "display_id": "FT-0084",
+    "historical_episode_focus": "分享大一找实习的困惑",
+    "historical_episode_usage": "historical behavior evidence only; use when the current scenario or delivered feed is substantively relevant",
+    "language_style": {
+      "summary": "colloquial，回复功能：discussion",
+      "tendencies": [
+        "colloquial",
+        "discussion",
+        "medium"
+      ]
+    },
+    "macro_role": "archetype-05",
+    "micro_role": "生涯机会决策咨询者_question_04",
+    "need_portfolio": [
+      "分享体验",
+      "获得建议"
+    ],
+    "source_profile_v2_bound": true,
+    "stable_traits": [
+      "生涯机会决策咨询者_question_04",
+      "直接表达意图",
+      "colloquial，回复功能：discussion"
+    ],
+    "topic_portfolio": [
+      "实习",
+      "职业探索"
+    ]
+  },
+  "steps": [
+    {
+      "tick": 3,
+      "provable_model_context": [],
+      "agent_action": {
+        "message_id": "forum-message-f67c6ef487df9b13031b7526",
+        "action": "post",
+        "thread_id": "forum-thread-c4f0aa1881755fcb5b346bac",
+        "parent_message_id": null,
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "unverified",
+        "claim_operation": "create",
+        "visible_text": "连续三天看到空场但显示不可约，确实值得查；不过“内部占用”还只是猜测。有没有人记下具体日期、时段和场地？若能对照取消后释放时间、迟到核销规则，才更容易判断是系统问题还是预约机制导致的。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-427d61e3914850d0f540be12",
+          "speaker": "FT-0750",
+          "tick": 4,
+          "relation": "direct_reply",
+          "text": "我也遇到过约不上但不清楚是不是同一块场地。有人能说下具体日期、时段和场号吗？尤其想知道取消或没签到后多久会重新放出来。"
+        },
+        {
+          "message_id": "forum-message-87005fa0b4f6a22005196fcb",
+          "speaker": "FT-0158",
+          "tick": 4,
+          "relation": "direct_reply",
+          "text": "如果要继续查，最好把同一场地同一时段的日期记下来，再对照取消后释放和未签到核销时间；这样也能排除临时教学或活动保护时段。"
+        },
+        {
+          "message_id": "forum-message-8b3d505fd4f573d029fa0d29",
+          "speaker": "FT-0921",
+          "tick": 4,
+          "relation": "direct_reply",
+          "text": "如果有人实际遇到过，能不能说下取消后多久会重新放号、预约成功但没到场会不会自动释放？这两个规则能先帮忙排除一部分猜测。"
+        },
+        {
+          "message_id": "forum-message-aef6dcdd32fc03626f58a234",
+          "speaker": "FT-0901",
+          "tick": 4,
+          "relation": "direct_reply",
+          "text": "可以再加一项：记录同一块场地是否连续在小程序里不可约，并注明现场有没有维护、切场或教学标识。这样比只看见一次空场更容易复现。"
+        },
+        {
+          "message_id": "forum-message-bed8170f082459066065360b",
+          "speaker": "FT-0750",
+          "tick": 8,
+          "relation": "direct_reply",
+          "text": "我前面已经问过场地、时段和释放规则了，这里再卡一个点：羽毛球和乒乓球的未签到、过期释放是否真的共用一套规则？如果不同，最好分别给规则入口或工单口径，不然很难判断是系统没释放还是项目本来就有特殊锁定。"
+        }
+      ],
+      "next_public_action": {
+        "tick": 4,
+        "action": "reply",
+        "text": "可以再补一个复现办法：同一场地同时截下现场占用状态和小程序页面，并记录取消或过期后的时间点。这样更容易分清保护时段、维护，还是预约没释放；到点未签到的核销规则也值得公开说明。"
+      }
+    },
+    {
+      "tick": 4,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-8d2ab83620e8abd0a06cfefb",
+          "speaker": "FT-0931",
+          "tick": 3,
+          "text": "三天空场和小程序不可约这个现象值得查，但还不能直接等同于“内部占用”。有人知道取消后多久释放，或者预约成功但没到场会不会自动核销吗？"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-97c598f3b78bb4a15e2d2a3a",
+        "action": "reply",
+        "thread_id": "forum-thread-21706712e7a09356a554fa98",
+        "parent_message_id": "forum-message-8d2ab83620e8abd0a06cfefb",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "challenge",
+        "visible_text": "可以再补一个复现办法：同一场地同时截下现场占用状态和小程序页面，并记录取消或过期后的时间点。这样更容易分清保护时段、维护，还是预约没释放；到点未签到的核销规则也值得公开说明。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-b6f8c9f75f10fc86b3115ec9",
+          "speaker": "FT-0343",
+          "tick": 5,
+          "relation": "direct_reply",
+          "text": "除了看多久释放，规则里有没有写未签到几分钟自动核销、同一规则是否覆盖羽毛球和乒乓球？不然不同场地对照也不好判断。"
+        }
+      ],
+      "next_public_action": {
+        "tick": 5,
+        "action": "reply",
+        "text": "如果能把同一场地连续几个时段的“不可约”状态和现场标识一起记下，再看取消或过期后多久恢复，应该能分开维护锁场和预约未释放；现在还不适合直接归因于内部占用。"
+      }
+    },
+    {
+      "tick": 5,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-f67c6ef487df9b13031b7526",
+          "speaker": "FT-0084",
+          "tick": 3,
+          "text": "连续三天看到空场但显示不可约，确实值得查；不过“内部占用”还只是猜测。有没有人记下具体日期、时段和场地？若能对照取消后释放时间、迟到核销规则，才更容易判断是系统问题还是预约机制导致的。"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-aef6dcdd32fc03626f58a234",
+          "speaker": "FT-0901",
+          "tick": 4,
+          "text": "可以再加一项：记录同一块场地是否连续在小程序里不可约，并注明现场有没有维护、切场或教学标识。这样比只看见一次空场更容易复现。"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-cfc69fb5f9c74b386d7094b6",
+        "action": "reply",
+        "thread_id": "forum-thread-c4f0aa1881755fcb5b346bac",
+        "parent_message_id": "forum-message-aef6dcdd32fc03626f58a234",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "none",
+        "visible_text": "如果能把同一场地连续几个时段的“不可约”状态和现场标识一起记下，再看取消或过期后多久恢复，应该能分开维护锁场和预约未释放；现在还不适合直接归因于内部占用。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-6f6fc762a040c58832c0531a",
+          "speaker": "FT-0158",
+          "tick": 6,
+          "relation": "direct_reply",
+          "text": "我前面也倾向先记录同一场地同一时段；现在还应把取消、过期和未签到后的自动释放时限查清。否则“内部占用”和状态未释放仍分不开。"
+        },
+        {
+          "message_id": "forum-message-bf0ac32f92f332478fd4ead2",
+          "speaker": "FT-0901",
+          "tick": 6,
+          "relation": "direct_reply",
+          "text": "还可以顺手对照羽毛球和乒乓球：取消、过期和未签到的释放规则是否一致？若规则不同，单看空场不可约很难判断是哪一环卡住。"
+        },
+        {
+          "message_id": "forum-message-cd4b26465839daa494dad5b8",
+          "speaker": "FT-0750",
+          "tick": 6,
+          "relation": "direct_reply",
+          "text": "我前面也在追场地、时段和释放规则。现在想确认一下：羽毛球、乒乓球是不是共用同一套未签到自动释放规则？如果规则不同，能否分别给个可核对的入口？"
+        }
+      ],
+      "next_public_action": {
+        "tick": 6,
+        "action": "reply",
+        "text": "前面已经提到不同场地对照了，我想再补一个可复核点：能否记录预约状态从成功、取消或过期到重新可约的时间？如果未签到有自动核销，也请明确具体分钟数。这样比只看现场空不空更能判断是不是释放延迟。"
+      }
+    },
+    {
+      "tick": 6,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-8d2ab83620e8abd0a06cfefb",
+          "speaker": "FT-0931",
+          "tick": 3,
+          "text": "三天空场和小程序不可约这个现象值得查，但还不能直接等同于“内部占用”。有人知道取消后多久释放，或者预约成功但没到场会不会自动核销吗？"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-b6f8c9f75f10fc86b3115ec9",
+          "speaker": "FT-0343",
+          "tick": 5,
+          "text": "除了看多久释放，规则里有没有写未签到几分钟自动核销、同一规则是否覆盖羽毛球和乒乓球？不然不同场地对照也不好判断。"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-e770950bdf60b74ed492bfcb",
+        "action": "reply",
+        "thread_id": "forum-thread-21706712e7a09356a554fa98",
+        "parent_message_id": "forum-message-b6f8c9f75f10fc86b3115ec9",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "challenge",
+        "visible_text": "前面已经提到不同场地对照了，我想再补一个可复核点：能否记录预约状态从成功、取消或过期到重新可约的时间？如果未签到有自动核销，也请明确具体分钟数。这样比只看现场空不空更能判断是不是释放延迟。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-8ec5d401ac8d950c2d9a5853",
+          "speaker": "FT-0343",
+          "tick": 7,
+          "relation": "direct_reply",
+          "text": "规则写明未签到会自动释放的话，这次有没有实际状态记录能对上？比如到点后多久恢复可约，还是只停留在规则说明，没法核对具体时段？"
+        }
+      ],
+      "next_public_action": {
+        "tick": 7,
+        "action": "reply",
+        "text": "如果两类场地共用规则，最好再对照一条实际记录：未签到后状态何时恢复、是否有例外。这样才能区分规则本身和某次状态没更新。"
+      }
+    },
+    {
+      "tick": 7,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-f67c6ef487df9b13031b7526",
+          "speaker": "FT-0084",
+          "tick": 3,
+          "text": "连续三天看到空场但显示不可约，确实值得查；不过“内部占用”还只是猜测。有没有人记下具体日期、时段和场地？若能对照取消后释放时间、迟到核销规则，才更容易判断是系统问题还是预约机制导致的。"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-cd4b26465839daa494dad5b8",
+          "speaker": "FT-0750",
+          "tick": 6,
+          "text": "我前面也在追场地、时段和释放规则。现在想确认一下：羽毛球、乒乓球是不是共用同一套未签到自动释放规则？如果规则不同，能否分别给个可核对的入口？"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-e9cf0ff8522af8e16fad8981",
+        "action": "reply",
+        "thread_id": "forum-thread-c4f0aa1881755fcb5b346bac",
+        "parent_message_id": "forum-message-cd4b26465839daa494dad5b8",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "none",
+        "visible_text": "如果两类场地共用规则，最好再对照一条实际记录：未签到后状态何时恢复、是否有例外。这样才能区分规则本身和某次状态没更新。"
+      },
+      "direct_responses": [],
+      "next_public_action": {
+        "tick": 8,
+        "action": "reply",
+        "text": "我还是不太会把“空场”直接判成内部占用。更关键的是挑一个具体时段，看不可约状态在取消或未签到后有没有变化记录；如果一直不释放，才更像系统或流程问题。"
+      }
+    },
+    {
+      "tick": 8,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-8d2ab83620e8abd0a06cfefb",
+          "speaker": "FT-0931",
+          "tick": 3,
+          "text": "三天空场和小程序不可约这个现象值得查，但还不能直接等同于“内部占用”。有人知道取消后多久释放，或者预约成功但没到场会不会自动核销吗？"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-8ec5d401ac8d950c2d9a5853",
+          "speaker": "FT-0343",
+          "tick": 7,
+          "text": "规则写明未签到会自动释放的话，这次有没有实际状态记录能对上？比如到点后多久恢复可约，还是只停留在规则说明，没法核对具体时段？"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-daf02c3f97a14f302718c8f9",
+        "action": "reply",
+        "thread_id": "forum-thread-21706712e7a09356a554fa98",
+        "parent_message_id": "forum-message-8ec5d401ac8d950c2d9a5853",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "challenge",
+        "visible_text": "我还是不太会把“空场”直接判成内部占用。更关键的是挑一个具体时段，看不可约状态在取消或未签到后有没有变化记录；如果一直不释放，才更像系统或流程问题。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-f62b028d1a34986be53faf90",
+          "speaker": "FT-0343",
+          "tick": 9,
+          "relation": "direct_reply",
+          "text": "那能不能给一个具体时段，核对取消或未签到后状态何时释放？如果没有记录，怎么判断是规则如此还是系统没释放？"
+        }
+      ],
+      "next_public_action": {
+        "tick": 9,
+        "action": "reply",
+        "text": "未签到释放规则如果能按项目、时段各复现一次，会比继续猜“内部占用”更有区分度。尤其要记录状态从不可约变可约的具体时间；若始终不变，再追问是否存在维护或保护时段。"
+      }
+    },
+    {
+      "tick": 9,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-f67c6ef487df9b13031b7526",
+          "speaker": "FT-0084",
+          "tick": 3,
+          "text": "连续三天看到空场但显示不可约，确实值得查；不过“内部占用”还只是猜测。有没有人记下具体日期、时段和场地？若能对照取消后释放时间、迟到核销规则，才更容易判断是系统问题还是预约机制导致的。"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-bed8170f082459066065360b",
+          "speaker": "FT-0750",
+          "tick": 8,
+          "text": "我前面已经问过场地、时段和释放规则了，这里再卡一个点：羽毛球和乒乓球的未签到、过期释放是否真的共用一套规则？如果不同，最好分别给规则入口或工单口径，不然很难判断是系统没释放还是项目本来就有特殊锁定。"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-e969d1685cab3c6e786b7788",
+        "action": "reply",
+        "thread_id": "forum-thread-c4f0aa1881755fcb5b346bac",
+        "parent_message_id": "forum-message-bed8170f082459066065360b",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "challenge",
+        "visible_text": "未签到释放规则如果能按项目、时段各复现一次，会比继续猜“内部占用”更有区分度。尤其要记录状态从不可约变可约的具体时间；若始终不变，再追问是否存在维护或保护时段。"
+      },
+      "direct_responses": [
+        {
+          "message_id": "forum-message-0e1671fa8aa266f1f0074a1c",
+          "speaker": "FT-0750",
+          "tick": 10,
+          "relation": "direct_reply",
+          "text": "羽毛球和乒乓球的释放规则会一样吗？我想按项目各记一次取消、过期和未签到后的状态变化，不然还是分不清是规则差异还是没释放。"
+        },
+        {
+          "message_id": "forum-message-5edcddacd7716a9689a88a65",
+          "speaker": "FT-0901",
+          "tick": 10,
+          "relation": "direct_reply",
+          "text": "我之前也在看取消、过期和未签到的差异。可以再补一项：同一场地连续刷新并截图状态变更时间；如果释放时间稳定，比较像规则，若一直不变才更值得报系统问题。"
+        }
+      ],
+      "next_public_action": {
+        "tick": 10,
+        "action": "reply",
+        "text": "可以先盯一个具体时段：记录取消或未签到的时间，再看小程序何时恢复可约。要是状态一直不变，才更像未释放；若按固定时限恢复，也能排除一部分“内部占用”的猜测。"
+      }
+    },
+    {
+      "tick": 10,
+      "provable_model_context": [
+        {
+          "role": "thread_root",
+          "message_id": "forum-message-8d2ab83620e8abd0a06cfefb",
+          "speaker": "FT-0931",
+          "tick": 3,
+          "text": "三天空场和小程序不可约这个现象值得查，但还不能直接等同于“内部占用”。有人知道取消后多久释放，或者预约成功但没到场会不会自动核销吗？"
+        },
+        {
+          "role": "direct_parent",
+          "message_id": "forum-message-f62b028d1a34986be53faf90",
+          "speaker": "FT-0343",
+          "tick": 9,
+          "text": "那能不能给一个具体时段，核对取消或未签到后状态何时释放？如果没有记录，怎么判断是规则如此还是系统没释放？"
+        }
+      ],
+      "agent_action": {
+        "message_id": "forum-message-566825404cad02be0c114e7f",
+        "action": "reply",
+        "thread_id": "forum-thread-21706712e7a09356a554fa98",
+        "parent_message_id": "forum-message-f62b028d1a34986be53faf90",
+        "quote_message_id": null,
+        "stance": "uncertain",
+        "emotion": "curious",
+        "evidence_status": "uncertain",
+        "claim_operation": "none",
+        "visible_text": "可以先盯一个具体时段：记录取消或未签到的时间，再看小程序何时恢复可约。要是状态一直不变，才更像未释放；若按固定时限恢复，也能排除一部分“内部占用”的猜测。"
+      },
+      "direct_responses": [],
+      "next_public_action": null
+    }
+  ],
+  "direct_response_count": 13,
+  "all_actions_from_live_or_exact_trace": true,
+  "content_sha256": "6717246b77963ed6762cfc183af8976497e5529cbe1944b8e8fc6c4a08e673f6"
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<style>.title{font:700 30px Arial,sans-serif;fill:#17141a}.sub{font:16px Arial,sans-serif;fill:#5d5963}.card{fill:#faf8f5;stroke:#ddd6ce;stroke-width:1.5}</style>
+<rect width="1200" height="620" fill="#f4f1ed"/><text x="55" y="58" class="title">Net-stance distribution at Tick 9</text>
+<text x="55" y="90" class="sub">Design-weighted parent Agents; descriptive density, not a forced bimodality test</text>
+<rect x="35" y="118" width="1130" height="410" rx="18" class="card"/><line x1="90" y1="480" x2="1040" y2="480" stroke="#aaa29a"/><path d="M 90.0 480.0 L 140.0 480.0 L 190.0 480.0 L 240.0 480.0 L 290.0 480.0 L 340.0 480.0 L 390.0 478.6 L 440.0 454.3 L 490.0 271.4 L 540.0 180.0 L 590.0 311.4 L 640.0 382.9 L 690.0 298.6 L 740.0 242.9 L 790.0 304.3 L 840.0 447.1 L 890.0 480.0 L 940.0 480.0 L 990.0 480.0 L 1040.0 480.0" fill="none" stroke="#46414b" stroke-width="5"/><path d="M 90.0 480.0 L 140.0 480.0 L 190.0 480.0 L 240.0 480.0 L 290.0 480.0 L 340.0 478.8 L 390.0 480.0 L 440.0 428.6 L 490.0 257.7 L 540.0 180.0 L 590.0 284.0 L 640.0 353.3 L 690.0 339.0 L 740.0 391.6 L 790.0 421.4 L 840.0 470.4 L 890.0 480.0 L 940.0 480.0 L 990.0 480.0 L 1040.0 480.0" fill="none" stroke="#c70b3b" stroke-width="5"/>
+<text x="90" y="515" class="sub">−1 opposition</text><text x="530" y="515" class="sub">0 mixed</text><text x="930" y="515" class="sub">+1 support</text>
+<text x="865" y="165" class="sub" fill="#46414b">— Natural</text><text x="865" y="200" class="sub" fill="#c70b3b">— D governance</text>
+<text x="55" y="575" class="sub">Natural mean +0.136 · D mean +0.054</text>
+</svg>

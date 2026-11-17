@@ -1,0 +1,5505 @@
+{
+  "macro_role_count": 17,
+  "micro_role_count": 120,
+  "micro_role_release_sha256": "2521e28beb06e869a207741e810fb87f3b32b96434660f58e1710d5375f1fa36",
+  "raw_text_persisted": false,
+  "role_counts_by_macro": {
+    "archetype-01": 10,
+    "archetype-02": 10,
+    "archetype-03": 10,
+    "archetype-04": 4,
+    "archetype-05": 7,
+    "archetype-06": 4,
+    "archetype-07": 8,
+    "archetype-08": 10,
+    "archetype-09": 4,
+    "archetype-10": 8,
+    "archetype-11": 7,
+    "archetype-12": 4,
+    "archetype-13": 10,
+    "archetype-14": 6,
+    "archetype-15": 10,
+    "archetype-16": 4,
+    "archetype-17": 4
+  },
+  "roles": [
+    {
+      "micro_interaction_role": "课程规则核实者_question_01",
+      "micro_role_id": "micro-fcef0ddd5b41d096a05b",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "选课决策",
+        "焦虑缓解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.014231499051233396,
+        "discussion": 0.010910815939278937,
+        "emotional_vent": 0.0056925996204933585,
+        "experience_share_or_ask": 0.005218216318785579,
+        "help_request": 0.006641366223908918,
+        "information_request": 0.38045540796963945,
+        "information_share": 0.0014231499051233396,
+        "question": 0.575426944971537
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-e255205108bc892363b3",
+        "evidence-031c234c566480a89f08",
+        "evidence-9a461985a83583b25041",
+        "evidence-a3cf204dc360231d36d9",
+        "evidence-fd416dbdd104ea436212",
+        "evidence-89fc8c83c7754386710d",
+        "evidence-0d47eef31ea987c5b05a",
+        "evidence-e669e73d72745ed63ca8",
+        "evidence-7bcda5b85c11a743ae49",
+        "evidence-b423b0f01afa99b12ff5",
+        "evidence-b4ff3c96e532216dbce2",
+        "evidence-6b5eb5930874fa776cbd"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "课程评价",
+        "选课",
+        "课程信息",
+        "给分",
+        "小学期"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_02",
+      "micro_role_id": "micro-c04aaa8dec61f0ad151b",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "选课决策",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.014231499051233396,
+        "discussion": 0.010436432637571158,
+        "emotional_vent": 0.0056925996204933585,
+        "experience_share_or_ask": 0.004269449715370019,
+        "help_request": 0.006641366223908918,
+        "information_request": 0.36669829222011385,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5906072106261859
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-afe4a7b652a6145a9f18",
+        "evidence-4cfc502a0887898099e3",
+        "evidence-037a4755fcac02da2c09",
+        "evidence-c2fa93bab7961d2fdb5f",
+        "evidence-32d951b1bff45a996311",
+        "evidence-f062605c0cf809c3b7cd",
+        "evidence-0c4c8c2cdf6707f16186",
+        "evidence-93bc9f35d50c2863edae",
+        "evidence-d1f43f5b3c7b3f39fba0",
+        "evidence-a299969fa76affcca84f",
+        "evidence-2230b62a852041771763",
+        "evidence-7e6c5b7eaee1681b13b5"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "选课",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "给分"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_03",
+      "micro_role_id": "micro-ca4eed2069617ad1952f",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "规则了解",
+        "焦虑缓解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.014231499051233396,
+        "discussion": 0.006641366223908918,
+        "emotional_vent": 0.0056925996204933585,
+        "experience_share_or_ask": 0.007590132827324478,
+        "help_request": 0.006641366223908918,
+        "information_request": 0.37855787476280833,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5792220113851992
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-7f74f4eec6b899779229",
+        "evidence-760cfc5030d492d3f248",
+        "evidence-a9562373af5ffcf68d34",
+        "evidence-50085942af9dfb04e997",
+        "evidence-d0c6a4b0a321b3f67a32",
+        "evidence-315adf1c23ce1c47a079",
+        "evidence-6055e3295651810812d1",
+        "evidence-704e71e009b1b9d49005",
+        "evidence-88ac21ba01218589271c",
+        "evidence-52d86973d8b370395b01",
+        "evidence-258a2b577a3216d87076",
+        "evidence-29a24e01b8eec722c0cf"
+      ],
+      "topic_portfolio": [
+        "选课",
+        "课程规则",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "期末考试"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_04",
+      "micro_role_id": "micro-239c45363e67076b0892",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "规则了解",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.014231499051233396,
+        "discussion": 0.007115749525616698,
+        "emotional_vent": 0.0056925996204933585,
+        "experience_share_or_ask": 0.004743833017077799,
+        "help_request": 0.006641366223908918,
+        "information_request": 0.3633776091081594,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5967741935483871
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-29c326506d55df766d77",
+        "evidence-1bb7f453f7598bd486ae",
+        "evidence-e2294c028d9f7426641a",
+        "evidence-54b6f3d461a564623bbd",
+        "evidence-af4b7334da0e1aa2a7bf",
+        "evidence-c534a127c36252b8af7b",
+        "evidence-0634ef320f5a007f4250",
+        "evidence-3d82f5fd33988f72ff13",
+        "evidence-fe05026ac365e9299ada",
+        "evidence-4e82b2d2f9dc2fe0a40b",
+        "evidence-0053c1b04e59ff5e2e22",
+        "evidence-3ccf9b6d1af8b5839900"
+      ],
+      "topic_portfolio": [
+        "选课",
+        "课程规则",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "给分"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_05",
+      "micro_role_id": "micro-98c75ce055635270f164",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "选课决策",
+        "焦虑缓解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.014231499051233396,
+        "discussion": 0.008064516129032258,
+        "emotional_vent": 0.006166982922201139,
+        "experience_share_or_ask": 0.004269449715370019,
+        "help_request": 0.007115749525616698,
+        "information_request": 0.3704933586337761,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5882352941176471
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-4107cf1619279c7b2cf7",
+        "evidence-788668d16efaabe32e5c",
+        "evidence-be20c192130ef7cc6fa0",
+        "evidence-4ba0b71388e0b5614d90",
+        "evidence-cf43722b4fe868861817",
+        "evidence-4c6c4f49d961c176412d",
+        "evidence-141fe5eca7d86fd83af0",
+        "evidence-0e158270f0683f167be7",
+        "evidence-1cdb57bbd9038db3ef63",
+        "evidence-82de3ae94fca86332d33",
+        "evidence-d58aa50d971996b95c4e",
+        "evidence-146f666613bd03ee076c"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "课程评价",
+        "选课",
+        "课程信息",
+        "给分",
+        "期末考试"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_06",
+      "micro_role_id": "micro-374e2ae780601ba1591c",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "焦虑缓解",
+        "规则了解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.013757115749525617,
+        "discussion": 0.010436432637571158,
+        "emotional_vent": 0.006166982922201139,
+        "experience_share_or_ask": 0.006641366223908918,
+        "help_request": 0.007115749525616698,
+        "information_request": 0.3723908918406072,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5820683111954459
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-39aae8403b7292a46132",
+        "evidence-8187ac43625a983d68ca",
+        "evidence-2e5c5dee28cf5859ff74",
+        "evidence-6d5c3f70a24ac4c95d45",
+        "evidence-301c677c841a67ffa439",
+        "evidence-133157b95af0ba10d3f5",
+        "evidence-4c1f335c742e5e922ea6",
+        "evidence-b30576ef540cc44d29de",
+        "evidence-69ec35dafe713850ca91",
+        "evidence-829e587516bebf8c450d",
+        "evidence-7d111b2d177217d28845",
+        "evidence-9b3e7da752910bf4890d"
+      ],
+      "topic_portfolio": [
+        "选课",
+        "课程规则",
+        "课程评价",
+        "课程信息",
+        "课程",
+        "给分"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_07",
+      "micro_role_id": "micro-defa7f3acd1e65611930",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "选课决策",
+        "课程规则"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.013757115749525617,
+        "discussion": 0.007590132827324478,
+        "emotional_vent": 0.006166982922201139,
+        "experience_share_or_ask": 0.0028462998102466793,
+        "help_request": 0.007115749525616698,
+        "information_request": 0.36907020872865276,
+        "information_share": 0.0014231499051233396,
+        "question": 0.5920303605313093
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-8de46f67c06757a4954c",
+        "evidence-e1dc966095d30e54da90",
+        "evidence-dd91013813f94769ac0d",
+        "evidence-e148267c46c7d4640529",
+        "evidence-4797c6f95279bca8c32a",
+        "evidence-e9d2047c3e7d275484f9",
+        "evidence-61d995394e8e5d232c92",
+        "evidence-9dd45964a036c3575651",
+        "evidence-24ff21bf99d8d0d2f217",
+        "evidence-44461c1ccbec4fc5a744",
+        "evidence-2ff60d28841670e04f21",
+        "evidence-7c53c993fb4cafcf7457"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "课程评价",
+        "选课",
+        "课程信息",
+        "绩点",
+        "给分"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_08",
+      "micro_role_id": "micro-a4aacae96fc55f47b205",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "焦虑缓解",
+        "规则了解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.013757115749525617,
+        "discussion": 0.007115749525616698,
+        "emotional_vent": 0.006166982922201139,
+        "experience_share_or_ask": 0.0028462998102466793,
+        "help_request": 0.007115749525616698,
+        "information_request": 0.36622390891840606,
+        "information_share": 0.0018975332068311196,
+        "question": 0.594876660341556
+      },
+      "reviewed_episode_count": 2108,
+      "reviewed_evidence_pool": [
+        "evidence-8785b3a99916bf62efc8",
+        "evidence-150715073833e058055a",
+        "evidence-ee33c5bbe932e41eb25d",
+        "evidence-3dbbdac12eec6d761ff2",
+        "evidence-24b5d770f9b73478ae6f",
+        "evidence-533ce1b0f042776c93bf",
+        "evidence-7e27af85ed14ef32e183",
+        "evidence-b3cb755b5adf5fdbd41c",
+        "evidence-0950db60623f9729a1ee",
+        "evidence-9a0053184718704450ce",
+        "evidence-3711893ef4e2035af6c5",
+        "evidence-0e1aedd5dedbb0aed638"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "选课",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "给分"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_09",
+      "micro_role_id": "micro-2dd7ff191d21511458d7",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "规则了解",
+        "选课决策"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.013763644992880873,
+        "discussion": 0.008068343616516375,
+        "emotional_vent": 0.006169909824394874,
+        "experience_share_or_ask": 0.0033222591362126247,
+        "help_request": 0.006644518272425249,
+        "information_request": 0.3806359753203607,
+        "information_share": 0.0018984337921214998,
+        "question": 0.5794969150450878
+      },
+      "reviewed_episode_count": 2107,
+      "reviewed_evidence_pool": [
+        "evidence-f5ae9e2edf555d00503e",
+        "evidence-a1c2bec8ae13a31e4100",
+        "evidence-72f81a7f78e48f1b52a7",
+        "evidence-58e7e295b495ee50b21c",
+        "evidence-1a35ed2aa703b4e56cc6",
+        "evidence-bce25a8ef40989d403c4",
+        "evidence-bbd520d0431577dbcafa",
+        "evidence-dec599588bf8b55597a3",
+        "evidence-6c7294dc44733a6d65ff",
+        "evidence-7f42b2c0834eb600b843",
+        "evidence-253d86138d3ca425b068",
+        "evidence-8c71a063d301bbf0984e"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "选课",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "课程"
+      ]
+    },
+    {
+      "micro_interaction_role": "课程规则核实者_question_10",
+      "micro_role_id": "micro-20c62df7b06bbc7b0072",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息核实",
+        "选课决策",
+        "规则了解"
+      ],
+      "primary_macro_role": "archetype-01",
+      "reply_function_distribution": {
+        "complaint": 0.013763644992880873,
+        "discussion": 0.005220692928334125,
+        "emotional_vent": 0.005695301376364499,
+        "experience_share_or_ask": 0.004746084480303749,
+        "help_request": 0.006644518272425249,
+        "information_request": 0.3730422401518747,
+        "information_share": 0.0014238253440911248,
+        "question": 0.5894636924537257
+      },
+      "reviewed_episode_count": 2107,
+      "reviewed_evidence_pool": [
+        "evidence-73064e83cd18ebd43cb9",
+        "evidence-7758a0fd2156dc41c681",
+        "evidence-ee7fc2bdbd108e584aea",
+        "evidence-e598ea09a8bbe07460ec",
+        "evidence-e69aff99131fbf4033d6",
+        "evidence-0b07d79a3c82d003a661",
+        "evidence-a1da57670bb44badfa97",
+        "evidence-60fad5863bdf212674bd",
+        "evidence-bce69782965f5be3d89e",
+        "evidence-8b3e8604d9bcd24cdf3d",
+        "evidence-f49cb1a38735100bb460",
+        "evidence-32461f1b435f9e2c83e6"
+      ],
+      "topic_portfolio": [
+        "课程规则",
+        "选课",
+        "课程评价",
+        "课程信息",
+        "绩点",
+        "课程"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_01",
+      "micro_role_id": "micro-7a7d04200d169d9decad",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "学业支持",
+        "经验分享",
+        "决策支持",
+        "考试准备"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.0027155465037338763,
+        "emotional_vent": 0.004073319755600814,
+        "experience_share_or_ask": 0.07942973523421588,
+        "help_request": 0.5492192803801765,
+        "information_request": 0.13238289205702647,
+        "information_share": 0.03801765105227427,
+        "question": 0.1934826883910387,
+        "request": 0.0006788866259334691
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-cb91298082a78efd489d",
+        "evidence-ba1b68d41f95a22e75ef",
+        "evidence-ba0ac329b7e80a71b4f0",
+        "evidence-891b4ff0d947f3f2b67a",
+        "evidence-3b712af0f47a73ddd64f",
+        "evidence-ff9e6c076e7fea445c8b",
+        "evidence-b05207cd9150c1d98ced",
+        "evidence-fdb65448f2b3f6ca0b1d",
+        "evidence-99694328dfe36ce6128c",
+        "evidence-846fc529bfa56b62cf9e",
+        "evidence-a9850245c1ec8f4b25a1",
+        "evidence-c24548d907a99515be86"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "学业规划",
+        "学业焦虑",
+        "考试",
+        "课程资料",
+        "选课"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_02",
+      "micro_role_id": "micro-e73adab45ded8933030a",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "学业支持",
+        "经验分享",
+        "考试准备",
+        "资料获取"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.0027155465037338763,
+        "emotional_vent": 0.0027155465037338763,
+        "experience_share_or_ask": 0.0835030549898167,
+        "help_request": 0.5539714867617108,
+        "information_request": 0.11337406653088934,
+        "information_share": 0.03801765105227427,
+        "question": 0.20502376103190767,
+        "request": 0.0006788866259334691
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-e20e07056a79abbfe398",
+        "evidence-3affbb1809acc0c2cadc",
+        "evidence-1d3483c19ba9b642637f",
+        "evidence-0f6dd5e75e9f7f88114b",
+        "evidence-ece6aa385e0072046b91",
+        "evidence-d7da834ba65bb6465fbc",
+        "evidence-24523a4cf29d24ced2fe",
+        "evidence-9070be6244176830cae2",
+        "evidence-c1b57c4c4c919cea5917",
+        "evidence-e13267cba1ef60c1c3d3",
+        "evidence-17af7fbc4cd410996f0b",
+        "evidence-4523daf8510ff2de8ec2"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "学业焦虑",
+        "课程资料",
+        "大创",
+        "保研",
+        "选课"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_03",
+      "micro_role_id": "micro-d8bc52741757fd432a64",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "经验分享",
+        "学业支持",
+        "考试准备",
+        "资料获取"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.002036659877800407,
+        "emotional_vent": 0.0027155465037338763,
+        "experience_share_or_ask": 0.07603530210454854,
+        "help_request": 0.5587236931432451,
+        "information_request": 0.12219959266802444,
+        "information_share": 0.03801765105227427,
+        "question": 0.19959266802443992,
+        "request": 0.0006788866259334691
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-9ec7836d874a90dd4580",
+        "evidence-9a278943bce49ea5f607",
+        "evidence-93e0cca512c6b371fc04",
+        "evidence-39a2ae1f128ce43e265a",
+        "evidence-b6428f167b6ae5697614",
+        "evidence-259ef1afa8cdc19085c1",
+        "evidence-45ab2002fb5f46507e1e",
+        "evidence-f675ae183efee407a664",
+        "evidence-ddc6a3e79a1ffbc8d5b1",
+        "evidence-34539e5e95d3c9cb26cf",
+        "evidence-b5713380cedf88401dac",
+        "evidence-d4fa484167c22d911210"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "学业焦虑",
+        "课程资料",
+        "保研",
+        "学习资料",
+        "选课"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_04",
+      "micro_role_id": "micro-236283d56db6b1d299ec",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "学业支持",
+        "经验分享",
+        "考试准备",
+        "决策支持"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.002036659877800407,
+        "emotional_vent": 0.0047522063815342835,
+        "experience_share_or_ask": 0.08757637474541752,
+        "help_request": 0.5492192803801765,
+        "information_request": 0.12219959266802444,
+        "information_share": 0.03801765105227427,
+        "question": 0.1955193482688391,
+        "request": 0.0006788866259334691
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-4608c5880ef96bcbf6bc",
+        "evidence-1a61ffdc560fefd0794a",
+        "evidence-400c2d7b67cbfe69d76b",
+        "evidence-95f8b592530a0c84b4de",
+        "evidence-0d2d5a7c6428c757554a",
+        "evidence-d2a6be16ef4b4ec61c28",
+        "evidence-3fc1937525a9967a8ee8",
+        "evidence-e19a9d395d0edadb3bf6",
+        "evidence-b5e68e77d79d05fdf5b2",
+        "evidence-a0c9036f52b9bb957889",
+        "evidence-d7197d0c34262658b7cf",
+        "evidence-e038ab49e15c1fa8ed8a"
+      ],
+      "topic_portfolio": [
+        "学业焦虑",
+        "课程资料",
+        "选课",
+        "学业规划",
+        "保研",
+        "绩点"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_05",
+      "micro_role_id": "micro-49e60ac33fb0e3dab8af",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "决策支持",
+        "经验分享",
+        "学业支持",
+        "考试准备"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.002036659877800407,
+        "emotional_vent": 0.0033944331296673455,
+        "experience_share_or_ask": 0.06788866259334692,
+        "help_request": 0.5505770536320435,
+        "information_request": 0.12830957230142567,
+        "information_share": 0.03801765105227427,
+        "question": 0.20977596741344195
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-5cbcd68a09e776870204",
+        "evidence-96cbc694bad63a91e6a3",
+        "evidence-b920b9e81944a8fae3c4",
+        "evidence-8f10322d73894ce8d5ce",
+        "evidence-c7dc33817c9f8f6bbf81",
+        "evidence-8db2937307d76c031a99",
+        "evidence-604cac3e29e2d0d542ea",
+        "evidence-6444fd48ef50966a2647",
+        "evidence-9f4aca6894f7854d6e23",
+        "evidence-ba9c095e5ad6fe720758",
+        "evidence-6d4bc7d9ae80aa12cbaa",
+        "evidence-4df001f80d2d3fea8bbe"
+      ],
+      "topic_portfolio": [
+        "选课",
+        "学业焦虑",
+        "学业规划",
+        "保研",
+        "课程资料",
+        "大创"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_06",
+      "micro_role_id": "micro-2acd5146013ea39a34a5",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "学业支持",
+        "经验分享",
+        "考试准备",
+        "决策支持"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.002036659877800407,
+        "emotional_vent": 0.004073319755600814,
+        "experience_share_or_ask": 0.07331975560081466,
+        "help_request": 0.5566870332654447,
+        "information_request": 0.11608961303462322,
+        "information_share": 0.0373387644263408,
+        "question": 0.20977596741344195,
+        "request": 0.0006788866259334691
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-67f4395bdd86f1489969",
+        "evidence-1f4d2ec4e3daf6bd6486",
+        "evidence-5b7c1f396137f67eff71",
+        "evidence-facd078e64bdb5558a0a",
+        "evidence-d89ae82e113f85227977",
+        "evidence-13441f4b672827539dad",
+        "evidence-d4433d2e426b06b973f7",
+        "evidence-4b0c06afbc7b636d03fe",
+        "evidence-4059d5ea3821b79c2332",
+        "evidence-2cb934bcf8795daa9d15",
+        "evidence-36e3385cc11a5e754ce7",
+        "evidence-b43ec84575e8f75b502c"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "学业焦虑",
+        "保研",
+        "课程资料",
+        "大创",
+        "选课"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_07",
+      "micro_role_id": "micro-ba53273bd22c1f83bff2",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "经验分享",
+        "学业支持",
+        "考试准备",
+        "决策支持"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.002036659877800407,
+        "emotional_vent": 0.0006788866259334691,
+        "experience_share_or_ask": 0.07739307535641547,
+        "help_request": 0.5498981670061099,
+        "information_request": 0.13238289205702647,
+        "information_share": 0.03801765105227427,
+        "question": 0.19959266802443992
+      },
+      "reviewed_episode_count": 1473,
+      "reviewed_evidence_pool": [
+        "evidence-a32311aa1695a7ee5da5",
+        "evidence-3defe4414293f13c4152",
+        "evidence-03b0c7bedb54af940db1",
+        "evidence-7ef6992960aff49b3772",
+        "evidence-3f11384ea5ea17eb6c6e",
+        "evidence-aaa51591a346dd6e301a",
+        "evidence-d81006c8d4213b361e98",
+        "evidence-62c5ccfd160a031cf6ee",
+        "evidence-60bf5b115f8368c49b02",
+        "evidence-bf34baa6d71fd565acf3",
+        "evidence-ba59e312ccc7ea4a9338",
+        "evidence-edf357022fc4ce486c71"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "选课",
+        "考试",
+        "学业焦虑",
+        "课程资料",
+        "保研"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_08",
+      "micro_role_id": "micro-ddb2d5f8e42d7f93ed61",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "学业支持",
+        "经验分享",
+        "考试准备",
+        "资料获取"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.0020380434782608695,
+        "emotional_vent": 0.0033967391304347825,
+        "experience_share_or_ask": 0.06385869565217392,
+        "help_request": 0.5529891304347826,
+        "information_request": 0.12703804347826086,
+        "information_share": 0.03804347826086957,
+        "question": 0.21195652173913043,
+        "request": 0.0006793478260869565
+      },
+      "reviewed_episode_count": 1472,
+      "reviewed_evidence_pool": [
+        "evidence-b32f113985333b3a46ed",
+        "evidence-6c883fbd299c79ddb993",
+        "evidence-be0cffd520fdaefb359f",
+        "evidence-03c2def0fb4f07ad89f4",
+        "evidence-7db3946a5744ff67fd28",
+        "evidence-3d21f6d6042fd132a674",
+        "evidence-26bc4c52682711d97870",
+        "evidence-104c658fac1045a63100",
+        "evidence-1e065e6597ce552955af",
+        "evidence-73c7e9fc99f3035ee548",
+        "evidence-aee34b02dbccc369aacb",
+        "evidence-1ba5600618063ec1fd5d"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "学业焦虑",
+        "保研",
+        "选课",
+        "大创",
+        "课程资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_09",
+      "micro_role_id": "micro-fb19603be71969534b03",
+      "need_portfolio": [
+        "信息获取",
+        "建议",
+        "经验分享",
+        "学业支持",
+        "考试准备",
+        "决策支持"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.0020380434782608695,
+        "emotional_vent": 0.005434782608695652,
+        "experience_share_or_ask": 0.07880434782608696,
+        "help_request": 0.5652173913043478,
+        "information_request": 0.11548913043478261,
+        "information_share": 0.03804347826086957,
+        "question": 0.1949728260869565
+      },
+      "reviewed_episode_count": 1472,
+      "reviewed_evidence_pool": [
+        "evidence-33a1d7ea86d762ef33b1",
+        "evidence-ad186d2f9e5e717f6eec",
+        "evidence-d6c54a62d4843a5296f5",
+        "evidence-290ef500c2700b98d2e6",
+        "evidence-a7c38362ef4cc6e4ea0d",
+        "evidence-d4ed6aee4e766e3bb778",
+        "evidence-1194541287779a7388fe",
+        "evidence-6677947ce323d59ca63b",
+        "evidence-5254e7c09aa5af6718d1",
+        "evidence-7409d4ffaa23a97b1415",
+        "evidence-eb8299d63fc6884a6b4d",
+        "evidence-2021eecb7ab2276ed31f"
+      ],
+      "topic_portfolio": [
+        "学业规划",
+        "学业焦虑",
+        "保研",
+        "课程资料",
+        "选课",
+        "大创"
+      ]
+    },
+    {
+      "micro_interaction_role": "学习行动求助者_help_request_10",
+      "micro_role_id": "micro-627c1bef9c430757284c",
+      "need_portfolio": [
+        "信息获取",
+        "学业支持",
+        "建议",
+        "经验分享",
+        "考试准备",
+        "决策支持"
+      ],
+      "primary_macro_role": "archetype-02",
+      "reply_function_distribution": {
+        "discussion": 0.0020380434782608695,
+        "emotional_vent": 0.0006793478260869565,
+        "experience_share_or_ask": 0.07472826086956522,
+        "help_request": 0.563858695652174,
+        "information_request": 0.11548913043478261,
+        "information_share": 0.03804347826086957,
+        "question": 0.20516304347826086
+      },
+      "reviewed_episode_count": 1472,
+      "reviewed_evidence_pool": [
+        "evidence-564a163ef3ad6531bd7c",
+        "evidence-ad090476d3c5d0ef1e39",
+        "evidence-4e73769f8418e40e581f",
+        "evidence-5c225424a7f77e6b64af",
+        "evidence-0f4e6878aa56ff3618b2",
+        "evidence-17e6a563b1bda73c06c3",
+        "evidence-25c41c850124d7b193ce",
+        "evidence-fef85fd68dca315d6ae7",
+        "evidence-652a53703876f241787a",
+        "evidence-c8886bef897144fe7f88",
+        "evidence-37c7c00c246d2d25188b",
+        "evidence-7bcc6d5a89c26564e697"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "学业规划",
+        "学业焦虑",
+        "课程资料",
+        "考试",
+        "选课"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_01",
+      "micro_role_id": "micro-34c390430c5ccb63e7ea",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.006517690875232775,
+        "help_request": 0.07541899441340782,
+        "information_request": 0.47113594040968343,
+        "information_share": 0.024208566108007448,
+        "question": 0.41899441340782123,
+        "request": 0.0037243947858473
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-be3507e3df696d1db27c",
+        "evidence-50ce02650c95ef64310c",
+        "evidence-c6afe1027353783c5ac2",
+        "evidence-da5295c9d69747512992",
+        "evidence-d190ff09f3daefb69fb6",
+        "evidence-2e8bb1d8b3b04310eb66",
+        "evidence-1b8cd9296733412ef5a0",
+        "evidence-a5d7fb8ff24459ca7091",
+        "evidence-6666af0a13026012c821",
+        "evidence-dd8a5cec2d7afdd09e7f",
+        "evidence-0a4ccffd3cc691b8abc3",
+        "evidence-fe01b78b35cebb14fe4a"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "失物招领",
+        "校园设施",
+        "校园卡",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_02",
+      "micro_role_id": "micro-2e70b4411d1f475d6a92",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "规则咨询",
+        "找回失物"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.006517690875232775,
+        "help_request": 0.07635009310986965,
+        "information_request": 0.4702048417132216,
+        "information_share": 0.024208566108007448,
+        "question": 0.41899441340782123,
+        "request": 0.0037243947858473
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-a70183b409f56527961c",
+        "evidence-73e7c359dd426bfef8a7",
+        "evidence-6716b535a4ba2850d989",
+        "evidence-6d9170bda3fe7bceb7a2",
+        "evidence-c129c2d781ee1de6c117",
+        "evidence-44f6114e5b7b894603b8",
+        "evidence-d6a5c76ff88faed8305d",
+        "evidence-3a4100f708dbabee5ff6",
+        "evidence-1effab18d4f243eae451",
+        "evidence-e100911f171fc08d2ebc",
+        "evidence-74133e1b5a7f17bd8c57",
+        "evidence-961efc110b293b7df674"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校园设施",
+        "校医院",
+        "失物招领",
+        "校园卡",
+        "图书馆"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_03",
+      "micro_role_id": "micro-4f54872f94b19ff9d852",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "规则咨询",
+        "找回失物"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0074487895716946,
+        "help_request": 0.07541899441340782,
+        "information_request": 0.462756052141527,
+        "information_share": 0.025139664804469275,
+        "question": 0.4245810055865922,
+        "request": 0.004655493482309125
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-a87a3b3f6ada4e6aa431",
+        "evidence-54fe9461bcda6d1344be",
+        "evidence-b1562c36536d7b07df7f",
+        "evidence-3a7e7cfc9f265fc9f840",
+        "evidence-1cee131295a39430b3d4",
+        "evidence-3cb57ccac8498138d88d",
+        "evidence-5ab845f8ac8e5df769c1",
+        "evidence-c45847d5aff84b08ca13",
+        "evidence-08343bf665b90464cf46",
+        "evidence-1bdd036621289e49e1b3",
+        "evidence-2959e844defc9109661b",
+        "evidence-aee79cb81e9ae2b491c1"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "失物招领",
+        "校园设施",
+        "校园卡",
+        "图书馆"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_04",
+      "micro_role_id": "micro-8618852a98c48057cdae",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0074487895716946,
+        "help_request": 0.07635009310986965,
+        "information_request": 0.4664804469273743,
+        "information_share": 0.025139664804469275,
+        "question": 0.419925512104283,
+        "request": 0.004655493482309125
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-cee8022ca2aba06776f9",
+        "evidence-05379548956a0374f5b4",
+        "evidence-d70a1d3aa5ebf25d9fc8",
+        "evidence-6837d16d8ba34dcf5bab",
+        "evidence-54b812abe6c3a8eff52a",
+        "evidence-1f50380480bc35f02338",
+        "evidence-1194e331d773ab587c57",
+        "evidence-d2b150b5301b2c507e8f",
+        "evidence-d2cc125e62397ff382b6",
+        "evidence-404ab631694cc678b27b",
+        "evidence-51824aec9204519d4ca8",
+        "evidence-d321b5141b08285de4ac"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "校园设施",
+        "失物招领",
+        "图书馆",
+        "校园卡"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_05",
+      "micro_role_id": "micro-d698db61b06d507095bc",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "规则咨询",
+        "信息咨询",
+        "找回失物"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0074487895716946,
+        "help_request": 0.07541899441340782,
+        "information_request": 0.45623836126629425,
+        "information_share": 0.025139664804469275,
+        "question": 0.43202979515828677,
+        "request": 0.0037243947858473
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-149399f0860a1f64a7ab",
+        "evidence-f10cdbf7e552f7f51f1e",
+        "evidence-36e000586cba96859635",
+        "evidence-e745ece1ad0e0d7bcb64",
+        "evidence-82671d5bb456ea61bc0b",
+        "evidence-fcbf4b604777369e219e",
+        "evidence-0a06887a55cd1ed6c061",
+        "evidence-8e4f1bad18001e5de177",
+        "evidence-eb16658bef5108911f0f",
+        "evidence-d8651ffb53beb6b71a31",
+        "evidence-e9770e817c31bb1cc192",
+        "evidence-4a018db63da716c2f0c9"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "校园设施",
+        "失物招领",
+        "校园卡",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_06",
+      "micro_role_id": "micro-b73281835143de89bae7",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0074487895716946,
+        "help_request": 0.07541899441340782,
+        "information_request": 0.46461824953445063,
+        "information_share": 0.025139664804469275,
+        "question": 0.4245810055865922,
+        "request": 0.002793296089385475
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-b0dd91cb1dfeea441149",
+        "evidence-70416d3f7aac8b33176a",
+        "evidence-15363e8d1150c6529779",
+        "evidence-f473df9a7f1a0eae0522",
+        "evidence-8a1586c61876515549ab",
+        "evidence-5e1a7af99a4a84956b2f",
+        "evidence-87241c1e141ccb6cfb2d",
+        "evidence-51b2d9519830479ad8a6",
+        "evidence-28a227bb9b75c2f686f1",
+        "evidence-2c9bbdfb9627f25ef874",
+        "evidence-bbe6db2a0d889cfc3d93",
+        "evidence-eaa859581d395d5ed331"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "校园设施",
+        "失物招领",
+        "校园卡",
+        "图书馆"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_07",
+      "micro_role_id": "micro-0e89a2e4c6782fec9526",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0074487895716946,
+        "help_request": 0.07541899441340782,
+        "information_request": 0.4897579143389199,
+        "information_share": 0.025139664804469275,
+        "question": 0.3985102420856611,
+        "request": 0.0037243947858473
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-590bc6586c6977195d3d",
+        "evidence-b2345d86ff56339d3818",
+        "evidence-a4c9f51c82630af4a5e3",
+        "evidence-1deddfdb905b486f27a3",
+        "evidence-2093357579f29d42cbb9",
+        "evidence-2311f46422603db26f7e",
+        "evidence-84a4e3598c888e3a8798",
+        "evidence-dba7012e5f07a3ccae6a",
+        "evidence-f701ddad891e9c935671",
+        "evidence-1f11f5720fa55038c975",
+        "evidence-4991bd9495de463ce258",
+        "evidence-854c8f6da84b43b385db"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "失物招领",
+        "校医院",
+        "校园设施",
+        "校园卡",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_08",
+      "micro_role_id": "micro-04b611161898034bf9c3",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.006517690875232775,
+        "help_request": 0.07914338919925512,
+        "information_request": 0.4553072625698324,
+        "information_share": 0.025139664804469275,
+        "question": 0.4301675977653631,
+        "request": 0.0037243947858473
+      },
+      "reviewed_episode_count": 1074,
+      "reviewed_evidence_pool": [
+        "evidence-0deb3e10552bab400e14",
+        "evidence-7ce984eb672dd550094f",
+        "evidence-1540d246bf4874706772",
+        "evidence-bcb3faa5623d97f2030c",
+        "evidence-855eac81f53a45b6c130",
+        "evidence-b001b40ee4ba06214ba0",
+        "evidence-9efc137a3cbfe9027bb4",
+        "evidence-9659a4022fd0ea14cb3c",
+        "evidence-ade75f6f84aa4759fb22",
+        "evidence-e062a564d45d709aa17f",
+        "evidence-9d9707dc43e399eab0a8",
+        "evidence-da5c5eee25418553e373"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "校园设施",
+        "失物招领",
+        "图书馆",
+        "校园卡"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_09",
+      "micro_role_id": "micro-c3c9cbc0f03c6509e4ee",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0065237651444548,
+        "help_request": 0.0782851817334576,
+        "information_request": 0.45293569431500463,
+        "information_share": 0.024231127679403542,
+        "question": 0.4361602982292637,
+        "request": 0.001863932898415657
+      },
+      "reviewed_episode_count": 1073,
+      "reviewed_evidence_pool": [
+        "evidence-5e859b481bd579149d53",
+        "evidence-9dd16e213235f7806ae3",
+        "evidence-285ad90597d77a29ff69",
+        "evidence-fba75a24bb8540fa571a",
+        "evidence-3b7638dd22521ff04e0e",
+        "evidence-c097f689a3060f1ab714",
+        "evidence-8863ac0683d86d8a54ee",
+        "evidence-be067ce4ec1f25c3d88b",
+        "evidence-4d0da315a15be18f7a69",
+        "evidence-2ed606be0fa210a6aca3",
+        "evidence-974aec70d96f79f418bd",
+        "evidence-ee7b55954004d32db01a"
+      ],
+      "topic_portfolio": [
+        "校园服务",
+        "校医院",
+        "失物招领",
+        "校园设施",
+        "校园卡",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "校园规则办事询问者_question_10",
+      "micro_role_id": "micro-923b6b754b8e11b2387e",
+      "need_portfolio": [
+        "信息获取",
+        "信息确认",
+        "规则确认",
+        "信息咨询",
+        "找回失物",
+        "规则咨询"
+      ],
+      "primary_macro_role": "archetype-03",
+      "reply_function_distribution": {
+        "complaint": 0.0065237651444548,
+        "help_request": 0.07642124883504194,
+        "information_request": 0.45666356011183595,
+        "information_share": 0.024231127679403542,
+        "question": 0.43243243243243246,
+        "request": 0.003727865796831314
+      },
+      "reviewed_episode_count": 1073,
+      "reviewed_evidence_pool": [
+        "evidence-cd199464072824e39ba4",
+        "evidence-94f22809e162b4edf334",
+        "evidence-f8723a6cd46ebc321e75",
+        "evidence-075fdb118a6280764b33",
+        "evidence-71113e67120ecfad68da",
+        "evidence-bff449a2ae2f1b8e54aa",
+        "evidence-80b5f53d34cc7a9d06c0",
+        "evidence-42221a2f2be5567e4daf",
+        "evidence-c35df150e0c7b427081d",
+        "evidence-e12633a03847f93c27b2",
+        "evidence-6c220faa03bbfe4c310f",
+        "evidence-b67b64929f40387bb471"
+      ],
+      "topic_portfolio": [
+        "校医院",
+        "校园服务",
+        "失物招领",
+        "校园设施",
+        "校园卡",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共服务投诉者_complaint_01",
+      "micro_role_id": "micro-73c1da0e2f4f94f6f639",
+      "need_portfolio": [
+        "表达不满",
+        "情绪宣泄",
+        "投诉",
+        "维权",
+        "寻求解决",
+        "安静环境"
+      ],
+      "primary_macro_role": "archetype-04",
+      "reply_function_distribution": {
+        "complaint": 0.8725961538461539,
+        "emotional_vent": 0.10096153846153846,
+        "help_request": 0.014423076923076924,
+        "information_request": 0.002403846153846154,
+        "question": 0.003605769230769231,
+        "risk_advice_request": 0.006009615384615385
+      },
+      "reviewed_episode_count": 832,
+      "reviewed_evidence_pool": [
+        "evidence-4efd75319465d4e6b953",
+        "evidence-85f806389c447ad92a52",
+        "evidence-7207c5987be2e3020219",
+        "evidence-c6c69e9cbd293aeec1cc",
+        "evidence-a158d3402ca84fc6c7ff",
+        "evidence-f585de390005212bf57a",
+        "evidence-f192799fbc7ffce4ed55",
+        "evidence-8ae659be2122b32ea008",
+        "evidence-8daacf685148cd37e333",
+        "evidence-1fdd77cbe00bb4b5650d",
+        "evidence-01d656cd3ae3e3ce8dd2",
+        "evidence-0748c22b35b0c7de4d64"
+      ],
+      "topic_portfolio": [
+        "投诉",
+        "图书馆",
+        "宿舍噪音",
+        "占座",
+        "预约",
+        "校园规则"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共服务投诉者_complaint_02",
+      "micro_role_id": "micro-22b2801d2dfbfe39d459",
+      "need_portfolio": [
+        "表达不满",
+        "情绪宣泄",
+        "维权",
+        "投诉",
+        "寻求解决",
+        "安静环境"
+      ],
+      "primary_macro_role": "archetype-04",
+      "reply_function_distribution": {
+        "complaint": 0.875,
+        "emotional_vent": 0.09615384615384616,
+        "help_request": 0.014423076923076924,
+        "information_request": 0.004807692307692308,
+        "question": 0.003605769230769231,
+        "risk_advice_request": 0.006009615384615385
+      },
+      "reviewed_episode_count": 832,
+      "reviewed_evidence_pool": [
+        "evidence-63fa8ddd8e357bb26ce4",
+        "evidence-210185d7697226ebc78f",
+        "evidence-52c3e93410a38594db9f",
+        "evidence-701380670f4fd5dd8640",
+        "evidence-53c85531fa0b99a0afe2",
+        "evidence-7314698224121add88d9",
+        "evidence-a745e2467f59c4e653c0",
+        "evidence-998534133ae5c6976d07",
+        "evidence-111288d2cd1ca54d5e2a",
+        "evidence-b87e864128a7da305f0b",
+        "evidence-d2db71d84dff540dd9d3",
+        "evidence-2615c9bd6dc400d9a351"
+      ],
+      "topic_portfolio": [
+        "投诉",
+        "图书馆",
+        "宿舍噪音",
+        "车辆",
+        "占座",
+        "预约"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共服务投诉者_complaint_03",
+      "micro_role_id": "micro-ed2635b19d0f1c4b60b0",
+      "need_portfolio": [
+        "表达不满",
+        "情绪宣泄",
+        "安静环境",
+        "投诉",
+        "寻求解决",
+        "维权"
+      ],
+      "primary_macro_role": "archetype-04",
+      "reply_function_distribution": {
+        "complaint": 0.8677884615384616,
+        "emotional_vent": 0.10216346153846154,
+        "help_request": 0.013221153846153846,
+        "information_request": 0.006009615384615385,
+        "question": 0.004807692307692308,
+        "risk_advice_request": 0.006009615384615385
+      },
+      "reviewed_episode_count": 832,
+      "reviewed_evidence_pool": [
+        "evidence-a8f089811320addd390f",
+        "evidence-1c90fe980b025f9ab762",
+        "evidence-b8dc75c43c585cd2e6f4",
+        "evidence-0edf27fa89d4c0541843",
+        "evidence-0f5d5a2929fc26cb476e",
+        "evidence-506d436f7774c219379b",
+        "evidence-7c02345a2b54e2828cf5",
+        "evidence-31423ddec2c00e825255",
+        "evidence-e96c065ac341bf800eb3",
+        "evidence-7124f9f5ca77abc633cd",
+        "evidence-d1e40982bf43e22a0b93",
+        "evidence-9dacbdd2779c3c7a5346"
+      ],
+      "topic_portfolio": [
+        "投诉",
+        "图书馆",
+        "宿舍噪音",
+        "校园生活",
+        "宿舍生活",
+        "闹钟干扰"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共服务投诉者_complaint_04",
+      "micro_role_id": "micro-347a28227b2145b4cb62",
+      "need_portfolio": [
+        "表达不满",
+        "情绪宣泄",
+        "投诉",
+        "维权",
+        "寻求解决",
+        "安静环境"
+      ],
+      "primary_macro_role": "archetype-04",
+      "reply_function_distribution": {
+        "complaint": 0.890625,
+        "emotional_vent": 0.08774038461538461,
+        "help_request": 0.013221153846153846,
+        "question": 0.003605769230769231,
+        "risk_advice_request": 0.004807692307692308
+      },
+      "reviewed_episode_count": 832,
+      "reviewed_evidence_pool": [
+        "evidence-cce3aa5b608606aa7ec3",
+        "evidence-d4577c51306624c89ff6",
+        "evidence-2e4784eb96ff669f3a09",
+        "evidence-0ef058485011488bfde8",
+        "evidence-955880a77b289082ffcb",
+        "evidence-433edf32977c21ead481",
+        "evidence-222fef3fc032513fdd17",
+        "evidence-50c1b7255f16241fa910",
+        "evidence-72a37980b7f1a3348355",
+        "evidence-68953f8cdaa939a5b4c3",
+        "evidence-97e028e27db36444722a",
+        "evidence-ab5d39116edb34c4aa80"
+      ],
+      "topic_portfolio": [
+        "投诉",
+        "图书馆",
+        "宿舍噪音",
+        "占座",
+        "预约",
+        "校园规则"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_01",
+      "micro_role_id": "micro-954bcfda4ea451145e8f",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "获得建议",
+        "风险评估",
+        "信息咨询",
+        "决策建议"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.004700352526439483,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.0881316098707403,
+        "emotional_vent": 0.0011750881316098707,
+        "experience_share_or_ask": 0.07873090481786134,
+        "help_request": 0.09753231492361927,
+        "information_request": 0.13513513513513514,
+        "information_share": 0.04465334900117509,
+        "question": 0.5381903642773208
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-b1106254c5d03e2ae69b",
+        "evidence-62f5dd3aed8167fee6e4",
+        "evidence-aebe8eaa89bc301b47b7",
+        "evidence-48f57f8d30d751c7727a",
+        "evidence-9299844b95f733ef5f14",
+        "evidence-f792e09c9d48de7549b9",
+        "evidence-4e176c85e0a2e63de42f",
+        "evidence-a22a4ae97f1073fe95ed",
+        "evidence-ea1f6b4f08827658e487",
+        "evidence-baca6ddc21e1dead659e",
+        "evidence-1a821f845611a29c876e",
+        "evidence-f032bb8fbbc859cf0d80"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "求职",
+        "职业规划"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_02",
+      "micro_role_id": "micro-a09fcdbd6e6ba859e907",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "获得建议",
+        "信息咨询",
+        "风险评估",
+        "生涯规划"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.008225616921269096,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.0881316098707403,
+        "emotional_vent": 0.0011750881316098707,
+        "experience_share_or_ask": 0.07285546415981199,
+        "help_request": 0.09753231492361927,
+        "information_request": 0.12338425381903642,
+        "information_share": 0.04935370152761457,
+        "question": 0.54524089306698,
+        "risk_advice_request": 0.0023501762632197414
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-567a3a21cf2eb5b300d3",
+        "evidence-daa79ee9d1ed55bea5cb",
+        "evidence-78e67016456ddf8cae43",
+        "evidence-3c71be5affa5599a8de5",
+        "evidence-276f22198ec2242a7c35",
+        "evidence-4b7e454d7c0d6871f327",
+        "evidence-d2672cfc5e8dc9a825b2",
+        "evidence-1b1af2f3e7123f22edec",
+        "evidence-1b04810cdecd70dc025d",
+        "evidence-023e9b18b2d7b9c9efba",
+        "evidence-a40e6cde84ed5621d8b5",
+        "evidence-37a21c992fc3158ea1b3"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "就业",
+        "秋招"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_03",
+      "micro_role_id": "micro-1cd2048cc3187c31ea07",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "信息咨询",
+        "风险评估",
+        "获得建议",
+        "信息比较"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.007050528789659225,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.09283196239717979,
+        "emotional_vent": 0.0011750881316098707,
+        "experience_share_or_ask": 0.07873090481786134,
+        "help_request": 0.08578143360752057,
+        "information_request": 0.12690951821386603,
+        "information_share": 0.04465334900117509,
+        "question": 0.5499412455934195,
+        "risk_advice_request": 0.0011750881316098707
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-120aa7c32bdfdd48b471",
+        "evidence-b5a066a488a6dfa59016",
+        "evidence-b252ae0bf3cadc33e34a",
+        "evidence-ef17f70330fde9decb2d",
+        "evidence-839dbd35c46e85b2fcf1",
+        "evidence-324b80f6a7a08cb229ce",
+        "evidence-0d7163037d6d1190f91c",
+        "evidence-594f2590ad89de9bdae5",
+        "evidence-cf3dda7cece392e581b5",
+        "evidence-02bbbad0642e101e5656",
+        "evidence-3d8067f08eb944a1ea7a",
+        "evidence-58c205244df29e05a7e9"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "职业规划",
+        "求职"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_04",
+      "micro_role_id": "micro-2e9a5981ba4d8ad0e975",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "信息咨询",
+        "获得建议",
+        "风险评估",
+        "决策建议"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.007050528789659225,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.0881316098707403,
+        "emotional_vent": 0.0011750881316098707,
+        "experience_share_or_ask": 0.0846063454759107,
+        "help_request": 0.09400705052878966,
+        "information_request": 0.11633372502937721,
+        "information_share": 0.045828437132784956,
+        "question": 0.5511163337250293
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-fc1fe80ad70027dc161c",
+        "evidence-c795f353dd29b054eea0",
+        "evidence-05cb5a01c613c2c46500",
+        "evidence-38449b592f233b0dc682",
+        "evidence-043adc43090d00d4224e",
+        "evidence-ecb8e5ebf7082e71b1c1",
+        "evidence-7c48916528c5b31833cc",
+        "evidence-22f10ac5e555455bc99e",
+        "evidence-17a3ac2afafb30a60705",
+        "evidence-eb427d40e52684afd4fe",
+        "evidence-b9cc08085f835c391daf",
+        "evidence-35897ba11e20e99dd3de"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "就业",
+        "求职"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_05",
+      "micro_role_id": "micro-28e4091786d4af13fd4a",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "获得建议",
+        "风险评估",
+        "职业建议",
+        "信息比较"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.007050528789659225,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.0881316098707403,
+        "emotional_vent": 0.0023501762632197414,
+        "experience_share_or_ask": 0.08930669800235018,
+        "help_request": 0.0963572267920094,
+        "information_request": 0.12925969447708577,
+        "information_share": 0.043478260869565216,
+        "question": 0.5323149236192715
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-1539a2840cbcbb5add80",
+        "evidence-156e39a78ff2061c1ac3",
+        "evidence-378cafb1e6f6e8fa786c",
+        "evidence-b33c1c787fc75801d897",
+        "evidence-bd4d17581f65d91242cf",
+        "evidence-ab83e50a8eb75a91b764",
+        "evidence-524bedeef2d55fbfd8bc",
+        "evidence-badada8ceddd26343bf9",
+        "evidence-29edb837e5e12ac3286c",
+        "evidence-eca5aa6009a86c4fde4b",
+        "evidence-bda97393521897c41ce1",
+        "evidence-b7fed2a2e314f1c9f5e4"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "求职",
+        "秋招"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_06",
+      "micro_role_id": "micro-b2fe5d2e86291a8bf1d1",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "风险评估",
+        "获得建议",
+        "信息咨询",
+        "生涯规划"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.007050528789659225,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.09165687426556991,
+        "emotional_vent": 0.0023501762632197414,
+        "experience_share_or_ask": 0.08108108108108109,
+        "help_request": 0.09048178613396005,
+        "information_request": 0.136310223266745,
+        "information_share": 0.05170387779083431,
+        "question": 0.5276145710928319
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-cc90c300b874a3232388",
+        "evidence-3e76a6f03b0b66207bbb",
+        "evidence-5964ab7bec03ffb7bb9a",
+        "evidence-9648f1677633655a0ba5",
+        "evidence-dfef894f966716014b49",
+        "evidence-e4d67ef6160641813df6",
+        "evidence-e795444edb1c752a1626",
+        "evidence-7e54f8d0499b4a575ee4",
+        "evidence-8e9999cc513a40d2105a",
+        "evidence-4f0181573cb0a30e6371",
+        "evidence-ab374159f8276cc41462",
+        "evidence-0588df393c11c049566a"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "求职",
+        "秋招"
+      ]
+    },
+    {
+      "micro_interaction_role": "生涯机会决策咨询者_question_07",
+      "micro_role_id": "micro-a2aded1a8817e3a95597",
+      "need_portfolio": [
+        "信息获取",
+        "决策支持",
+        "获得建议",
+        "信息咨询",
+        "风险评估",
+        "决策建议"
+      ],
+      "primary_macro_role": "archetype-05",
+      "reply_function_distribution": {
+        "advice_seeking": 0.005875440658049354,
+        "complaint": 0.011750881316098707,
+        "discussion": 0.08343125734430082,
+        "emotional_vent": 0.0011750881316098707,
+        "experience_share_or_ask": 0.0846063454759107,
+        "help_request": 0.08930669800235018,
+        "information_request": 0.13278495887191538,
+        "information_share": 0.04935370152761457,
+        "question": 0.5405405405405406,
+        "risk_advice_request": 0.0011750881316098707
+      },
+      "reviewed_episode_count": 851,
+      "reviewed_evidence_pool": [
+        "evidence-c4ff9ba29f3892d483ad",
+        "evidence-275230400023cfd33645",
+        "evidence-03de4070102c81c37f1c",
+        "evidence-0aa66729170e7850f149",
+        "evidence-f2a6600a373385ea2d37",
+        "evidence-0c319fb86a420cb69881",
+        "evidence-e6c2e6690197a2d78165",
+        "evidence-f6041e88bd27286f7ccf",
+        "evidence-a2b9d708c42d4d580a2a",
+        "evidence-19a8abcd349e0f3b05ec",
+        "evidence-e5d952e0cc7927fe0c53",
+        "evidence-d2c122057f267fbbde7b"
+      ],
+      "topic_portfolio": [
+        "保研",
+        "实习",
+        "考研",
+        "职业发展",
+        "秋招",
+        "职业规划"
+      ]
+    },
+    {
+      "micro_interaction_role": "机会发布招募者_information_share_01",
+      "micro_role_id": "micro-6b5dcb49c83e13555306",
+      "need_portfolio": [
+        "招募",
+        "招募参与者",
+        "信息发布",
+        "招募实习生",
+        "信息咨询",
+        "联系方式"
+      ],
+      "primary_macro_role": "archetype-06",
+      "reply_function_distribution": {
+        "complaint": 0.014975041597337771,
+        "help_request": 0.04159733777038269,
+        "information_request": 0.49417637271214643,
+        "information_share": 0.26622296173044924,
+        "other": 0.1447587354409318,
+        "question": 0.0016638935108153079,
+        "request": 0.036605657237936774
+      },
+      "reviewed_episode_count": 601,
+      "reviewed_evidence_pool": [
+        "evidence-fde5b5d297ab4a8324f3",
+        "evidence-b5eae164a2bb777d0dfa",
+        "evidence-d7d24ee42f6c3537a1e2",
+        "evidence-69a44c3231542c90d179",
+        "evidence-8aa3fbbe3214a79c3ec1",
+        "evidence-7feb246dd4ed59de3afa",
+        "evidence-957e2937cdf4dff07eb6",
+        "evidence-0018eb1e79fb55c4f684",
+        "evidence-f91249149482ceb0e0e0",
+        "evidence-3d10909f9c5c6cca3b33",
+        "evidence-bc5529dbcf266cc580da",
+        "evidence-7516e904aa57222fd436"
+      ],
+      "topic_portfolio": [
+        "家教招聘",
+        "实习招聘",
+        "招聘",
+        "招募",
+        "ESG报告",
+        "铝企"
+      ]
+    },
+    {
+      "micro_interaction_role": "机会发布招募者_information_share_02",
+      "micro_role_id": "micro-d0f91ea2062a35bebfc3",
+      "need_portfolio": [
+        "信息发布",
+        "招募实习生",
+        "招募",
+        "招募参与者",
+        "信息咨询",
+        "联系方式"
+      ],
+      "primary_macro_role": "archetype-06",
+      "reply_function_distribution": {
+        "complaint": 0.013311148086522463,
+        "help_request": 0.051580698835274545,
+        "information_request": 0.46422628951747086,
+        "information_share": 0.26455906821963393,
+        "other": 0.17304492512479203,
+        "request": 0.033277870216306155
+      },
+      "reviewed_episode_count": 601,
+      "reviewed_evidence_pool": [
+        "evidence-2e17051e79d4bf64fc8b",
+        "evidence-952f67c24047b286a069",
+        "evidence-55254f8799170c41ed2c",
+        "evidence-338b9ee33c0d13bac1c1",
+        "evidence-a51c53cb51627ccf9118",
+        "evidence-36e260498c9a01def50f",
+        "evidence-53d0ced2dfab7fe654fa",
+        "evidence-246de262eb032d998365",
+        "evidence-2e5626d3533939d57964",
+        "evidence-8a25cc8efe3fd89590ac",
+        "evidence-b861b92ed91263142f75",
+        "evidence-518e8434bc32371020d6"
+      ],
+      "topic_portfolio": [
+        "实习招聘",
+        "家教招聘",
+        "招募",
+        "招聘",
+        "ESG报告",
+        "铝企"
+      ]
+    },
+    {
+      "micro_interaction_role": "机会发布招募者_information_share_03",
+      "micro_role_id": "micro-48cd0fcefe62f6d3252d",
+      "need_portfolio": [
+        "信息发布",
+        "招募",
+        "招募参与者",
+        "招募实习生",
+        "信息咨询",
+        "联系方式"
+      ],
+      "primary_macro_role": "archetype-06",
+      "reply_function_distribution": {
+        "complaint": 0.013311148086522463,
+        "help_request": 0.03826955074875208,
+        "information_request": 0.4442595673876872,
+        "information_share": 0.28452579034941766,
+        "other": 0.16638935108153077,
+        "question": 0.0016638935108153079,
+        "request": 0.051580698835274545
+      },
+      "reviewed_episode_count": 601,
+      "reviewed_evidence_pool": [
+        "evidence-2e3b45f889c008ccbfdc",
+        "evidence-a8f78f05c9c37ac46a2b",
+        "evidence-c39e09346c2f5f2aa3f9",
+        "evidence-1b3f22668cc5a36aa5f9",
+        "evidence-a5116c67d1b079401e1e",
+        "evidence-304ed0ff1deac5203e11",
+        "evidence-e8843c700e65be2ab2d9",
+        "evidence-75cf1d72c72239309455",
+        "evidence-d476d48367ef74e25edd",
+        "evidence-0a951f77b2059d658933",
+        "evidence-8bcbb70d418b61d8991a",
+        "evidence-7763b6f48b2313501d96"
+      ],
+      "topic_portfolio": [
+        "实习招聘",
+        "家教招聘",
+        "招募",
+        "招聘",
+        "ESG报告",
+        "铝企"
+      ]
+    },
+    {
+      "micro_interaction_role": "机会发布招募者_information_share_04",
+      "micro_role_id": "micro-a89135165ee840172b2b",
+      "need_portfolio": [
+        "招募",
+        "信息发布",
+        "招募参与者",
+        "招募实习生",
+        "信息咨询",
+        "联系方式"
+      ],
+      "primary_macro_role": "archetype-06",
+      "reply_function_distribution": {
+        "complaint": 0.013311148086522463,
+        "help_request": 0.03993344425956739,
+        "information_request": 0.4841930116472546,
+        "information_share": 0.23793677204658903,
+        "other": 0.17470881863560733,
+        "question": 0.0016638935108153079,
+        "request": 0.048252911813643926
+      },
+      "reviewed_episode_count": 601,
+      "reviewed_evidence_pool": [
+        "evidence-019048e7147f35e41b09",
+        "evidence-0986ad96e0f0fba87f09",
+        "evidence-f76b57d1ad47142ee74f",
+        "evidence-d1d5c689fbfa89386c9c",
+        "evidence-ced678355f46b0d77eb4",
+        "evidence-e51e38dff381779ab55c",
+        "evidence-7d3773261d446b1c3cbd",
+        "evidence-78eb7b09fd823a8d1b2f",
+        "evidence-1d6d150471955178a09c",
+        "evidence-322cdcd7cfb96ae51cd7",
+        "evidence-3da6c2e4609e4a135d0e",
+        "evidence-1b97504c95778e3b482d"
+      ],
+      "topic_portfolio": [
+        "实习招聘",
+        "家教招聘",
+        "招聘",
+        "招募",
+        "ESG报告",
+        "铝企"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_01",
+      "micro_role_id": "micro-b6790a2bfe94cc891a25",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "经验分享",
+        "租赁需求",
+        "生活便利"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009925558312655087,
+        "experience_share_or_ask": 0.05583126550868486,
+        "help_request": 0.2518610421836228,
+        "information_request": 0.29280397022332505,
+        "information_share": 0.011166253101736972,
+        "other": 0.028535980148883373,
+        "question": 0.34863523573200994,
+        "risk_advice_request": 0.0012406947890818859
+      },
+      "reviewed_episode_count": 806,
+      "reviewed_evidence_pool": [
+        "evidence-9ca7b4065645835aaeba",
+        "evidence-51a576f1714405a0c38b",
+        "evidence-c6583cdf182d46dcc13a",
+        "evidence-b72c5b99a71f532cbd58",
+        "evidence-677f28af885bba4184ef",
+        "evidence-f75ebe226e004706c4de",
+        "evidence-9786ff3749ec50fa9b97",
+        "evidence-87719d27870b59f40adc",
+        "evidence-368cc8bc9b30a9d1ea3f",
+        "evidence-a386e55cde68b5637861",
+        "evidence-4015ddd25ed633bac88c",
+        "evidence-410452ab02fe0c5057f5"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "校园周边",
+        "美食推荐",
+        "消费咨询",
+        "一人食",
+        "生活服务"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_02",
+      "micro_role_id": "micro-3bf96213bb5aef23756e",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "经验分享",
+        "饮食建议",
+        "社交"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009925558312655087,
+        "experience_share_or_ask": 0.07568238213399504,
+        "help_request": 0.24317617866004962,
+        "information_request": 0.2990074441687345,
+        "information_share": 0.0012406947890818859,
+        "other": 0.026054590570719603,
+        "question": 0.3436724565756824,
+        "risk_advice_request": 0.0012406947890818859
+      },
+      "reviewed_episode_count": 806,
+      "reviewed_evidence_pool": [
+        "evidence-722de76d69e03ba2682f",
+        "evidence-154181a39e0f7f6b34a4",
+        "evidence-501474f59cf276d27ea1",
+        "evidence-e01bda6ba3af1fe29ba9",
+        "evidence-8c4bf38d11173bd86c46",
+        "evidence-12b06d5880c16720c002",
+        "evidence-106d266e4a06cdf407cf",
+        "evidence-56927a667910b2535905",
+        "evidence-a9a8497a32bda3df9fd8",
+        "evidence-461bfc565d935d6ff447",
+        "evidence-155ac30522884da8b17a",
+        "evidence-b35c4eaf05984f177c30"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "消费咨询",
+        "美食推荐",
+        "校园周边",
+        "生活服务",
+        "消费"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_03",
+      "micro_role_id": "micro-b9d11a6d3627f62db333",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "生活便利",
+        "经验分享",
+        "美食推荐"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009925558312655087,
+        "experience_share_or_ask": 0.052109181141439205,
+        "help_request": 0.24813895781637718,
+        "information_request": 0.2853598014888337,
+        "information_share": 0.013647642679900745,
+        "other": 0.02357320099255583,
+        "question": 0.36600496277915634,
+        "risk_advice_request": 0.0012406947890818859
+      },
+      "reviewed_episode_count": 806,
+      "reviewed_evidence_pool": [
+        "evidence-7f7359f3d5cac39f8d6b",
+        "evidence-1a90e730be6da41dea1a",
+        "evidence-05847addef257aaf5253",
+        "evidence-ddf39e8cc6ef0dc37212",
+        "evidence-777b35bd685c0e2b2202",
+        "evidence-4572ad4c14bf2832c0a4",
+        "evidence-0fb87599e1158b2ed344",
+        "evidence-3134e591ff1a35f5f6e3",
+        "evidence-538188121be9941925a2",
+        "evidence-fc69743341399c330846",
+        "evidence-6945f30052c35f9e1970",
+        "evidence-a26c57d86791ea2cd3b8"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "美食推荐",
+        "校园周边",
+        "消费咨询",
+        "一人食",
+        "生活服务"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_04",
+      "micro_role_id": "micro-8b2ba7767dcbb5606115",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "饮食建议",
+        "经验分享",
+        "生活便利"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009937888198757764,
+        "experience_share_or_ask": 0.058385093167701865,
+        "help_request": 0.23850931677018633,
+        "information_request": 0.28695652173913044,
+        "information_share": 0.011180124223602485,
+        "other": 0.02608695652173913,
+        "question": 0.368944099378882
+      },
+      "reviewed_episode_count": 805,
+      "reviewed_evidence_pool": [
+        "evidence-1bf115c358912bb546b0",
+        "evidence-0f9d95af40d82b988ed9",
+        "evidence-fdbd227559365c7f5927",
+        "evidence-d53e1b2c791c70ec4fca",
+        "evidence-159dff7c4b18a73024c1",
+        "evidence-fc097e65134e6af214f7",
+        "evidence-628a78cf88f0305c9fe0",
+        "evidence-d73feba6c56ceef0e109",
+        "evidence-06aff1e2fcd7d999ded7",
+        "evidence-3ae2f9ebcdd38f7596ac",
+        "evidence-913a2197f4bfbbe68b64",
+        "evidence-763464d82c7efaabd6dd"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "美食推荐",
+        "消费咨询",
+        "生活服务",
+        "消费推荐",
+        "校园周边"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_05",
+      "micro_role_id": "micro-32b26dd1ecd84f8beb55",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "经验分享",
+        "寻找代课者",
+        "完成签到"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009937888198757764,
+        "experience_share_or_ask": 0.05093167701863354,
+        "help_request": 0.2422360248447205,
+        "information_request": 0.2968944099378882,
+        "information_share": 0.013664596273291925,
+        "other": 0.02608695652173913,
+        "question": 0.3577639751552795,
+        "risk_advice_request": 0.002484472049689441
+      },
+      "reviewed_episode_count": 805,
+      "reviewed_evidence_pool": [
+        "evidence-83b6de57c4e4da0a4598",
+        "evidence-ac09af2701a08999fe39",
+        "evidence-6f7193c2f0989ee90a43",
+        "evidence-1b96239eae620f226fc4",
+        "evidence-a198abaeb4363cc5f1e8",
+        "evidence-a61d0cd963cb7d1b07fb",
+        "evidence-b0199040f6f816081e3c",
+        "evidence-976f405e4c09f040f148",
+        "evidence-4cff87d0897fe2fef8fd",
+        "evidence-bfa8816f35df65ea6d8d",
+        "evidence-b6a4b9fb33812a581557",
+        "evidence-a490d1b7800dd72f9c33"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "美食推荐",
+        "消费咨询",
+        "校园周边",
+        "一人食",
+        "生活服务"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_06",
+      "micro_role_id": "micro-d999476a64260b2b36a6",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "推荐",
+        "寻找代课者",
+        "完成签到"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009937888198757764,
+        "experience_share_or_ask": 0.062111801242236024,
+        "help_request": 0.2496894409937888,
+        "information_request": 0.2968944099378882,
+        "information_share": 0.014906832298136646,
+        "other": 0.01987577639751553,
+        "question": 0.3453416149068323,
+        "risk_advice_request": 0.0012422360248447205
+      },
+      "reviewed_episode_count": 805,
+      "reviewed_evidence_pool": [
+        "evidence-18d7faf408a0795e8bb7",
+        "evidence-964d9556843ae226e0b1",
+        "evidence-476641b8576d7bf3b17d",
+        "evidence-273397e07057091bac5a",
+        "evidence-09ef7ba1a3db5e8123c9",
+        "evidence-72f622d38b3ae16e9f1e",
+        "evidence-2ba8d339dd5c13f1890b",
+        "evidence-e54cd82b8027249659fd",
+        "evidence-87605a4c705906fe6f30",
+        "evidence-9869299ad6b1db35b67c",
+        "evidence-f3cff18626dfcf857981",
+        "evidence-2a2fefbaf33371e062d8"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "消费咨询",
+        "校园周边",
+        "美食推荐",
+        "生活服务",
+        "消费推荐"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_07",
+      "micro_role_id": "micro-3421ffe1d17fee4cfc51",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "性价比",
+        "经验分享",
+        "租赁需求",
+        "美食推荐"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009937888198757764,
+        "experience_share_or_ask": 0.05217391304347826,
+        "help_request": 0.25093167701863356,
+        "information_request": 0.2795031055900621,
+        "information_share": 0.006211180124223602,
+        "other": 0.02857142857142857,
+        "question": 0.3701863354037267,
+        "risk_advice_request": 0.002484472049689441
+      },
+      "reviewed_episode_count": 805,
+      "reviewed_evidence_pool": [
+        "evidence-300e939c80b730da2b1b",
+        "evidence-288b5233c244c5bd485d",
+        "evidence-a3dab9147614ae29e832",
+        "evidence-0b4643829252ac2dc1ab",
+        "evidence-777841b231f5b31e18a1",
+        "evidence-4d7c01f5834775b2f639",
+        "evidence-b99516061370fd10065d",
+        "evidence-ad8eff7d20af860aabd4",
+        "evidence-df077deae2d7d73d314b",
+        "evidence-cedfb758927b591179d3",
+        "evidence-08c74273b8448415bdbd",
+        "evidence-842ad65a08e94c2a5f27"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "美食推荐",
+        "校园周边",
+        "生活服务",
+        "餐饮",
+        "消费咨询"
+      ]
+    },
+    {
+      "micro_interaction_role": "生活方案咨询者_question_08",
+      "micro_role_id": "micro-98613989e0985b165852",
+      "need_portfolio": [
+        "信息获取",
+        "消费决策",
+        "经验分享",
+        "性价比",
+        "推荐",
+        "寄存服务"
+      ],
+      "primary_macro_role": "archetype-07",
+      "reply_function_distribution": {
+        "discussion": 0.009937888198757764,
+        "experience_share_or_ask": 0.07329192546583851,
+        "help_request": 0.24596273291925466,
+        "information_request": 0.27701863354037265,
+        "information_share": 0.008695652173913044,
+        "other": 0.02857142857142857,
+        "question": 0.3552795031055901,
+        "risk_advice_request": 0.0012422360248447205
+      },
+      "reviewed_episode_count": 805,
+      "reviewed_evidence_pool": [
+        "evidence-0e0906099e489c674bae",
+        "evidence-124e450a8eaa94d4cd5a",
+        "evidence-8359973348ee2fd0368b",
+        "evidence-cb52350edaebdd3067e1",
+        "evidence-0a0dffaf6223136f4591",
+        "evidence-18d09a673e8906c7853e",
+        "evidence-313a4b1334d02fd67a46",
+        "evidence-5b183d97332003ade54a",
+        "evidence-1e33c8ca7e710a1d252f",
+        "evidence-8ec9786b31d56b5c8415",
+        "evidence-6237bc89eecaefad0b3d",
+        "evidence-e02aa2ce25a304950c07"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "美食推荐",
+        "校园周边",
+        "消费咨询",
+        "生活服务",
+        "一人食"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_01",
+      "micro_role_id": "micro-cdb244a7b985a8f413b6",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "交易",
+        "出售",
+        "出售闲置",
+        "推广"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0020100502512562816,
+        "experience_share_or_ask": 0.007035175879396985,
+        "help_request": 0.0814070351758794,
+        "information_request": 0.11557788944723618,
+        "information_share": 0.19597989949748743,
+        "other": 0.2894472361809045,
+        "question": 0.017085427135678392,
+        "request": 0.2914572864321608
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-6399a6c63e871f204fe4",
+        "evidence-555dfd6b1aae3bcd1e4a",
+        "evidence-d9ccf857a5ba4e2248c7",
+        "evidence-135a9b920a21b7a20993",
+        "evidence-117003368b057f8de60c",
+        "evidence-89419a6d8b5f809fe028",
+        "evidence-eb2f4760388ac68d225e",
+        "evidence-c1108ec7b79d7a473d00",
+        "evidence-7465b5cb023af8a721b9",
+        "evidence-435749c40091723ef524",
+        "evidence-23ff7c471af98acb6468",
+        "evidence-5c4acddf7c126bbb303a"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "学习资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_02",
+      "micro_role_id": "micro-6c5fe346298ddad815c3",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "出售",
+        "交易",
+        "推广",
+        "转让"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0020100502512562816,
+        "experience_share_or_ask": 0.008040201005025126,
+        "help_request": 0.08542713567839195,
+        "information_request": 0.12663316582914572,
+        "information_share": 0.19396984924623115,
+        "other": 0.2793969849246231,
+        "question": 0.01306532663316583,
+        "request": 0.2914572864321608
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-89f862e5df69f4e8ec15",
+        "evidence-9c99ad84d083e48e5d30",
+        "evidence-2c5e0873a73230b9ffc8",
+        "evidence-60b74380a4549ba1041e",
+        "evidence-a2414291c8cd15b70363",
+        "evidence-2590a70376f5d84fe9bc",
+        "evidence-e82b84f8be2474ef45a3",
+        "evidence-45c817680ab6859de63d",
+        "evidence-80dc7edd19b351afdcf5",
+        "evidence-82e4b77e6357d1b6457c",
+        "evidence-abe0ce05290947e0d920",
+        "evidence-82d041d45763f4ac8272"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "考试资料",
+        "学习资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_03",
+      "micro_role_id": "micro-35083e845e3e43d7dd54",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "交易",
+        "出售",
+        "推广",
+        "出售闲置"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.006030150753768844,
+        "experience_share_or_ask": 0.009045226130653266,
+        "help_request": 0.09346733668341708,
+        "information_request": 0.1135678391959799,
+        "information_share": 0.1849246231155779,
+        "other": 0.3075376884422111,
+        "question": 0.010050251256281407,
+        "request": 0.27537688442211056
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-a1e6f22d1688f9fee01f",
+        "evidence-d8fac372a9901985bef6",
+        "evidence-5da06f2ee75589e173c3",
+        "evidence-de9c4409c3194bb53e78",
+        "evidence-f823fa5146799d68b5e1",
+        "evidence-0f8e552e33a1989eaefb",
+        "evidence-97450cf0019f0fb033d3",
+        "evidence-391226639d2a1f4b64f6",
+        "evidence-e55b85606d38a5aa5538",
+        "evidence-1f0eb1292669f0cd5a79",
+        "evidence-3ea7393ad35609ace8d6",
+        "evidence-08cdf0bd5848182ce47d"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "学习资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_04",
+      "micro_role_id": "micro-d165d0ce06f6bd7674c8",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "出售",
+        "交易",
+        "转让",
+        "资源交换"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0010050251256281408,
+        "experience_share_or_ask": 0.008040201005025126,
+        "help_request": 0.09045226130653267,
+        "information_request": 0.12864321608040202,
+        "information_share": 0.20603015075376885,
+        "other": 0.28743718592964823,
+        "question": 0.009045226130653266,
+        "request": 0.2693467336683417
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-4024cf3df79e5bc56b80",
+        "evidence-fb9fff0f09207db79020",
+        "evidence-98ff873c9a12d164b945",
+        "evidence-bb427212a495b4739686",
+        "evidence-d42f8a60e1f3705e287d",
+        "evidence-d7df3c2d9cafeed510a7",
+        "evidence-d4ffa0d6191f3edd04ec",
+        "evidence-ce3ab669258c8f211870",
+        "evidence-8fe51be0de82ca0803f1",
+        "evidence-acb4052b8f029f8c56a2",
+        "evidence-c1a71d5d42b8424123cd",
+        "evidence-98901bf3bbfd6fe32752"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "考试资料",
+        "租赁交易"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_05",
+      "micro_role_id": "micro-de0f3b172b0a12c05cb6",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "交易",
+        "出售",
+        "出售闲置",
+        "推广"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0010050251256281408,
+        "experience_share_or_ask": 0.003015075376884422,
+        "help_request": 0.07939698492462312,
+        "information_request": 0.11758793969849246,
+        "information_share": 0.1849246231155779,
+        "other": 0.31055276381909547,
+        "question": 0.011055276381909548,
+        "request": 0.29246231155778896
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-042ebb726f4a43a0fee9",
+        "evidence-0fce48008d55e60bbb6c",
+        "evidence-f48cb68c8846597abd6f",
+        "evidence-4ec04f28ded955159eec",
+        "evidence-5d742814616be0268e0f",
+        "evidence-3df66da4633938911dfc",
+        "evidence-6bfc279afcc97d4771ae",
+        "evidence-b14f33ea0d4264925d95",
+        "evidence-599228fb57ad2f9ddf13",
+        "evidence-8198082d2781729b86ff",
+        "evidence-a2ebeefc0d6265849516",
+        "evidence-7d256bf93f136bda5e1d"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "学习资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_06",
+      "micro_role_id": "micro-8a3c412ea412f78a451a",
+      "need_portfolio": [
+        "完成交易",
+        "交易",
+        "出售",
+        "获得服务",
+        "推广",
+        "出售闲置"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.006030150753768844,
+        "help_request": 0.08944723618090453,
+        "information_request": 0.12763819095477386,
+        "information_share": 0.19698492462311556,
+        "other": 0.29447236180904524,
+        "question": 0.018090452261306532,
+        "request": 0.26733668341708544
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-fcce593b4921463620d9",
+        "evidence-96538b1e256ad52c7ae7",
+        "evidence-904344c1fb362cc35e8b",
+        "evidence-b175ce0814dab35a78a9",
+        "evidence-8a5c3c4e05c075173371",
+        "evidence-a2346a9b2dc5e9e6f407",
+        "evidence-67bfe2bada25424b186e",
+        "evidence-893eb8d6a537e21a27a2",
+        "evidence-6eb3cdef0e7efa686463",
+        "evidence-4b2215cc021c28d05062",
+        "evidence-84f529b93398fda5599f",
+        "evidence-90160e54b390be36af6d"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "考试资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_07",
+      "micro_role_id": "micro-ec8cc21faa85d0d85275",
+      "need_portfolio": [
+        "完成交易",
+        "获得服务",
+        "交易",
+        "出售",
+        "出售闲置",
+        "推广"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0020100502512562816,
+        "experience_share_or_ask": 0.007035175879396985,
+        "help_request": 0.08341708542713568,
+        "information_request": 0.11658291457286432,
+        "information_share": 0.19798994974874373,
+        "other": 0.3035175879396985,
+        "question": 0.009045226130653266,
+        "request": 0.2804020100502513
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-6b484d211db7e3ad37a9",
+        "evidence-84427e53109b25ec3175",
+        "evidence-fbaf1955d4b75faa5631",
+        "evidence-833350d6fe3607f14400",
+        "evidence-16f5174ebb0b00ab9c5a",
+        "evidence-12fff1e83eae1e97e155",
+        "evidence-847dda7ccb0760302415",
+        "evidence-30f61a42f83aa6daeaf7",
+        "evidence-cac2fbcf36ccd41425d8",
+        "evidence-e2c8dadea09d80e80aac",
+        "evidence-3d645d16e6ab2b4eec85",
+        "evidence-15b5849d7ac2d1d1848d"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "学习资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_08",
+      "micro_role_id": "micro-11ab81309a3ac7327581",
+      "need_portfolio": [
+        "完成交易",
+        "交易",
+        "出售",
+        "获得服务",
+        "推广",
+        "出售闲置"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0020100502512562816,
+        "experience_share_or_ask": 0.004020100502512563,
+        "help_request": 0.07035175879396985,
+        "information_request": 0.13969849246231156,
+        "information_share": 0.18391959798994975,
+        "other": 0.3035175879396985,
+        "question": 0.017085427135678392,
+        "request": 0.2793969849246231
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-2cbac63490d4a7469e1e",
+        "evidence-57bfdff7d293d42c5780",
+        "evidence-c2b892cddeb4fa893457",
+        "evidence-afbcdf446093e22990ff",
+        "evidence-f9e492a31a6f09e5a14f",
+        "evidence-4d849d931825cf604669",
+        "evidence-5f364ba49580f64b256c",
+        "evidence-1ca1c12d66e7c5124d66",
+        "evidence-c58aea8f6a90721f60f7",
+        "evidence-a215bedb3e01dc4cbe53",
+        "evidence-c26f6cebf45daa0606f2",
+        "evidence-72f8c448beb72100d61a"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "外卖"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_09",
+      "micro_role_id": "micro-c5caa49f87c8443000ed",
+      "need_portfolio": [
+        "完成交易",
+        "交易",
+        "获得服务",
+        "出售",
+        "推广",
+        "资源交换"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "discussion": 0.0020100502512562816,
+        "experience_share_or_ask": 0.006030150753768844,
+        "help_request": 0.07537688442211055,
+        "information_request": 0.13467336683417086,
+        "information_share": 0.1899497487437186,
+        "other": 0.2904522613065327,
+        "question": 0.017085427135678392,
+        "request": 0.28442211055276384
+      },
+      "reviewed_episode_count": 995,
+      "reviewed_evidence_pool": [
+        "evidence-b464e11fed50bcb9b1f7",
+        "evidence-e78eaa163bde5437801c",
+        "evidence-ba621f547612da5f4c2b",
+        "evidence-0e387076836ec0babdfe",
+        "evidence-2aa04d188a69da6e5a24",
+        "evidence-567f4b2b6ffeada50cb1",
+        "evidence-c6f5650c1e409f861de6",
+        "evidence-1623c94e8d61af38e66f",
+        "evidence-6f0206cb540c493acc2a",
+        "evidence-9fa87375b90756efd016",
+        "evidence-00e4ad3ea20c3b029df3",
+        "evidence-942c2ae5f701671d8d0e"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "考试资料"
+      ]
+    },
+    {
+      "micro_interaction_role": "一般交易推广者_information_share_10",
+      "micro_role_id": "micro-bece3e32dde15cc6476b",
+      "need_portfolio": [
+        "完成交易",
+        "交易",
+        "获得服务",
+        "出售",
+        "推广",
+        "出售闲置"
+      ],
+      "primary_macro_role": "archetype-08",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.005030181086519115,
+        "help_request": 0.07645875251509054,
+        "information_request": 0.12474849094567404,
+        "information_share": 0.19114688128772636,
+        "other": 0.3038229376257545,
+        "question": 0.015090543259557344,
+        "request": 0.2837022132796781
+      },
+      "reviewed_episode_count": 994,
+      "reviewed_evidence_pool": [
+        "evidence-0ccda5058249484f8311",
+        "evidence-117536ed6898d72d752c",
+        "evidence-89874faa292b68887352",
+        "evidence-472f7c460278bf582488",
+        "evidence-46e19f0e3b922fa1f750",
+        "evidence-a48d21183d14dc343e60",
+        "evidence-04c86cd3b284475c6076",
+        "evidence-7b1d82b6b935c7bc2d24",
+        "evidence-01e78285ffe007673b46",
+        "evidence-b648d4d199454fca9ee9",
+        "evidence-0774adc1b4ae88a31e67",
+        "evidence-bf2f8bdead0086b93e59"
+      ],
+      "topic_portfolio": [
+        "交易",
+        "二手交易",
+        "课程资料",
+        "有偿服务",
+        "租赁交易",
+        "校园生活"
+      ]
+    },
+    {
+      "micro_interaction_role": "风险交易推广者_information_share_01",
+      "micro_role_id": "micro-412710153a811043643d",
+      "need_portfolio": [
+        "推广",
+        "招募",
+        "信息传播",
+        "获取测试题",
+        "交易交换",
+        "学习备考"
+      ],
+      "primary_macro_role": "archetype-09",
+      "reply_function_distribution": {
+        "information_request": 0.15555555555555556,
+        "information_share": 0.23333333333333334,
+        "other": 0.3888888888888889,
+        "request": 0.2222222222222222
+      },
+      "reviewed_episode_count": 90,
+      "reviewed_evidence_pool": [
+        "evidence-495d4f2b7741f8becdd5",
+        "evidence-ed0b808f2d853b7ec661",
+        "evidence-15bf7ed9ea8cbd13b064",
+        "evidence-cc95531f5077d3d427cf",
+        "evidence-a60b355ed9955bb6cf05",
+        "evidence-d40380cd8355e6f4c031",
+        "evidence-d8b2b01be0d1d56d0914",
+        "evidence-1ab6e49c68fe1feef3b6",
+        "evidence-d7d40de089ecab67b96a",
+        "evidence-cba9c3049699fad8199b",
+        "evidence-863a82f8facb6b4910cd",
+        "evidence-ff2decb63b424e4e4fa6"
+      ],
+      "topic_portfolio": [
+        "兼职代理",
+        "暑假留校",
+        "校园推广",
+        "交易招募",
+        "python测试题",
+        "有偿求购"
+      ]
+    },
+    {
+      "micro_interaction_role": "风险交易推广者_information_share_02",
+      "micro_role_id": "micro-45abeb109577b2429d31",
+      "need_portfolio": [
+        "推广",
+        "招募",
+        "信息传播",
+        "获取测试题",
+        "交易交换",
+        "学习备考"
+      ],
+      "primary_macro_role": "archetype-09",
+      "reply_function_distribution": {
+        "information_request": 0.14606741573033707,
+        "information_share": 0.24719101123595505,
+        "other": 0.38202247191011235,
+        "request": 0.2247191011235955
+      },
+      "reviewed_episode_count": 89,
+      "reviewed_evidence_pool": [
+        "evidence-94ccef533ebd3d4021e2",
+        "evidence-eeffc635e872e1bc42a6",
+        "evidence-448b6f42f29d1bad2d74",
+        "evidence-daf2f09bab4437266ed3",
+        "evidence-d84eaeb88eaacf69c24c",
+        "evidence-aefcf3fcb2962dec8be2",
+        "evidence-3062b1aa2935725f111a",
+        "evidence-82ce810f36dcea994f41",
+        "evidence-854f3f29fd8dc41810b4",
+        "evidence-ce0f46c7418d09fdbcb1",
+        "evidence-14cde2846f975bbee743",
+        "evidence-77035da4087a69298e86"
+      ],
+      "topic_portfolio": [
+        "兼职代理",
+        "暑假留校",
+        "校园推广",
+        "交易招募",
+        "python测试题",
+        "有偿求购"
+      ]
+    },
+    {
+      "micro_interaction_role": "风险交易推广者_information_share_03",
+      "micro_role_id": "micro-a44b14e239529966b13e",
+      "need_portfolio": [
+        "推广",
+        "招募",
+        "信息传播",
+        "获取测试题",
+        "交易交换",
+        "学习备考"
+      ],
+      "primary_macro_role": "archetype-09",
+      "reply_function_distribution": {
+        "information_request": 0.15730337078651685,
+        "information_share": 0.23595505617977527,
+        "other": 0.3707865168539326,
+        "request": 0.23595505617977527
+      },
+      "reviewed_episode_count": 89,
+      "reviewed_evidence_pool": [
+        "evidence-453dc53fc3f51626b728",
+        "evidence-82cfe627b7b3d7a2f8bd",
+        "evidence-08721ba29f8853fbc99d",
+        "evidence-5df330088c344c295447",
+        "evidence-d1ae9460da9a39067a1f",
+        "evidence-2a7537138fbf8c0e1915",
+        "evidence-78709a2ab9c9d14b0638",
+        "evidence-94ecee4aad591a1063b0",
+        "evidence-c8452c90006488cc6a5c",
+        "evidence-d7cfa34f1be5aa8c2cfb",
+        "evidence-dc4722de3acd05d8bf13",
+        "evidence-9f4a883ef4bc58d701a2"
+      ],
+      "topic_portfolio": [
+        "兼职代理",
+        "暑假留校",
+        "校园推广",
+        "交易招募",
+        "python测试题",
+        "有偿求购"
+      ]
+    },
+    {
+      "micro_interaction_role": "风险交易推广者_information_share_04",
+      "micro_role_id": "micro-7c16f4ee9495c31f4a50",
+      "need_portfolio": [
+        "推广",
+        "招募",
+        "信息传播",
+        "获取测试题",
+        "交易交换",
+        "学习备考"
+      ],
+      "primary_macro_role": "archetype-09",
+      "reply_function_distribution": {
+        "information_request": 0.14606741573033707,
+        "information_share": 0.20224719101123595,
+        "other": 0.39325842696629215,
+        "request": 0.25842696629213485
+      },
+      "reviewed_episode_count": 89,
+      "reviewed_evidence_pool": [
+        "evidence-2da8b3d9abb6d8a10ed6",
+        "evidence-ef029f7c7920f296b93e",
+        "evidence-3929492642c509c985fa",
+        "evidence-6134adc7959c7ad37bad",
+        "evidence-39b83aba2fa058e1836c",
+        "evidence-f9220202b4fa71bb7753",
+        "evidence-4d490b4f0ded5ca0deb2",
+        "evidence-b9c7291c9677a4e80656",
+        "evidence-15fc20b6b39f6bb1b2b2",
+        "evidence-bb6a6a96dab754771232",
+        "evidence-6050cf51dd3820d4e62c",
+        "evidence-429c4165c52c9ef0486e"
+      ],
+      "topic_portfolio": [
+        "兼职代理",
+        "暑假留校",
+        "校园推广",
+        "交易招募",
+        "python测试题",
+        "有偿求购"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_01",
+      "micro_role_id": "micro-3bef79a158368cd5c989",
+      "need_portfolio": [
+        "寻找同伴",
+        "社交陪伴",
+        "陪伴",
+        "社交",
+        "同伴匹配",
+        "娱乐"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.08087291399229782,
+        "emotional_vent": 0.011553273427471117,
+        "experience_share_or_ask": 0.1245186136071887,
+        "help_request": 0.27086007702182285,
+        "information_request": 0.01668806161745828,
+        "information_share": 0.03337612323491656,
+        "information_share_or_ask": 0.024390243902439025,
+        "other": 0.1925545571245186,
+        "question": 0.08087291399229782,
+        "request": 0.1643132220795892
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-c35ddf734a93639c98c8",
+        "evidence-94ba556b5781304445eb",
+        "evidence-c5eb8a9e7d0525dcc7ce",
+        "evidence-e257670b4385ec28f736",
+        "evidence-5531ea20f43f2dc4a6d4",
+        "evidence-1efdff86ea7053e25b0c",
+        "evidence-20a9f8f1c349f91800a6",
+        "evidence-01b43c0ec348ffb233aa",
+        "evidence-93fa4012e85f609b53f0",
+        "evidence-70739802bdad8f902199",
+        "evidence-36483ef94a01827defd6",
+        "evidence-26c6e2afd484688caaea"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "交友",
+        "搭子"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_02",
+      "micro_role_id": "micro-b88a2a8e181c8620f1cd",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "社交",
+        "陪伴",
+        "同伴匹配",
+        "归属感"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.08729139922978177,
+        "emotional_vent": 0.012836970474967908,
+        "experience_share_or_ask": 0.10783055198973042,
+        "help_request": 0.27471116816431324,
+        "information_request": 0.014120667522464698,
+        "information_share": 0.028241335044929396,
+        "information_share_or_ask": 0.024390243902439025,
+        "other": 0.18870346598202825,
+        "question": 0.10911424903722722,
+        "request": 0.1527599486521181
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-e2b344c99b7e50974cf7",
+        "evidence-376e9601f92b119d303e",
+        "evidence-ed8400711965f07416c5",
+        "evidence-59500fe65a6e7d4e0a3b",
+        "evidence-3be15b32afe0856a1e0c",
+        "evidence-b23378979f1d9ec6a135",
+        "evidence-e8850633b20d9318decf",
+        "evidence-d3ecbc44fec0b0bec186",
+        "evidence-5b0575f3b99c5ae2e39d",
+        "evidence-f0fe483d809f15108a6d",
+        "evidence-045b967da5e25765be74",
+        "evidence-7aab4daeffc13e1ed3f1"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "亲密关系",
+        "拼车"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_03",
+      "micro_role_id": "micro-ef7d8ceb25d60cce8f6b",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "陪伴",
+        "社交",
+        "娱乐",
+        "同伴匹配"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.06803594351732992,
+        "emotional_vent": 0.01540436456996149,
+        "experience_share_or_ask": 0.12066752246469833,
+        "help_request": 0.26572528883183566,
+        "information_request": 0.02053915275994865,
+        "information_share": 0.03594351732991014,
+        "information_share_or_ask": 0.03209242618741977,
+        "other": 0.20154043645699615,
+        "question": 0.0834403080872914,
+        "request": 0.15661103979460847
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-c215be79d7ae76559d6a",
+        "evidence-eb2642995f5cc11abe5b",
+        "evidence-09eb2d5d18cb8b4fedfa",
+        "evidence-1d4dc82600bc62718dec",
+        "evidence-5578effa77f830b9e03b",
+        "evidence-8d707c20f132f560b1db",
+        "evidence-1608670313e09365207c",
+        "evidence-cc1f479c97a7346c42ba",
+        "evidence-607778650c3fb0133605",
+        "evidence-fb45b9b1c23af9db70ed",
+        "evidence-b6d78a62c1d374e84704",
+        "evidence-b55566c0731ab302ac00"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "搭子",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_04",
+      "micro_role_id": "micro-3bcbd128e7b5a2d583a4",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "社交",
+        "陪伴",
+        "娱乐",
+        "同伴匹配"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.07702182284980745,
+        "emotional_vent": 0.011553273427471117,
+        "experience_share_or_ask": 0.11424903722721438,
+        "help_request": 0.28754813863928114,
+        "information_request": 0.01797175866495507,
+        "information_share": 0.03209242618741977,
+        "information_share_or_ask": 0.03594351732991014,
+        "other": 0.18356867779204109,
+        "question": 0.07830551989730423,
+        "request": 0.16174582798459564
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-21e92273ba3d7af21c0c",
+        "evidence-d158755d2618d14d8c74",
+        "evidence-d11d1eb832c3b3a66597",
+        "evidence-6112698d5cd699d7af17",
+        "evidence-1356e1db887219c861b2",
+        "evidence-828a240ad4c5ec9a6607",
+        "evidence-522d38038ca61691f8d3",
+        "evidence-93503cf2de3aa7dae164",
+        "evidence-34d4d05cebca97d86b28",
+        "evidence-565ba1e7493bb4a62882",
+        "evidence-73a6623c5e79db3b8559",
+        "evidence-c8dc2ddcafc566838730"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "搭子",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_05",
+      "micro_role_id": "micro-fc8c2ef7cd96d9350f62",
+      "need_portfolio": [
+        "寻找同伴",
+        "社交陪伴",
+        "社交",
+        "陪伴",
+        "娱乐",
+        "同伴匹配"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.07317073170731707,
+        "emotional_vent": 0.012836970474967908,
+        "experience_share_or_ask": 0.13093709884467267,
+        "help_request": 0.24775353016688062,
+        "information_request": 0.02053915275994865,
+        "information_share": 0.03594351732991014,
+        "information_share_or_ask": 0.023106546854942234,
+        "other": 0.20154043645699615,
+        "question": 0.08985879332477535,
+        "request": 0.1643132220795892
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-3c7284fdc05dc2ebb6c9",
+        "evidence-570239db738e81ebc122",
+        "evidence-d891b9941e717c195b91",
+        "evidence-824d306f919daf347035",
+        "evidence-a6f55c48d7c14370e58e",
+        "evidence-0fb31d1294813b797293",
+        "evidence-52b6370bb08680ea334d",
+        "evidence-98b9cee99490c22fa19b",
+        "evidence-05a4a7037e85cd4cee5a",
+        "evidence-bb89afe5f6878555d3ad",
+        "evidence-dc9f593a402464461b0e",
+        "evidence-6db9a2c3538eba82ba63"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "陪伴",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_06",
+      "micro_role_id": "micro-ebae7b77c514258587d3",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "陪伴",
+        "社交",
+        "同伴匹配",
+        "归属感"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.08729139922978177,
+        "emotional_vent": 0.010269576379974325,
+        "experience_share_or_ask": 0.12836970474967907,
+        "help_request": 0.26700898587933247,
+        "information_request": 0.01668806161745828,
+        "information_share": 0.026957637997432605,
+        "information_share_or_ask": 0.02053915275994865,
+        "other": 0.18870346598202825,
+        "question": 0.07958921694480103,
+        "request": 0.17458279845956354
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-277d07b336ba3940d02f",
+        "evidence-4cfb8cb1812272dff2d2",
+        "evidence-91188c699a09b90e6d70",
+        "evidence-4aa6641a3fb9f5ed547a",
+        "evidence-1e908ba09cecae6b0043",
+        "evidence-4dfb9cefe7dec368f701",
+        "evidence-7d1e446cfcbaa2f59820",
+        "evidence-38484effc1e9f19282a6",
+        "evidence-0d0f5ac4db1b65e1045b",
+        "evidence-f12a08ca3f1536b986ae",
+        "evidence-21ff6604739420e0a398",
+        "evidence-4bf0d5471c2ac8f48a3e"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "搭子",
+        "同伴招募",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_07",
+      "micro_role_id": "micro-c2f28475ad99e77440ea",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "陪伴",
+        "社交",
+        "同伴匹配",
+        "娱乐"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.07573812580231065,
+        "emotional_vent": 0.011553273427471117,
+        "experience_share_or_ask": 0.12836970474967907,
+        "help_request": 0.2798459563543004,
+        "information_request": 0.01540436456996149,
+        "information_share": 0.024390243902439025,
+        "information_share_or_ask": 0.03080872913992298,
+        "other": 0.18356867779204109,
+        "question": 0.08472400513478819,
+        "request": 0.16559691912708602
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-6a7a944d30388b3eb5c7",
+        "evidence-c24645edd42ea1e408bf",
+        "evidence-9daa98c9f6c632823b84",
+        "evidence-3fb4a28e39314c7a9724",
+        "evidence-a3f266d28f7e3cca478e",
+        "evidence-1c34517e9b3df3bd8f4d",
+        "evidence-962403d5cd98ee0adf8a",
+        "evidence-b0d10c03edb1f541e1e0",
+        "evidence-7ddd412e75daf7ddb5c8",
+        "evidence-815de97801efd777a988",
+        "evidence-014c8592eaa3944e84f4",
+        "evidence-0ad98a371dc3bcbc9afb"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "搭子",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "社交同伴匹配者_request_08",
+      "micro_role_id": "micro-73058e8e424de3d3682e",
+      "need_portfolio": [
+        "社交陪伴",
+        "寻找同伴",
+        "陪伴",
+        "社交",
+        "归属感",
+        "同伴匹配"
+      ],
+      "primary_macro_role": "archetype-10",
+      "reply_function_distribution": {
+        "discussion": 0.0821566110397946,
+        "emotional_vent": 0.010269576379974325,
+        "experience_share_or_ask": 0.10911424903722722,
+        "help_request": 0.2605905006418485,
+        "information_request": 0.01797175866495507,
+        "information_share": 0.03080872913992298,
+        "information_share_or_ask": 0.03209242618741977,
+        "other": 0.2092426187419769,
+        "question": 0.0975609756097561,
+        "request": 0.15019255455712452
+      },
+      "reviewed_episode_count": 779,
+      "reviewed_evidence_pool": [
+        "evidence-16dc03b4575196af0279",
+        "evidence-0303988bcd31dcaa8eaf",
+        "evidence-a21185cd21c447fe9874",
+        "evidence-b5cee59084178430ba7d",
+        "evidence-744d31f007e32f20eb96",
+        "evidence-2f8d287924f51a1a1c99",
+        "evidence-47b910eda922175d7f70",
+        "evidence-465400055dd9211d3b81",
+        "evidence-79dc8fb609e0782567f9",
+        "evidence-4609394ff6dea1f69502",
+        "evidence-027bda65953cca1c3e8a",
+        "evidence-c91a2e57fed6143aaf45"
+      ],
+      "topic_portfolio": [
+        "社交",
+        "社交匹配",
+        "恋爱",
+        "同伴招募",
+        "陪伴",
+        "亲密关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_01",
+      "micro_role_id": "micro-90ba454f6f90e4df0c48",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "寻找队友",
+        "考试准备",
+        "资源匹配",
+        "资源交换"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.015513126491646777,
+        "help_request": 0.6968973747016707,
+        "information_request": 0.10859188544152745,
+        "information_share": 0.02028639618138425,
+        "other": 0.03579952267303103,
+        "question": 0.0477326968973747,
+        "request": 0.07517899761336516
+      },
+      "reviewed_episode_count": 838,
+      "reviewed_evidence_pool": [
+        "evidence-61f381249a2dbac18279",
+        "evidence-59879bab1dd8a87d960c",
+        "evidence-b219facfb77db2f57a99",
+        "evidence-6487985baf3a40e5a028",
+        "evidence-6eab9fa5b4fdcfe4b5c4",
+        "evidence-b1d2a54082a02e118f79",
+        "evidence-ec558b3e5fcff538db7e",
+        "evidence-a83fea104e1ce2528d48",
+        "evidence-38be0ea6e227cfce50fd",
+        "evidence-2abd144af127672b7c13",
+        "evidence-08d8754b09c175527697",
+        "evidence-838364d350ed5f1ccb86"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "创新创业",
+        "竞赛组队"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_02",
+      "micro_role_id": "micro-51958abab573c1ba4255",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "考试准备",
+        "寻找队友",
+        "信息获取",
+        "资源匹配"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.015531660692951015,
+        "help_request": 0.6714456391875747,
+        "information_request": 0.1039426523297491,
+        "information_share": 0.026284348864994027,
+        "other": 0.04420549581839905,
+        "question": 0.056152927120669056,
+        "request": 0.08243727598566308
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-8fe35bff51f903171b15",
+        "evidence-11d6916e7d28e00beaff",
+        "evidence-b1df4f293c0259483e4b",
+        "evidence-05c387b9bb32b517df5f",
+        "evidence-9a09e0140bebf297f275",
+        "evidence-6e0d5e40e5ffd3765d2c",
+        "evidence-3e46a76abe2eb911069f",
+        "evidence-94162c9ff8157b5d6a21",
+        "evidence-a0eec99049bb563ab185",
+        "evidence-8cd137248c76a6d01c97",
+        "evidence-7d745f99b702d1a03c3c",
+        "evidence-151fa9634868cdefed4e"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "竞赛组队",
+        "创新创业"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_03",
+      "micro_role_id": "micro-5b691909c7867aa72ed6",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "考试准备",
+        "资源匹配",
+        "寻找队友",
+        "信息获取"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.016726403823178016,
+        "help_request": 0.7025089605734767,
+        "information_request": 0.0979689366786141,
+        "information_share": 0.021505376344086023,
+        "other": 0.03106332138590203,
+        "question": 0.05973715651135006,
+        "request": 0.07048984468339307
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-205679b93818acd8c696",
+        "evidence-eb265898248e86a16c51",
+        "evidence-025772fc1ac459dc44de",
+        "evidence-8b13d801b0fd6e221524",
+        "evidence-84a635ec19c7988c379c",
+        "evidence-7d7d396ca9810761fb7e",
+        "evidence-87a0dabdd2c24af494d6",
+        "evidence-7306bddeca6ddd842468",
+        "evidence-c285bcb948b0c2f33972",
+        "evidence-262b0e57ff2f52d66aae",
+        "evidence-b7a7b6e5c50eb703c216",
+        "evidence-701239cb8ee1bcb14383"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "创新创业",
+        "求助"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_04",
+      "micro_role_id": "micro-a7d88b4aa4b0362fb829",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "考试准备",
+        "寻找队友",
+        "信息获取",
+        "资源匹配"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.016726403823178016,
+        "help_request": 0.6893667861409797,
+        "information_request": 0.0967741935483871,
+        "information_share": 0.022700119474313024,
+        "other": 0.03464755077658303,
+        "question": 0.06332138590203107,
+        "request": 0.07646356033452807
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-c470b800920a109c537e",
+        "evidence-5cce87f783af5c1cb723",
+        "evidence-acbbc3c88f283c0821ba",
+        "evidence-c85c2c64eeaa2a5f6a58",
+        "evidence-39712aa11ebb91c5cc02",
+        "evidence-6ce2e49681f67362717e",
+        "evidence-6cf13709b69786324260",
+        "evidence-3e17e6d5a0685dc584d7",
+        "evidence-61fe506d12cc8b5d43c6",
+        "evidence-b7d0de77d80af08b2a74",
+        "evidence-5e3784de336c94454c2c",
+        "evidence-b9ddddc69eff1cf1628f"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "竞赛组队",
+        "创新创业"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_05",
+      "micro_role_id": "micro-ffe90f46dc0309f5d736",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "寻找队友",
+        "考试准备",
+        "资源匹配",
+        "信息获取"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.017921146953405017,
+        "help_request": 0.6953405017921147,
+        "information_request": 0.09438470728793309,
+        "information_share": 0.022700119474313024,
+        "other": 0.022700119474313024,
+        "question": 0.05854241338112306,
+        "request": 0.0884109916367981
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-b174ff11dd64ddd95f6d",
+        "evidence-812da4d08d3c8d21ec51",
+        "evidence-c76acc93044b26d253a2",
+        "evidence-0b1de4521668618bcde8",
+        "evidence-d797b2b86c39f316a8b4",
+        "evidence-ba9faab8d1fa37844ff4",
+        "evidence-5332f1b4a9a88c8bdfc5",
+        "evidence-c2556ba3244f3e88e94f",
+        "evidence-6159d2851f0592de02fa",
+        "evidence-945baa7b149b2d85bae0",
+        "evidence-6c650051c7991edcf93a",
+        "evidence-d55af12090568bc700bf"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "创新创业",
+        "求助"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_06",
+      "micro_role_id": "micro-acaf497c5df030e66132",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "考试准备",
+        "寻找队友",
+        "资源交换",
+        "信息获取"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.011947431302270013,
+        "help_request": 0.6798088410991637,
+        "information_request": 0.0991636798088411,
+        "information_share": 0.021505376344086023,
+        "other": 0.03345280764635603,
+        "question": 0.06451612903225806,
+        "request": 0.08960573476702509
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-c9683d263a277a2df1b0",
+        "evidence-99591fe9ee82ca83bece",
+        "evidence-49fc511fd80d053024f8",
+        "evidence-5b34cc51c2df5e4d74e7",
+        "evidence-2d5a03c105a22ad355b1",
+        "evidence-482caa4f61388654f1de",
+        "evidence-34976c3b8fe74f429a96",
+        "evidence-ebb9f7bfc7862993fb4f",
+        "evidence-9d13635fbccbe1bd62a7",
+        "evidence-2322dd55da316adf4cdc",
+        "evidence-c26a0a1fd97b7b0771ec",
+        "evidence-5f478be5e374492f920d"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "求助",
+        "竞赛组队"
+      ]
+    },
+    {
+      "micro_interaction_role": "任务资源匹配者_request_07",
+      "micro_role_id": "micro-aa5f2c59f824283cb76f",
+      "need_portfolio": [
+        "资源获取",
+        "找人帮忙",
+        "考试准备",
+        "寻找队友",
+        "资源匹配",
+        "信息获取"
+      ],
+      "primary_macro_role": "archetype-11",
+      "reply_function_distribution": {
+        "experience_share_or_ask": 0.023894862604540025,
+        "help_request": 0.6905615292712067,
+        "information_request": 0.0967741935483871,
+        "information_share": 0.021505376344086023,
+        "other": 0.03464755077658303,
+        "question": 0.056152927120669056,
+        "request": 0.07646356033452807
+      },
+      "reviewed_episode_count": 837,
+      "reviewed_evidence_pool": [
+        "evidence-91d84c7cbb641f0a6c1a",
+        "evidence-b05e4ca0dc773bed58ad",
+        "evidence-435c52c34f637aeef160",
+        "evidence-806571cbf61db651c8e9",
+        "evidence-19a76a56f5602298881d",
+        "evidence-c2072d1cb4ddfec7576a",
+        "evidence-aa06e0b8f79cee1a04b5",
+        "evidence-4416ce927288be5e1441",
+        "evidence-aa60ca06f44eceffba84",
+        "evidence-f105fca49a7dddb06daf",
+        "evidence-fd37568a0ae952eafd5d",
+        "evidence-804102f674f93a3ccddd"
+      ],
+      "topic_portfolio": [
+        "组队",
+        "有偿求助",
+        "学习资料",
+        "代课",
+        "创新创业",
+        "竞赛组队"
+      ]
+    },
+    {
+      "micro_interaction_role": "关系与协作边界协商者_help_request_01",
+      "micro_role_id": "micro-a4a59f28c6d21cba73e1",
+      "need_portfolio": [
+        "情感支持",
+        "关系建议",
+        "表达不满",
+        "获得理解",
+        "获得建议",
+        "边界协商"
+      ],
+      "primary_macro_role": "archetype-12",
+      "reply_function_distribution": {
+        "complaint": 0.18691588785046728,
+        "discussion": 0.16121495327102803,
+        "emotional_vent": 0.0455607476635514,
+        "experience_share_or_ask": 0.03154205607476635,
+        "help_request": 0.39135514018691586,
+        "question": 0.18341121495327103
+      },
+      "reviewed_episode_count": 856,
+      "reviewed_evidence_pool": [
+        "evidence-d11117dbe31aad46fbaf",
+        "evidence-20e02034d6e80d449013",
+        "evidence-89c46b9220497e9dd570",
+        "evidence-c1c301c5abeaf1529c2a",
+        "evidence-73436642e78fc2438b44",
+        "evidence-2f9f148abceba9880594",
+        "evidence-7e3e100ad2cb87502427",
+        "evidence-ed44a5d8b7c133570478",
+        "evidence-b950ad60c2befdc8917a",
+        "evidence-0b7a14df0020f60a2617",
+        "evidence-ccacf128ffc127808673",
+        "evidence-4c394b5c44db9ef4d361"
+      ],
+      "topic_portfolio": [
+        "恋爱关系",
+        "宿舍关系",
+        "亲密关系",
+        "性观念",
+        "恋爱标准",
+        "分手"
+      ]
+    },
+    {
+      "micro_interaction_role": "关系与协作边界协商者_help_request_02",
+      "micro_role_id": "micro-08b1c5f22ec188bc4f6c",
+      "need_portfolio": [
+        "情感支持",
+        "关系建议",
+        "表达不满",
+        "获得建议",
+        "正常性确认",
+        "关系决策支持"
+      ],
+      "primary_macro_role": "archetype-12",
+      "reply_function_distribution": {
+        "complaint": 0.1871345029239766,
+        "discussion": 0.16023391812865498,
+        "emotional_vent": 0.04678362573099415,
+        "experience_share_or_ask": 0.025730994152046785,
+        "help_request": 0.391812865497076,
+        "question": 0.18830409356725147
+      },
+      "reviewed_episode_count": 855,
+      "reviewed_evidence_pool": [
+        "evidence-66354585657bf18ac31d",
+        "evidence-e2d1f46be323b189fc16",
+        "evidence-6a1ab5d17f6cb22597fb",
+        "evidence-f4b5360c16eb61adf181",
+        "evidence-333758b1b1d78072d392",
+        "evidence-ee60dc87a14ba69417a4",
+        "evidence-d1324f1364719ebbc7d8",
+        "evidence-ba62952c538b694d2b77",
+        "evidence-d09c45cea0604abbe341",
+        "evidence-2225ad7d1fffd64c5421",
+        "evidence-65d2a6d4d44ba10e0f1e",
+        "evidence-5857860174c70fe915ec"
+      ],
+      "topic_portfolio": [
+        "恋爱关系",
+        "宿舍关系",
+        "亲密关系",
+        "性观念",
+        "恋爱标准",
+        "分手"
+      ]
+    },
+    {
+      "micro_interaction_role": "关系与协作边界协商者_help_request_03",
+      "micro_role_id": "micro-2bd6043d917f0992f32d",
+      "need_portfolio": [
+        "情感支持",
+        "关系建议",
+        "表达不满",
+        "边界协商",
+        "寻求建议",
+        "正常性确认"
+      ],
+      "primary_macro_role": "archetype-12",
+      "reply_function_distribution": {
+        "complaint": 0.1871345029239766,
+        "discussion": 0.1567251461988304,
+        "emotional_vent": 0.042105263157894736,
+        "experience_share_or_ask": 0.04093567251461988,
+        "help_request": 0.39415204678362575,
+        "question": 0.17894736842105263
+      },
+      "reviewed_episode_count": 855,
+      "reviewed_evidence_pool": [
+        "evidence-e05e46e684924680742b",
+        "evidence-f7483c4509dfe72f7416",
+        "evidence-bc4460c108610205aa64",
+        "evidence-29393c9129f80729bca9",
+        "evidence-e2b6fee62e9884ffba36",
+        "evidence-c656aaffbea5519bf5df",
+        "evidence-5bcb595d3b0b76aa84c8",
+        "evidence-ac234ad4e7e7b697881b",
+        "evidence-4d9951a4ebddc61fb33f",
+        "evidence-d6f41b49086fa6394ab6",
+        "evidence-d49f7d4f09910cef2f79",
+        "evidence-e1271452cae46bdaaed4"
+      ],
+      "topic_portfolio": [
+        "恋爱关系",
+        "宿舍关系",
+        "亲密关系",
+        "性观念",
+        "恋爱标准",
+        "分手"
+      ]
+    },
+    {
+      "micro_interaction_role": "关系与协作边界协商者_help_request_04",
+      "micro_role_id": "micro-aa994253cc9b8ad503e7",
+      "need_portfolio": [
+        "情感支持",
+        "关系建议",
+        "表达不满",
+        "寻求建议",
+        "获得建议",
+        "边界协商"
+      ],
+      "primary_macro_role": "archetype-12",
+      "reply_function_distribution": {
+        "complaint": 0.18596491228070175,
+        "discussion": 0.16257309941520467,
+        "emotional_vent": 0.04327485380116959,
+        "experience_share_or_ask": 0.0304093567251462,
+        "help_request": 0.40350877192982454,
+        "question": 0.1742690058479532
+      },
+      "reviewed_episode_count": 855,
+      "reviewed_evidence_pool": [
+        "evidence-1aa9464caee6ea436ca3",
+        "evidence-b917104f027bd71d77ac",
+        "evidence-cd64372f03a99ff914bd",
+        "evidence-3233107675f699952d06",
+        "evidence-facc071411d2a4635652",
+        "evidence-4ac3d50dfdcbdac1ee23",
+        "evidence-63a2e3412d9731b2a0df",
+        "evidence-52c09b6e827a38d7938e",
+        "evidence-dee370bc421ad1cbb8f4",
+        "evidence-d7bb02914762c536ef50",
+        "evidence-8dc965c04c1d982078d8",
+        "evidence-3f4cf525d4228a57cc9f"
+      ],
+      "topic_portfolio": [
+        "恋爱关系",
+        "宿舍关系",
+        "亲密关系",
+        "性观念",
+        "恋爱标准",
+        "分手"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_01",
+      "micro_role_id": "micro-6d9e7a6cb98aee7a6d07",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "情感支持",
+        "寻求共鸣",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.017142857142857144,
+        "discussion": 0.0033333333333333335,
+        "emotional_vent": 0.9247619047619048,
+        "experience_share_or_ask": 0.007619047619047619,
+        "help_request": 0.025238095238095237,
+        "information_request": 0.0014285714285714286,
+        "information_share": 0.011904761904761904,
+        "other": 0.004285714285714286,
+        "question": 0.004285714285714286
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-117162c9c5729fba06ba",
+        "evidence-56c4989c293e92dc7717",
+        "evidence-5ad51e808bbe23ec25fd",
+        "evidence-8abe33909b2077675b4c",
+        "evidence-9bca02689ec6b169b933",
+        "evidence-2248ada609084ddded15",
+        "evidence-886479a88c8f8aebf3cf",
+        "evidence-d5fc2da6ebbb935e055b",
+        "evidence-a68cd638086e12ed1f39",
+        "evidence-d7e3abd0eb8363f80ca9",
+        "evidence-78d5b8e0a931da220977",
+        "evidence-88da940b863c5adaf805"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "情绪表达",
+        "宿舍关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_02",
+      "micro_role_id": "micro-1b360f1ca0de53bcfd7f",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "寻求共鸣",
+        "情感支持",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.010476190476190476,
+        "discussion": 0.002857142857142857,
+        "emotional_vent": 0.929047619047619,
+        "experience_share_or_ask": 0.009523809523809525,
+        "help_request": 0.025714285714285714,
+        "information_request": 0.002857142857142857,
+        "information_share": 0.011904761904761904,
+        "other": 0.004761904761904762,
+        "question": 0.002857142857142857
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-7fe6dd56374b44d8de20",
+        "evidence-49756e33e119ff88b431",
+        "evidence-7a2edbf6b55b30479df6",
+        "evidence-5c9ae06e62918ed35bd4",
+        "evidence-fd3a49a8fd27ccf940be",
+        "evidence-c904e27575e119c90311",
+        "evidence-0bf44511c65b68bcb2bc",
+        "evidence-784b784dc26d46e541a4",
+        "evidence-b154114ac8fd9a7b71c0",
+        "evidence-5658cc15820964bd4861",
+        "evidence-843bbe1f8583a98be852",
+        "evidence-03cc52ffe0d2c1ae61c4"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "人际关系",
+        "宿舍关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_03",
+      "micro_role_id": "micro-628468515ad7c0459f5b",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "情感支持",
+        "被理解",
+        "寻求共鸣",
+        "共鸣"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.018095238095238095,
+        "discussion": 0.0014285714285714286,
+        "emotional_vent": 0.9257142857142857,
+        "experience_share_or_ask": 0.005238095238095238,
+        "help_request": 0.024285714285714285,
+        "information_request": 0.004761904761904762,
+        "information_share": 0.011904761904761904,
+        "other": 0.005238095238095238,
+        "question": 0.0033333333333333335
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-3803efbfbe9719282bf0",
+        "evidence-c064fb0cf1462c0348de",
+        "evidence-c8f8d53a9f288bd167ba",
+        "evidence-4847a291fd52a24fe036",
+        "evidence-ea872d3622c2bf440ac6",
+        "evidence-4550da3ffed0171a9f84",
+        "evidence-e5af0ab78ab3c4693ca1",
+        "evidence-4f55ec929f492c541a0c",
+        "evidence-1b1145557c6a58bd2e84",
+        "evidence-4d3d01e7466de0c78f7e",
+        "evidence-fbceb56225e23672bf8c",
+        "evidence-a65257949b4ba31b290a"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "情绪表达",
+        "宿舍关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_04",
+      "micro_role_id": "micro-8201e273f468943b8217",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "寻求共鸣",
+        "情感支持",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.011428571428571429,
+        "discussion": 0.0038095238095238095,
+        "emotional_vent": 0.9266666666666666,
+        "experience_share_or_ask": 0.008095238095238095,
+        "help_request": 0.024285714285714285,
+        "information_request": 0.004761904761904762,
+        "information_share": 0.011904761904761904,
+        "other": 0.005714285714285714,
+        "question": 0.0033333333333333335
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-c14f037c7fbb5392aa1f",
+        "evidence-9b14f0ca7eb245a06a92",
+        "evidence-4e52a10343a48749d9e9",
+        "evidence-900f5830b1666d1c50e9",
+        "evidence-7370ef7b90171bf925bc",
+        "evidence-2a9b5e652f12d310b6ff",
+        "evidence-02bc37eed25bdcc38ad2",
+        "evidence-6b755ff0825200ce6118",
+        "evidence-5c6fad65c96d5e92ffed",
+        "evidence-18293eaa825bc314d8cc",
+        "evidence-2ecc6310dec5934a73ee",
+        "evidence-bf4336897d45b4240026"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "情绪表达",
+        "宿舍关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_05",
+      "micro_role_id": "micro-501581c9785af953aa58",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "寻求共鸣",
+        "情感支持",
+        "共鸣"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.017142857142857144,
+        "discussion": 0.002857142857142857,
+        "emotional_vent": 0.9257142857142857,
+        "experience_share_or_ask": 0.006190476190476191,
+        "help_request": 0.024761904761904763,
+        "information_request": 0.006190476190476191,
+        "information_share": 0.011904761904761904,
+        "other": 0.002380952380952381,
+        "question": 0.002857142857142857
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-82cf74057257d3265e8b",
+        "evidence-08d973f413e8f8ed9407",
+        "evidence-58d664e1df4fe0d2fd87",
+        "evidence-1e0f16e51ba9824766c5",
+        "evidence-40d1b8ca403b168d90d6",
+        "evidence-ca0030b6dd04bd9ed6e5",
+        "evidence-a4abf2b780f23fc0e4ac",
+        "evidence-ea9f2974be5fcce5c3c4",
+        "evidence-6274482edd4f2efec5d0",
+        "evidence-669b6da1a18a2b55049b",
+        "evidence-aa58ce9087bc55fa55ad",
+        "evidence-e1c75150ee942487e3a1"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "情绪",
+        "自我反思",
+        "宿舍关系",
+        "情绪表达"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_06",
+      "micro_role_id": "micro-84f26a6245bd28355a83",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "情感支持",
+        "寻求共鸣",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.01380952380952381,
+        "discussion": 0.005238095238095238,
+        "emotional_vent": 0.9214285714285714,
+        "experience_share_or_ask": 0.008095238095238095,
+        "help_request": 0.024285714285714285,
+        "information_request": 0.005238095238095238,
+        "information_share": 0.011904761904761904,
+        "other": 0.006666666666666667,
+        "question": 0.0033333333333333335
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-cb4541459884b2f9501a",
+        "evidence-9a106b2cddfdd2d7855e",
+        "evidence-6d07a5367d806b96d808",
+        "evidence-cfa4f2cb637f2c9a4ac6",
+        "evidence-b87e0d724029ab81e9e0",
+        "evidence-678b71e40cad1c99e931",
+        "evidence-470d60431d477dc4918a",
+        "evidence-2feb9b2cdc36248bf96b",
+        "evidence-8ee6c9f904995f8b11a9",
+        "evidence-d6888af50fd930d4ecea",
+        "evidence-53495933c9e71199e674",
+        "evidence-df6075174b455e1560fc"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "情绪",
+        "自我反思",
+        "宿舍关系",
+        "人际关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_07",
+      "micro_role_id": "micro-a88065062e1a9441bc6a",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "情感支持",
+        "寻求共鸣",
+        "共鸣"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.01380952380952381,
+        "discussion": 0.004761904761904762,
+        "emotional_vent": 0.9252380952380952,
+        "experience_share_or_ask": 0.006190476190476191,
+        "help_request": 0.024761904761904763,
+        "information_request": 0.004285714285714286,
+        "information_share": 0.011904761904761904,
+        "other": 0.007142857142857143,
+        "question": 0.0019047619047619048
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-565798d3e807a59d7e0e",
+        "evidence-7bfba6cbeaf147d54ed2",
+        "evidence-311d7278a292b86762b7",
+        "evidence-ff9ca24b1a018eea1216",
+        "evidence-0ddcf75c4f95f45bdf27",
+        "evidence-763d052ad25723999594",
+        "evidence-a06541be58241c7bfd83",
+        "evidence-f0c8fafd3b8da753be84",
+        "evidence-d72f0651e2078f886e33",
+        "evidence-a48a3b314d51cd54a20c",
+        "evidence-0cd02ba6a244c5169193",
+        "evidence-7a61059f6ad240bad2a8"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "宿舍关系",
+        "人际关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_08",
+      "micro_role_id": "micro-6ec6c7a536953fceff66",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "情感支持",
+        "被理解",
+        "寻求共鸣",
+        "共鸣"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.018095238095238095,
+        "discussion": 0.0033333333333333335,
+        "emotional_vent": 0.919047619047619,
+        "experience_share_or_ask": 0.007142857142857143,
+        "help_request": 0.024761904761904763,
+        "information_request": 0.005714285714285714,
+        "information_share": 0.012380952380952381,
+        "other": 0.006190476190476191,
+        "question": 0.0033333333333333335
+      },
+      "reviewed_episode_count": 2100,
+      "reviewed_evidence_pool": [
+        "evidence-57e6eb350ff6ae05bd53",
+        "evidence-2f73ae9b6ec1bb66e424",
+        "evidence-c6aede4ae3907ce2d1f0",
+        "evidence-86412338eb8f67eda9fa",
+        "evidence-ae475487157c457047ee",
+        "evidence-beb1d68124283f4a4485",
+        "evidence-4473ce3f13cb4ce75533",
+        "evidence-6cd4fc75786045f28208",
+        "evidence-2904c0d9d5a6590cd1d5",
+        "evidence-2e9218598e6b7d5ad3cb",
+        "evidence-5e9c8b1b4151b35a7b25",
+        "evidence-f80d9388edf45513965b"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "情绪表达",
+        "宿舍关系"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_09",
+      "micro_role_id": "micro-bee84e554afb2179f9b5",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "情感支持",
+        "寻求共鸣",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.01953311100524059,
+        "discussion": 0.0033349213911386373,
+        "emotional_vent": 0.924726060028585,
+        "experience_share_or_ask": 0.005717008099094807,
+        "help_request": 0.02429728442115293,
+        "information_request": 0.0023820867079561697,
+        "information_share": 0.012386850881372083,
+        "other": 0.004764173415912339,
+        "question": 0.0028585040495474035
+      },
+      "reviewed_episode_count": 2099,
+      "reviewed_evidence_pool": [
+        "evidence-d082ef45344b2da208fe",
+        "evidence-9ea8fa5c05b84450a496",
+        "evidence-eee10977e515fcc18531",
+        "evidence-69a4a47be157b30962a3",
+        "evidence-f188ec1cd137133e96df",
+        "evidence-8ff013c07bfd01fde32f",
+        "evidence-a5bd46b1ad8cec93716c",
+        "evidence-c04531f615992ace268a",
+        "evidence-309e946afc21b81ec94c",
+        "evidence-04a1ff47bbe2f50c2d09",
+        "evidence-f74a314dfac71a4aa924",
+        "evidence-438216c2cb990a28d4ee"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "情绪",
+        "自我反思",
+        "宿舍关系",
+        "情绪表达"
+      ]
+    },
+    {
+      "micro_interaction_role": "情绪承接者_emotional_expression_10",
+      "micro_role_id": "micro-daeaa9ed1948dd425fea",
+      "need_portfolio": [
+        "情绪宣泄",
+        "情感宣泄",
+        "被理解",
+        "情感支持",
+        "寻求共鸣",
+        "寻求安慰"
+      ],
+      "primary_macro_role": "archetype-13",
+      "reply_function_distribution": {
+        "complaint": 0.022391615054787994,
+        "discussion": 0.004287756074321105,
+        "emotional_vent": 0.9161505478799429,
+        "experience_share_or_ask": 0.008099094807050978,
+        "help_request": 0.0252501191043354,
+        "information_request": 0.003811338732729871,
+        "information_share": 0.012386850881372083,
+        "other": 0.004287756074321105,
+        "question": 0.0033349213911386373
+      },
+      "reviewed_episode_count": 2099,
+      "reviewed_evidence_pool": [
+        "evidence-3e612d13f3eb5ccdc0a4",
+        "evidence-2495deabd899eb0e15bd",
+        "evidence-c5090918bf56ea5967c9",
+        "evidence-3fb55eb54146c64718ca",
+        "evidence-96b8e0d6f92c9c724a86",
+        "evidence-c83b9574cea3a132251c",
+        "evidence-6daf8572955c8a7e9c1f",
+        "evidence-db5eedd2fa0744ae410e",
+        "evidence-4fc46ed6abd81429d508",
+        "evidence-f83d650c19d1d9bad65d",
+        "evidence-0bb761db1a68ed8f5991",
+        "evidence-79756759493bb4f11d80"
+      ],
+      "topic_portfolio": [
+        "情绪宣泄",
+        "学业压力",
+        "自我反思",
+        "情绪",
+        "宿舍关系",
+        "情绪表达"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_01",
+      "micro_role_id": "micro-36def9d92a4408a054b3",
+      "need_portfolio": [
+        "表达观点",
+        "寻求认同",
+        "表达不满",
+        "引发讨论",
+        "表达困惑",
+        "理解现象"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.20243902439024392,
+        "discussion": 0.6121951219512195,
+        "emotional_vent": 0.05731707317073171,
+        "information_share": 0.08292682926829269,
+        "other": 0.006097560975609756,
+        "question": 0.03902439024390244
+      },
+      "reviewed_episode_count": 820,
+      "reviewed_evidence_pool": [
+        "evidence-ff8f02ea68eb36bda2cf",
+        "evidence-b63b47e5ad5e8fecd136",
+        "evidence-b1f79cecd843d2916327",
+        "evidence-7ae445efe2cb616fb43d",
+        "evidence-a770544e158cc1622240",
+        "evidence-6529d06d71584b190349",
+        "evidence-b5a82a691514061d6819",
+        "evidence-aa16210f89041224ecc0",
+        "evidence-77ee0dae01c1c06e373b",
+        "evidence-150cfacf9b58b656be15",
+        "evidence-27fcc7e100bf7c7f6137",
+        "evidence-06f3a5bcdecad24f690d"
+      ],
+      "topic_portfolio": [
+        "公共讨论",
+        "求职",
+        "防骗",
+        "网络舆论",
+        "高校形象",
+        "评论区乱象"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_02",
+      "micro_role_id": "micro-b5a1756889320e4b710b",
+      "need_portfolio": [
+        "表达观点",
+        "表达不满",
+        "寻求认同",
+        "表达困惑",
+        "分享警示",
+        "引发讨论"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.20609756097560974,
+        "discussion": 0.5914634146341463,
+        "emotional_vent": 0.05731707317073171,
+        "information_share": 0.09634146341463415,
+        "other": 0.006097560975609756,
+        "question": 0.042682926829268296
+      },
+      "reviewed_episode_count": 820,
+      "reviewed_evidence_pool": [
+        "evidence-a940450eeda20dc70743",
+        "evidence-0c1a8300dc8d9500488f",
+        "evidence-790baa5b6d341b9b1499",
+        "evidence-45b53b5019e500d57be6",
+        "evidence-32848c98f361d57c61c8",
+        "evidence-fc5e26c288afb6d75fd5",
+        "evidence-fd4eb07a93b320ae213a",
+        "evidence-aadb0b29895c5083dc5f",
+        "evidence-cacdac0977e22c48e94c",
+        "evidence-2ca097a21730eb2a5118",
+        "evidence-8670d2bfeaa0b8ae521e",
+        "evidence-e2b9314dd3a3a0a045ae"
+      ],
+      "topic_portfolio": [
+        "求职",
+        "防骗",
+        "网络舆论",
+        "高校形象",
+        "评论区乱象",
+        "法学名校"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_03",
+      "micro_role_id": "micro-3057686ebc9b8abdaccc",
+      "need_portfolio": [
+        "表达观点",
+        "表达不满",
+        "寻求认同",
+        "引发讨论",
+        "表达困惑",
+        "分享警示"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.21367521367521367,
+        "discussion": 0.6019536019536019,
+        "emotional_vent": 0.052503052503052504,
+        "information_share": 0.0927960927960928,
+        "other": 0.006105006105006105,
+        "question": 0.03296703296703297
+      },
+      "reviewed_episode_count": 819,
+      "reviewed_evidence_pool": [
+        "evidence-7d4524356a9fa465dc0d",
+        "evidence-3998a72e623c73f05755",
+        "evidence-4d918d2686c34d290a31",
+        "evidence-bdb976f7adc85d0b09a1",
+        "evidence-825260fa712456664326",
+        "evidence-0c576f75b9d7d44804f0",
+        "evidence-89a30ca0a1dcbc7506d1",
+        "evidence-e2e4d22ed3893f87e93c",
+        "evidence-dd2d1690ddacc0453b0f",
+        "evidence-379bf82c5b5fadf35eda",
+        "evidence-61e4cee4b87edad2222e",
+        "evidence-459e41ac9f38f4260d51"
+      ],
+      "topic_portfolio": [
+        "求职",
+        "防骗",
+        "网络舆论",
+        "公共讨论",
+        "高校形象",
+        "评论区乱象"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_04",
+      "micro_role_id": "micro-035190f042e7a87aaca6",
+      "need_portfolio": [
+        "表达观点",
+        "表达不满",
+        "寻求认同",
+        "引发讨论",
+        "表达困惑",
+        "分享警示"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.199023199023199,
+        "discussion": 0.6068376068376068,
+        "emotional_vent": 0.052503052503052504,
+        "information_share": 0.09645909645909646,
+        "other": 0.006105006105006105,
+        "question": 0.03907203907203907
+      },
+      "reviewed_episode_count": 819,
+      "reviewed_evidence_pool": [
+        "evidence-50c62c3653a10f07dcb5",
+        "evidence-cdf54b2872e90c27e0d1",
+        "evidence-4807e4fccabaaeab36d2",
+        "evidence-6e93800b07233d7cff2d",
+        "evidence-bda9f19e2600dd29ecae",
+        "evidence-9c84cbba67bae83ffd96",
+        "evidence-06ee3b2cdf80a5ad4053",
+        "evidence-bf6b4b6d7fd6077bf476",
+        "evidence-f111fc869d61831571b8",
+        "evidence-75ed21635c29ce9aa1da",
+        "evidence-3a36b7d9c267f5d8172c",
+        "evidence-eab5eeab0efdce81c55a"
+      ],
+      "topic_portfolio": [
+        "求职",
+        "防骗",
+        "公共讨论",
+        "网络舆论",
+        "高校形象",
+        "评论区乱象"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_05",
+      "micro_role_id": "micro-c61fa4e12cd7793465ab",
+      "need_portfolio": [
+        "表达观点",
+        "表达不满",
+        "寻求认同",
+        "表达困惑",
+        "分享警示",
+        "引发讨论"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.19047619047619047,
+        "discussion": 0.6007326007326007,
+        "emotional_vent": 0.06349206349206349,
+        "information_share": 0.09523809523809523,
+        "other": 0.007326007326007326,
+        "question": 0.042735042735042736
+      },
+      "reviewed_episode_count": 819,
+      "reviewed_evidence_pool": [
+        "evidence-81b608761d29aed1a056",
+        "evidence-4de00429bd5ebb77574a",
+        "evidence-b22c718c664b848c67cb",
+        "evidence-f8e0005e2994b7b3248c",
+        "evidence-2d8f8757969050bcedc2",
+        "evidence-5075081df1a80192ab4d",
+        "evidence-89e0dcf1a1d7ba26a292",
+        "evidence-776baa89c4e5ac1401ee",
+        "evidence-6a81ef233aac0a3c5a40",
+        "evidence-3fd13529e036a77eb216",
+        "evidence-d0cffac9978b37892f2e",
+        "evidence-8af5304c3b691843f43e"
+      ],
+      "topic_portfolio": [
+        "求职",
+        "防骗",
+        "公共讨论",
+        "网络舆论",
+        "高校形象",
+        "评论区乱象"
+      ]
+    },
+    {
+      "micro_interaction_role": "公共规范讨论者_discussion_06",
+      "micro_role_id": "micro-a577581fbecae0dd99cb",
+      "need_portfolio": [
+        "表达观点",
+        "寻求认同",
+        "表达不满",
+        "分享警示",
+        "表达困惑",
+        "理解现象"
+      ],
+      "primary_macro_role": "archetype-14",
+      "reply_function_distribution": {
+        "complaint": 0.19536019536019536,
+        "discussion": 0.5921855921855922,
+        "emotional_vent": 0.05860805860805861,
+        "information_share": 0.10500610500610501,
+        "other": 0.007326007326007326,
+        "question": 0.04151404151404151
+      },
+      "reviewed_episode_count": 819,
+      "reviewed_evidence_pool": [
+        "evidence-afb1afa6763f1f521be0",
+        "evidence-019ac372d980088176db",
+        "evidence-bd37ac2db5bc99c5b866",
+        "evidence-baccb8f90e642c069ae1",
+        "evidence-1e2d73571d5fa174489b",
+        "evidence-ad2a81302f95286f9e4a",
+        "evidence-739ac965b298a2aa3370",
+        "evidence-b05ac447550683380fea",
+        "evidence-9e82a6bdad8a9ed3fe4f",
+        "evidence-3a4922b3c2d82b31d553",
+        "evidence-8b5b7ab2c2b5d5d58716",
+        "evidence-860e250e8e8e408f8d4c"
+      ],
+      "topic_portfolio": [
+        "求职",
+        "防骗",
+        "公共讨论",
+        "网络舆论",
+        "高校形象",
+        "评论区乱象"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_01",
+      "micro_role_id": "micro-2c816c9243eff51db263",
+      "need_portfolio": [
+        "分享体验",
+        "经验分享",
+        "信息获取",
+        "分享",
+        "寻求共鸣",
+        "归属感"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.00983284169124877,
+        "discussion": 0.09931170108161258,
+        "emotional_expression": 0.0058997050147492625,
+        "emotional_vent": 0.07079646017699115,
+        "experience_share_or_ask": 0.5978367748279253,
+        "information_request": 0.024582104228121928,
+        "information_share": 0.09537856440511308,
+        "other": 0.038348082595870206,
+        "question": 0.05801376597836775
+      },
+      "reviewed_episode_count": 1017,
+      "reviewed_evidence_pool": [
+        "evidence-8c0b2ad8d5aac5ff6ebe",
+        "evidence-d3a1cedba921376518f5",
+        "evidence-721c03cad03cdf413e1c",
+        "evidence-78f98e0100c2c22fd011",
+        "evidence-122b5a641e766d6c3f73",
+        "evidence-179e57a5ccbe8bf9df6c",
+        "evidence-d8d15fca0e6e3e886886",
+        "evidence-1876a61253c3d159beb6",
+        "evidence-4295382aef481bfcf8dd",
+        "evidence-d03d242917f6395f1d27",
+        "evidence-aca72d830220117d3b96",
+        "evidence-28ba8f9bedbd6f2855bc"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "教师评价",
+        "美食",
+        "食堂",
+        "课程"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_02",
+      "micro_role_id": "micro-bbe338497eff996efef7",
+      "need_portfolio": [
+        "分享体验",
+        "经验分享",
+        "信息获取",
+        "分享",
+        "寻求共鸣",
+        "情感表达"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.00688298918387414,
+        "discussion": 0.0943952802359882,
+        "emotional_expression": 0.003933136676499509,
+        "emotional_vent": 0.07079646017699115,
+        "experience_share_or_ask": 0.5880039331366765,
+        "information_request": 0.024582104228121928,
+        "information_share": 0.1111111111111111,
+        "other": 0.04424778761061947,
+        "question": 0.05604719764011799
+      },
+      "reviewed_episode_count": 1017,
+      "reviewed_evidence_pool": [
+        "evidence-e5a706dea4c4e8374fc5",
+        "evidence-a3c72dabf12293573c4f",
+        "evidence-dc45dcc323e229840f3b",
+        "evidence-0f3da7cf9407f0efbc2f",
+        "evidence-6d2e062fdbc68bec6a0b",
+        "evidence-556cef124ea1a1c3e5a3",
+        "evidence-a4d0234a61aec0023ba3",
+        "evidence-78d8ac7ddb9134fda360",
+        "evidence-a2456108fbf54c272994",
+        "evidence-357a600bfd2d7d55dfb6",
+        "evidence-493448da9eb86b7d2d67",
+        "evidence-fd26b78ee86130f2aa9e"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "教师评价",
+        "食堂",
+        "课程",
+        "美食"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_03",
+      "micro_role_id": "micro-ad732427df7ca4899f24",
+      "need_portfolio": [
+        "分享体验",
+        "信息获取",
+        "经验分享",
+        "分享",
+        "寻求共鸣",
+        "信息分享"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.00688298918387414,
+        "discussion": 0.0943952802359882,
+        "emotional_expression": 0.0029498525073746312,
+        "emotional_vent": 0.06784660766961652,
+        "experience_share_or_ask": 0.5939036381514258,
+        "information_request": 0.02064896755162242,
+        "information_share": 0.09734513274336283,
+        "other": 0.046214355948869225,
+        "question": 0.06981317600786627
+      },
+      "reviewed_episode_count": 1017,
+      "reviewed_evidence_pool": [
+        "evidence-468a386d883ab595553f",
+        "evidence-091d393333bd45c164fb",
+        "evidence-ebc0b20ac95536b3afad",
+        "evidence-d6261f1215ca11c56269",
+        "evidence-5322c291a347789675cc",
+        "evidence-c48d4b5aebb33c45ec97",
+        "evidence-04bf4ea6aa519d787e2c",
+        "evidence-31a71be8a45cffa426f3",
+        "evidence-6be1503878a7bf47c09a",
+        "evidence-059c1e829e0f99e43b69",
+        "evidence-c0094d21215e37a78c4a",
+        "evidence-dd29e65e27d2c5d67f8d"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "教师评价",
+        "课程",
+        "课程评价",
+        "课程体验"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_04",
+      "micro_role_id": "micro-1808edd7355a6b52d5be",
+      "need_portfolio": [
+        "分享体验",
+        "分享",
+        "信息获取",
+        "经验分享",
+        "寻求共鸣",
+        "信息分享"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.010816125860373648,
+        "discussion": 0.08652900688298919,
+        "emotional_expression": 0.0019665683382497543,
+        "emotional_vent": 0.06489675516224189,
+        "experience_share_or_ask": 0.5988200589970502,
+        "information_request": 0.012782694198623401,
+        "information_share": 0.10521140609636184,
+        "other": 0.05014749262536873,
+        "question": 0.0688298918387414
+      },
+      "reviewed_episode_count": 1017,
+      "reviewed_evidence_pool": [
+        "evidence-d855f5515f10b6aa269e",
+        "evidence-06b69f58e2e310462b7a",
+        "evidence-d7f7f042048ddb6bc084",
+        "evidence-6db27752caf00bd2f0c3",
+        "evidence-6b4b6530ae5266daa4f7",
+        "evidence-5ecca921e4e9b00905ac",
+        "evidence-f72b15e553a0133cb545",
+        "evidence-2ed1645abe312f1c232d",
+        "evidence-6921d78a6a9e8596956c",
+        "evidence-a02eb054ba830b298896",
+        "evidence-a8f4fe48439898e7adb0",
+        "evidence-39a3ec2c23858b378f8b"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "食堂",
+        "课程",
+        "餐饮",
+        "教师评价"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_05",
+      "micro_role_id": "micro-38d67a45d5611b7df7c0",
+      "need_portfolio": [
+        "分享体验",
+        "分享",
+        "经验分享",
+        "信息获取",
+        "社交互动",
+        "寻求共鸣"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.00688298918387414,
+        "discussion": 0.09537856440511308,
+        "emotional_expression": 0.0019665683382497543,
+        "emotional_vent": 0.07374631268436578,
+        "experience_share_or_ask": 0.5703048180924287,
+        "information_request": 0.018682399213372666,
+        "information_share": 0.10226155358898721,
+        "other": 0.05506391347099312,
+        "question": 0.07571288102261553
+      },
+      "reviewed_episode_count": 1017,
+      "reviewed_evidence_pool": [
+        "evidence-7ce19d7676289837eb22",
+        "evidence-ba43b45e514581a52b3f",
+        "evidence-a10afe79bf798243ac98",
+        "evidence-355a90cdea410d100b71",
+        "evidence-4536b1e51ed1c6d5d29f",
+        "evidence-2481530906db3bcf71ae",
+        "evidence-d0f72691d98affad1e3e",
+        "evidence-3a464c4f7bd994f7fcdb",
+        "evidence-06fa184893bd9420bf14",
+        "evidence-41fb72d1441c4e915dc0",
+        "evidence-c2f80c01cbee08423962",
+        "evidence-4f708ecdaf8f4837a12d"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "教师评价",
+        "课程",
+        "美食",
+        "课程评价"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_06",
+      "micro_role_id": "micro-4072358ddcf6b55b0184",
+      "need_portfolio": [
+        "分享体验",
+        "信息获取",
+        "分享",
+        "经验分享",
+        "归属感",
+        "信息分享"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.008858267716535433,
+        "discussion": 0.10236220472440945,
+        "emotional_expression": 0.002952755905511811,
+        "emotional_vent": 0.06791338582677166,
+        "experience_share_or_ask": 0.5807086614173228,
+        "information_request": 0.017716535433070866,
+        "information_share": 0.1062992125984252,
+        "other": 0.04330708661417323,
+        "question": 0.06988188976377953
+      },
+      "reviewed_episode_count": 1016,
+      "reviewed_evidence_pool": [
+        "evidence-aaf7575cd342d093bed6",
+        "evidence-15eb153dd50d78427fa3",
+        "evidence-c17a04893176da0a3b9c",
+        "evidence-f6150d63ee3e1317a8da",
+        "evidence-1ec3d6ad6c1e422f5e3d",
+        "evidence-872296f60883064f385c",
+        "evidence-0a6419670f21f194b001",
+        "evidence-5803a5971a3415d0e445",
+        "evidence-c41b5531385667d2b613",
+        "evidence-904c530a9fc5900d4c7b",
+        "evidence-f5401948fc26661b74c7",
+        "evidence-58b1c3f138a5d473a467"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "课程",
+        "美食",
+        "教师评价",
+        "食堂"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_07",
+      "micro_role_id": "micro-1a0018db137a687fcc47",
+      "need_portfolio": [
+        "分享体验",
+        "信息获取",
+        "经验分享",
+        "分享",
+        "寻求共鸣",
+        "社交互动"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.008858267716535433,
+        "discussion": 0.09940944881889764,
+        "emotional_expression": 0.002952755905511811,
+        "emotional_vent": 0.06988188976377953,
+        "experience_share_or_ask": 0.5856299212598425,
+        "information_request": 0.02066929133858268,
+        "information_share": 0.10728346456692914,
+        "other": 0.045275590551181105,
+        "question": 0.060039370078740155
+      },
+      "reviewed_episode_count": 1016,
+      "reviewed_evidence_pool": [
+        "evidence-c8489972b286e216fbd0",
+        "evidence-1a8224692586f3bb0dc8",
+        "evidence-3ccf55f56fc343862e2f",
+        "evidence-b068ea8d09b626c3a7b2",
+        "evidence-c3ff06eeeec0a19aa97f",
+        "evidence-e62f7588a3bbb7cf8dc4",
+        "evidence-31364b268c1c667e40ee",
+        "evidence-ae687576601b446a3d1b",
+        "evidence-f7e4eff4d5f2b8a33843",
+        "evidence-d98fb98388e629e644ca",
+        "evidence-d15bc2a6194ed47ac840",
+        "evidence-fd99d523a7963cc1b1fe"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "课程",
+        "教师评价",
+        "食堂",
+        "餐饮"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_08",
+      "micro_role_id": "micro-4f08242134a7b241e28d",
+      "need_portfolio": [
+        "分享体验",
+        "信息获取",
+        "分享",
+        "经验分享",
+        "寻求共鸣",
+        "信息分享"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.000984251968503937,
+        "discussion": 0.09547244094488189,
+        "emotional_expression": 0.001968503937007874,
+        "emotional_vent": 0.06791338582677166,
+        "experience_share_or_ask": 0.5905511811023622,
+        "information_request": 0.024606299212598427,
+        "information_share": 0.11909448818897637,
+        "other": 0.0344488188976378,
+        "question": 0.06496062992125984
+      },
+      "reviewed_episode_count": 1016,
+      "reviewed_evidence_pool": [
+        "evidence-1ed15546563e631be539",
+        "evidence-bbad5210c956dfda55d7",
+        "evidence-358dad915badf5cbafb2",
+        "evidence-49bb3e09aafb6f4bd522",
+        "evidence-7f7b73914860e0c122c4",
+        "evidence-84a389d9ced0b661d8cf",
+        "evidence-6f0e0925694db863e7b4",
+        "evidence-8eff6260e54bf8eac67b",
+        "evidence-1e50cc69f0325dbda8ae",
+        "evidence-091ea1a1f8afb71a445c",
+        "evidence-317ae5aff6aded94e310",
+        "evidence-f63bab13316bf0c36b2d"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "课程",
+        "美食",
+        "教师评价",
+        "课程评价"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_09",
+      "micro_role_id": "micro-252f63511e6391145ecf",
+      "need_portfolio": [
+        "分享体验",
+        "信息获取",
+        "经验分享",
+        "分享",
+        "社交互动",
+        "寻求共鸣"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.008858267716535433,
+        "discussion": 0.09547244094488189,
+        "emotional_expression": 0.003937007874015748,
+        "emotional_vent": 0.06791338582677166,
+        "experience_share_or_ask": 0.5826771653543307,
+        "information_request": 0.017716535433070866,
+        "information_share": 0.10826771653543307,
+        "other": 0.04625984251968504,
+        "question": 0.0688976377952756
+      },
+      "reviewed_episode_count": 1016,
+      "reviewed_evidence_pool": [
+        "evidence-26bd79ca7c784877b218",
+        "evidence-628de48a54e8d92e2a48",
+        "evidence-6bb00fab3b3ad579bd1a",
+        "evidence-d0fedeb0ad2640274f79",
+        "evidence-592f2bb759f645d15191",
+        "evidence-76a1aa7a5c96903e74d9",
+        "evidence-a3906db7e33d859345f9",
+        "evidence-beaa977de47a30b8c38a",
+        "evidence-a36a89a32193edf01228",
+        "evidence-45da886aae23d6b99c71",
+        "evidence-5578e25b50a985d3494e",
+        "evidence-291230a27768bef1550d"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "课程",
+        "教师评价",
+        "美食",
+        "课程评价"
+      ]
+    },
+    {
+      "micro_interaction_role": "社区体验交流者_information_share_10",
+      "micro_role_id": "micro-034f68103b0802ea4ea0",
+      "need_portfolio": [
+        "分享体验",
+        "分享",
+        "信息获取",
+        "经验分享",
+        "寻求共鸣",
+        "信息分享"
+      ],
+      "primary_macro_role": "archetype-15",
+      "reply_function_distribution": {
+        "complaint": 0.003937007874015748,
+        "discussion": 0.10728346456692914,
+        "emotional_expression": 0.005905511811023622,
+        "emotional_vent": 0.07086614173228346,
+        "experience_share_or_ask": 0.5816929133858267,
+        "information_request": 0.021653543307086614,
+        "information_share": 0.11122047244094488,
+        "other": 0.03346456692913386,
+        "question": 0.0639763779527559
+      },
+      "reviewed_episode_count": 1016,
+      "reviewed_evidence_pool": [
+        "evidence-cec69b1ab9a4a41e0ec5",
+        "evidence-fc6cd2bb8186e6fc89fe",
+        "evidence-a848e5dd50f93a5f6dc0",
+        "evidence-7daf71132a3c87700f83",
+        "evidence-dc1d0d8d529fae9dd888",
+        "evidence-60f7ca1be3af7013a4c4",
+        "evidence-f0c1cad2260186e2908a",
+        "evidence-861210254e2e1758d675",
+        "evidence-44e57abe1e8bf6f457d0",
+        "evidence-e181a163be15b6a60a2e",
+        "evidence-3c44ceaa45d6210839cb",
+        "evidence-916b767d89a934dbaa61"
+      ],
+      "topic_portfolio": [
+        "校园生活",
+        "成绩分享",
+        "教师评价",
+        "课程",
+        "美食",
+        "课程体验"
+      ]
+    },
+    {
+      "micro_interaction_role": "语境不明表演者_other_01",
+      "micro_role_id": "micro-5a52c0dec8aff9f09776",
+      "need_portfolio": [
+        "获得回应",
+        "表达",
+        "情绪宣泄",
+        "自我表达",
+        "娱乐",
+        "幽默"
+      ],
+      "primary_macro_role": "archetype-16",
+      "reply_function_distribution": {
+        "complaint": 0.006321112515802781,
+        "discussion": 0.09355246523388117,
+        "emotional_vent": 0.18710493046776233,
+        "help_request": 0.025284450063211124,
+        "information_request": 0.0012642225031605564,
+        "other": 0.6333754740834386,
+        "question": 0.05309734513274336
+      },
+      "reviewed_episode_count": 791,
+      "reviewed_evidence_pool": [
+        "evidence-d9b6b3bec34105ed4574",
+        "evidence-f2ef2028140e77e35bba",
+        "evidence-72fd2b09fae3db3a3db2",
+        "evidence-4e3d6e7fb2cfd1016c65",
+        "evidence-d1fa6609df4a914db122",
+        "evidence-21664eb47828dd4b46cf",
+        "evidence-f29814e63f71a6299c8a",
+        "evidence-f9363653cfb93d6a32a6",
+        "evidence-a490107cdfebb8ce5150",
+        "evidence-9e4ea63cbda120e968ae",
+        "evidence-86f72e2f5d6371b5c81f",
+        "evidence-8d3b07d21b72bf639c9b"
+      ],
+      "topic_portfolio": [
+        "玩梗",
+        "语境不明",
+        "情绪表达",
+        "校园生活",
+        "调侃",
+        "情感表达"
+      ]
+    },
+    {
+      "micro_interaction_role": "语境不明表演者_other_02",
+      "micro_role_id": "micro-76eb5f0dccbef378ec12",
+      "need_portfolio": [
+        "获得回应",
+        "表达",
+        "情绪宣泄",
+        "娱乐",
+        "寻求认同",
+        "情感表达"
+      ],
+      "primary_macro_role": "archetype-16",
+      "reply_function_distribution": {
+        "complaint": 0.006321112515802781,
+        "discussion": 0.0897597977243995,
+        "emotional_vent": 0.18963337547408343,
+        "help_request": 0.02654867256637168,
+        "information_request": 0.0037926675094816687,
+        "other": 0.6359039190897599,
+        "question": 0.04804045512010114
+      },
+      "reviewed_episode_count": 791,
+      "reviewed_evidence_pool": [
+        "evidence-a256f483a774f6764e50",
+        "evidence-b3c3979b44292366b771",
+        "evidence-596f0298fb24e06cd792",
+        "evidence-419be54d837c224f978b",
+        "evidence-e7aac81bb09eaa342531",
+        "evidence-d1f9907fd782d3509c4d",
+        "evidence-86aafe7df93da2978202",
+        "evidence-79fa9ad4e44a63bd6f69",
+        "evidence-1cd52667b36c477979b8",
+        "evidence-1e87e1f2bacea3ec5b85",
+        "evidence-42874054cc12512abaa8",
+        "evidence-f657abf7a231eee9eede"
+      ],
+      "topic_portfolio": [
+        "玩梗",
+        "语境不明",
+        "调侃",
+        "情绪表达",
+        "校园生活",
+        "情感表达"
+      ]
+    },
+    {
+      "micro_interaction_role": "语境不明表演者_other_03",
+      "micro_role_id": "micro-1cf28d1d9fefca4c69e9",
+      "need_portfolio": [
+        "获得回应",
+        "表达",
+        "情绪宣泄",
+        "娱乐",
+        "社交互动",
+        "情感表达"
+      ],
+      "primary_macro_role": "archetype-16",
+      "reply_function_distribution": {
+        "complaint": 0.006329113924050633,
+        "discussion": 0.08227848101265822,
+        "emotional_vent": 0.1670886075949367,
+        "help_request": 0.027848101265822784,
+        "information_request": 0.0012658227848101266,
+        "information_share": 0.006329113924050633,
+        "other": 0.6544303797468355,
+        "question": 0.05443037974683544
+      },
+      "reviewed_episode_count": 790,
+      "reviewed_evidence_pool": [
+        "evidence-f288bfa881f06c036e52",
+        "evidence-5794a4edf3419b2a1293",
+        "evidence-af860097e92232e51890",
+        "evidence-4d879d78e9ab05317963",
+        "evidence-a27edddaa94659d8b001",
+        "evidence-d33815f00e1c0d9219f6",
+        "evidence-5a2665f56c3e334a48d2",
+        "evidence-e4ce53a90722a74c63a5",
+        "evidence-cb73610cb34ca2bc2108",
+        "evidence-f7f056ad07cd7c28e195",
+        "evidence-573d9db389831e8d9ca3",
+        "evidence-91f8a089eafc988302e4"
+      ],
+      "topic_portfolio": [
+        "玩梗",
+        "语境不明",
+        "调侃",
+        "情绪表达",
+        "情感表达",
+        "社区互动"
+      ]
+    },
+    {
+      "micro_interaction_role": "语境不明表演者_other_04",
+      "micro_role_id": "micro-b6854d97596fbdcbe03a",
+      "need_portfolio": [
+        "获得回应",
+        "表达",
+        "情绪宣泄",
+        "娱乐",
+        "情感表达",
+        "自我表达"
+      ],
+      "primary_macro_role": "archetype-16",
+      "reply_function_distribution": {
+        "complaint": 0.005063291139240506,
+        "discussion": 0.08607594936708861,
+        "emotional_vent": 0.1860759493670886,
+        "help_request": 0.026582278481012658,
+        "information_request": 0.0037974683544303796,
+        "other": 0.6417721518987342,
+        "question": 0.05063291139240506
+      },
+      "reviewed_episode_count": 790,
+      "reviewed_evidence_pool": [
+        "evidence-8bbdedc88c0f256de901",
+        "evidence-03c9b34b6701695bcfd7",
+        "evidence-f3c1e23d3d3453918f51",
+        "evidence-cfa89df81a0a43f082fd",
+        "evidence-ae8a16baba30163e0466",
+        "evidence-82a3da6707155b4d833d",
+        "evidence-4c4ca0af7c7638868f5b",
+        "evidence-5e6efcad2a0ab7eed375",
+        "evidence-a6e4ed405fbd91cfdc34",
+        "evidence-e73247c1aa651c0f810c",
+        "evidence-e653e7c888f0b05311b0",
+        "evidence-78223b6660dc5d97bb87"
+      ],
+      "topic_portfolio": [
+        "玩梗",
+        "语境不明",
+        "调侃",
+        "校园生活",
+        "情绪表达",
+        "社交"
+      ]
+    },
+    {
+      "micro_interaction_role": "身心健康求助者_help_request_01",
+      "micro_role_id": "micro-b31dc131385f80bc04d0",
+      "need_portfolio": [
+        "心理支持",
+        "情感支持",
+        "行动力提升",
+        "时间管理",
+        "求助资源",
+        "获得建议"
+      ],
+      "primary_macro_role": "archetype-17",
+      "reply_function_distribution": {
+        "discussion": 0.06623931623931624,
+        "emotional_vent": 0.05555555555555555,
+        "experience_share_or_ask": 0.11752136752136752,
+        "help_request": 0.5192307692307693,
+        "information_request": 0.06837606837606838,
+        "information_share": 0.01282051282051282,
+        "question": 0.16025641025641027
+      },
+      "reviewed_episode_count": 468,
+      "reviewed_evidence_pool": [
+        "evidence-b688d674e4319f80b089",
+        "evidence-d55cb9444832da3e6042",
+        "evidence-d2dc417b371f72eb5c2b",
+        "evidence-854fea049e82d116efc0",
+        "evidence-fbe0fbd7fc6f98e87d01",
+        "evidence-fa21e7378ded9bd0bbc0",
+        "evidence-79acd7e76301ea4174d9",
+        "evidence-f5c288a01fca485a7062",
+        "evidence-c0e158fd002b5e2f8530",
+        "evidence-cac6e642770113bafd18",
+        "evidence-681c468926c886fcc729",
+        "evidence-326feaf634e6fab59782"
+      ],
+      "topic_portfolio": [
+        "心理健康",
+        "健康",
+        "拖延",
+        "焦虑",
+        "学业困难",
+        "实习失败"
+      ]
+    },
+    {
+      "micro_interaction_role": "身心健康求助者_help_request_02",
+      "micro_role_id": "micro-4db74f5fa7973f93b6dd",
+      "need_portfolio": [
+        "心理支持",
+        "情感支持",
+        "行动力提升",
+        "时间管理",
+        "求助资源",
+        "获得建议"
+      ],
+      "primary_macro_role": "archetype-17",
+      "reply_function_distribution": {
+        "discussion": 0.06638115631691649,
+        "emotional_vent": 0.08137044967880086,
+        "experience_share_or_ask": 0.13062098501070663,
+        "help_request": 0.49464668094218417,
+        "information_request": 0.044967880085653104,
+        "information_share": 0.01284796573875803,
+        "question": 0.16916488222698073
+      },
+      "reviewed_episode_count": 467,
+      "reviewed_evidence_pool": [
+        "evidence-e5c07d0562769bc895bf",
+        "evidence-59afee677e504f6c894c",
+        "evidence-38ab53618698ec270b48",
+        "evidence-3487d4f1b29f74aa247e",
+        "evidence-ebd66fd84571e7937ede",
+        "evidence-6f95c10554913daa8fe4",
+        "evidence-c678db886d7ba3f74960",
+        "evidence-7a1a06db2b7cdb7f4736",
+        "evidence-cbab0efc9a2b55329103",
+        "evidence-f751a997760d5ba4eb3e",
+        "evidence-179f0f2c160a246433b8",
+        "evidence-16ded0e95219045f3bc0"
+      ],
+      "topic_portfolio": [
+        "心理健康",
+        "健康",
+        "拖延",
+        "焦虑",
+        "学业困难",
+        "实习失败"
+      ]
+    },
+    {
+      "micro_interaction_role": "身心健康求助者_help_request_03",
+      "micro_role_id": "micro-33362b81a8a749a8bb47",
+      "need_portfolio": [
+        "情感支持",
+        "心理支持",
+        "行动力提升",
+        "时间管理",
+        "求助资源",
+        "获得建议"
+      ],
+      "primary_macro_role": "archetype-17",
+      "reply_function_distribution": {
+        "discussion": 0.06423982869379015,
+        "emotional_vent": 0.07066381156316917,
+        "experience_share_or_ask": 0.1349036402569593,
+        "help_request": 0.5032119914346895,
+        "information_request": 0.044967880085653104,
+        "information_share": 0.01284796573875803,
+        "question": 0.16916488222698073
+      },
+      "reviewed_episode_count": 467,
+      "reviewed_evidence_pool": [
+        "evidence-dc310b9a95430cda6f76",
+        "evidence-b922ebeaca06a86b4464",
+        "evidence-4c3e449e1c75d85158cc",
+        "evidence-b33219eae6763472e128",
+        "evidence-973fa9b4a123767101b3",
+        "evidence-071a67c92b14582309d7",
+        "evidence-49fcdda298c0e2ae35bb",
+        "evidence-28c62e2b4682e8f124ce",
+        "evidence-1836c24ba5a69312e0a3",
+        "evidence-ac0d074a7ee5ae7e2c65",
+        "evidence-e904420fb2e7c1277c18",
+        "evidence-1cdfb597d05fb4eb64ee"
+      ],
+      "topic_portfolio": [
+        "心理健康",
+        "健康",
+        "拖延",
+        "焦虑",
+        "学业困难",
+        "实习失败"
+      ]
+    },
+    {
+      "micro_interaction_role": "身心健康求助者_help_request_04",
+      "micro_role_id": "micro-e464b57018deda64ebc4",
+      "need_portfolio": [
+        "心理支持",
+        "情感支持",
+        "行动力提升",
+        "时间管理",
+        "求助资源",
+        "获得建议"
+      ],
+      "primary_macro_role": "archetype-17",
+      "reply_function_distribution": {
+        "discussion": 0.06423982869379015,
+        "emotional_vent": 0.06638115631691649,
+        "experience_share_or_ask": 0.139186295503212,
+        "help_request": 0.5053533190578159,
+        "information_request": 0.05353319057815846,
+        "information_share": 0.01284796573875803,
+        "question": 0.15845824411134904
+      },
+      "reviewed_episode_count": 467,
+      "reviewed_evidence_pool": [
+        "evidence-f9aace2088c12355e6fa",
+        "evidence-726415574752e28ae1cf",
+        "evidence-c7649fdfcb15eeee3427",
+        "evidence-6a0be5bc8052f1b8ed44",
+        "evidence-7c24d808009c6c4976c6",
+        "evidence-d9e7976bf435df461a37",
+        "evidence-6fdc4f0c921fdf6a32dc",
+        "evidence-00b4a7988faf12c671e6",
+        "evidence-273c3a07e05f495cb8b1",
+        "evidence-6378a0482dbc3d8d4eff",
+        "evidence-4c6950eb6ef371bedc48",
+        "evidence-54ec32aa69f73c03ff14"
+      ],
+      "topic_portfolio": [
+        "心理健康",
+        "健康",
+        "拖延",
+        "焦虑",
+        "学业困难",
+        "实习失败"
+      ]
+    }
+  ],
+  "schema_version": "campus-pulse-forum-micro-role-release-v1",
+  "source_ids_persisted": false,
+  "source_reviewed_episode_count": 131604
+}

@@ -1,0 +1,28 @@
+# Optional Windows x64/Python 3.12 data-prep environment.
+# Kept separate from the application/runtime dependency lock.
+# Install into data/private/reddit/cmv/python-libs.
+# Optional Windows GPU acceleration: install onnxruntime-directml==1.22.0 into
+# data/private/reddit/cmv/python-libs-directml (do not install it into this CPU target).
+certifi==2026.7.22
+charset-normalizer==3.5.1
+colorama==0.4.6
+coloredlogs==15.0.1
+filelock==4.0.3
+flatbuffers==25.12.19
+fsspec==2026.9.0
+huggingface-hub==0.36.2
+humanfriendly==10.0
+idna==3.20
+mpmath==1.3.0
+numpy==2.5.3
+onnxruntime==1.22.1
+packaging==26.3
+protobuf==7.36.2
+pyreadline3==3.5.6
+PyYAML==6.0.3
+requests==2.34.2
+sympy==1.14.0
+tokenizers==0.21.4
+tqdm==4.70.1
+typing-extensions==4.16.0
+urllib3==2.8.0

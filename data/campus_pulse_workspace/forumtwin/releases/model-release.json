@@ -1,0 +1,57 @@
+{
+  "components": {
+    "claims": {
+      "schema_version": "campus-pulse-forum-twin-claims-component-v1",
+      "sha256": "65596146b08e4bb6183c1461669fd4bf7f356cf30254b1a212567d333b2183c5"
+    },
+    "corpus_index": {
+      "schema_version": "campus-pulse-forum-twin-corpus-index-component-v1",
+      "sha256": "d1b546b37aca28b3a595875716be79634880c8ee500da842a578c565a775f1dd"
+    },
+    "corpus_snapshot": {
+      "schema_version": "campus-pulse-forum-twin-corpus-snapshot-component-v1",
+      "sha256": "457ad3c24cad9d68fed42221948fd882f59c41f41c985c981100db6e764bb275"
+    },
+    "ecology": {
+      "schema_version": "campus-pulse-forum-twin-ecology-component-v1",
+      "sha256": "2a0d10c4633ae54ea10e3d17997244318b1d7b2bb5ee13777282cc1c47e66d9e"
+    },
+    "exposure_graph": {
+      "schema_version": "campus-pulse-forum-twin-exposure-graph-component-v1",
+      "sha256": "4d90d35005c19a3047cf79e7818221bfac442c849680ebc040c7a4f572977c84"
+    },
+    "feed": {
+      "schema_version": "campus-pulse-forum-twin-feed-component-v1",
+      "sha256": "65596146b08e4bb6183c1461669fd4bf7f356cf30254b1a212567d333b2183c5"
+    },
+    "forum": {
+      "schema_version": "campus-pulse-forum-twin-forum-component-v1",
+      "sha256": "2afdb499a70dbce92a512d0d8c270d76dfb973f3fc3b8c1dc8a2897dc194a5a0"
+    },
+    "governance": {
+      "schema_version": "campus-pulse-forum-twin-governance-component-v1",
+      "sha256": "badabe0129b3016777984c4679b433a61da79c131292afa8981ac81d9c89d8b1"
+    },
+    "particles": {
+      "schema_version": "campus-pulse-forum-twin-particles-component-v1",
+      "sha256": "4d90d35005c19a3047cf79e7818221bfac442c849680ebc040c7a4f572977c84"
+    },
+    "population": {
+      "schema_version": "campus-pulse-forum-twin-population-component-v1",
+      "sha256": "0a88a03574a6f8497e696fe52ff01b931e76b0440b94284f760b58b2a6af824c"
+    },
+    "profiles": {
+      "schema_version": "campus-pulse-forum-twin-profiles-component-v1",
+      "sha256": "f370c81cc8f77f9d549d7e7bf46d78d44b874eb022a1d3868edd255f21de51cb"
+    },
+    "renderer": {
+      "schema_version": "campus-pulse-forum-twin-renderer-component-v1",
+      "sha256": "ccabf223b0e0c94f78af11ea26bacee188723ed762811403d066b1cd8a776211"
+    },
+    "sampling": {
+      "schema_version": "campus-pulse-forum-twin-sampling-component-v1",
+      "sha256": "9825ddcd366003ae6a8ec8da9fc7fb7a56bc5adbec1ad41aad0d944adc408fe2"
+    }
+  },
+  "model_sha256": "acb2535969491acfafd4eba3eb1079b99a6bc58748d8e127e7f7333daf40a409"
+}

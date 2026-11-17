@@ -1,0 +1,71 @@
+{
+  "calibration_mode": "global_aggregate_fallback",
+  "calibration_release_sha256": "862e832f843cdec125c0cd59302fdf00112cff5c0d0698672e6d0dd16fb2b798",
+  "global_continuation_stages": {
+    "medium_to_large": {
+      "posterior_mean": 0.14268897,
+      "successes": 5272,
+      "trials": 36950
+    },
+    "root_to_any_reply": {
+      "posterior_mean": 0.76238365,
+      "successes": 100333,
+      "trials": 131604
+    },
+    "small_to_medium": {
+      "posterior_mean": 0.36827496,
+      "successes": 36950,
+      "trials": 100333
+    }
+  },
+  "macro_role_partial_pooling": {},
+  "method": {
+    "global_prior": "Jeffreys Beta(0.5, 0.5)",
+    "macro_partial_pooling_prior_strength": 24.0,
+    "stages": {
+      "medium_to_large": "P(final replies >= 13 | final replies >= 4)",
+      "root_to_any_reply": "P(final replies >= 1)",
+      "small_to_medium": "P(final replies >= 4 | final replies >= 1)"
+    }
+  },
+  "privacy": {
+    "episode_ids_persisted": false,
+    "raw_text_persisted": false,
+    "record_level_rows_persisted": false,
+    "source_ids_persisted": false
+  },
+  "schema_version": "campus-pulse-forum-ecology-calibration-v2",
+  "selection_contract": {
+    "large_thread_rule": "large continuation is not identifiable from aggregate bins; use the strictly-positive exploration floor instead of inventing a target",
+    "llm_action_forced": false,
+    "llm_text_generated": false,
+    "minimum_attention_weight": 0.05,
+    "policy_or_branch_label_used": false,
+    "public_hot_latest_ranking_changed": false,
+    "use": "soft deterministic attention ordering inside the shared public board"
+  },
+  "source": {
+    "ecology_file_sha256": "c8732f5bdcf68d6d6238c9f9a87ac009d03609085fdbe500697a3d49fcc674d8",
+    "ecology_release_sha256": "cbe99e45ff50466c9df750375855523a02377166a9a099883f0f751c9a569b89",
+    "ecology_schema": "campus-pulse-forum-ecology-release-v1",
+    "episode_file_sha256": null,
+    "thread_count": 131604
+  },
+  "thread_size_bucket_counts": {
+    "large": 5272,
+    "medium": 31678,
+    "small": 63383,
+    "zero": 31271
+  },
+  "thread_size_distribution": {
+    "large": 0.04005957,
+    "medium": 0.24070697,
+    "small": 0.4816191,
+    "zero": 0.23761436
+  },
+  "time_holdout": {
+    "available": false,
+    "conditional_macro_probabilities_enabled": false,
+    "reason": "private conflict-free episode rows were not supplied"
+  }
+}

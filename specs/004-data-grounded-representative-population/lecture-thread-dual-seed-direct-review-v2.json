@@ -1,0 +1,218 @@
+{
+  "schema_version": "lecture-thread-dual-seed-direct-review-v2",
+  "reviewed_artifacts": [
+    {
+      "seed": 20260722,
+      "path_persisted": false,
+      "sha256": "4bcb380123e52a01ee02e2d512fe471f40148feb8f8982d59e7ab1fcc1a66ec1",
+      "reply_count": 12,
+      "provider_accepted_count": 12,
+      "fallback_count": 0,
+      "accounted_tokens": 53749
+    },
+    {
+      "seed": 20261731,
+      "path_persisted": false,
+      "sha256": "1b98bef495bc0e5715622f3b6bb8b4120219ec6f64ce68d12fa90d805a9529a8",
+      "reply_count": 12,
+      "provider_accepted_count": 12,
+      "fallback_count": 0,
+      "accounted_tokens": 54887
+    }
+  ],
+  "review_method": {
+    "reviewer": "direct_semantic_reading_by_development_agent",
+    "unit": "root, direct parent, canonical ledger, routed thread, parent anchor, assigned reply function, rendered reply, persona variant, and ordered recent thread context",
+    "model_judge_treated_as_final_verdict": false,
+    "mechanical_naturalness_score_used": false,
+    "ratings": [
+      "clear",
+      "partial_non_regressive",
+      "fail"
+    ]
+  },
+  "case_reviews": [
+    {
+      "seed": 20260722,
+      "case_id": "fcb79c0b1bc11e6a",
+      "rating": "clear",
+      "note": "A natural source request under the emotional root that preserves uncertainty and adds no event claim."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "a2ab962d0cded51c",
+      "rating": "clear",
+      "note": "The governance demand is concise, persona-consistent, and directly tied to the information-and-feedback root."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "45967184d656e9c4",
+      "rating": "clear",
+      "note": "Naturally extends the prior demand with a verification time and feedback entry point."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "989402a5add181e1",
+      "rating": "clear",
+      "note": "A short actionable evidence request that remains within the official-channel uncertainty boundary."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "0d3807efca010383",
+      "rating": "clear",
+      "note": "The career-bible metaphor is recognizable light irony and coherently follows the request for context."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "164e114ee79ca571",
+      "rating": "clear",
+      "note": "Clarifies the responsible unit rather than merely asking for another source."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "4306b5613dc8f198",
+      "rating": "clear",
+      "note": "A first-person anxiety response is specific enough to represent the persona without inventing biography."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "ab7f7d4cb84cf5ad",
+      "rating": "clear",
+      "note": "Directly continues the prior anxiety turn and preserves the self-doubt feature of the canonical behavior."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "5465646a55e9350f",
+      "rating": "partial_non_regressive",
+      "note": "Safe and locally coherent as clarification, but it compresses the canonical follow-up about status and response time into another responsible-unit question."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "65bff0672a46fe7e",
+      "rating": "clear",
+      "note": "Scopes the evidence-status relay to the visible thread, avoiding an unsupported objective claim about all available evidence."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "164a790cfbdeeabb",
+      "rating": "clear",
+      "note": "A compact pile-on turn repeats the established metaphor without escalating to a personal attack."
+    },
+    {
+      "seed": 20260722,
+      "case_id": "b9cf493b9d9a6f88",
+      "rating": "clear",
+      "note": "The opening agreement visibly amplifies the parent while the second clause keeps the downstream self-doubt concern."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "3743697cf98e92d1",
+      "rating": "partial_non_regressive",
+      "note": "Natural and safe as an evidence request, but the service-escalation persona is flattened because channel, checkpoint, and deadline details are dropped."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "bbd3b3b59ddbaded",
+      "rating": "clear",
+      "note": "Directly asks where the formal explanation will appear and follows the preceding source request."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "260c33934c615b6d",
+      "rating": "clear",
+      "note": "Converts the complaint persona into a concrete entry-point and deadline demand without adding a factual assertion."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "a2ad3a0628a834d6",
+      "rating": "clear",
+      "note": "A concise follow-up request that continues the governance thread rather than restarting it."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "eff5eed1350b9ab6",
+      "rating": "clear",
+      "note": "Forum-like shorthand preserves the request for a unified entry point and expected response time."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "0c201c56e5c667ea",
+      "rating": "clear",
+      "note": "Combines direct comfort with shared experience and fits the emotional root without over-explaining."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "a54b849f42e9cd63",
+      "rating": "clear",
+      "note": "Naturally amplifies the established anti-ranking stance after the support turn."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "a37ef5241863bdab",
+      "rating": "clear",
+      "note": "Challenges the standard-answer framing while inviting the root author to specify their concern."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "59bfca6ea252528c",
+      "rating": "clear",
+      "note": "Correctly anchors back to the root when the local thread shifts from feedback timing to original-text verification."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "4aa95bebe10f6f03",
+      "rating": "clear",
+      "note": "A restrained personal-experience turn follows the invitation to explain what remains difficult."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "1a55df20b1a42ec3",
+      "rating": "clear",
+      "note": "Direct emotional support responds to the parent rather than restating the whole event."
+    },
+    {
+      "seed": 20261731,
+      "case_id": "1e54044b53ba6b76",
+      "rating": "clear",
+      "note": "The short residual-discomfort statement is recognizable, parent-relevant, and non-identifying."
+    }
+  ],
+  "summary": {
+    "seed_count": 2,
+    "thread_count": 6,
+    "case_count": 24,
+    "provider_accepted_count": 24,
+    "fallback_count": 0,
+    "clear_count": 22,
+    "partial_non_regressive_count": 2,
+    "fail_count": 0,
+    "parent_coherence_pass_count": 24,
+    "new_external_fact_regression_count": 0,
+    "key_functions_observed_across_pilot": [
+      "evidence_request",
+      "evidence_relay",
+      "irony_or_meme",
+      "amplification_or_pile_on"
+    ],
+    "verdict": "accepted_dual_seed_local_thread_pilot_with_frequency_instability_caveat"
+  },
+  "cross_seed_interpretation": {
+    "qualitative_finding": "Both seeds produce coherent local governance and emotional-support threads after semantic thread routing and explicit root-versus-latest parent anchoring.",
+    "frequency_finding": "The assigned interaction-function mix remains seed-sensitive; seed-level reference-versus-synthetic Jensen-Shannon diagnostics are 0.1296 and 0.3878.",
+    "interpretation": "The pilot supports qualitative local-thread fidelity and safety boundaries, not stable population-level interaction-function frequencies."
+  },
+  "observed_data_interpretation": {
+    "reference_pair_sample": 48,
+    "lecture_holdout_pair_sample": 48,
+    "lecture_holdout_was_used_for_generation": false,
+    "finding": "Observed pairs ground the function vocabulary and style constraints. Held-out lecture pairs remain evaluation-only; the synthetic function mix is a coverage probe rather than a fitted frequency distribution."
+  },
+  "claim_boundary": {
+    "full_forum_diffusion_graph_validated": false,
+    "population_frequency_calibrated": false,
+    "causal_effect_identified": false,
+    "local_parent_conditioned_thread_behavior_supported": true,
+    "cross_seed_local_coherence_supported": true,
+    "next_gate": "Use these 24 replies as the release evidence for local thread fidelity; do not claim population-share calibration until a larger multi-seed calibration run reduces seed sensitivity."
+  }
+}

@@ -1,0 +1,2141 @@
+{
+  "analysis_snapshot_id": "b99df3cb436403efb9961cf4f4d03e82f3ad55fd3d27994f1c6a55066abae365",
+  "benchmark_fingerprint": "9a6df04f17f95f11a29c1d8067a4bac6ab22dc641d863163e5cd7d45a5994e4b",
+  "claim_boundary": {
+    "not_supported": "实时预测、个体行为、持续社交网络，以及FAQ、道歉、分流、容量或其他干预的因果效果。",
+    "supported": "同一个离线阶段引擎在经验校准后，可复演两个外部锚定冲击的聚合需求曲线。"
+  },
+  "dataset_snapshot_id": "99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6",
+  "definition_fingerprint": "0edf65a3f5d668ebd4a7be4685a0e8e94b36452af49452eee73558c40fb1d57b",
+  "engine": {
+    "calibration": "empirical phase topic rates with Jeffreys smoothing",
+    "evidence_stage": "retrospective_in_sample_replay",
+    "exposure_control": "observed all-post count held fixed per stage",
+    "live_data_dependency": false,
+    "llm_dependency": false,
+    "name": "offline_discrete_role_mixture_replay",
+    "simulation_clock": "four synthetic stages per event",
+    "structural_constraint_violations": 0,
+    "topic_constraints": "requires_topic is sampled conditionally within the simulated parent; exclude_topics is sampled only from the remaining role exposure",
+    "wall_clock_dependency": false
+  },
+  "events": [
+    {
+      "comment_collection_regime": "pre_2026_04_crawl_break",
+      "fidelity": {
+        "causal_status": "not_identified",
+        "evidence_stage": "retrospective_in_sample_replay",
+        "external_validation_status": "not_evaluated",
+        "grade_scope": "in_sample_monte_carlo_reconstruction_only",
+        "interpretation": "在观察到的全部帖子暴露量下进行样本内历史重构；不是样本外预测，也不是任何治理干预效果的估计。",
+        "observed_count_interval_coverage_90": 1.0,
+        "observed_primary_peak_phases": [
+          "burst"
+        ],
+        "primary_peak_phase_match": true,
+        "primary_peak_stage_distance": 0,
+        "primary_stage_scale_wape": 0.03508771929824561,
+        "primary_tail_share_error": 0.012786202795123408,
+        "primary_topic_rate_mae": 0.001106280474210215,
+        "reconstruction_fit_grade": "strong",
+        "reconstruction_grade_rule": "weakest_versioned_metric",
+        "reconstruction_metric_grades": {
+          "primary_peak_stage_distance": "strong",
+          "primary_stage_scale_wape": "strong",
+          "primary_tail_share_error": "strong",
+          "topic_incidence_composition_tvd": "strong"
+        },
+        "role_mechanism_validation_status": "not_evaluated",
+        "simulated_primary_peak_phases": [
+          "burst"
+        ],
+        "topic_incidence_composition_tvd": 0.007012195121951198,
+        "topic_rate_mae": 0.000221256094842043
+      },
+      "identification": {
+        "causal_status": "not_identified",
+        "claim_boundary": "不识别搬迁的福利效应，也不识别任何后续治理策略的效果。",
+        "estimand": "公开信息发布后，通州相关论坛发帖份额的短期变化。",
+        "evidence_stage": "externally_anchored_pre_post_attention_discontinuity",
+        "identification_strength": "weak_temporal_ordering_signal"
+      },
+      "phases": [
+        {
+          "all_posts_exposure_held_fixed": 411,
+          "label": "公告前24小时",
+          "phase_id": "baseline",
+          "topics": {
+            "course_continuity": {
+              "absolute_share_error": 0.0,
+              "label": "课程与培养衔接",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.04999999999999716
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "feedback_channel": {
+              "absolute_share_error": 0.0,
+              "label": "反馈与协商渠道",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 1.0499999999999972
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "housing": {
+              "absolute_share_error": 0.0,
+              "label": "住宿安排",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0499999999999972
+                }
+              }
+            },
+            "student_organizations": {
+              "absolute_share_error": 0.0,
+              "label": "学生组织运行",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "tongzhou": {
+              "absolute_share_error": 0.0024330900243309,
+              "label": "通州与双校区",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 2,
+              "observed_share": 0.004866180048661801,
+              "simulated_median_share": 0.0072992700729927005,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 3.0,
+                "p95": 6.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 3.049999999999997
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 161,
+          "label": "公告后0—6小时",
+          "phase_id": "burst",
+          "topics": {
+            "course_continuity": {
+              "absolute_share_error": 0.0,
+              "label": "课程与培养衔接",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 9,
+              "observed_share": 0.055900621118012424,
+              "simulated_median_share": 0.055900621118012424,
+              "simulated_posts": {
+                "p05": 5.0,
+                "p50": 9.0,
+                "p95": 14.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "information_seeker": {
+                  "p05": 1.0,
+                  "p50": 3.0,
+                  "p95": 6.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "stakeholder": {
+                  "p05": 2.0,
+                  "p50": 5.5,
+                  "p95": 10.0
+                }
+              }
+            },
+            "feedback_channel": {
+              "absolute_share_error": 0.0,
+              "label": "反馈与协商渠道",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 1,
+              "observed_share": 0.006211180124223602,
+              "simulated_median_share": 0.006211180124223602,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 1.0,
+                "p95": 4.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 3.0
+                }
+              }
+            },
+            "housing": {
+              "absolute_share_error": 0.0,
+              "label": "住宿安排",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 5,
+              "observed_share": 0.031055900621118012,
+              "simulated_median_share": 0.031055900621118012,
+              "simulated_posts": {
+                "p05": 1.9500000000000002,
+                "p50": 5.0,
+                "p95": 9.049999999999997
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0499999999999972
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 4.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "stakeholder": {
+                  "p05": 1.0,
+                  "p50": 3.0,
+                  "p95": 6.0
+                }
+              }
+            },
+            "student_organizations": {
+              "absolute_share_error": 0.0,
+              "label": "学生组织运行",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 4,
+              "observed_share": 0.024844720496894408,
+              "simulated_median_share": 0.024844720496894408,
+              "simulated_posts": {
+                "p05": 2.0,
+                "p50": 4.0,
+                "p95": 8.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 3.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "stakeholder": {
+                  "p05": 1.0,
+                  "p50": 2.0,
+                  "p95": 6.0
+                }
+              }
+            },
+            "tongzhou": {
+              "absolute_share_error": 0.0,
+              "label": "通州与双校区",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 37,
+              "observed_share": 0.22981366459627328,
+              "simulated_median_share": 0.22981366459627328,
+              "simulated_posts": {
+                "p05": 30.0,
+                "p50": 37.0,
+                "p95": 46.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 1.0,
+                  "p50": 4.0,
+                  "p95": 7.0
+                },
+                "information_seeker": {
+                  "p05": 7.0,
+                  "p50": 12.0,
+                  "p95": 16.049999999999997
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 2.0,
+                  "p95": 5.049999999999997
+                },
+                "stakeholder": {
+                  "p05": 13.0,
+                  "p50": 19.0,
+                  "p95": 27.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 276,
+          "label": "公告后6—24小时",
+          "phase_id": "spread",
+          "topics": {
+            "course_continuity": {
+              "absolute_share_error": 0.0,
+              "label": "课程与培养衔接",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 1,
+              "observed_share": 0.0036231884057971015,
+              "simulated_median_share": 0.0036231884057971015,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 1.0,
+                "p95": 4.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 3.0
+                }
+              }
+            },
+            "feedback_channel": {
+              "absolute_share_error": 0.0,
+              "label": "反馈与协商渠道",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 2,
+              "observed_share": 0.007246376811594203,
+              "simulated_median_share": 0.007246376811594203,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 2.0,
+                "p95": 6.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.04999999999999716
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 4.0
+                }
+              }
+            },
+            "housing": {
+              "absolute_share_error": 0.0,
+              "label": "住宿安排",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 1,
+              "observed_share": 0.0036231884057971015,
+              "simulated_median_share": 0.0036231884057971015,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 1.0,
+                "p95": 3.049999999999997
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 2.049999999999997
+                }
+              }
+            },
+            "student_organizations": {
+              "absolute_share_error": 0.0,
+              "label": "学生组织运行",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "tongzhou": {
+              "absolute_share_error": 0.0,
+              "label": "通州与双校区",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 11,
+              "observed_share": 0.03985507246376811,
+              "simulated_median_share": 0.03985507246376811,
+              "simulated_posts": {
+                "p05": 6.0,
+                "p50": 11.0,
+                "p95": 18.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 3.0
+                },
+                "information_seeker": {
+                  "p05": 1.0,
+                  "p50": 4.0,
+                  "p95": 7.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 2.0
+                },
+                "stakeholder": {
+                  "p05": 2.95,
+                  "p50": 6.0,
+                  "p95": 10.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 502,
+          "label": "公告后24—48小时",
+          "phase_id": "decay",
+          "topics": {
+            "course_continuity": {
+              "absolute_share_error": 0.0,
+              "label": "课程与培养衔接",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 1.0499999999999972
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "feedback_channel": {
+              "absolute_share_error": 0.0,
+              "label": "反馈与协商渠道",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "housing": {
+              "absolute_share_error": 0.0,
+              "label": "住宿安排",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                }
+              }
+            },
+            "student_organizations": {
+              "absolute_share_error": 0.0,
+              "label": "学生组织运行",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 0,
+              "observed_share": 0.0,
+              "simulated_median_share": 0.0,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 0.0,
+                "p95": 2.0
+              },
+              "simulation_constraint": {
+                "kind": "conditional_on_topic",
+                "topic_id": "tongzhou"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 0.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            },
+            "tongzhou": {
+              "absolute_share_error": 0.00199203187250996,
+              "label": "通州与双校区",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 7,
+              "observed_share": 0.013944223107569721,
+              "simulated_median_share": 0.01593625498007968,
+              "simulated_posts": {
+                "p05": 3.0,
+                "p50": 8.0,
+                "p95": 12.049999999999997
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 1.0,
+                  "p95": 2.0
+                },
+                "information_seeker": {
+                  "p05": 0.9500000000000002,
+                  "p50": 3.0,
+                  "p95": 5.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "stakeholder": {
+                  "p05": 1.0,
+                  "p50": 4.0,
+                  "p95": 8.0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role_model": {
+        "roles": {
+          "amplifier": {
+            "response_multiplier": 1.1,
+            "weight": 0.1
+          },
+          "information_seeker": {
+            "response_multiplier": 1.2,
+            "weight": 0.3
+          },
+          "observer": {
+            "response_multiplier": 0.4,
+            "weight": 0.2
+          },
+          "stakeholder": {
+            "response_multiplier": 1.4,
+            "weight": 0.4
+          }
+        },
+        "source_type": "assumption"
+      },
+      "scenario_id": "tongzhou_governance_information_shock",
+      "shock_origin": "governance_action",
+      "shock_type": "governance_information",
+      "title": "通州入驻公告：治理型信息冲击"
+    },
+    {
+      "comment_collection_regime": "post_2026_04_crawl_break",
+      "fidelity": {
+        "causal_status": "not_identified",
+        "evidence_stage": "retrospective_in_sample_replay",
+        "external_validation_status": "not_evaluated",
+        "grade_scope": "in_sample_monte_carlo_reconstruction_only",
+        "interpretation": "在观察到的全部帖子暴露量下进行样本内历史重构；不是样本外预测，也不是任何治理干预效果的估计。",
+        "observed_count_interval_coverage_90": 1.0,
+        "observed_primary_peak_phases": [
+          "spread"
+        ],
+        "primary_peak_phase_match": true,
+        "primary_peak_stage_distance": 0,
+        "primary_stage_scale_wape": 0.019337016574585635,
+        "primary_tail_share_error": 0.0003673038367946746,
+        "primary_topic_rate_mae": 0.0008171987678627786,
+        "reconstruction_fit_grade": "strong",
+        "reconstruction_grade_rule": "weakest_versioned_metric",
+        "reconstruction_metric_grades": {
+          "primary_peak_stage_distance": "strong",
+          "primary_stage_scale_wape": "strong",
+          "primary_tail_share_error": "strong",
+          "topic_incidence_composition_tvd": "strong"
+        },
+        "role_mechanism_validation_status": "not_evaluated",
+        "simulated_primary_peak_phases": [
+          "spread"
+        ],
+        "topic_incidence_composition_tvd": 0.002040816326530609,
+        "topic_rate_mae": 0.00045548610561180924
+      },
+      "identification": {
+        "causal_status": "not_identified",
+        "claim_boundary": "讲座精确开始时间未经外部证实；次日道歉具有内生性，不作为因果干预。",
+        "estimand": "围绕事件所在日及随后数日，直接事件关注及相邻职业议题讨论的短期变化。",
+        "evidence_stage": "externally_anchored_event_day_attention_association",
+        "identification_strength": "external_anchor_association"
+      },
+      "phases": [
+        {
+          "all_posts_exposure_held_fixed": 1442,
+          "label": "事件前两日",
+          "phase_id": "baseline",
+          "topics": {
+            "career_spillover": {
+              "absolute_share_error": 0.0,
+              "label": "职业议题外溢（剔除直接事件词）",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 9,
+              "observed_share": 0.0062413314840499305,
+              "simulated_median_share": 0.0062413314840499305,
+              "simulated_posts": {
+                "p05": 4.0,
+                "p50": 9.0,
+                "p95": 15.0
+              },
+              "simulation_constraint": {
+                "kind": "excludes_topic",
+                "topic_id": "direct_event"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.9500000000000002,
+                  "p50": 3.0,
+                  "p95": 8.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 2.0,
+                  "p95": 5.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 2.0,
+                  "p95": 4.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 2.0,
+                  "p95": 4.0
+                }
+              }
+            },
+            "direct_event": {
+              "absolute_share_error": 0.0006934812760055479,
+              "label": "直接事件讨论",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 1,
+              "observed_share": 0.0006934812760055479,
+              "simulated_median_share": 0.0013869625520110957,
+              "simulated_posts": {
+                "p05": 0.0,
+                "p50": 2.0,
+                "p95": 4.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 3.0
+                },
+                "information_seeker": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 2.0
+                },
+                "stakeholder": {
+                  "p05": 0.0,
+                  "p50": 0.0,
+                  "p95": 1.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 1333,
+          "label": "事件当日",
+          "phase_id": "burst",
+          "topics": {
+            "career_spillover": {
+              "absolute_share_error": 0.00037509377344335966,
+              "label": "职业议题外溢（剔除直接事件词）",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 16,
+              "observed_share": 0.012003000750187547,
+              "simulated_median_share": 0.012378094523630907,
+              "simulated_posts": {
+                "p05": 10.0,
+                "p50": 16.5,
+                "p95": 23.049999999999997
+              },
+              "simulation_constraint": {
+                "kind": "excludes_topic",
+                "topic_id": "direct_event"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 2.0,
+                  "p50": 6.0,
+                  "p95": 10.0
+                },
+                "information_seeker": {
+                  "p05": 1.0,
+                  "p50": 4.0,
+                  "p95": 8.049999999999997
+                },
+                "observer": {
+                  "p05": 1.0,
+                  "p50": 3.0,
+                  "p95": 6.0
+                },
+                "stakeholder": {
+                  "p05": 0.9500000000000002,
+                  "p50": 3.0,
+                  "p95": 7.0
+                }
+              }
+            },
+            "direct_event": {
+              "absolute_share_error": 0.0003750937734433579,
+              "label": "直接事件讨论",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 87,
+              "observed_share": 0.06526631657914479,
+              "simulated_median_share": 0.06564141035258815,
+              "simulated_posts": {
+                "p05": 71.94999999999999,
+                "p50": 87.5,
+                "p95": 104.05
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 22.0,
+                  "p50": 33.0,
+                  "p95": 40.05
+                },
+                "information_seeker": {
+                  "p05": 13.95,
+                  "p50": 21.0,
+                  "p95": 30.0
+                },
+                "observer": {
+                  "p05": 10.0,
+                  "p50": 15.0,
+                  "p95": 23.049999999999997
+                },
+                "stakeholder": {
+                  "p05": 12.0,
+                  "p50": 18.5,
+                  "p95": 27.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 909,
+          "label": "次日扩散",
+          "phase_id": "spread",
+          "topics": {
+            "career_spillover": {
+              "absolute_share_error": 0.0,
+              "label": "职业议题外溢（剔除直接事件词）",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 26,
+              "observed_share": 0.028602860286028604,
+              "simulated_median_share": 0.028602860286028604,
+              "simulated_posts": {
+                "p05": 18.950000000000003,
+                "p50": 26.0,
+                "p95": 35.05
+              },
+              "simulation_constraint": {
+                "kind": "excludes_topic",
+                "topic_id": "direct_event"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 5.95,
+                  "p50": 10.0,
+                  "p95": 14.049999999999997
+                },
+                "information_seeker": {
+                  "p05": 2.0,
+                  "p50": 7.0,
+                  "p95": 11.0
+                },
+                "observer": {
+                  "p05": 1.0,
+                  "p50": 4.5,
+                  "p95": 9.0
+                },
+                "stakeholder": {
+                  "p05": 1.9500000000000002,
+                  "p50": 5.0,
+                  "p95": 10.099999999999994
+                }
+              }
+            },
+            "direct_event": {
+              "absolute_share_error": 0.0022002200220022083,
+              "label": "直接事件讨论",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 69,
+              "observed_share": 0.07590759075907591,
+              "simulated_median_share": 0.0737073707370737,
+              "simulated_posts": {
+                "p05": 55.0,
+                "p50": 67.0,
+                "p95": 80.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 17.0,
+                  "p50": 26.0,
+                  "p95": 35.05
+                },
+                "information_seeker": {
+                  "p05": 10.950000000000001,
+                  "p50": 16.0,
+                  "p95": 22.049999999999997
+                },
+                "observer": {
+                  "p05": 7.0,
+                  "p50": 11.0,
+                  "p95": 18.0
+                },
+                "stakeholder": {
+                  "p05": 8.95,
+                  "p50": 14.0,
+                  "p95": 21.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "all_posts_exposure_held_fixed": 1131,
+          "label": "后续两日",
+          "phase_id": "decay",
+          "topics": {
+            "career_spillover": {
+              "absolute_share_error": 0.0,
+              "label": "职业议题外溢（剔除直接事件词）",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 13,
+              "observed_share": 0.011494252873563218,
+              "simulated_median_share": 0.011494252873563218,
+              "simulated_posts": {
+                "p05": 8.0,
+                "p50": 13.0,
+                "p95": 20.0
+              },
+              "simulation_constraint": {
+                "kind": "excludes_topic",
+                "topic_id": "direct_event"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 2.0,
+                  "p50": 5.0,
+                  "p95": 10.0
+                },
+                "information_seeker": {
+                  "p05": 1.0,
+                  "p50": 3.0,
+                  "p95": 6.0
+                },
+                "observer": {
+                  "p05": 0.0,
+                  "p50": 2.0,
+                  "p95": 6.0
+                },
+                "stakeholder": {
+                  "p05": 1.0,
+                  "p50": 3.0,
+                  "p95": 5.0
+                }
+              }
+            },
+            "direct_event": {
+              "absolute_share_error": 0.0,
+              "label": "直接事件讨论",
+              "observed_count_covered_by_p05_p95": true,
+              "observed_posts": 24,
+              "observed_share": 0.021220159151193633,
+              "simulated_median_share": 0.021220159151193633,
+              "simulated_posts": {
+                "p05": 17.0,
+                "p50": 24.0,
+                "p95": 33.0
+              },
+              "simulation_constraint": {
+                "kind": "marginal"
+              },
+              "synthetic_role_breakdown": {
+                "amplifier": {
+                  "p05": 5.0,
+                  "p50": 9.0,
+                  "p95": 15.0
+                },
+                "information_seeker": {
+                  "p05": 2.0,
+                  "p50": 6.0,
+                  "p95": 9.0
+                },
+                "observer": {
+                  "p05": 1.0,
+                  "p50": 4.0,
+                  "p95": 7.049999999999997
+                },
+                "stakeholder": {
+                  "p05": 2.0,
+                  "p50": 5.0,
+                  "p95": 9.0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "role_model": {
+        "roles": {
+          "amplifier": {
+            "response_multiplier": 1.5,
+            "weight": 0.25
+          },
+          "information_seeker": {
+            "response_multiplier": 1.2,
+            "weight": 0.2
+          },
+          "observer": {
+            "response_multiplier": 0.45,
+            "weight": 0.4
+          },
+          "stakeholder": {
+            "response_multiplier": 1.4,
+            "weight": 0.15
+          }
+        },
+        "source_type": "assumption"
+      },
+      "scenario_id": "lecture_external_incident_shock",
+      "shock_origin": "exogenous_event",
+      "shock_type": "external_incident",
+      "title": "讲座争议：外生舆情冲击"
+    }
+  ],
+  "fidelity_methodology": {
+    "interval_interpretation": "conditional Monte Carlo quantiles under observed exposure and same-sample empirical rates; not prediction intervals or external coverage",
+    "primary_peak_stage_distance": "minimum index distance between any observed and simulated-p50 peak stage, where peaks use primary-topic share of all stage posts and all exact ties are retained",
+    "primary_stage_scale_wape": "sum over stages of abs(simulated p50 primary count - observed primary count), divided by total observed primary count",
+    "primary_tail_share_error": "absolute difference in decay-stage share of the four-stage primary topic count total",
+    "simulation_quantiles": "linear interpolation at (n-1)*p over seeded replicate counts",
+    "topic_incidence_composition_tvd": "one half of the L1 distance between observed and simulated-p50 distributions of declared topic-hit counts aggregated over stages; topic hits may overlap and are not population shares"
+  },
+  "generated_at_utc": "2026-07-21T19:29:21.974168+00:00",
+  "overall_fidelity": {
+    "all_primary_peak_phases_match": true,
+    "causal_status": "not_identified",
+    "event_reconstruction_fit_grades": {
+      "lecture_external_incident_shock": "strong",
+      "tongzhou_governance_information_shock": "strong"
+    },
+    "evidence_stage": "retrospective_in_sample_replay",
+    "external_validation_status": "not_evaluated",
+    "grade_thresholds": {
+      "moderate": {
+        "primary_peak_stage_distance": 1,
+        "primary_stage_scale_wape": 0.4,
+        "primary_tail_share_error": 0.25,
+        "topic_incidence_composition_tvd": 0.3
+      },
+      "strong": {
+        "primary_peak_stage_distance": 0,
+        "primary_stage_scale_wape": 0.25,
+        "primary_tail_share_error": 0.15,
+        "topic_incidence_composition_tvd": 0.2
+      }
+    },
+    "mean_primary_topic_rate_mae": 0.0009617396210364968,
+    "mean_topic_rate_mae": 0.0003383711002269261,
+    "policy_effect_status": "not_empirically_validated",
+    "role_mechanism_validation_status": "not_evaluated",
+    "weakest_reconstruction_fit_grade": "strong"
+  },
+  "repetitions": 100,
+  "replay_schema_version": "1.0.0",
+  "replicate_summaries": [
+    {
+      "repetition": 0,
+      "seed": 20260722,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0027866525997487577,
+        "tongzhou_governance_information_shock": 0.004272739932955307
+      }
+    },
+    {
+      "repetition": 1,
+      "seed": 20261731,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003814439300550422,
+        "tongzhou_governance_information_shock": 0.004637339174531566
+      }
+    },
+    {
+      "repetition": 2,
+      "seed": 20262740,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005137395070407261,
+        "tongzhou_governance_information_shock": 0.006150499632095306
+      }
+    },
+    {
+      "repetition": 3,
+      "seed": 20263749,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004004999226489656,
+        "tongzhou_governance_information_shock": 0.006215013907285128
+      }
+    },
+    {
+      "repetition": 4,
+      "seed": 20264758,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0059247739915041075,
+        "tongzhou_governance_information_shock": 0.003832781340822802
+      }
+    },
+    {
+      "repetition": 5,
+      "seed": 20265767,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0033046149482049278,
+        "tongzhou_governance_information_shock": 0.006339215232584947
+      }
+    },
+    {
+      "repetition": 6,
+      "seed": 20266776,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003132624020951008,
+        "tongzhou_governance_information_shock": 0.006035218964555253
+      }
+    },
+    {
+      "repetition": 7,
+      "seed": 20267785,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00232824077449727,
+        "tongzhou_governance_information_shock": 0.006700260661123019
+      }
+    },
+    {
+      "repetition": 8,
+      "seed": 20268794,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0022169236557235696,
+        "tongzhou_governance_information_shock": 0.006412754777989492
+      }
+    },
+    {
+      "repetition": 9,
+      "seed": 20269803,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0030780742529089825,
+        "tongzhou_governance_information_shock": 0.005597996101011018
+      }
+    },
+    {
+      "repetition": 10,
+      "seed": 20270812,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003266416596158562,
+        "tongzhou_governance_information_shock": 0.006319898053582168
+      }
+    },
+    {
+      "repetition": 11,
+      "seed": 20271821,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002714001460801684,
+        "tongzhou_governance_information_shock": 0.004219706686545142
+      }
+    },
+    {
+      "repetition": 12,
+      "seed": 20272830,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00403648960287826,
+        "tongzhou_governance_information_shock": 0.003344980989433329
+      }
+    },
+    {
+      "repetition": 13,
+      "seed": 20273839,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003763866815147904,
+        "tongzhou_governance_information_shock": 0.006670371603308847
+      }
+    },
+    {
+      "repetition": 14,
+      "seed": 20274848,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00426150231571821,
+        "tongzhou_governance_information_shock": 0.005358058780579424
+      }
+    },
+    {
+      "repetition": 15,
+      "seed": 20275857,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0036412805028573714,
+        "tongzhou_governance_information_shock": 0.005292264319879661
+      }
+    },
+    {
+      "repetition": 16,
+      "seed": 20276866,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004040458991226608,
+        "tongzhou_governance_information_shock": 0.009281689641368033
+      }
+    },
+    {
+      "repetition": 17,
+      "seed": 20277875,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003587103148726576,
+        "tongzhou_governance_information_shock": 0.005738785650193652
+      }
+    },
+    {
+      "repetition": 18,
+      "seed": 20278884,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002267982114342567,
+        "tongzhou_governance_information_shock": 0.0058176145217380465
+      }
+    },
+    {
+      "repetition": 19,
+      "seed": 20279893,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004607994741540214,
+        "tongzhou_governance_information_shock": 0.006433534273538902
+      }
+    },
+    {
+      "repetition": 20,
+      "seed": 20280902,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0033436349965065646,
+        "tongzhou_governance_information_shock": 0.004882103720042983
+      }
+    },
+    {
+      "repetition": 21,
+      "seed": 20281911,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002848148104484253,
+        "tongzhou_governance_information_shock": 0.00500904077393107
+      }
+    },
+    {
+      "repetition": 22,
+      "seed": 20282920,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0034679022895648254,
+        "tongzhou_governance_information_shock": 0.008933678623674588
+      }
+    },
+    {
+      "repetition": 23,
+      "seed": 20283929,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0020867097095169165,
+        "tongzhou_governance_information_shock": 0.005826541952966121
+      }
+    },
+    {
+      "repetition": 24,
+      "seed": 20284938,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005230814445293091,
+        "tongzhou_governance_information_shock": 0.005293628797439642
+      }
+    },
+    {
+      "repetition": 25,
+      "seed": 20285947,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0044919757084900674,
+        "tongzhou_governance_information_shock": 0.005202961408510523
+      }
+    },
+    {
+      "repetition": 26,
+      "seed": 20286956,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0019222038690124435,
+        "tongzhou_governance_information_shock": 0.0050540625125497325
+      }
+    },
+    {
+      "repetition": 27,
+      "seed": 20287965,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0023294146884782585,
+        "tongzhou_governance_information_shock": 0.0030485476750717272
+      }
+    },
+    {
+      "repetition": 28,
+      "seed": 20288974,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0028020660120498435,
+        "tongzhou_governance_information_shock": 0.0031896104208093945
+      }
+    },
+    {
+      "repetition": 29,
+      "seed": 20289983,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0049835115576002485,
+        "tongzhou_governance_information_shock": 0.004556145609940586
+      }
+    },
+    {
+      "repetition": 30,
+      "seed": 20290992,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004201013788818952,
+        "tongzhou_governance_information_shock": 0.005063354205851181
+      }
+    },
+    {
+      "repetition": 31,
+      "seed": 20292001,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00375065264010026,
+        "tongzhou_governance_information_shock": 0.0035222223346116216
+      }
+    },
+    {
+      "repetition": 32,
+      "seed": 20293010,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0030231093365414427,
+        "tongzhou_governance_information_shock": 0.004704771309346345
+      }
+    },
+    {
+      "repetition": 33,
+      "seed": 20294019,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002647008585261846,
+        "tongzhou_governance_information_shock": 0.005182364043997802
+      }
+    },
+    {
+      "repetition": 34,
+      "seed": 20295028,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0020492622288348647,
+        "tongzhou_governance_information_shock": 0.005087869645475465
+      }
+    },
+    {
+      "repetition": 35,
+      "seed": 20296037,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00504635417081398,
+        "tongzhou_governance_information_shock": 0.0042711933243586376
+      }
+    },
+    {
+      "repetition": 36,
+      "seed": 20297046,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004226396619456272,
+        "tongzhou_governance_information_shock": 0.009821431958162725
+      }
+    },
+    {
+      "repetition": 37,
+      "seed": 20298055,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0046463006093499706,
+        "tongzhou_governance_information_shock": 0.004235196855954701
+      }
+    },
+    {
+      "repetition": 38,
+      "seed": 20299064,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0038747590405556333,
+        "tongzhou_governance_information_shock": 0.005374647004462241
+      }
+    },
+    {
+      "repetition": 39,
+      "seed": 20300073,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0036537419557914055,
+        "tongzhou_governance_information_shock": 0.005698688975641464
+      }
+    },
+    {
+      "repetition": 40,
+      "seed": 20301082,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0038944592188076407,
+        "tongzhou_governance_information_shock": 0.007829958520484261
+      }
+    },
+    {
+      "repetition": 41,
+      "seed": 20302091,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002790019707441326,
+        "tongzhou_governance_information_shock": 0.007189334424554131
+      }
+    },
+    {
+      "repetition": 42,
+      "seed": 20303100,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004767003211240346,
+        "tongzhou_governance_information_shock": 0.004517322347430035
+      }
+    },
+    {
+      "repetition": 43,
+      "seed": 20304109,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002632248082321984,
+        "tongzhou_governance_information_shock": 0.004054037435664844
+      }
+    },
+    {
+      "repetition": 44,
+      "seed": 20305118,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0025033872881354263,
+        "tongzhou_governance_information_shock": 0.0021723664348815923
+      }
+    },
+    {
+      "repetition": 45,
+      "seed": 20306127,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003949611267505446,
+        "tongzhou_governance_information_shock": 0.0055744808768733375
+      }
+    },
+    {
+      "repetition": 46,
+      "seed": 20307136,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0031161056688105994,
+        "tongzhou_governance_information_shock": 0.0061282578199992645
+      }
+    },
+    {
+      "repetition": 47,
+      "seed": 20308145,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004593048957019391,
+        "tongzhou_governance_information_shock": 0.003470462500243092
+      }
+    },
+    {
+      "repetition": 48,
+      "seed": 20309154,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0050926477845567265,
+        "tongzhou_governance_information_shock": 0.0021660768932551364
+      }
+    },
+    {
+      "repetition": 49,
+      "seed": 20310163,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0031176336512665956,
+        "tongzhou_governance_information_shock": 0.0064686148185062724
+      }
+    },
+    {
+      "repetition": 50,
+      "seed": 20311172,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004216171094648109,
+        "tongzhou_governance_information_shock": 0.004605169715720847
+      }
+    },
+    {
+      "repetition": 51,
+      "seed": 20312181,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004351139434585952,
+        "tongzhou_governance_information_shock": 0.007010637536297509
+      }
+    },
+    {
+      "repetition": 52,
+      "seed": 20313190,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0029736155512508763,
+        "tongzhou_governance_information_shock": 0.008017673905487297
+      }
+    },
+    {
+      "repetition": 53,
+      "seed": 20314199,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003989841920660502,
+        "tongzhou_governance_information_shock": 0.0045120397947584915
+      }
+    },
+    {
+      "repetition": 54,
+      "seed": 20315208,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0033777153694960513,
+        "tongzhou_governance_information_shock": 0.004151176497257106
+      }
+    },
+    {
+      "repetition": 55,
+      "seed": 20316217,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003517147862674626,
+        "tongzhou_governance_information_shock": 0.005518718675343209
+      }
+    },
+    {
+      "repetition": 56,
+      "seed": 20317226,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0022092514366438606,
+        "tongzhou_governance_information_shock": 0.008504200844835136
+      }
+    },
+    {
+      "repetition": 57,
+      "seed": 20318235,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0029823130936030384,
+        "tongzhou_governance_information_shock": 0.006383138916730352
+      }
+    },
+    {
+      "repetition": 58,
+      "seed": 20319244,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004363114914303506,
+        "tongzhou_governance_information_shock": 0.007000429919559495
+      }
+    },
+    {
+      "repetition": 59,
+      "seed": 20320253,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00373233974788687,
+        "tongzhou_governance_information_shock": 0.00470486237486469
+      }
+    },
+    {
+      "repetition": 60,
+      "seed": 20321262,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004541424908617045,
+        "tongzhou_governance_information_shock": 0.00511119596510815
+      }
+    },
+    {
+      "repetition": 61,
+      "seed": 20322271,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0026336012343420763,
+        "tongzhou_governance_information_shock": 0.0034769341729062354
+      }
+    },
+    {
+      "repetition": 62,
+      "seed": 20323280,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0073082182882602065,
+        "tongzhou_governance_information_shock": 0.004104432792473395
+      }
+    },
+    {
+      "repetition": 63,
+      "seed": 20324289,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0016597803663628743,
+        "tongzhou_governance_information_shock": 0.002719944901899407
+      }
+    },
+    {
+      "repetition": 64,
+      "seed": 20325298,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0032310993785882886,
+        "tongzhou_governance_information_shock": 0.0033473524559482224
+      }
+    },
+    {
+      "repetition": 65,
+      "seed": 20326307,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0029082135887668384,
+        "tongzhou_governance_information_shock": 0.003664383134822545
+      }
+    },
+    {
+      "repetition": 66,
+      "seed": 20327316,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002832734692183169,
+        "tongzhou_governance_information_shock": 0.005164235984986624
+      }
+    },
+    {
+      "repetition": 67,
+      "seed": 20328325,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003881688282562188,
+        "tongzhou_governance_information_shock": 0.00258662724086652
+      }
+    },
+    {
+      "repetition": 68,
+      "seed": 20329334,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004722512031861737,
+        "tongzhou_governance_information_shock": 0.011504899987181589
+      }
+    },
+    {
+      "repetition": 69,
+      "seed": 20330343,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0031803153718774355,
+        "tongzhou_governance_information_shock": 0.005905819378633928
+      }
+    },
+    {
+      "repetition": 70,
+      "seed": 20331352,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0027928028799143302,
+        "tongzhou_governance_information_shock": 0.005119129954317924
+      }
+    },
+    {
+      "repetition": 71,
+      "seed": 20332361,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0030741232099968504,
+        "tongzhou_governance_information_shock": 0.005248522766770942
+      }
+    },
+    {
+      "repetition": 72,
+      "seed": 20333370,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005157069008931899,
+        "tongzhou_governance_information_shock": 0.004631049632905112
+      }
+    },
+    {
+      "repetition": 73,
+      "seed": 20334379,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0032677514027424403,
+        "tongzhou_governance_information_shock": 0.002960609241262572
+      }
+    },
+    {
+      "repetition": 74,
+      "seed": 20335388,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0036196615828019193,
+        "tongzhou_governance_information_shock": 0.00646315013479804
+      }
+    },
+    {
+      "repetition": 75,
+      "seed": 20336397,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004936422487329598,
+        "tongzhou_governance_information_shock": 0.008023963447113753
+      }
+    },
+    {
+      "repetition": 76,
+      "seed": 20337406,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.002340260839378416,
+        "tongzhou_governance_information_shock": 0.005755640297163194
+      }
+    },
+    {
+      "repetition": 77,
+      "seed": 20338415,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005367091352087438,
+        "tongzhou_governance_information_shock": 0.0025076230117537434
+      }
+    },
+    {
+      "repetition": 78,
+      "seed": 20339424,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0018114706854583046,
+        "tongzhou_governance_information_shock": 0.004844560643042374
+      }
+    },
+    {
+      "repetition": 79,
+      "seed": 20340433,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0037808003156138276,
+        "tongzhou_governance_information_shock": 0.0049675796218189
+      }
+    },
+    {
+      "repetition": 80,
+      "seed": 20341442,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0031184474532307107,
+        "tongzhou_governance_information_shock": 0.004808290978083404
+      }
+    },
+    {
+      "repetition": 81,
+      "seed": 20342451,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00391338228596797,
+        "tongzhou_governance_information_shock": 0.005874747974296464
+      }
+    },
+    {
+      "repetition": 82,
+      "seed": 20343460,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0023376891882137467,
+        "tongzhou_governance_information_shock": 0.0030782546018492114
+      }
+    },
+    {
+      "repetition": 83,
+      "seed": 20344469,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004926011680940476,
+        "tongzhou_governance_information_shock": 0.0035998620861644173
+      }
+    },
+    {
+      "repetition": 84,
+      "seed": 20345478,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0047914236492050165,
+        "tongzhou_governance_information_shock": 0.0033656694194643955
+      }
+    },
+    {
+      "repetition": 85,
+      "seed": 20346487,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0032388405718096623,
+        "tongzhou_governance_information_shock": 0.0036358585545683544
+      }
+    },
+    {
+      "repetition": 86,
+      "seed": 20347496,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.00273309146410676,
+        "tongzhou_governance_information_shock": 0.00610083129421833
+      }
+    },
+    {
+      "repetition": 87,
+      "seed": 20348505,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003151732369692295,
+        "tongzhou_governance_information_shock": 0.006586266952561216
+      }
+    },
+    {
+      "repetition": 88,
+      "seed": 20349514,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.006169865340049151,
+        "tongzhou_governance_information_shock": 0.003817291171413241
+      }
+    },
+    {
+      "repetition": 89,
+      "seed": 20350523,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003727593248446838,
+        "tongzhou_governance_information_shock": 0.004967670687337245
+      }
+    },
+    {
+      "repetition": 90,
+      "seed": 20351532,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003038850577590164,
+        "tongzhou_governance_information_shock": 0.004327053364875418
+      }
+    },
+    {
+      "repetition": 91,
+      "seed": 20352541,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0024990394423339934,
+        "tongzhou_governance_information_shock": 0.0038871858382612577
+      }
+    },
+    {
+      "repetition": 92,
+      "seed": 20353550,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0024470429800204203,
+        "tongzhou_governance_information_shock": 0.0037354601481938534
+      }
+    },
+    {
+      "repetition": 93,
+      "seed": 20354559,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.004678143203464285,
+        "tongzhou_governance_information_shock": 0.0063352971574733834
+      }
+    },
+    {
+      "repetition": 94,
+      "seed": 20355568,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005955759857959867,
+        "tongzhou_governance_information_shock": 0.002897095181559356
+      }
+    },
+    {
+      "repetition": 95,
+      "seed": 20356577,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0046085970221959914,
+        "tongzhou_governance_information_shock": 0.0063896105893934945
+      }
+    },
+    {
+      "repetition": 96,
+      "seed": 20357586,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.003735476988834886,
+        "tongzhou_governance_information_shock": 0.0030925624247354778
+      }
+    },
+    {
+      "repetition": 97,
+      "seed": 20358595,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0037892679912214407,
+        "tongzhou_governance_information_shock": 0.004518511467421634
+      }
+    },
+    {
+      "repetition": 98,
+      "seed": 20359604,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.0044513726414237885,
+        "tongzhou_governance_information_shock": 0.00566898204886398
+      }
+    },
+    {
+      "repetition": 99,
+      "seed": 20360613,
+      "topic_rate_mae_by_event": {
+        "lecture_external_incident_shock": 0.005220552229612498,
+        "tongzhou_governance_information_shock": 0.008813395373486334
+      }
+    }
+  ],
+  "seed": 20260722
+}

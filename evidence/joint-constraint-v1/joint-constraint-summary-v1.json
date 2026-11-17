@@ -1,0 +1,172 @@
+{
+  "blind_review_status": "pending",
+  "completed_primary_slots": 48,
+  "condition_metrics": {
+    "context_ablation": {
+      "action_counts": {
+        "ignore": 6,
+        "post": 4,
+        "read": 1,
+        "seek_help": 1
+      },
+      "distinct_actions": 4,
+      "distinct_stances": 3,
+      "emotion_counts": {
+        "concerned": 8,
+        "curious": 1,
+        "neutral": 3
+      },
+      "exact_duplicate_public_text_count": 0,
+      "maximum_pair_text_similarity": 0.681481,
+      "mean_pair_text_similarity": 0.451143,
+      "private_action_count": 5,
+      "public_action_count": 5,
+      "resident_slots": 12,
+      "situation_term_uptake_count": 5,
+      "stance_counts": {
+        "mixed": 4,
+        "neutral": 1,
+        "uncertain": 7
+      },
+      "template_like_text_count": 0,
+      "unique_public_text_count": 5
+    },
+    "context_only": {
+      "action_counts": {
+        "ignore": 3,
+        "post": 2,
+        "read": 7
+      },
+      "distinct_actions": 3,
+      "distinct_stances": 2,
+      "emotion_counts": {
+        "concerned": 1,
+        "curious": 8,
+        "neutral": 3
+      },
+      "exact_duplicate_public_text_count": 0,
+      "maximum_pair_text_similarity": 0.275862,
+      "mean_pair_text_similarity": 0.275862,
+      "private_action_count": 1,
+      "public_action_count": 2,
+      "resident_slots": 12,
+      "situation_term_uptake_count": 2,
+      "stance_counts": {
+        "neutral": 6,
+        "uncertain": 6
+      },
+      "template_like_text_count": 0,
+      "unique_public_text_count": 2
+    },
+    "context_plus_profile": {
+      "action_counts": {
+        "ignore": 6,
+        "post": 5,
+        "seek_help": 1
+      },
+      "distinct_actions": 3,
+      "distinct_stances": 3,
+      "emotion_counts": {
+        "concerned": 5,
+        "curious": 1,
+        "neutral": 6
+      },
+      "exact_duplicate_public_text_count": 0,
+      "maximum_pair_text_similarity": 0.441558,
+      "mean_pair_text_similarity": 0.336558,
+      "private_action_count": 5,
+      "public_action_count": 6,
+      "resident_slots": 12,
+      "situation_term_uptake_count": 6,
+      "stance_counts": {
+        "mixed": 1,
+        "neutral": 6,
+        "uncertain": 5
+      },
+      "template_like_text_count": 0,
+      "unique_public_text_count": 6
+    },
+    "full_natural_profile": {
+      "action_counts": {
+        "ignore": 1,
+        "post": 9,
+        "read": 1,
+        "seek_help": 1
+      },
+      "distinct_actions": 4,
+      "distinct_stances": 3,
+      "emotion_counts": {
+        "concerned": 7,
+        "curious": 3,
+        "neutral": 1,
+        "skeptical": 1
+      },
+      "exact_duplicate_public_text_count": 0,
+      "maximum_pair_text_similarity": 0.573427,
+      "mean_pair_text_similarity": 0.317628,
+      "private_action_count": 11,
+      "public_action_count": 10,
+      "resident_slots": 12,
+      "situation_term_uptake_count": 9,
+      "stance_counts": {
+        "mixed": 1,
+        "neutral": 2,
+        "uncertain": 9
+      },
+      "template_like_text_count": 0,
+      "unique_public_text_count": 10
+    }
+  },
+  "paired_agent_count": 12,
+  "paired_behavior_change_rates": {
+    "joint_over_context": {
+      "action": 0.75,
+      "emotion": 0.916667,
+      "evidence_status": 0.5,
+      "private_action": 0.666667,
+      "stance": 0.416667,
+      "topic": 0.25
+    },
+    "profile_given_context": {
+      "action": 0.666667,
+      "emotion": 0.666667,
+      "evidence_status": 0.416667,
+      "private_action": 0.333333,
+      "stance": 0.416667,
+      "topic": 0.583333
+    },
+    "profile_given_state": {
+      "action": 0.583333,
+      "emotion": 0.5,
+      "evidence_status": 0.333333,
+      "private_action": 0.333333,
+      "stance": 0.5,
+      "topic": 0.416667
+    },
+    "state_given_context": {
+      "action": 0.5,
+      "emotion": 0.583333,
+      "evidence_status": 0.5,
+      "private_action": 0.333333,
+      "stance": 0.666667,
+      "topic": 0.166667
+    },
+    "state_given_profile": {
+      "action": 0.416667,
+      "emotion": 0.583333,
+      "evidence_status": 0.416667,
+      "private_action": 0.333333,
+      "stance": 0.333333,
+      "topic": 0.583333
+    }
+  },
+  "provider_usage": {
+    "completed_requests": 53,
+    "reported_tokens": 197343,
+    "unknown": 0
+  },
+  "record_level_outputs_public": false,
+  "run_id": "forum_persona_a_66c782f078b12ff22c2b9272",
+  "schema_version": "campus-pulse-joint-constraint-public-summary-v1",
+  "summary_sha256": "0c6f8e67eb482374663d02ffa9a54fa9978323bbd7050cbce24ace1e25301ca6"
+}

@@ -1,0 +1,30 @@
+{
+  "all_gates_passed": true,
+  "gates": {
+    "context_uptake_at_least_0_85": true,
+    "full_view_expression_gain_at_least_0_10": true,
+    "joint_identification_at_least_0_75": true,
+    "persona_identification_at_least_0_75": true,
+    "state_direction_at_least_0_80": true,
+    "template_like_at_most_0_05": true,
+    "unsupported_fact_at_most_0_02": true
+  },
+  "interpretation": "This small paired panel tests whether Profile and the previous committed particle state visibly constrain LLM behavior beyond the same forum context.",
+  "review_sha256": "7116f4e9e17272c6a54d54c057a862da1da42f050d4755d8d4106bbdb864d8a5",
+  "reviewer": "assistant_blind_prescreen",
+  "run_result_sha256": "7fb868ce71e9fe4713db3d94ab6f9175fd75ab2560c4052f09f747c04a56afff",
+  "schema_version": "campus-pulse-joint-constraint-blind-score-v1",
+  "score_sha256": "300c342ac4a27a3f5b0c7e38bc512e6a5999c8e502d5bbd600c9d9cdede4c0d1",
+  "scores": {
+    "abstained_all_silent_rows": 2,
+    "context_uptake_rate": 1.0,
+    "identification_denominator": 10,
+    "joint_full_view_identification_rate": 0.9,
+    "persona_factor_identification_rate": 1.0,
+    "previous_state_factor_identification_rate": 0.9,
+    "private_action_count_gain_per_agent_full_over_context": 0.833333,
+    "public_action_rate_gain_full_over_context": 0.666667,
+    "template_like_rate": 0.0,
+    "unsupported_fact_rate": 0.0
+  }
+}

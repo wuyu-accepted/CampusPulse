@@ -1,0 +1,44 @@
+{
+    "post_pool": [
+        {
+            "post_id": "P0",
+            "author": "seed_account",
+            "text": "听说今晚本市部分地区将临时管控，大家提前囤点生活物资，别到时候措手不及。",
+            "type": "rumor",
+            "round": 0,
+            "engagement": {
+                "likes": 8,
+                "reposts": 12,
+                "comments": 3
+            }
+        },
+        {
+            "post_id": "P1",
+            "author": "local_news_x",
+            "text": "关于'今晚临时管控'的说法，暂未看到任何官方通知，建议以政府发布为准。",
+            "type": "neutral",
+            "round": 0,
+            "engagement": {
+                "likes": 2,
+                "reposts": 1,
+                "comments": 0
+            }
+        }
+    ],
+    "case_bundle": {
+        "claim": "今晚本市部分地区将进行大规模临时管控",
+        "ground_truth": "false",
+        "evidence": [
+            "市政府官网及政务号当日无任何相关公告",
+            "网传截图经核查出自去年另一城市的旧通知",
+            "市政务服务热线回复：无此安排"
+        ],
+        "correction_material": "官方无管控安排，网传截图为去年外地旧图，请勿传播。"
+    },
+    "sim": {
+        "feed_size": 4,
+        "max_comments_shown": 4,
+        "intervention_mode": "none",
+        "intervention_round": 3
+    }
+}

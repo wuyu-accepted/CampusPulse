@@ -1,0 +1,50 @@
+{
+  "schema_version": "campus-pulse-case-evidence-summary-v1",
+  "project_id": "lecture-incident-governance",
+  "scenario_id": "lecture_external_incident_shock",
+  "seed": 20260722,
+  "branches": {
+    "Natural": {
+      "tick": 10,
+      "message_count": 167,
+      "reply_count": 158,
+      "thread_count": 9,
+      "claim_count": 22,
+      "corrected_or_verified_claim_count": 18,
+      "governance_message_count": 0,
+      "population_state": {
+        "concern": 0.255541,
+        "trust": 0.392113,
+        "satisfaction": 0.099617,
+        "support": 0.505872,
+        "opposition": 0.33305
+      }
+    },
+    "D": {
+      "tick": 10,
+      "message_count": 173,
+      "reply_count": 161,
+      "thread_count": 8,
+      "claim_count": 4,
+      "corrected_or_verified_claim_count": 2,
+      "governance_message_count": 6,
+      "population_state": {
+        "concern": 0.229187,
+        "trust": 0.423853,
+        "satisfaction": 0.117621,
+        "support": 0.528335,
+        "opposition": 0.317933
+      }
+    }
+  },
+  "paired_difference_D_minus_Natural": {
+    "message_count": 6,
+    "reply_count": 3,
+    "thread_count": -1,
+    "claim_count": -18,
+    "concern": -0.026354,
+    "trust": 0.03174
+  },
+  "contract_note": "This completed transfer case uses an earlier public runtime contract. Unavailable newer metrics are not filled with zero or inferred.",
+  "content_sha256": "48254e9a006c7db75619283de3e743652c6cc57db347eaf90df538cb3bc40e7d"
+}

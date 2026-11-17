@@ -1,0 +1,310 @@
+{
+  "schema_version": "representative-population-release-audit-v1",
+  "audit_date": "2026-07-26",
+  "release_status": "passed",
+  "scope": "Privacy-preserving representative forum-behavior population, two-shock qualitative transfer, and model-conditional governance stress test.",
+  "data_lineage": {
+    "authorized_input_table_count": 2,
+    "dataset_snapshot_id": "99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6",
+    "analysis_snapshot_id": "b99df3cb436403efb9961cf4f4d03e82f3ad55fd3d27994f1c6a55066abae365",
+    "same_snapshot_verified_on_server": true,
+    "third_party_or_example_data_used_in_final_evaluation": false
+  },
+  "direct_semantic_review": {
+    "manifest": "specs/004-data-grounded-representative-population/direct-transcript-review-v1.json",
+    "unique_decisions_read": 912,
+    "unique_public_messages_read": 620,
+    "automatic_metrics_decided_release": false,
+    "verdict": "release_candidate_for_representative_forum_behavior_simulation"
+  },
+  "supplemental_thread_ecology_review": {
+    "manifest": "specs/004-data-grounded-representative-population/lecture-thread-dual-seed-direct-review-v2.json",
+    "independent_seed_count": 2,
+    "observed_parent_reply_pairs_coded_per_seed": 96,
+    "unique_pairs_across_resamples_not_claimed": true,
+    "synthetic_local_threads": 6,
+    "synthetic_replies_read": 24,
+    "clear": 22,
+    "partial_non_regressive": 2,
+    "fail": 0,
+    "lecture_holdout_used_for_generation": false,
+    "verdict": "accepted_dual_seed_local_thread_pilot_with_frequency_instability_caveat"
+  },
+  "supplemental_governance_branch_review": {
+    "manifest": "specs/004-data-grounded-representative-population/governance-branch-direct-review-v1.json",
+    "shared_root_cases": 2,
+    "same_agent_policy_pairs": 4,
+    "public_reactions_read": 8,
+    "clear": 4,
+    "partial_non_regressive": 0,
+    "fail": 0,
+    "all_combined_branch_agents_marked_satisfied": false,
+    "direct_parent_reply_sequence_claimed": false,
+    "observational_causal_effect_claimed": false,
+    "verdict": "accepted_same_agent_policy_branch_demo_with_noncausal_boundary"
+  },
+  "supplemental_cross_shock_variant_review": {
+    "alignment_manifest": "specs/004-data-grounded-representative-population/cross-shock-population-alignment-audit-v1.json",
+    "direct_review_manifest": "specs/004-data-grounded-representative-population/cross-shock-variant-direct-review-v1.json",
+    "population_months": [
+      "2026-03",
+      "2026-06"
+    ],
+    "common_archetypes": 16,
+    "common_frozen_variants": 37,
+    "selected_variants": 10,
+    "decisions_read": 130,
+    "public_messages_read": 104,
+    "clear": 9,
+    "partial_non_regressive": 1,
+    "fail": 0,
+    "selective_nonresponse_controls_included": true,
+    "same_numbered_agent_claimed_across_months": false,
+    "cross_snapshot_behavior_mechanism_transfer_claimed": true,
+    "verdict": "accepted_two_level_fidelity_review_with_one_disclosed_variant_specificity_gap"
+  },
+  "supplemental_variant_gate_acceptance": {
+    "result": "_run/variant-gate-acceptance-v1-seed-20260722.json",
+    "direct_review_manifest": "specs/004-data-grounded-representative-population/variant-gate-acceptance-direct-review-v1.json",
+    "frozen_variants": 4,
+    "scenario_variant_trajectories_read": 8,
+    "decisions_read": 32,
+    "public_messages_read": 23,
+    "clear": 4,
+    "partial_non_regressive": 0,
+    "fail": 0,
+    "previous_partial_updated_to": "clear_after_variant_gate",
+    "positive_sensitivity_preserved": true,
+    "selective_nonresponse_preserved": true,
+    "irrelevant_event_public_violations": 0,
+    "population_frequency_claimed": false,
+    "causal_policy_effect_claimed": false,
+    "verdict": "accepted_frozen_panel_variant_gate_repair"
+  },
+  "privacy_audit": {
+    "artifacts_scanned": 21,
+    "raw_input_filenames_found": 0,
+    "local_or_remote_absolute_paths_found": 0,
+    "raw_post_code_keys_found": 0,
+    "raw_comment_id_keys_found": 0,
+    "source_path_keys_found": 0,
+    "persisted_prompt_keys_found": 0,
+    "email_addresses_found": 0,
+    "exact_api_secret_values_found": 0,
+    "provider_environment_variable_name_note": "Final run metadata records the configured environment-variable name, never its value.",
+    "phone_shape_false_positive_note": "Nine regex hits were manually inspected; all occur inside SHA-256 fingerprints or cache keys, not message text or contact fields.",
+    "decision_cache_contract": {
+      "validated_synthetic_decisions_only": true,
+      "prompts_stored": false,
+      "raw_rows_stored": false,
+      "api_credentials_stored": false
+    },
+    "status": "pass"
+  },
+  "cost_audit": {
+    "single_policy_turns": 192,
+    "single_policy_provider_reported_token_range": [
+      441909,
+      466976
+    ],
+    "approximate_tokens_per_decision": 2300,
+    "two_policy_shared_baseline_turns": 336,
+    "two_policy_generation_equivalent_tokens": 849099,
+    "variant_gate_provider_calls": 33,
+    "variant_gate_provider_reported_tokens": 83566,
+    "dual_seed_local_thread_reply_count": 24,
+    "dual_seed_local_thread_accounted_tokens": 108636,
+    "resumability_examples": [
+      {
+        "run": "lecture seed 20261731",
+        "cache_hits": 94,
+        "new_provider_calls": 98
+      },
+      {
+        "run": "Tongzhou seed 20260722 after attention update",
+        "cache_hits": 170,
+        "new_provider_calls": 22
+      },
+      {
+        "run": "Tongzhou baseline plus combined policy final update",
+        "cache_hits": 240,
+        "new_provider_calls": 96
+      }
+    ]
+  },
+  "verification": {
+    "local_test_command": "py -3.13 -m unittest src.envs.campus_pulse_governance.tests.test_artifact_contract -v",
+    "local_tests_run": 6,
+    "local_tests_passed": 6,
+    "server_test_command": "python3 -m unittest discover -s src/envs/campus_pulse_governance/tests -v",
+    "competition_release_command": "make campus-pulse-verify",
+    "server_tests_run": 70,
+    "server_tests_passed": 70,
+    "frontend_authoritative_artifact_contract": "pass",
+    "json_contract_validation": "pass",
+    "frontend_production_build": "pass",
+    "frontend_chunk_warning_status": "none_after_route_and_vendor_split",
+    "frontend_campus_pulse_route_chunk_kib": 35.52,
+    "thread_ecology_browser_layout": "desktop_and_mobile_no_horizontal_overflow",
+    "governance_branch_browser_layout": "desktop_and_mobile_no_horizontal_overflow",
+    "cross_shock_fidelity_browser_layout": "desktop_and_mobile_no_horizontal_overflow",
+    "variant_gate_repair_frontend_contract": "pass",
+    "variant_gate_repair_browser_layout": "desktop_1440x900_and_mobile_390x844_pass",
+    "browser_runtime_health": {
+      "broken_images": 0,
+      "console_warnings": 0,
+      "console_errors": 0,
+      "document_horizontal_overflow": false,
+      "body_horizontal_overflow": false,
+      "internal_shell_horizontal_overflow": false
+    },
+    "browser_interactions_checked": [
+      "Tongzhou governance shock to lecture external shock and back",
+      "four-stage shock replay",
+      "natural evolution to combined governance branch",
+      "exam-range persona historical drift to repaired gate trajectory"
+    ]
+  },
+  "deployment": {
+    "host_key_fingerprint_verified": "verified_redacted",
+    "host_specific_paths_redacted": true,
+    "remote_repository": "repository_root",
+    "pre_release_backup": "operator_managed_backup/representative-population-pre-release-20260722",
+    "incremental_sync": {
+      "date": "2026-07-23",
+      "method": "scp_to_explicit_paths_only",
+      "changed_file_count": 7,
+      "pre_sync_backup": "operator_managed_backup/cross-shock-fidelity-ui-v1-20260723-0113",
+      "local_remote_changed_file_sha256_match": true
+    },
+    "variant_gate_frontend_sync": {
+      "date": "2026-07-23",
+      "method": "scp_to_three_explicit_paths_only",
+      "changed_file_count": 3,
+      "pre_sync_backup": "operator_managed_backup/frontend-gate-repair-v1-20260723-1147",
+      "artifact_contract_tests": "6_of_6_pass",
+      "complete_server_tests": "70_of_70_pass",
+      "production_build": "pass"
+    },
+    "engineering_closure": {
+      "date": "2026-07-26",
+      "release_branch": "release/campus-pulse-v1",
+      "release_tag": "campus-pulse-v1.0.0",
+      "pre_closure_backup": "operator_managed_backup/campus-pulse-pre-engineering-closure-20260725-2159",
+      "historical_run_policy": "_run ignored by default; only directly reviewed release artifacts are force-added",
+      "raw_inputs_in_release_archive": false,
+      "api_secret_in_release_archive": false
+    },
+    "remote_test_status": "pass",
+    "remote_frontend_build_status": "pass"
+  },
+  "release_artifacts": [
+    {
+      "path": "_run/taxonomy-release-v2_3-reviewed-1000.json",
+      "bytes": 655619,
+      "sha256": "317704264fd51e79b2eb660481c16f25f2603b133244fb5e8b4eab24d9ef485b"
+    },
+    {
+      "path": "_run/persona-evidence-v1-reviewed-1000.json",
+      "bytes": 403392,
+      "sha256": "a410253677533feae3d2c3a05b4eb942497a5200a3b709d865d3257bda5e2a90"
+    },
+    {
+      "path": "_run/persona-release-v1-reviewed-17x3.json",
+      "bytes": 131091,
+      "sha256": "baebf3653a9a78f2cbdf6b994c196dfcc9d02f918e0d6bef7d8b7fd15e2c84d4"
+    },
+    {
+      "path": "_run/representative-v18-48-lecture-seed-20260722.json",
+      "bytes": 785313,
+      "sha256": "2006ad5745fed0231e39fc3e88eef515a4ad40356e2d043f94ea81b89aaee5e5"
+    },
+    {
+      "path": "_run/representative-v17-48-lecture-seed-20261731.json",
+      "bytes": 784452,
+      "sha256": "8038f8f4dafba4e37c0ecaddca7a5e610c6fa634736acf3af642e8cd649d8d04"
+    },
+    {
+      "path": "_run/representative-v20-48-tongzhou-seed-20260722.json",
+      "bytes": 796816,
+      "sha256": "838857b3d0a9572d81d78703a514105ae8aea5f9a3b7779551e82e4b05a0a0bb"
+    },
+    {
+      "path": "_run/representative-v21-48-tongzhou-seed-20261731.json",
+      "bytes": 795210,
+      "sha256": "64e003d8271ceef3282bdae88b8c20735ecc5300aff8786f075c7acb1265fa6f"
+    },
+    {
+      "path": "_run/representative-v24-48-tongzhou-policy-seed-20260722.json",
+      "bytes": 1307160,
+      "sha256": "8392fa5344fdc7d64f9d4d59f4361e24957974d4c2ec7765d168f58547274bc4"
+    },
+    {
+      "path": "_run/forum-expression-pilot-v3.json",
+      "bytes": 68702,
+      "sha256": "fc98e2594e39afbc3b1cd3e77673dd99e749723adf0c79d851b148f9a1147e95"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/direct-transcript-review-v1.json",
+      "bytes": 12396,
+      "sha256": "8edfc54f1f71ad9eeef1419dfd12f5cd9611e0073bdb1eaf3a4bdd971000735e"
+    },
+    {
+      "path": "_run/lecture-thread-ecology-pilot-v10-seed-20260722.json",
+      "bytes": 46516,
+      "sha256": "4bcb380123e52a01ee02e2d512fe471f40148feb8f8982d59e7ab1fcc1a66ec1"
+    },
+    {
+      "path": "_run/lecture-thread-ecology-pilot-v9-seed-20261731.json",
+      "bytes": 45928,
+      "sha256": "1b98bef495bc0e5715622f3b6bb8b4120219ec6f64ce68d12fa90d805a9529a8"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/lecture-thread-dual-seed-direct-review-v2.json",
+      "bytes": 8409,
+      "sha256": "61183ab3ae679c0088aea2810ac0840f55156bf019a4f64d096cb44df5abf08c"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/governance-branch-direct-review-v1.json",
+      "bytes": 4548,
+      "sha256": "59c40df90ea2d48b17fedb5630aac3abd40fb79dcd8fd3e5292d4e88fa130ce6"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/cross-shock-population-alignment-audit-v1.json",
+      "bytes": 3335,
+      "sha256": "ef26b708be0d2dc2cea5c4f746007b05de3a3a5f656ab7300617129b6f598103"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/cross-shock-variant-direct-review-v1.json",
+      "bytes": 10342,
+      "sha256": "9f42c45e42a0f08467d3751b821eb05d1d422d946f9519a84c50e39ba6b44db7"
+    },
+    {
+      "path": "_run/variant-gate-acceptance-v1-seed-20260722.json",
+      "bytes": 74531,
+      "sha256": "3cedca118fb87440dedf9cee5fed1560ccf409b9d8e6d00f961ed37af0d68b21"
+    },
+    {
+      "path": "_run/variant-gate-acceptance-v1-seed-20260722.decisions.json",
+      "bytes": 19365,
+      "sha256": "bd08d7809c80d0d741606492078fc3df2ac27131b4df4412d123799a7d03b80f"
+    },
+    {
+      "path": "specs/004-data-grounded-representative-population/variant-gate-acceptance-direct-review-v1.json",
+      "bytes": 7204,
+      "sha256": "aef876091c477511a755b77604209f01664ffe8b163ca70aa237a6915fb9124c"
+    }
+  ],
+  "nonclaims": [
+    "No real person, demographic population, silent reader, true diffusion speed, or response latency is reconstructed.",
+    "Absolute posting volume is not calibrated.",
+    "Trust and satisfaction are simulated latent states.",
+    "Policy-branch differences are not causally identified.",
+    "The shared-root policy comparison is an explanatory pairing of same-agent public reactions, not an observed direct-reply sequence.",
+    "Synthetic agent numbers are snapshot-local row identifiers and do not identify the same simulated individual across March and June.",
+    "Cross-month fidelity evidence concerns frozen behavior-variant mechanisms, not fixed population weights or real-person digital twins.",
+    "The local thread pilot does not reconstruct a complete observed reply or diffusion graph.",
+    "The dual-seed 24-reply coverage probe is not a population-frequency calibration; its interaction-function mix remains seed-sensitive.",
+    "The four-variant gate panel is a frozen regression acceptance test, not a population response-rate estimate or full-simulation external-validity claim."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "experiment_a": {
+    "blind": "{\"private_note\":\"看到有关于临时管控的消息，但没有官方确认，不想被误导。\",\"action_type\":\"no_action\",\"public_text\":\"\"}",
+    "direct": "{\"belief\":\"怀疑\",\"action\":\"等待官方消息\",\"reason\":\"因为没有官方通知，消息的真实性无法确认，应该以政府发布的信息为准。\"}"
+  }
+}

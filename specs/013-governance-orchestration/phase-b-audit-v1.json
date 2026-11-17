@@ -1,0 +1,155 @@
+{
+  "schema_version": "campus-pulse-governance-phase-b-audit-v1",
+  "audited_at_utc": "2026-07-27T05:09:02Z",
+  "release_status": "phase_b_internal_only",
+  "scope": {
+    "completed_tasks": [
+      "T100",
+      "T110",
+      "T120",
+      "T130",
+      "T140"
+    ],
+    "workspace_schema_version": 8,
+    "governance_table_count": 6,
+    "governance_index_count": 5,
+    "governance_trigger_count": 18,
+    "decision_source": "previous_sealed_aggregate_only",
+    "policy_projection_target": "existing_policy_dataclass",
+    "second_persona_or_state_engine_added": false,
+    "real_world_action_allowed": false
+  },
+  "identities": {
+    "actor_release_id": "campus-pulse-governance-actors-v1-reviewed",
+    "actor_release_fingerprint": "0caaabbc3e370ef3d35cb693498e6fac2acc5138d0a906a91aa389c8ff8141e7",
+    "action_release_id": "campus-pulse-governance-actions-v1-reviewed",
+    "action_release_fingerprint": "4799bc1172e32263bf5c598ebc8158fd72a8300a16bbaece71dfc5819371c36f",
+    "reviewed_test_assignment_fingerprint": "8cf4fe6cb6dbd46ce2c62fa0344732e7d6a614e2f79084c7752a420f604bafd7",
+    "reviewed_test_program_fingerprint": "d626680c62cbba4b3343d722463211e3d3c385042dda73e298a22be47fd0c589"
+  },
+  "persistence_contract": {
+    "program_release": "immutable_and_exactly_idempotent",
+    "run_binding": "immutable_and_exactly_idempotent",
+    "action_events": "append_only_hash_chain",
+    "resource_events": "append_only_hash_chain",
+    "epoch_evaluations": "append_only_semantic_hash_chain",
+    "epoch_checkpoints": "append_only_semantic_hash_chain",
+    "resource_conservation": "opening_plus_replenishment_equals_available_plus_reserved_plus_settled_loss",
+    "lease_provenance": "database_validated_current_generation",
+    "semantic_hashes_depend_on_lease_identity": false
+  },
+  "automated_gates": {
+    "targeted_local": {
+      "command": "PYTHONPATH=<repo>;<repo>/src python -W error::ResourceWarning -m unittest -v backend.tests.test_campus_pulse_governance_compiler backend.tests.test_campus_pulse_governance_runtime",
+      "tests_passed": 26,
+      "tests_failed": 0,
+      "elapsed_seconds": 8.17
+    },
+    "backend_local": {
+      "command": "PYTHONPATH=<repo>;<repo>/src python -W error::ResourceWarning -m unittest discover -q -s backend/tests -p test_*.py",
+      "tests_passed": 323,
+      "tests_failed": 0,
+      "tests_skipped": 29,
+      "elapsed_seconds": 337.666,
+      "note": "Optional FastAPI and other server-only dependencies were absent locally; the authoritative server suite below had them installed."
+    },
+    "targeted_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest -v src.backend.tests.test_campus_pulse_governance_compiler src.backend.tests.test_campus_pulse_governance_runtime",
+      "tests_passed": 26,
+      "tests_failed": 0,
+      "elapsed_seconds": 2.506
+    },
+    "backend_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest discover -q -s src/backend/tests -p test_*.py",
+      "tests_passed": 325,
+      "tests_failed": 0,
+      "elapsed_seconds": 133.622
+    },
+    "simulation_authorized_server": {
+      "command": "PYTHONPATH=.:src python -W error::ResourceWarning -m unittest discover -q -s src/envs/campus_pulse_governance/tests -p test_*.py",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "elapsed_seconds": 7.066
+    },
+    "frontend_contract_authorized_server": {
+      "command": "node --test src/frontend/tests/*.test.mjs",
+      "tests_passed": 11,
+      "tests_failed": 0
+    },
+    "frontend_production_build_authorized_server": {
+      "command": "cd src/frontend && npm run build",
+      "modules_transformed": 2154,
+      "status": "passed"
+    },
+    "container_static_authorized_server": {
+      "command": "make campus-pulse-container-static-check",
+      "status": "passed"
+    },
+    "tracked_diff_whitespace_authorized_server": {
+      "command": "git diff --check",
+      "status": "passed"
+    },
+    "provider_calls": 0
+  },
+  "negative_and_recovery_cases_proved": [
+    "schema_v7_to_v8_atomic_migration",
+    "program_registration_conflict",
+    "run_binding_conflict",
+    "future_epoch_without_prior_checkpoint",
+    "caller_cannot_supply_trigger_state",
+    "privacy_suppressed_conditional_trigger_fails_closed",
+    "stale_lease_rejected_before_ledger_write",
+    "duplicate_reservation_is_idempotent",
+    "concurrent_duplicate_reservation_has_one_append",
+    "reservation_crash_rolls_back_action_and_resources",
+    "new_lease_restart_matches_uninterrupted_semantic_epoch_hashes",
+    "resource_conservation_after_every_transition",
+    "append_only_update_and_delete_rejected"
+  ],
+  "claim_boundary": {
+    "execution_kind": "model_conditional_simulation_or_deterministic_fixture",
+    "historical_fit_kind": "descriptive_calibration",
+    "causal_effect_identified": false,
+    "governance_recommendation_released": false,
+    "real_action_executed": false,
+    "raw_forum_text_persisted_in_governance_ledgers": false
+  },
+  "non_claims": [
+    "Phase B does not yet execute matched baseline and intervention branches through the governance ledger.",
+    "Phase B does not yet derive or release governance-gap explanations.",
+    "Phase B does not estimate real staffing, budget, service capacity or policy effects.",
+    "Phase B does not contact users, publish notices, moderate content, create work orders or trigger emergency responses.",
+    "No Provider credential was read and no Provider request was made."
+  ],
+  "deferred_tasks": [
+    "T200",
+    "T210",
+    "T220",
+    "T230",
+    "T240",
+    "T300",
+    "T310",
+    "T320",
+    "T400",
+    "T410",
+    "T420"
+  ],
+  "audited_files": {
+    "src/backend/campus_pulse/governance/persistence_schema.py": "c4c304ee549349e792e32faf9c5b23047aa9d3a318fb6f83c8c5c7f02304c70a",
+    "src/backend/campus_pulse/governance/runtime.py": "3fc38998025c7b9f36f54009c052b762ed68e071f0d02d8347d9b7986295e831",
+    "src/backend/campus_pulse/governance/projection.py": "0e1f743ef4011f4899b89b4be0f8692e0fd1258de80050fbc955cfdfb6e0b876",
+    "src/backend/campus_pulse/governance/sqlite_repository.py": "ea1fb5707184cb914c98237c49b6bf7e7a5a2eb47fc1c7b20ef45b2aeda9b027",
+    "src/backend/campus_pulse/governance/__init__.py": "0b168891af66383e6e3e24bd20a049666d7fd8696783978bcc16d1a42ad79896",
+    "src/backend/campus_pulse/store.py": "f11641fa7571b4471a7a1078cd915eed67d5aa775775a0d851519a55b62c54ee",
+    "src/backend/tests/test_campus_pulse_governance_runtime.py": "1515fde7160e1a51d485e00f01343086e2c5ada78822554e2ddfab65f417b1ce",
+    "src/backend/tests/test_campus_pulse_governance_compiler.py": "f2647854cbb87e6925b9ea722ea0de2f0a3d3edd1e3e1989c5c4b767793879df",
+    "src/backend/tests/test_campus_pulse_schema_v4.py": "28389b9aa14cde27603e00de504ffb74c73d8c4d7d6a0459e65b9851bdea214a",
+    "src/backend/tests/test_campus_pulse_schema_v5.py": "e07643a1bf80fd6aabc17320a7240dba741d854a6546b75f7fe439d3c8ac67e9",
+    "src/backend/tests/test_campus_pulse_schema_v6.py": "63408f3b017dff868fe4565dda268c1a918a0c2e760a7fbbe6cd429b546a1924",
+    "src/backend/tests/test_campus_pulse_schema_v7.py": "a2b3d04d1925a8bef98d0417e35316e4b60e4cdbf9d28588c296a509a3fa369b",
+    "src/backend/tests/test_campus_pulse_sensing_lineage.py": "64084b74342bfd2b481991afb7c29ad5d0a1e779b010729ce72ed9f3ca0665d2",
+    "specs/013-governance-orchestration/spec.md": "12e16b6a8ef1a23fcb4cb536c56ba314087efdbe18954149bae8b15ab07ecb8a",
+    "specs/013-governance-orchestration/plan.md": "fc7dba4d993f1f9eeb552dfc53b17eb5d26992686a1dac37b2a284e6d749307f",
+    "specs/013-governance-orchestration/tasks.md": "97f27cb32770e6daecca63f30c1fc2c7910a1e9c9a9785c6096b66fb372425af"
+  }
+}

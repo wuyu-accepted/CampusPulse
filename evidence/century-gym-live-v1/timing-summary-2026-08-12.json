@@ -1,0 +1,735 @@
+{
+  "contains_credentials": false,
+  "contains_prompt_or_provider_body": false,
+  "elapsed_seconds": 1182.458,
+  "latest": {
+    "elapsed_seconds": 1182.458,
+    "ledger": {
+      "attempt_total": 146,
+      "attempts": [
+        {
+          "count": 8,
+          "outcome": "format_invalid",
+          "slot_kind": "resident",
+          "state": "settled"
+        },
+        {
+          "count": 137,
+          "outcome": "success",
+          "slot_kind": "resident",
+          "state": "settled"
+        },
+        {
+          "count": 1,
+          "outcome": "unknown",
+          "slot_kind": "resident",
+          "state": "settled"
+        }
+      ],
+      "cache": [
+        {
+          "completion_tokens": 35278,
+          "count": 137,
+          "prompt_tokens": 757907,
+          "slot_kind": "resident",
+          "total_tokens": 793185
+        }
+      ],
+      "cache_total": 137,
+      "control": {
+        "authorization_active": 1,
+        "authorization_consumed": 1,
+        "cancellation_requested": 0,
+        "lease_active": 1,
+        "next_request_occurrence": 147,
+        "provider_calls_completed": 146,
+        "provider_calls_reserved": 0,
+        "provider_calls_unknown": 1,
+        "provider_profile_enabled": 1,
+        "provider_reported_tokens": 841292,
+        "risk_charged_tokens": 53100,
+        "tokens_in_flight": 0
+      },
+      "events": [
+        {
+          "count": 1,
+          "event_kind": "authorization_consumed"
+        },
+        {
+          "count": 146,
+          "event_kind": "request_invoked"
+        },
+        {
+          "count": 146,
+          "event_kind": "request_reserved"
+        },
+        {
+          "count": 146,
+          "event_kind": "request_settled"
+        }
+      ],
+      "ledger_bytes": 987136,
+      "wal_bytes": 0
+    },
+    "observed_at": "2026-08-12T14:46:28.669479Z",
+    "public_progress": {
+      "committed_ticks": [
+        {
+          "branch": "shared_baseline",
+          "content_sha256": "454e74d31516cb0558ad29f38f9bc324a5296315ba4bc3d3d2293aad970b984a",
+          "tick": 3
+        },
+        {
+          "branch": "shared_baseline",
+          "content_sha256": "efcfb0975291b2dbad16373e3331ccdf0762a705e0077b3589fa931428755186",
+          "tick": 4
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "d26de485f248d4f7fc15d6ed779722a7c5537ec273c64e3a8700d2c97d3617ff",
+          "tick": 5
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "e8bf6c8013441831c55eb0fab8e66d94a3dc32f23b8b79ed19354ec5166e690f",
+          "tick": 6
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "f6bdffd1654362221dde931a91ec394651d5cb8c568faa34209e1acbfceb2a28",
+          "tick": 7
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "b80201faaf0715915b81a1e73a62b384acf6c4b0af9eefe51c6b57735edbc7d2",
+          "tick": 8
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "58137f3488f7062a0ab94ee197cd39f93c04cc105a943089bab3ed9ae40a5041",
+          "tick": 9
+        },
+        {
+          "branch": "Natural",
+          "content_sha256": "d566ee692bf466934ffedf39563768a1e6ec4b5fc6992a06e262f5d0b6ed8450",
+          "tick": 10
+        }
+      ],
+      "preflight_sha256": "52db468d5eec0ec99d61b70e74ef94d25c8340bf027e93d6297469e9e60d132b",
+      "result_sha256": null,
+      "run_id": "forum_hero_356ee850dcfb72579646a487",
+      "scenario_id": "century_gym_ghost_booking_dispute",
+      "status": "paused_fail_closed",
+      "stop_code": "V7LiveUnknownOutcome"
+    }
+  },
+  "milestones": {
+    "first_attempt": {
+      "at": "2026-08-12T14:28:26.671317Z",
+      "elapsed_seconds": 100.464
+    },
+    "first_resident_settled": {
+      "at": "2026-08-12T14:28:29.694358Z",
+      "elapsed_seconds": 103.484
+    },
+    "ledger_created": {
+      "at": "2026-08-12T14:27:53.450271Z",
+      "elapsed_seconds": 67.24
+    },
+    "monitor_started": {
+      "at": "2026-08-12T14:26:46.207576Z",
+      "elapsed_seconds": 0.0
+    },
+    "terminal": {
+      "at": "2026-08-12T14:46:28.669479Z",
+      "elapsed_seconds": 1182.458,
+      "status": "paused_fail_closed",
+      "stop_code": "V7LiveUnknownOutcome"
+    }
+  },
+  "monitor_id": "20260812T222646",
+  "monitor_started_at": "2026-08-12T14:26:46.207576Z",
+  "preflight_sha256": "52db468d5eec0ec99d61b70e74ef94d25c8340bf027e93d6297469e9e60d132b",
+  "schema_version": "campus-pulse-century-gym-timing-v1",
+  "status": "paused_fail_closed",
+  "tick_timings": [
+    {
+      "branch": "shared_baseline",
+      "content_sha256": "454e74d31516cb0558ad29f38f9bc324a5296315ba4bc3d3d2293aad970b984a",
+      "elapsed_seconds": 158.831,
+      "first_observed_at": "2026-08-12T14:29:25.042971Z",
+      "ledger_counters": {
+        "attempt_total": 17,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "pending",
+            "slot_kind": "resident",
+            "state": "invoked"
+          },
+          {
+            "count": 16,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 2638,
+            "count": 16,
+            "prompt_tokens": 65343,
+            "slot_kind": "resident",
+            "total_tokens": 67981
+          }
+        ],
+        "cache_total": 16,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 18,
+          "provider_calls_completed": 16,
+          "provider_calls_reserved": 1,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 67981,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 50778
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 17,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 17,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 16,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 135168,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 158.831,
+      "tick": 3
+    },
+    {
+      "branch": "shared_baseline",
+      "content_sha256": "efcfb0975291b2dbad16373e3331ccdf0762a705e0077b3589fa931428755186",
+      "elapsed_seconds": 250.422,
+      "first_observed_at": "2026-08-12T14:30:56.632246Z",
+      "ledger_counters": {
+        "attempt_total": 33,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 32,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 6974,
+            "count": 32,
+            "prompt_tokens": 155460,
+            "slot_kind": "resident",
+            "total_tokens": 162434
+          }
+        ],
+        "cache_total": 32,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 34,
+          "provider_calls_completed": 33,
+          "provider_calls_reserved": 0,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 168445,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 0
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 33,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 33,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 33,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 237568,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 91.591,
+      "tick": 4
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "d26de485f248d4f7fc15d6ed779722a7c5537ec273c64e3a8700d2c97d3617ff",
+      "elapsed_seconds": 357.156,
+      "first_observed_at": "2026-08-12T14:32:43.366181Z",
+      "ledger_counters": {
+        "attempt_total": 51,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "pending",
+            "slot_kind": "resident",
+            "state": "invoked"
+          },
+          {
+            "count": 2,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 48,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 11257,
+            "count": 48,
+            "prompt_tokens": 246568,
+            "slot_kind": "resident",
+            "total_tokens": 257825
+          }
+        ],
+        "cache_total": 48,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 52,
+          "provider_calls_completed": 50,
+          "provider_calls_reserved": 1,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 269859,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 52234
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 51,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 51,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 50,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 348160,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 106.734,
+      "tick": 5
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "e8bf6c8013441831c55eb0fab8e66d94a3dc32f23b8b79ed19354ec5166e690f",
+      "elapsed_seconds": 431.678,
+      "first_observed_at": "2026-08-12T14:33:57.890001Z",
+      "ledger_counters": {
+        "attempt_total": 67,
+        "attempts": [
+          {
+            "count": 3,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 64,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 15743,
+            "count": 64,
+            "prompt_tokens": 338660,
+            "slot_kind": "resident",
+            "total_tokens": 354403
+          }
+        ],
+        "cache_total": 64,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 68,
+          "provider_calls_completed": 67,
+          "provider_calls_reserved": 0,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 372571,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 0
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 67,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 67,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 67,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 479232,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 74.522,
+      "tick": 6
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "f6bdffd1654362221dde931a91ec394651d5cb8c568faa34209e1acbfceb2a28",
+      "elapsed_seconds": 514.281,
+      "first_observed_at": "2026-08-12T14:35:20.493493Z",
+      "ledger_counters": {
+        "attempt_total": 86,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "pending",
+            "slot_kind": "resident",
+            "state": "invoked"
+          },
+          {
+            "count": 5,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 80,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 19897,
+            "count": 80,
+            "prompt_tokens": 432827,
+            "slot_kind": "resident",
+            "total_tokens": 452724
+          }
+        ],
+        "cache_total": 80,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 87,
+          "provider_calls_completed": 85,
+          "provider_calls_reserved": 1,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 483016,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 52808
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 86,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 86,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 85,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 589824,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 82.603,
+      "tick": 7
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "b80201faaf0715915b81a1e73a62b384acf6c4b0af9eefe51c6b57735edbc7d2",
+      "elapsed_seconds": 607.974,
+      "first_observed_at": "2026-08-12T14:36:54.185284Z",
+      "ledger_counters": {
+        "attempt_total": 102,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "pending",
+            "slot_kind": "resident",
+            "state": "invoked"
+          },
+          {
+            "count": 5,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 96,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 24249,
+            "count": 96,
+            "prompt_tokens": 524914,
+            "slot_kind": "resident",
+            "total_tokens": 549163
+          }
+        ],
+        "cache_total": 96,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 103,
+          "provider_calls_completed": 101,
+          "provider_calls_reserved": 1,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 579455,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 52518
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 102,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 102,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 101,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 692224,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 93.693,
+      "tick": 8
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "58137f3488f7062a0ab94ee197cd39f93c04cc105a943089bab3ed9ae40a5041",
+      "elapsed_seconds": 765.171,
+      "first_observed_at": "2026-08-12T14:39:31.382076Z",
+      "ledger_counters": {
+        "attempt_total": 119,
+        "attempts": [
+          {
+            "count": 1,
+            "outcome": "pending",
+            "slot_kind": "resident",
+            "state": "invoked"
+          },
+          {
+            "count": 6,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 112,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 28554,
+            "count": 112,
+            "prompt_tokens": 616009,
+            "slot_kind": "resident",
+            "total_tokens": 644563
+          }
+        ],
+        "cache_total": 112,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 120,
+          "provider_calls_completed": 118,
+          "provider_calls_reserved": 1,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 680758,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 52252
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 119,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 119,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 118,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 815104,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 157.197,
+      "tick": 9
+    },
+    {
+      "branch": "Natural",
+      "content_sha256": "d566ee692bf466934ffedf39563768a1e6ec4b5fc6992a06e262f5d0b6ed8450",
+      "elapsed_seconds": 854.868,
+      "first_observed_at": "2026-08-12T14:41:01.078735Z",
+      "ledger_counters": {
+        "attempt_total": 134,
+        "attempts": [
+          {
+            "count": 6,
+            "outcome": "format_invalid",
+            "slot_kind": "resident",
+            "state": "settled"
+          },
+          {
+            "count": 128,
+            "outcome": "success",
+            "slot_kind": "resident",
+            "state": "settled"
+          }
+        ],
+        "cache": [
+          {
+            "completion_tokens": 32773,
+            "count": 128,
+            "prompt_tokens": 706775,
+            "slot_kind": "resident",
+            "total_tokens": 739548
+          }
+        ],
+        "cache_total": 128,
+        "control": {
+          "authorization_active": 1,
+          "authorization_consumed": 1,
+          "cancellation_requested": 0,
+          "lease_active": 1,
+          "next_request_occurrence": 135,
+          "provider_calls_completed": 134,
+          "provider_calls_reserved": 0,
+          "provider_calls_unknown": 0,
+          "provider_profile_enabled": 1,
+          "provider_reported_tokens": 775743,
+          "risk_charged_tokens": 0,
+          "tokens_in_flight": 0
+        },
+        "events": [
+          {
+            "count": 1,
+            "event_kind": "authorization_consumed"
+          },
+          {
+            "count": 134,
+            "event_kind": "request_invoked"
+          },
+          {
+            "count": 134,
+            "event_kind": "request_reserved"
+          },
+          {
+            "count": 134,
+            "event_kind": "request_settled"
+          }
+        ],
+        "ledger_bytes": 925696,
+        "wal_bytes": 0
+      },
+      "seconds_since_previous_commit": 89.697,
+      "tick": 10
+    }
+  ],
+  "timeline_file": "timing-snapshots-20260812T222646.jsonl",
+  "updated_at": "2026-08-12T14:46:28.669479Z"
+}

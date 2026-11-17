@@ -1,0 +1,144 @@
+{
+  "schema_version": "campus-pulse-anonymous-particle-panel-v1",
+  "panel_file": "anonymous-particle-panel-v1.npz",
+  "panel_sha256": "98c591dca0e3bfe09669564794cb3adab2758d73440384802504b7d7695377a8",
+  "frames": [
+    {
+      "prefix": "frame_00",
+      "tick": 0,
+      "branch": "shared_initial",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_01",
+      "tick": 3,
+      "branch": "shared_baseline",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_02",
+      "tick": 4,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_03",
+      "tick": 4,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_04",
+      "tick": 5,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_05",
+      "tick": 5,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_06",
+      "tick": 6,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_07",
+      "tick": 6,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_08",
+      "tick": 7,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_09",
+      "tick": 7,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_10",
+      "tick": 8,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_11",
+      "tick": 8,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_12",
+      "tick": 9,
+      "branch": "D",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    },
+    {
+      "prefix": "frame_13",
+      "tick": 9,
+      "branch": "Natural",
+      "anonymous_parent_count": 1000,
+      "particles_per_parent": 10
+    }
+  ],
+  "state_fields": [
+    "attention",
+    "concern",
+    "trust",
+    "satisfaction",
+    "support",
+    "opposition",
+    "activity",
+    "voice",
+    "service_strain",
+    "rumor_belief",
+    "verified_belief",
+    "evidence_acceptance"
+  ],
+  "shape_per_frame": [
+    1000,
+    10,
+    12
+  ],
+  "weight_contract": {
+    "particle_weights_sum_to_parent_weight": true,
+    "all_particle_weights_sum_to_one_per_frame": true
+  },
+  "anonymization": {
+    "stable_anonymous_parent_slot": true,
+    "runtime_parent_indices_removed": true,
+    "agent_ids_removed": true,
+    "profile_join_keys_removed": true,
+    "prompt_and_response_fingerprints_removed": true,
+    "assimilation_records_removed": true,
+    "source_ids_and_text_absent": true
+  },
+  "allowed_uses": [
+    "per-frame particle distributions",
+    "within-parent particle uncertainty",
+    "longitudinal anonymous-parent change",
+    "Natural versus D state comparisons"
+  ],
+  "interpretation": "The 10 particles under one anonymous parent are uncertainty states for one synthetic Agent, not ten people. Anonymous slots cannot be joined to profiles, forum messages or source records."
+}

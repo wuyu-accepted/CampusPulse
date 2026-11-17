@@ -1,0 +1,297 @@
+{
+  "category_metrics": {
+    "academic_and_exam": {
+      "linked_comments": 72746,
+      "mean_comments_if_responded": 4.570046488252293,
+      "mean_comments_per_post": 3.4015711212943045,
+      "peak_dates": [
+        {
+          "date": "2026-06-22",
+          "posts": 322
+        },
+        {
+          "date": "2026-07-16",
+          "posts": 288
+        },
+        {
+          "date": "2026-06-18",
+          "posts": 258
+        }
+      ],
+      "posts": 21386,
+      "response_probability_proxy": 0.7443187131768446,
+      "with_comment": 15918,
+      "zero_comment_rate": 0.25568128682315533
+    },
+    "campus_services": {
+      "linked_comments": 19978,
+      "mean_comments_if_responded": 4.146533831465338,
+      "mean_comments_per_post": 3.285314915309982,
+      "peak_dates": [
+        {
+          "date": "2026-06-21",
+          "posts": 64
+        },
+        {
+          "date": "2026-06-22",
+          "posts": 60
+        },
+        {
+          "date": "2026-04-22",
+          "posts": 58
+        }
+      ],
+      "posts": 6081,
+      "response_probability_proxy": 0.7923038973852985,
+      "with_comment": 4818,
+      "zero_comment_rate": 0.20769610261470153
+    },
+    "career_development": {
+      "linked_comments": 25541,
+      "mean_comments_if_responded": 5.786361576801087,
+      "mean_comments_per_post": 4.589577717879605,
+      "peak_dates": [
+        {
+          "date": "2026-06-03",
+          "posts": 77
+        },
+        {
+          "date": "2026-07-01",
+          "posts": 71
+        },
+        {
+          "date": "2026-05-26",
+          "posts": 67
+        }
+      ],
+      "posts": 5565,
+      "response_probability_proxy": 0.7931716082659479,
+      "with_comment": 4414,
+      "zero_comment_rate": 0.20682839173405212
+    },
+    "emotional_support": {
+      "linked_comments": 21498,
+      "mean_comments_if_responded": 6.853044309850175,
+      "mean_comments_per_post": 5.860959651035987,
+      "peak_dates": [
+        {
+          "date": "2026-06-22",
+          "posts": 68
+        },
+        {
+          "date": "2026-06-24",
+          "posts": 53
+        },
+        {
+          "date": "2026-06-23",
+          "posts": 51
+        }
+      ],
+      "posts": 3668,
+      "response_probability_proxy": 0.8552344601962922,
+      "with_comment": 3137,
+      "zero_comment_rate": 0.14476553980370774
+    },
+    "relationships": {
+      "linked_comments": 42402,
+      "mean_comments_if_responded": 7.937476600524148,
+      "mean_comments_per_post": 6.944317065181789,
+      "peak_dates": [
+        {
+          "date": "2026-04-11",
+          "posts": 59
+        },
+        {
+          "date": "2026-05-21",
+          "posts": 49
+        },
+        {
+          "date": "2026-04-16",
+          "posts": 48
+        }
+      ],
+      "posts": 6106,
+      "response_probability_proxy": 0.8748771699967245,
+      "with_comment": 5342,
+      "zero_comment_rate": 0.12512283000327545
+    },
+    "rumor_or_verification": {
+      "linked_comments": 4196,
+      "mean_comments_if_responded": 5.098420413122722,
+      "mean_comments_per_post": 4.29038854805726,
+      "peak_dates": [
+        {
+          "date": "2026-06-22",
+          "posts": 63
+        },
+        {
+          "date": "2026-06-23",
+          "posts": 35
+        },
+        {
+          "date": "2026-07-03",
+          "posts": 18
+        }
+      ],
+      "posts": 978,
+      "response_probability_proxy": 0.8415132924335378,
+      "with_comment": 823,
+      "zero_comment_rate": 0.15848670756646216
+    },
+    "safety_and_rights": {
+      "linked_comments": 8865,
+      "mean_comments_if_responded": 8.499520613614573,
+      "mean_comments_per_post": 7.007905138339921,
+      "peak_dates": [
+        {
+          "date": "2026-07-11",
+          "posts": 66
+        },
+        {
+          "date": "2026-07-12",
+          "posts": 30
+        },
+        {
+          "date": "2026-06-27",
+          "posts": 21
+        }
+      ],
+      "posts": 1265,
+      "response_probability_proxy": 0.824505928853755,
+      "with_comment": 1043,
+      "zero_comment_rate": 0.17549407114624507
+    }
+  },
+  "collection_regime": {
+    "interpretation": "Do not mix pre-break and post-break response probabilities or treat the discontinuity as ordinary user behavior.",
+    "observed_break": "2026-04-04",
+    "validation_holdout_window": "2026-06-16/2026-07-16",
+    "validation_train_window": "2026-05-01/2026-06-16"
+  },
+  "engagement": {
+    "comment_count_quantiles": {
+      "max": 1016,
+      "p25": 1.0,
+      "p50": 2.0,
+      "p75": 4.0,
+      "p90": 8.0,
+      "p95": 12.0,
+      "p99": 28.0
+    },
+    "mean_comments_all_posts": 3.533842659142132,
+    "mean_comments_if_responded": 4.606257228776313,
+    "zero_comment_posts": 26238,
+    "zero_comment_rate": 0.23281690890699036
+  },
+  "excluded_gap_posts": 1337,
+  "generated_at_utc": "2026-07-21T16:34:18.579379+00:00",
+  "hourly_posts": {
+    "0": 4650,
+    "1": 2487,
+    "10": 6196,
+    "11": 6658,
+    "12": 6636,
+    "13": 6149,
+    "14": 6614,
+    "15": 7297,
+    "16": 7735,
+    "17": 7123,
+    "18": 6806,
+    "19": 6697,
+    "2": 1192,
+    "20": 6882,
+    "21": 6829,
+    "22": 6756,
+    "23": 6670,
+    "3": 564,
+    "4": 308,
+    "5": 260,
+    "6": 306,
+    "7": 981,
+    "8": 2499,
+    "9": 4403
+  },
+  "input_evidence": {
+    "comments_csv": {
+      "bytes": 139282569,
+      "sha256": "a418f3936a520b857ea5e4796588d6d33faf8435d1426f19874dfb6fc0e89ec9"
+    },
+    "note": "File fingerprints identify the calibrated snapshot; input paths are not persisted.",
+    "posts_csv": {
+      "bytes": 93350184,
+      "sha256": "c72c1b3dc321aa4f12075b1e0006675c48eb8a141024e165696fd3c7ce14a0bd"
+    }
+  },
+  "limitations": [
+    "Categories are overlapping keyword proxies, not human-reviewed ground truth.",
+    "Comment timestamps are not used because comment real_date is inherited from the post.",
+    "Cumulative comments measure final thread attention, not response speed or unique responders."
+  ],
+  "linked_comments": 398257,
+  "monthly_posts": {
+    "2025-12": 11698,
+    "2026-01": 11010,
+    "2026-02": 4909,
+    "2026-03": 12244,
+    "2026-04": 14560,
+    "2026-05": 16645,
+    "2026-06": 25203,
+    "2026-07": 16429
+  },
+  "peak_dates": [
+    {
+      "date": "2026-06-22",
+      "posts": 1376
+    },
+    {
+      "date": "2026-07-16",
+      "posts": 1367
+    },
+    {
+      "date": "2026-06-03",
+      "posts": 1333
+    },
+    {
+      "date": "2026-06-24",
+      "posts": 1300
+    },
+    {
+      "date": "2026-06-23",
+      "posts": 1260
+    },
+    {
+      "date": "2026-06-18",
+      "posts": 1021
+    },
+    {
+      "date": "2026-06-21",
+      "posts": 1012
+    },
+    {
+      "date": "2026-06-16",
+      "posts": 997
+    },
+    {
+      "date": "2026-06-15",
+      "posts": 975
+    },
+    {
+      "date": "2026-07-11",
+      "posts": 969
+    }
+  ],
+  "privacy": "Aggregate output only; no post text, codes, comment IDs, hashes, or contacts are persisted.",
+  "scope": {
+    "end_exclusive": "2026-07-21",
+    "excluded_known_gap_dates": [
+      "2026-03-04",
+      "2026-04-03",
+      "2026-04-04",
+      "2026-04-20",
+      "2026-06-25"
+    ],
+    "platform_marker": "NP",
+    "start_inclusive": "2025-12-01"
+  },
+  "valid_posts": 112698
+}

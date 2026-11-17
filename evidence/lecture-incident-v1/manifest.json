@@ -1,0 +1,144 @@
+{
+  "schema_version": "campus-pulse-public-case-evidence-manifest-v1",
+  "project_id": "lecture-incident-governance",
+  "complete_ticks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "branches": [
+    "Natural",
+    "D"
+  ],
+  "provider_calls_during_restoration": 0,
+  "excluded_private_material": [
+    "provider_ledger",
+    "authorization_files",
+    "prompt_and_response_bodies",
+    "contract_diagnostics",
+    "record_level_private_relationships"
+  ],
+  "files": [
+    {
+      "path": "analysis/forumtwin-hero-story.svg",
+      "bytes": 4735,
+      "sha256": "4815bcc2ef62f7c3c86369f3c538e59e7f5f2b447be8aa9e42616a057fb3bb84"
+    },
+    {
+      "path": "analysis/parallel-forum-audit.json",
+      "bytes": 3696,
+      "sha256": "2326eb7280430043e895b9d5a107a724f34d89de0a6d3c509faecd3581624b5d"
+    },
+    {
+      "path": "analysis/parallel-forum-series.json",
+      "bytes": 4851,
+      "sha256": "75a1d3109903bb8b1d0b1116a3b48596708feefae39e5c4fed1c2ca03a931198"
+    },
+    {
+      "path": "case-summary.json",
+      "bytes": 1507,
+      "sha256": "a87d283c8dce8fa38ffb9fcd75cf0e1c803483bc966158885ce1f7f004fa1076"
+    },
+    {
+      "path": "public-progress/D/T03.json",
+      "bytes": 36107,
+      "sha256": "73c96bdfa6059ccada5b87b8da98f75e2f3ae9af4b574621b15187306f7ae2a7"
+    },
+    {
+      "path": "public-progress/D/T04.json",
+      "bytes": 84222,
+      "sha256": "da9a3f7730f7086bdd5287e15eee7eb409aa91b316aafc3949d3d549802befd4"
+    },
+    {
+      "path": "public-progress/D/T05.json",
+      "bytes": 121149,
+      "sha256": "ecd7d1e29763036121c51acf7e376ffd2320700ad9ef64fe81ec14089f2de9f1"
+    },
+    {
+      "path": "public-progress/D/T06.json",
+      "bytes": 156899,
+      "sha256": "94403433ea2ba059ba8a6b3148147cdad4bb60fe91c4d2932deb83759f3efc67"
+    },
+    {
+      "path": "public-progress/D/T07.json",
+      "bytes": 205429,
+      "sha256": "ec48d9b2de60728ca2249aef0c6454e1b38f5ccf212d5367a696c9ce7cf2bc00"
+    },
+    {
+      "path": "public-progress/D/T08.json",
+      "bytes": 240991,
+      "sha256": "7299c03e4092d9c91b02765c6ee5e048994f67fa125571348f26d9ab8deee8b2"
+    },
+    {
+      "path": "public-progress/D/T09.json",
+      "bytes": 274765,
+      "sha256": "e87c8c3349672608c0f1fe4dac45d6109435e1bdc13e3f48692f5c59fee9aa95"
+    },
+    {
+      "path": "public-progress/D/T10.json",
+      "bytes": 307770,
+      "sha256": "ea153798d237538c4b00ff9bfe62056f66f8ffe4be1f622303ffbbbbe4d6c187"
+    },
+    {
+      "path": "public-progress/latest.json",
+      "bytes": 2856,
+      "sha256": "6d20b0ea9fc3091bd6ae972c714862fd44607cce41b5ca878cd3e4c14b3b5827"
+    },
+    {
+      "path": "public-progress/Natural/T03.json",
+      "bytes": 30427,
+      "sha256": "fa14bf45a489890bb4165571dc73ae073916d2af381f6fd93620a84a59b867fc"
+    },
+    {
+      "path": "public-progress/Natural/T04.json",
+      "bytes": 75201,
+      "sha256": "a3df01202c327f6a797b7af73bd8ce931a0734a54cfc4f4d94a1264f4addfb56"
+    },
+    {
+      "path": "public-progress/Natural/T05.json",
+      "bytes": 113155,
+      "sha256": "6f8c1338c3627daec4b73644aa1ce1cc98f5b66bec2fda4c929d0008c83173f2"
+    },
+    {
+      "path": "public-progress/Natural/T06.json",
+      "bytes": 147935,
+      "sha256": "8d62ce37aa4e0c082b31662174f3933f42bf4dd2ae197fe8acc3c9e7a84a9b09"
+    },
+    {
+      "path": "public-progress/Natural/T07.json",
+      "bytes": 182593,
+      "sha256": "138f16928721414600ef3e78d51b23274e4d23e6c1fc2f16f3528ed8b1dfcfc3"
+    },
+    {
+      "path": "public-progress/Natural/T08.json",
+      "bytes": 214727,
+      "sha256": "09dce8c326813f4c08d54fef654411191383bf1d3e50b22048bd48a5e18cfd11"
+    },
+    {
+      "path": "public-progress/Natural/T09.json",
+      "bytes": 247284,
+      "sha256": "a6ca3f8c0211172d79392bc7f75d62c03660e0746ecd8910a6e2f29de34a8537"
+    },
+    {
+      "path": "public-progress/Natural/T10.json",
+      "bytes": 282019,
+      "sha256": "0d93f48ee7766265b1742c7d44d4fcae4afffe5b8d856b79beae74da23caac59"
+    },
+    {
+      "path": "result.json",
+      "bytes": 633117,
+      "sha256": "d1a74d9a052057760c5c39c0a3d191588d3e5b4f75a2889bc712a4f533d6a4b0"
+    },
+    {
+      "path": "RESULT_REPORT.md",
+      "bytes": 7315,
+      "sha256": "e35c17798526f495c222c5df3ae2f21d897e8241b57b0b69f5bac7859105216c"
+    }
+  ],
+  "manifest_sha256": "1a78e4fddb60922f64cbb85d1e89a1375bfa9e79b608ec3ee8be5ce179f4b523"
+}

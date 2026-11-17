@@ -1,0 +1,29 @@
+{
+  "scenario_id": "campus_services",
+  "version": "1.1.1",
+  "title": "校园后勤服务需求冲击",
+  "description": "模拟宿舍、食堂、校园网和设施诉求集中出现时的分流与工单容量压力。",
+  "parameters": {
+    "rounds": {"value": 48, "source_type": "operator_input", "evidence": "MVP演示采用48个合成决策轮次。", "limitations": "轮次不对应真实小时。"},
+    "base_arrival_rate": {"value": 6.0, "source_type": "derived", "evidence": "依据原始主窗口6150条校园生活服务关键词代理帖；剔除5个已知缺口日后为6081条，峰值日2026-06-21为64条，据此缩放。", "limitations": "并非真实工单到达率。"},
+    "shock_curve": {"value": [0.55, 0.65, 0.8, 1.0, 1.35, 1.8, 2.2, 2.0, 1.65, 1.25, 0.9, 0.7], "source_type": "assumption", "evidence": "后勤故障和集中投诉的合成冲击轮廓。"},
+    "need_mix": {"value": {"academic_information": 0.15, "emotional_support": 0.08, "safety_report": 0.02, "campus_service": 0.75}, "source_type": "operator_input", "evidence": "后勤场景功能性诉求组合。"},
+    "urgency_mix": {"value": {"low": 0.40, "medium": 0.42, "high": 0.16, "critical": 0.02}, "source_type": "assumption", "evidence": "缺少真实工单优先级，作为压力测试输入。"},
+    "natural_response_probability": {"value": {"academic_information": 0.6173, "emotional_support": 0.8172, "safety_report": 0.7284, "campus_service": 0.7303}, "source_type": "empirical_proxy", "evidence": "稳定采集制度内训练窗（2026-05-01至2026-06-15）关键词代理类别的最终非零评论比例；留出窗从2026-06-16开始。", "limitations": "社区回应不等于工单完成；关键词类别未经人工金标准验证。"},
+    "mean_replies_if_responded": {"value": {"academic_information": 4.20, "emotional_support": 6.93, "safety_report": 7.94, "campus_service": 4.20}, "source_type": "derived", "evidence": "稳定采集制度内训练窗各关键词代理类别的有评论帖子条件均值。", "limitations": "长尾形状另由假设的离散参数控制。"},
+    "reply_dispersion": {"value": 1.5, "source_type": "assumption", "evidence": "Gamma-Poisson过度离散参数。"},
+    "natural_resolution_probability": {"value": {"academic_information": 0.32, "emotional_support": 0.18, "safety_report": 0.10, "campus_service": 0.25}, "source_type": "assumption", "evidence": "现有数据无后勤工单完成状态。"},
+    "work_units_by_urgency": {"value": {"low": 1, "medium": 1, "high": 2, "critical": 3}, "source_type": "operator_input", "evidence": "服务处理工作量抽象。"},
+    "routing": {"value": {"academic_information": "academic_services", "emotional_support": "student_support", "safety_report": "campus_security", "campus_service": "facilities"}, "source_type": "derived", "evidence": "按治理职能建立的部门映射。"},
+    "department_capacity": {"value": {"academic_services": 2, "student_support": 2, "campus_security": 1, "facilities": 8}, "source_type": "operator_input", "evidence": "后勤场景MVP容量假设。"},
+    "faq_eligible_need_types": {"value": ["academic_information", "campus_service"], "source_type": "derived", "evidence": "标准流程和常见故障可先由FAQ分流。"},
+    "faq_effectiveness": {"value": {"academic_information": 0.50, "emotional_support": 0.05, "safety_report": 0.12, "campus_service": 0.52}, "source_type": "assumption", "evidence": "FAQ和自助流程效果待工单日志校准。"},
+    "peer_boost_capacity": {"value": 7, "source_type": "operator_input", "evidence": "每轮同伴经验补位名额。"},
+    "peer_boost_success": {"value": {"academic_information": 0.35, "emotional_support": 0.42, "safety_report": 0.12, "campus_service": 0.34}, "source_type": "assumption", "evidence": "同伴建议完成简单服务路径的概率假设。"},
+    "dynamic_backlog_threshold": {"value": 10, "source_type": "operator_input", "evidence": "后勤队列触发扩容阈值。"},
+    "dynamic_capacity_increment": {"value": 5, "source_type": "operator_input", "evidence": "后勤临时扩容工作单元。"},
+    "dynamic_capacity_limit": {"value": 5, "source_type": "operator_input", "evidence": "后勤临时扩容上限。"},
+    "cost_weights": {"value": {"faq_reach": 0.15, "peer_action": 0.6, "service_work_unit": 1.0, "dynamic_capacity_unit": 1.7, "routing_action": 0.1}, "source_type": "operator_input", "evidence": "无量纲治理成本权重。"}
+  },
+  "limitations": ["在获得真实工单接收、处理时长和完成状态前，结果只表示容量压力。"]
+}

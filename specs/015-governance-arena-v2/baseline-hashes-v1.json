@@ -1,0 +1,20 @@
+{
+  "schema_version": "campus-pulse-governance-arena-v2-baseline-hashes-v1",
+  "captured_at": "2026-07-31T01:00:00+08:00",
+  "remote_branch": "008-windowed-sensing",
+  "remote_commit": "2f859f6789587c507a152ca96afb98141e567fd3",
+  "artifacts": {
+    "_release/campus-pulse-competition-final.zip": "777d0c1fa45eb5de9fc60e3f182f335347b4c9ee55c2e647f13e763e219ba04c",
+    "_release/campus-pulse-competition-rc.zip": "358e8376c7f8659f61ad2e5df5ed0b2ed101f06252ca459207b99c6216f1f22b",
+    "src/frontend/public/campus-pulse-data/governance-arena-v1.json": "a39d723fb174138a4ada26d96efc39ff3e895f1e7dec62d9a0772ac5c2d6a0ec",
+    "src/frontend/public/campus-pulse-data/mass-sim-v1.json": "78cc2d4d1d1a0443d33c8c2b56d5924c3fcdfd0511d53ea5850ff2bc154f8a90",
+    "src/envs/campus_pulse_governance/governance_arena.py": "3728e75039e2bc6b42d2e2e8df120e860dbb7da5a2807a64685b455ef341ed9d",
+    "src/backend/campus_pulse/mass_persistence.py": "7918712a8f5a2545754ef89b7387fa3a309cb70a37eb9c5ff44f0688367642e9",
+    "src/frontend/src/views/GovernanceArenaView.vue": "220848b7b8cd8bdab1845af39b63e38be6f4e70b7ce958f93b63d0fcb66ad53a"
+  },
+  "policy": {
+    "additive_v2_only": true,
+    "old_artifacts_must_remain_byte_identical": true,
+    "provider_calls_authorized": false
+  }
+}

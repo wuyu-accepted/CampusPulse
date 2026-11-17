@@ -1,0 +1,28 @@
+{
+  "domain": "Communication",
+  "scene_name": "rumor_spiral_governance",
+  "odd_protocol": {
+    "overview": {
+      "system_goal": "在一个局部信息流（每个用户只看到自己的 Feed）的社交平台上，模拟谣言传播与沉默螺旋：用户基于个人画像形成私人反应，并决定一个公开平台行为；研究少数高活跃用户如何制造虚假多数感，以及不同治理策略的效果。",
+      "agent_types": "第一阶段(Step0)仅含 OrdinaryUser 普通用户。后续加入 OpinionLeader / MediaOrganization / FactCheckOrganization / PlatformRegulator 作为特殊账号。",
+      "environment_description": "环境维护一个全局帖子池(post_pool)，每轮为每个用户组装个性化信息流并回收其公开行为更新帖子池；隐藏的真值证据包(case_bundle)仅对事实核查开放。"
+    },
+    "design_concepts": {
+      "interaction_patterns": "用户浏览局部 Feed -> 形成私人反应 -> 产生公开行为(点赞/转发/评论/回复/举报/不操作) -> 环境更新帖子池 -> 下一轮进入相邻用户信息流。",
+      "communication_protocols": "用户通过 UserActionEvent 把公开行为回传环境(ENV)，环境通过带 feed_text 的 StartEvent 每轮向用户投递信息流。私人反应写入用户自身 private profile，不对外暴露。",
+      "decision_mechanisms": "用户依据自然语言画像、历史行为与当前 Feed 里的社会压力信号(多数意见、质疑被嘲讽等)自然反应，而非回答研究者式提问。"
+    },
+    "details": {
+      "agent_behaviors": "browse_and_act：浏览信息流，输出 {private_note, action_type, target_post_id, public_text}。",
+      "decision_algorithms": "第一阶段完全由 LLM 依画像与信息流判断；后续引入沉默差距等度量与治理策略分支。",
+      "specific_constraints": "用户不知道事件真伪，只能依据看到的内容；不提示这是谣言、不询问是否相信。"
+    }
+  },
+  "agent_types": {
+    "OrdinaryUser": "社交平台的普通用户，浏览个性化信息流，形成私人想法，并决定一个公开平台行为。"
+  },
+  "portrait": {
+    "OrdinaryUser": 5
+  },
+  "metrics": []
+}

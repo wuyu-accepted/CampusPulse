@@ -1,0 +1,196 @@
+{
+  "schema_version": "campus-pulse-competition-final-audit-v1",
+  "audited_at_utc": "2026-07-27T06:13:13Z",
+  "release_status": "competition_final_ready",
+  "source_state": {
+    "branch": "008-windowed-sensing",
+    "base_commit": "2f859f6789587c507a152ca96afb98141e567fd3",
+    "working_tree_clean": false,
+    "interpretation": "The base commit alone is not the release. The synchronized working tree, production build fingerprint and audited file hashes below identify the Final state."
+  },
+  "frozen_rc": {
+    "artifact_name": "campus-pulse-competition-rc.zip",
+    "sha256": "358e8376c7f8659f61ad2e5df5ed0b2ed101f06252ca459207b99c6216f1f22b",
+    "mutated": false,
+    "replacement_policy": "Final is a separately named artifact with a distinct ZIP root and audit."
+  },
+  "competition_scope": {
+    "primary_route": "/campus-pulse",
+    "supporting_route": "/campus-pulse/robustness",
+    "offline_mode": "competition_offline_static",
+    "offline_api_required": false,
+    "offline_workbench_available": false,
+    "offline_provider_calls": 0,
+    "final_delta": "visible_multi_actor_governance_orchestration"
+  },
+  "frozen_evidence": {
+    "source_snapshot_id": "99cf3df5dafe595438d7b352e3ef4137e2ab88ebda7233e898c96a4bf0d98ee6",
+    "source_tables": 2,
+    "post_rows": 132917,
+    "comment_rows": 454053,
+    "comment_post_linkage_ppm": 991900,
+    "semantic_cards": 1000,
+    "persona_variants": 51,
+    "weighted_agents": 48,
+    "random_seeds": 2,
+    "historical_window_episodes": 1200,
+    "direct_window_reviews": 633,
+    "simulation_decisions_directly_read": 912,
+    "public_messages_directly_read": 620
+  },
+  "governance_orchestration": {
+    "status": "reviewed_model_program",
+    "actor_roles": 3,
+    "controlled_actions": 4,
+    "modeled_resource_units": 5,
+    "real_world_actions": 0,
+    "decision_source": "prior_sealed_checkpoint_only",
+    "comparison_contract": [
+      "same_weighted_agents",
+      "same_two_random_seeds",
+      "one_shared_pre_intervention_baseline",
+      "modeled_resource_reservation_and_settlement"
+    ],
+    "external_incident_levers": [
+      "monitoring",
+      "review",
+      "referral"
+    ],
+    "cohort_need_satisfaction": "not_available_not_fabricated",
+    "actor_release_fingerprint": "0caaabbc3e370ef3d35cb693498e6fac2acc5138d0a906a91aa389c8ff8141e7",
+    "action_release_fingerprint": "4799bc1172e32263bf5c598ebc8158fd72a8300a16bbaece71dfc5819371c36f",
+    "claim_boundary": "model_conditional_not_causal_and_not_real_action"
+  },
+  "automated_gates": {
+    "backend_authorized_server": {
+      "status": "passed",
+      "tests_passed": 335,
+      "tests_failed": 0,
+      "elapsed_seconds": 133.383,
+      "command": "PYTHONPATH=src .venv-campus-pulse-online/bin/python -m unittest discover -s src/backend/tests -p test_*.py"
+    },
+    "governance_simulation_authorized_server": {
+      "status": "passed",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "elapsed_seconds": 7.069,
+      "warning": "A ResourceWarning references the existing synthetic HTTPError 429 sanitization fixture; it is not a network or Provider response."
+    },
+    "frontend_contract_authorized_server": {
+      "status": "passed",
+      "tests_passed": 15,
+      "tests_failed": 0,
+      "competition_final_tests_added": 4
+    },
+    "frontend_production_build_authorized_server": {
+      "status": "passed",
+      "modules_transformed": 2154,
+      "elapsed_seconds": 6.17,
+      "file_count": 49,
+      "direct_entry_asset_count": 6,
+      "total_bytes": 13940560,
+      "build_fingerprint": "eccf389cd47af46fdb1ce577e5c4c422ec088a2b8dbbb68122c17237724dadd0"
+    },
+    "offline_launcher": {
+      "status": "passed",
+      "api_required": false,
+      "provider_calls": 0,
+      "loopback_only": true,
+      "spa_deep_link": true,
+      "health_identity": true,
+      "forbidden_private_suffix_scan": true,
+      "sensitive_marker_scan": true
+    },
+    "competition_final_package_builder": {
+      "status": "passed",
+      "tests_passed": 4,
+      "tests_failed": 0,
+      "deterministic_zip_bytes": true,
+      "distinct_final_root": "CampusPulse-Competition-Final",
+      "per_member_sha256_manifest": true,
+      "production_build_identity_locked": true,
+      "final_audit_hash_revalidation": true,
+      "unlisted_private_file_excluded": true,
+      "tamper_fails_closed": true
+    },
+    "diff_whitespace": {
+      "status": "passed",
+      "command": "git diff --check"
+    },
+    "provider_calls": 0
+  },
+  "browser_gates": {
+    "desktop_1280x720": {
+      "status": "passed",
+      "orchestration_section_count": 1,
+      "orchestration_overflow_x": false,
+      "course_to_feedback_gap_update": true,
+      "governance_to_external_shock": true,
+      "external_governance_section_count": 0,
+      "external_to_governance_return": true,
+      "spread_combined_policy": true
+    },
+    "mobile_390x844": {
+      "status": "passed",
+      "body_client_width": 390,
+      "body_scroll_width": 390,
+      "document_client_width": 390,
+      "document_scroll_width": 390,
+      "orchestration_client_width": 352,
+      "orchestration_scroll_width": 352,
+      "horizontal_overflow": false
+    },
+    "supporting_robustness_route": {
+      "status": "passed",
+      "data_loaded": true,
+      "historical_event_replay_visible": true,
+      "claim_boundary_visible": true
+    },
+    "console": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "non_claims": [
+    "not_real_time_monitoring",
+    "not_population_opinion",
+    "not_individual_prediction",
+    "not_absolute_post_volume_forecast",
+    "not_causal_policy_effect",
+    "not_real_staffing_budget_or_service_capacity",
+    "not_real_governance_action",
+    "not_public_multi_tenant_saas",
+    "not_a_new_provider_run"
+  ],
+  "audited_files": {
+    "START_COMPETITION_DEMO.cmd": "81b581f6bfa98ac1e37b2f05a7beb75220c4ce76e250c352e5fdc95f0c1af0df",
+    "start-competition-demo.sh": "f1f0cdedd345057a7d6da158fee8734f2327047cf9d2e228dc039b6866d46c04",
+    "scripts/campus_pulse/run_competition_demo.py": "0d9ebc4bcf251e840c2e60d75501ae13db7d5fed651e4e6c2e92205eec3c150f",
+    "scripts/campus_pulse/package_competition_final.py": "e4424a917d8dc6073378e7ed9376284bdd64f069f53a91336972bc7413e2d9d8",
+    "src/backend/tests/test_competition_final_package.py": "909dacbeffd7ad726d0783effdee074e2df4a9b432f4b708777a706a6cb11a1a",
+    "src/frontend/src/views/RepresentativeSimulationView.vue": "609b2b9c4a9bbf8eb3c29b7a3b8e3b687658923aa0d9e4ab13ae716b4d252875",
+    "src/frontend/public/campus-pulse-data/representative-simulation.json": "11309ff44b7a8ea8f47fffcb49f6af7fbc1941b2989b3874e3db15c2adbb9ae6",
+    "src/frontend/tests/competitionFinal.contract.test.mjs": "e54644bd1d91c0bf2b6ea0709ef2d6caf13a1cfd18ffa1c4dcdcfbb18c3fc150",
+    "COMPETITION_DEMO.md": "6d180de9aa69e1cac7012cbe9cfd96aef3d53ea56533928ebe939c391c3deba6",
+    "README_CAMPUS_PULSE.md": "976d67718f92717eaf299a2ae535de039aa0bc045f8fcc4e0a0426ced4d945b3",
+    "specs/014-competition-final-results/browser-qa-20260727.md": "226fba305f6b7d8df278144e080c56a95fec2ec34863d2aab3b8b49dfc96552c",
+    "specs/014-competition-final-results/spec.md": "9e291be4771a9f4c73267b38c089ccddd3ba82df6a2204da3488b75d477115cb",
+    "src/backend/campus_pulse/governance/actor_catalog.py": "95121190ca229a435aa146f40948130e5dd082210064ba96d6d27dbaeb64e01c",
+    "src/backend/campus_pulse/governance/action_catalog.py": "9b6996818a0bf98e24d0a6c6d4ee9f39671b875f082a9610099cbbd87696c935",
+    "src/backend/campus_pulse/governance/compiler.py": "d204eefa11017d3d4a34e63c72ef450bbdea678b3757350bece8706137cf2cd4",
+    "src/backend/campus_pulse/governance/runtime.py": "3fc38998025c7b9f36f54009c052b762ed68e071f0d02d8347d9b7986295e831",
+    "src/backend/campus_pulse/governance/comparison.py": "8b093f5255bd86d368af480bb724bcacbe4baba5c42e8810f50e130850ed95b0",
+    "src/backend/campus_pulse/governance/gaps.py": "23b9cad8bfd90eaaf74a58ab1ad26337410a4ea40bb638a7888225a23625ea36",
+    "src/backend/campus_pulse/governance/explanation.py": "9ca533070844dc37b55f49952cab1d26e4d50cf19534cd40e344b4eb278c56ad",
+    "specs/013-governance-orchestration/phase-a-audit-v1.json": "9740983d6993d46ae580b0fae78f03960bd07faff4c8a83eb01ca20c9b7ee736",
+    "specs/013-governance-orchestration/phase-b-audit-v1.json": "21c8bc9d0f09274dc0f60d4f48fe65f36a495b3af1e4fb8203692ae9f0ac620c",
+    "specs/013-governance-orchestration/phase-c-comparison-audit-v1.json": "69c32ea98dda101214b7104696d28d74464dd54c6408eadf38848b928f73cb86"
+  },
+  "deferred_after_competition_final": [
+    "real_provider_worker_and_separately_authorized_canary",
+    "real_governance_pilot_effect_evaluation",
+    "continuous_live_monitoring",
+    "production_oidc_rbac_and_multi_tenancy",
+    "public_internet_deployment"
+  ]
+}

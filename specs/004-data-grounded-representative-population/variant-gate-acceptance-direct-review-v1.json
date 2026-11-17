@@ -1,0 +1,122 @@
+{
+  "schema_version": "variant-gate-acceptance-direct-review-v1",
+  "review_date": "2026-07-23",
+  "source_artifact": {
+    "path": "_run/variant-gate-acceptance-v1-seed-20260722.json",
+    "sha256": "3cedca118fb87440dedf9cee5fed1560ccf409b9d8e6d00f961ed37af0d68b21",
+    "panel_fingerprint": "6eee2a7436dc1a314d57cfb738ab7c404ffb15577505891605d7fbe8c60a0a92"
+  },
+  "review_method": {
+    "reviewer": "direct_semantic_reading_by_primary_development_agent",
+    "selection_frozen_before_new_outputs": true,
+    "decision_count_read": 32,
+    "public_message_count_read": 23,
+    "trajectory_count_read": 8,
+    "mechanical_metric_decided_rating": false,
+    "silence_counted_as_behavior": true,
+    "dimensions": [
+      "the exact persona variant rather than only its parent archetype remains visible",
+      "a naturally relevant shock still produces public action",
+      "an irrelevant shock permits daily life, reading, or silence",
+      "the response remains inside the variant's problem type and time horizon",
+      "event content changes without importing daily evidence facts",
+      "burst, spread, and decay form a plausible trajectory rather than duplicate posts"
+    ]
+  },
+  "execution_audit": {
+    "requested_model": "gpt-5.6-sol",
+    "agent_turns": 32,
+    "provider_calls": 33,
+    "provider_retry_count": 1,
+    "format_repairs": 0,
+    "provider_reported_tokens": 83566,
+    "cache_hits": 0,
+    "raw_forum_rows_sent_to_provider": false,
+    "historical_targets_sent_to_provider": false,
+    "api_key_persisted_in_artifact": false
+  },
+  "route_audit": {
+    "event_phase_decisions": 24,
+    "event_public_responses": 14,
+    "daily_or_non_public_routes": 10,
+    "classification_counts": {
+      "direct_activation_candidate": 5,
+      "adjacent_spillover": 10,
+      "irrelevant": 9
+    },
+    "classification_route_pairs": {
+      "direct_activation_candidate|event_public_response": 5,
+      "adjacent_spillover|event_public_response": 9,
+      "adjacent_spillover|daily_or_non_public": 1,
+      "irrelevant|daily_or_non_public": 9
+    },
+    "irrelevant_gate_event_public_violations": 0,
+    "direct_candidate_false_suppression_in_panel": 0,
+    "interpretation": "The gate retained positive sensitivity while allowing exact-variant selective nonresponse; these counts describe only the frozen diagnostic panel and are not population rates."
+  },
+  "trajectory_reviews": [
+    {
+      "variant_id": "archetype-03-v2",
+      "variant": "规则步骤核实型",
+      "previous_cross_snapshot_rating": "clear",
+      "updated_rating": "clear",
+      "tongzhou_exemplar_agent": "sim-agent-027",
+      "lecture_exemplar_agent": "sim-agent-031",
+      "tongzhou_judgment": "clear",
+      "lecture_judgment": "clear",
+      "review_note": "The agent asks for the formal consultation entry and submission process in Tongzhou, then asks about receipt numbers, progress lookup, and reply timing. Under the lecture shock it seeks the original official statement and publication channel across all visible stages. Procedure verification remains the stable mechanism, so the gate did not suppress a true positive."
+    },
+    {
+      "variant_id": "archetype-12-v3",
+      "variant": "共处援助设限型",
+      "previous_cross_snapshot_rating": "clear",
+      "updated_rating": "clear",
+      "tongzhou_exemplar_agent": "sim-agent-039",
+      "lecture_exemplar_agent": "sim-agent-021",
+      "tongzhou_judgment": "clear",
+      "lecture_judgment": "clear",
+      "review_note": "The Tongzhou trajectory moves from requesting reduced duty, to separating online and on-site work, to setting a transition period after no reply. The lecture trajectory activates only after the controversy enters an ongoing group relationship, then asks how to preserve cooperation while limiting discussion. The concrete relationship changes but negotiated assistance boundaries remain stable."
+    },
+    {
+      "variant_id": "archetype-07-v2",
+      "variant": "时效服务搜寻型",
+      "previous_cross_snapshot_rating": "clear",
+      "updated_rating": "clear",
+      "tongzhou_exemplar_agent": "sim-agent-008",
+      "lecture_exemplar_agent": "sim-agent-035",
+      "tongzhou_judgment": "clear",
+      "lecture_judgment": "clear_selective_nonresponse",
+      "review_note": "The agent responds strongly to Tongzhou with same-day transport, last-service, temporary-stay, application-deadline, and verification questions. It does not convert the unrelated lecture controversy into a service problem; it reads, ignores, or returns to a current laundry-service question. This is discriminating nonresponse rather than global silence."
+    },
+    {
+      "variant_id": "archetype-02-v1",
+      "variant": "临考范围压缩型",
+      "previous_cross_snapshot_rating": "partial_non_regressive",
+      "updated_rating": "clear_after_variant_gate",
+      "tongzhou_exemplar_agent": "sim-agent-033",
+      "lecture_exemplar_agent": "sim-agent-014",
+      "tongzhou_judgment": "clear",
+      "lecture_judgment": "clear_selective_nonresponse",
+      "review_note": "The Tongzhou trajectory remains tightly bounded to near-term revision: which affected courses to prioritize, which chapters are mandatory, and what can be deferred while the timetable is uncertain. In the lecture shock the variant ignores the limited burst, reads without posting when the career-spillover topic becomes visible, and exits attention in decay. The earlier drift into broad career direction and project prioritization is absent. Because the same variant remains active and specific under the genuinely relevant Tongzhou shock, this is not a silence-only fix."
+    }
+  ],
+  "summary": {
+    "panel_status": "pass",
+    "clear_variant_count": 4,
+    "partial_variant_count": 0,
+    "failed_variant_count": 0,
+    "challenging_variant_previous_rating": "partial_non_regressive",
+    "challenging_variant_updated_rating": "clear_after_variant_gate",
+    "positive_sensitivity_preserved": true,
+    "selective_nonresponse_preserved": true,
+    "sibling_variant_substitution_observed": false,
+    "competition_claim_update_supported": "The implementation may now claim that exact-variant gating corrected the previously disclosed lecture drift in this frozen acceptance panel. It may not claim population-level response rates, full-simulation external validity, or a causal policy effect."
+  },
+  "limitations": [
+    "The panel uses one frozen population seed and exact exemplars selected before the update; it is a regression acceptance test, not a frequency estimate.",
+    "Only four variants and two shocks are included, so passing does not prove every one of the 51 variants is correctly routed.",
+    "The provider is nondeterministic; the prompt-fingerprinted cache preserves this accepted realization but does not imply all future generations will be identical.",
+    "The review evaluates behavioral-semantic fidelity, not whether synthetic messages match raw forum wording or full reply-network ecology."
+  ],
+  "claim_boundary": "This review upgrades only the frozen four-variant gate acceptance result. It does not alter the historical shock evidence, identify causal effects, or validate population frequencies."
+}

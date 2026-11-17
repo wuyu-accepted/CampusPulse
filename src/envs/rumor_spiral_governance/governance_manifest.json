@@ -1,0 +1,127 @@
+[
+  {
+    "mode": "none",
+    "rep": 0,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_130611"
+  },
+  {
+    "mode": "none",
+    "rep": 1,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_130820"
+  },
+  {
+    "mode": "none",
+    "rep": 2,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_131023"
+  },
+  {
+    "mode": "none",
+    "rep": 3,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_131332"
+  },
+  {
+    "mode": "none",
+    "rep": 4,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_131538"
+  },
+  {
+    "mode": "delete",
+    "rep": 0,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_131744"
+  },
+  {
+    "mode": "delete",
+    "rep": 1,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_132012"
+  },
+  {
+    "mode": "delete",
+    "rep": 2,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_132214"
+  },
+  {
+    "mode": "delete",
+    "rep": 3,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_132541"
+  },
+  {
+    "mode": "delete",
+    "rep": 4,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_132732"
+  },
+  {
+    "mode": "command_debunk",
+    "rep": 0,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_132936"
+  },
+  {
+    "mode": "command_debunk",
+    "rep": 1,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_133223"
+  },
+  {
+    "mode": "command_debunk",
+    "rep": 2,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_133403"
+  },
+  {
+    "mode": "command_debunk",
+    "rep": 3,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_133553"
+  },
+  {
+    "mode": "command_debunk",
+    "rep": 4,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_133853"
+  },
+  {
+    "mode": "evidence_debunk",
+    "rep": 0,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_134046"
+  },
+  {
+    "mode": "evidence_debunk",
+    "rep": 1,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_134252"
+  },
+  {
+    "mode": "evidence_debunk",
+    "rep": 2,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_134534"
+  },
+  {
+    "mode": "evidence_debunk",
+    "rep": 3,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_134819"
+  },
+  {
+    "mode": "evidence_debunk",
+    "rep": 4,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_135140"
+  },
+  {
+    "mode": "boost_visibility",
+    "rep": 0,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_135339"
+  },
+  {
+    "mode": "boost_visibility",
+    "rep": 1,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_135544"
+  },
+  {
+    "mode": "boost_visibility",
+    "rep": 2,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_135916"
+  },
+  {
+    "mode": "boost_visibility",
+    "rep": 3,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_140233"
+  },
+  {
+    "mode": "boost_visibility",
+    "rep": 4,
+    "run_dir": "D:\\code\\大项目\\YuLan-OneSim-main\\src\\envs\\rumor_spiral_governance\\runs\\20260713_140636"
+  }
+]

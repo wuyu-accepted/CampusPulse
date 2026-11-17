@@ -1,0 +1,125 @@
+{
+  "schema_version": "campus-pulse-governance-phase-a-audit-v1",
+  "audited_at_utc": "2026-07-27T04:25:57Z",
+  "release_status": "phase_a_internal_only",
+  "scope": {
+    "completed_tasks": [
+      "T001",
+      "T010",
+      "T020",
+      "T030",
+      "T040"
+    ],
+    "actor_type_count": 6,
+    "action_family_count": 8,
+    "resource_unit_count": 5,
+    "trigger_source": "prior_sealed_aggregate_only",
+    "arbitrary_code_allowed": false,
+    "real_world_action_allowed": false
+  },
+  "identities": {
+    "actor_release_id": "campus-pulse-governance-actors-v1-reviewed",
+    "actor_release_fingerprint": "0caaabbc3e370ef3d35cb693498e6fac2acc5138d0a906a91aa389c8ff8141e7",
+    "action_release_id": "campus-pulse-governance-actions-v1-reviewed",
+    "action_release_fingerprint": "4799bc1172e32263bf5c598ebc8158fd72a8300a16bbaece71dfc5819371c36f",
+    "reviewed_test_assignment_fingerprint": "8cf4fe6cb6dbd46ce2c62fa0344732e7d6a614e2f79084c7752a420f604bafd7",
+    "reviewed_test_program_fingerprint": "d626680c62cbba4b3343d722463211e3d3c385042dda73e298a22be47fd0c589"
+  },
+  "automated_gates": {
+    "targeted_local": {
+      "command": "PYTHONPATH=src python -m unittest -v backend.tests.test_campus_pulse_governance_compiler",
+      "tests_passed": 15,
+      "tests_failed": 0
+    },
+    "targeted_authorized_server": {
+      "command": "PYTHONPATH=src python -W error::ResourceWarning -m unittest -v backend.tests.test_campus_pulse_governance_compiler",
+      "tests_passed": 15,
+      "tests_failed": 0
+    },
+    "backend_authorized_server": {
+      "command": "PYTHONPATH=src python -m unittest discover -s src/backend/tests -p test_*.py",
+      "tests_passed": 314,
+      "tests_failed": 0,
+      "elapsed_seconds": 125.205
+    },
+    "simulation_authorized_server": {
+      "command": "PYTHONPATH=src python -m unittest discover -s src/envs/campus_pulse_governance/tests -p test_*.py",
+      "tests_passed": 152,
+      "tests_failed": 0,
+      "elapsed_seconds": 7.068
+    },
+    "frontend_contract_authorized_server": {
+      "command": "node --test src/frontend/tests/*.test.mjs",
+      "tests_passed": 11,
+      "tests_failed": 0
+    },
+    "frontend_production_build_authorized_server": {
+      "command": "cd src/frontend && npm run build",
+      "modules_transformed": 2154,
+      "status": "passed"
+    },
+    "provider_calls": 0
+  },
+  "negative_cases_proved": [
+    "catalog_release_drift",
+    "unknown_schema_fields",
+    "unknown_resource_units",
+    "actor_and_co_actor_jurisdiction_overreach",
+    "scenario_action_overreach",
+    "invalid_target_cohorts",
+    "unknown_or_out_of_range_parameters",
+    "raw_or_unknown_trigger_fields",
+    "unbounded_trigger_depth",
+    "pre_intervention_actions",
+    "future_checkpoint_reads",
+    "backward_or_unmet_prerequisites",
+    "unordered_fallbacks",
+    "undeclared_overlapping_action_conflicts",
+    "worst_case_resource_envelope_excess",
+    "unsafe_url_path_secret_or_executable_text",
+    "compiled_program_tampering"
+  ],
+  "semantic_acceptance": {
+    "governance_information_shock": "multi_actor_program_compiles",
+    "external_incident_shock": "assignment_can_restrict_program_to_monitoring_only",
+    "interpretation": "simulation_design_contrast_not_causal_identification"
+  },
+  "non_claims": [
+    "No action or resource ledger is implemented in Phase A.",
+    "No governance action is applied by the runtime in Phase A.",
+    "No real staffing, budget or service capacity is estimated.",
+    "No policy effect, causal effect or governance recommendation is released.",
+    "No Provider credential was read and no Provider request was made."
+  ],
+  "deferred_tasks": [
+    "T100",
+    "T110",
+    "T120",
+    "T130",
+    "T140",
+    "T200",
+    "T210",
+    "T220",
+    "T230",
+    "T240",
+    "T300",
+    "T310",
+    "T320",
+    "T400",
+    "T410",
+    "T420"
+  ],
+  "audited_files": {
+    "src/backend/campus_pulse/governance/__init__.py": "1471f45b7678690feec2a6ef6778744916e33d79f1ef4a7c680b75f17a4ac7c2",
+    "src/backend/campus_pulse/governance/_canonical.py": "9b5c1fe82ee72aa3d0e0f3a8c2c0b141ce93d91f954d49951363c6084dc2e5a1",
+    "src/backend/campus_pulse/governance/actor_catalog.py": "95121190ca229a435aa146f40948130e5dd082210064ba96d6d27dbaeb64e01c",
+    "src/backend/campus_pulse/governance/action_catalog.py": "9b6996818a0bf98e24d0a6c6d4ee9f39671b875f082a9610099cbbd87696c935",
+    "src/backend/campus_pulse/governance/program_schema.py": "82053224c799a905bdb426f789cf5e7ab4295a36c80cbfe62356d4262d8f8556",
+    "src/backend/campus_pulse/governance/compiler.py": "d204eefa11017d3d4a34e63c72ef450bbdea678b3757350bece8706137cf2cd4",
+    "src/backend/tests/test_campus_pulse_governance_compiler.py": "f2647854cbb87e6925b9ea722ea0de2f0a3d3edd1e3e1989c5c4b767793879df",
+    "specs/013-governance-orchestration/spec.md": "2ff811e9f3a5b09d275c9f8750ec210efce8688e4b9931908df274af30d16edb",
+    "specs/013-governance-orchestration/plan.md": "d1b5fe5e9bfe36fea0bf5f9b8dfefae121cea39bf6cef27dade19678fd76ab1e",
+    "specs/013-governance-orchestration/research.md": "42858564eca32d0130c0cefed8ae35f03f4503c270e70ae8b6ac3f80da868fd3",
+    "specs/013-governance-orchestration/tasks.md": "aeec3e99865323f9d2f1566ad4283f046ca87b1a444837ba705a0be9848c6438"
+  }
+}

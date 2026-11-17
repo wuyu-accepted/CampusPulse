@@ -1,0 +1,77 @@
+{
+  "schema_version": "cross-shock-population-alignment-audit-v1",
+  "audit_date": "2026-07-22",
+  "source_artifacts": [
+    {
+      "scenario_id": "lecture_external_incident_shock",
+      "population_month": "2026-06",
+      "population_seed": 20260722,
+      "agent_count": 48,
+      "sha256": "2006ad5745fed0231e39fc3e88eef515a4ad40356e2d043f94ea81b89aaee5e5"
+    },
+    {
+      "scenario_id": "tongzhou_governance_information_shock",
+      "population_month": "2026-03",
+      "population_seed": 20260722,
+      "agent_count": 48,
+      "sha256": "838857b3d0a9572d81d78703a514105ae8aea5f9a3b7779551e82e4b05a0a0bb"
+    }
+  ],
+  "strict_alignment_result": {
+    "synthetic_agent_id_sets_overlap": 48,
+    "same_cross_snapshot_agent_identity": false,
+    "indexed_agent_mismatch_counts": {
+      "archetype_id": 29,
+      "persona_variant_id": 43,
+      "role_id": 25,
+      "population_weight": 48,
+      "population_month": 48,
+      "baseline_action": 18,
+      "baseline_message": 48
+    },
+    "interpretation": "Synthetic agent numbers are local row identifiers inside a population snapshot. Reusing the same number across March and June does not establish the same simulated individual."
+  },
+  "transferable_behavior_mechanism_result": {
+    "lecture_archetype_count": 16,
+    "tongzhou_archetype_count": 16,
+    "common_archetype_count": 16,
+    "lecture_variant_count": 38,
+    "tongzhou_variant_count": 41,
+    "common_variant_count": 37,
+    "frozen_profile_fields_checked": [
+      "profile_summary",
+      "reaction_logic",
+      "simulation_instruction",
+      "situational_signature",
+      "language_style",
+      "observable_core_tendencies",
+      "trigger_conditions",
+      "uncertainty_behavior",
+      "do_not_simulate"
+    ],
+    "common_variants_with_any_frozen_profile_field_mismatch": 0,
+    "interpretation": "The cross-time unit is the reviewed behavior variant, not the numbered agent. The same frozen behavioral mechanism can be checked for selective adaptation to different shocks."
+  },
+  "within_snapshot_policy_alignment": {
+    "artifact_sha256": "8392fa5344fdc7d64f9d4d59f4361e24957974d4c2ec7765d168f58547274bc4",
+    "scenario_id": "tongzhou_governance_information_shock",
+    "population_month": "2026-03",
+    "shared_initial_population_across_policies": true,
+    "baseline_agent_decision_count_per_policy": 48,
+    "exact_baseline_decision_mismatches": 0,
+    "valid_same_agent_comparison": "Within this artifact only, the same synthetic agent can be compared across baseline and combined policy branches after the shared baseline."
+  },
+  "evaluation_design": {
+    "within_snapshot_unit": "same synthetic_agent_id across phases or policy branches",
+    "cross_snapshot_unit": "same persona_variant_id with frozen profile fields",
+    "include_selective_nonresponse": true,
+    "reason": "A behavior type that stays silent under an irrelevant shock can be more faithful than one that reacts to every event.",
+    "forbidden_claims": [
+      "same numbered agent is the same individual across March and June",
+      "cross-time population weights are fixed",
+      "policy-branch differences are observational causal effects",
+      "synthetic agents are digital twins of real students"
+    ]
+  },
+  "verdict": "eligible_for_two_level_fidelity_review_with_cross_snapshot_identity_boundary"
+}

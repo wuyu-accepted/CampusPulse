@@ -1,0 +1,303 @@
+{
+  "adjudication_schema_version": "1.0.0",
+  "reviewer": "codex_direct_semantic_review",
+  "review_protocol": {
+    "primary_rule": "逐条对照脱敏原帖、语义卡、必要评论语境、类别边界与正反序模型判断，以发帖时可观察的主要互动行为裁决，不推断持久人格。",
+    "automatic_metrics_role": "只用于发现不稳定、边界和遗漏候选，不作为拟真度真值。",
+    "uncertainty_rule": "允许保留次级类别、边界和语境不明，不为追求覆盖而补写不存在的诉求。",
+    "cluster_membership_reviewed": true,
+    "all_hard_pairs_read_individually": true,
+    "raw_text_persisted": false
+  },
+  "expected_inputs": {
+    "semantic_run_fingerprint": "3bf3769ce5794a287dfc9d6b5b2e5e2b4671d73e332a4d40f17fc33787949623",
+    "taxonomy_run_fingerprint": "b19f632b17e91e836b00e8acc055d4329af3346931356e659ea5e2be886fa6fc",
+    "taxonomy_fingerprint": "028f7e977d3bfcd8ed3fcc5eb20ffa7e084337a281989f78dcd485594c169f9b",
+    "hard_pair_run_fingerprint": "68efa632879faa84962c69896f20bce3819070455969d153423fbf9cbe193549"
+  },
+  "taxonomy_amendments": [
+    {
+      "archetype_id": "archetype-01",
+      "fields": {
+        "exclusion_rules": [
+          "以选校、升学或职业路径权衡为主时归入生涯机会决策咨询者",
+          "以恢复状态、突击复习、解题方法或个性化课程推荐为主时归入学习行动求助者",
+          "以教学不一致或不公平为主张时归入公共服务投诉者"
+        ],
+        "distinguish_from_nearest": "本类问规则、考核或系统事实是什么；学习行动求助者问我该怎样学习、补课或按自身条件选择课程。"
+      },
+      "reason": "两条课程推荐帖被高置信误判为规则核实，原定义没有覆盖推荐型选课决策。"
+    },
+    {
+      "archetype_id": "archetype-02",
+      "fields": {
+        "core_need": "在时间、知识或选课适配压力下获得可执行的学习、复习、解题或课程选择建议",
+        "inclusion_rules": [
+          "询问短期复习是否可行、如何恢复学习节奏或安排任务",
+          "直接征求题目答案、知识解释或缺课内容补充",
+          "根据自身基础、能力偏好或成绩压力请求个性化课程推荐",
+          "核心期待是采取学习或选课行动，而不是单纯确认制度事实",
+          "可包含明显焦虑，但仍提出了具体方法、解答或选择请求"
+        ],
+        "distinguish_from_nearest": "本类关注解决学习任务或形成课程选择；课程规则核实者关注评分、考核、状态和制度事实。"
+      },
+      "reason": "把个性化课程推荐纳入学习行动，避免仅因出现课程与考核词就归入规则查询。"
+    },
+    {
+      "archetype_id": "archetype-15",
+      "fields": {
+        "label": "社区见闻分享者",
+        "core_need": "分享祝福、欣赏、喜悦、轻松见闻或值得共同感受的校园与文化体验",
+        "inclusion_rules": [
+          "分享节日善意、公共空间中的美好体验或成功带来的喜悦",
+          "公开表达支持、祝贺、欣赏或正面评价，且无需具体行动",
+          "分享语义清楚的校园或论坛轻松见闻，即使态度并非强烈正向",
+          "内容虽涉及游戏、音乐、票务或特定对象，核心仍是体验传播"
+        ],
+        "exclusion_rules": [
+          "寻找同好加好友或结伴参加活动归入社交同伴匹配者",
+          "提出公共价值主张或争辩邀请归入公共规范讨论者",
+          "仅有口号、歌词、残片且无法确定交流目的时归入语境不明表演者"
+        ],
+        "distinguish_from_nearest": "本类能确认是在分享见闻、祝福、欣赏或喜悦；语境不明表演者连主要态度或交流目的也不能稳定判断。"
+      },
+      "reason": "原分类遗漏语义清楚但非规范讨论、非强烈正向的轻量社区见闻，导致一条论坛功能变化被错扔进语境不明类。"
+    }
+  ],
+  "adjudications": [
+    {
+      "record_id": "sample-000009",
+      "input_fingerprint": "0356343d1684874fd0d4cab53f24077cb9eb983a26aa380004d850d4b2238114",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "full_cluster_membership_review",
+      "reason": "论坛新旧功能合并及旧帖恢复的调侃含义清楚，属于社区见闻分享，不是不可理解的残片。"
+    },
+    {
+      "record_id": "sample-000006",
+      "input_fingerprint": "0da4509c07fe1f5ff42a24dc7260a54ac94e0291848627fb88328d8e7c3f23cb",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "原帖反复宣泄被舍友吵醒的崩溃，没有提出沟通方案或边界判断请求；关系冲突只作为诱因。"
+    },
+    {
+      "record_id": "sample-000028",
+      "input_fingerprint": "17f8d8f7aa9719dfe3526802aca1395ca99b131dcccac3b29f6f52fcced15dd8",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "面向公众发布成体系的生涯价值主张，并非为发帖者自己的路径索取建议。"
+    },
+    {
+      "record_id": "sample-000030",
+      "input_fingerprint": "72fc14ea30e4d92e54bbeb05fb23bc3c1f08ee0139b95ff59411552f9dc6149d",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review",
+      "reason": "表达对不明不白冷暴力的厌恶与失落，但没有请求如何沟通；不应由语义模型补出协商任务。"
+    },
+    {
+      "record_id": "sample-000031",
+      "input_fingerprint": "5ccf9f3ecb58c0037daaa92ad4fafea8b1ea8a26a5bff2aab5673a27116b0381",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review",
+      "reason": "市值、员工和亲属安排组合明显带夸张表演色彩，且自称可能是玩笑；不宜当作真实生涯决策样本。"
+    },
+    {
+      "record_id": "sample-000035",
+      "input_fingerprint": "73741787867f3bf87617004a27771f4d7b1989432501e75907d5542c4daf800f",
+      "primary_archetype_id": "archetype-07",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "同时询问商业洗护店是否新开及体验如何，核心是消费选择。"
+    },
+    {
+      "record_id": "sample-000042",
+      "input_fingerprint": "4a27bfc82fe37d7edc5a851295e13f5cccbafeab59e505e0ba9647c55886ffeb",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-04",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "当前动作是确认平台私信异常是否普遍，尚未提出修复、追责或投诉。"
+    },
+    {
+      "record_id": "sample-000046",
+      "input_fingerprint": "9ea2aa75693dd453aa496a8a265f2852a5a997fa118072a806000c569ee2571d",
+      "primary_archetype_id": "archetype-07",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "询问具体餐饮商家当日是否营业，符合消费信息定义；是否位于校园附近不足以改成行政办事。"
+    },
+    {
+      "record_id": "sample-000047",
+      "input_fingerprint": "7d3941670617660ca59cf71e9fc77a17c0420634e97995ac6f3dd498dc439b56",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "夸张短句可能是歌词或接梗，评论仍不能确认真实负面处境和期待回应。"
+    },
+    {
+      "record_id": "sample-000050",
+      "input_fingerprint": "4c1bb2875626946c49497e6a52bf7a1ba0b39880a5fbd263e7b70f7ab1e5d7d9",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "只有政治人物与国家词组，事件、立场、提问和讨论目的均不可判定。"
+    },
+    {
+      "record_id": "sample-000052",
+      "input_fingerprint": "69f2432d0cf44e3d811fe96a136d13053b792a11c587f7e00fdeeb523990e44f",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "首要动作是付费寻找特定当堂参与者提供信息，资源匹配比未知的具体咨询内容更可观察。"
+    },
+    {
+      "record_id": "sample-000056",
+      "input_fingerprint": "7814c4a2be00f400ea613f8860e6e843edbcc3912afa679641f1948d41279daf",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review",
+      "reason": "虽使用口号和诗句，积极进取的自我表达与情绪传播足够清楚；同时保留表演性边界。"
+    },
+    {
+      "record_id": "sample-000067",
+      "input_fingerprint": "c4058227aa2ae95c30cfa0a80b7aacecdde90790161751263848eca54a248d69",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "对校园团体相关争议或传闻追问来龙去脉，属于公共事件核实而不是办事查询。"
+    },
+    {
+      "record_id": "sample-000072",
+      "input_fingerprint": "c1691733d41661b83a9d6db436dfb3444a647f594dbcf6f7d3615fb9d5a85a34",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "询问学院整体期末考试日程进度，不是某门课程的评分或考核规则。"
+    },
+    {
+      "record_id": "sample-000073",
+      "input_fingerprint": "9f541e139b0fd86f66f3214e6d9db447074ee4c8d4e3e96dfdf2d0e03e0172c8",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review_with_comment_context",
+      "reason": "评论补足了对依附伴侣、否定独立生活等一类公共言行的价值批评，规范评价是主要行为。"
+    },
+    {
+      "record_id": "sample-000074",
+      "input_fingerprint": "f3e11b3207c071724d7921bd05c0ee151fce7ce44b565d36974a86bb56bf81fd",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "重点是一分之差未达绩点目标的遗憾，没有询问评分规则或提出申诉。"
+    },
+    {
+      "record_id": "sample-000079",
+      "input_fingerprint": "04a069443ee43e1f0258437ed6bc5de616674bff05a70eecfa1107fdabb4e57a",
+      "primary_archetype_id": "archetype-04",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "强烈质疑课堂未覆盖课件或考核内容，包含对具体教学失责的投诉，不是中性规则查询。"
+    },
+    {
+      "record_id": "sample-000081",
+      "input_fingerprint": "c33a15616469a63db3dc8d268a6ee744a4f0259f9a4e0e7448ef631e6b85ea9c",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "因缺课请求补充当堂考试相关内容，主要是弥补学习信息缺口。"
+    },
+    {
+      "record_id": "sample-000084",
+      "input_fingerprint": "1ac50a8ec7e0081d0190fa7ac215d8746f1652da0f4b69b6ce0de479759b3e9a",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-09",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review",
+      "reason": "原帖只展示会员权益及价格，没有账号共享或规避规则证据；不能仅凭推测的平台条款升级为风险交易。"
+    },
+    {
+      "record_id": "sample-000085",
+      "input_fingerprint": "aa65fe8c0edad81bf3aaa4491e3334e6e921cfd9756aeaeb555cd41f02d37c49",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "尽管对象简称依赖校园语境，欣赏和正面分享意图清楚。"
+    },
+    {
+      "record_id": "sample-000086",
+      "input_fingerprint": "70190febef7a6d844b84c18c53933bcbabdcd3e6341f37bffaadf81101b3aa57",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review",
+      "reason": "面向高中生传播选校与升学取舍主张，并非发帖者为自己求策。"
+    },
+    {
+      "record_id": "sample-000088",
+      "input_fingerprint": "0796f8c94108d7853bba3b323b1bc69f496688a9762e290bffbdeb0a8c6cc1ca",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review",
+      "reason": "描述的是项目或申请考核确认入口与邮件通知故障，主要是系统办事流程，不足以当作课程规则。"
+    },
+    {
+      "record_id": "sample-000094",
+      "input_fingerprint": "ab5d79b3cb2b5ab6f8662dbe75f97a763431ec6cb9a208abfc17dcce3d720c06",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review_outside_supplied_candidates",
+      "reason": "主要请求公共选修课推荐，并用内容和考核方式辅助选择；真正类别未进入模型候选集。"
+    },
+    {
+      "record_id": "sample-000096",
+      "input_fingerprint": "e1298fbd42cccd1aaab4a4ac4f5e5442980153fd6c034e67bb097aaf2b8a71a9",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_direct_review_with_comment_context",
+      "reason": "身体或情绪疼痛仍不确定，但强烈不适及获得关心的互动方向可辨，保留语境不明次级边界。"
+    },
+    {
+      "record_id": "sample-000097",
+      "input_fingerprint": "9bf4f5c4f007ad39ffe18c497711f02de1db560cb536427a1b87d1fd8ff6de2d",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review_outside_supplied_candidates",
+      "reason": "依据自身背诵优势和成绩压力请求个性化课程推荐，是学习选择行动；真正类别未进入模型候选集。"
+    },
+    {
+      "record_id": "sample-000099",
+      "input_fingerprint": "a410750871bb689a223eb92b7be6df6dcdd589cec19789f62f96029ffb44a8ce",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_direct_review_with_comment_context",
+      "reason": "在公共论坛揭露并谴责影响多名不知情者的欺骗，当前期待公共评价而非私人协商方案。"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "OrdinaryUser": [
+        {"id":1,"name":"browse_and_act","condition":null,
+         "description":"浏览信息流，形成私人想法并决定公开平台行为。","type":"OR",
+         "required_variables":[],"output_updates":[
+             {"name":"private_note","type":"str"},{"name":"last_action_type","type":"str"}]}
+    ],
+    "OpinionLeader": [
+        {"id":1,"name":"browse_and_act","condition":null,
+         "description":"同普通用户的行为逻辑。区别在于画像与社交网络中心位置。","type":"OR",
+         "required_variables":[],"output_updates":[
+             {"name":"private_note","type":"str"},{"name":"last_action_type","type":"str"}]}
+    ],
+    "MediaOrganization": [
+        {"id":3,"name":"select_and_publish","condition":null,
+         "description":"按编辑方针从信息流选材并作为广播帖(media)发布。","type":"OR",
+         "required_variables":[],"output_updates":[]}
+    ],
+    "FactCheckOrganization": [
+        {"id":2,"name":"publish_factcheck","condition":null,
+         "description":"读取隐藏真值证据包，按治理模式决定是否发布辟谣。","type":"OR",
+         "required_variables":[],"output_updates":[]}
+    ]
+}

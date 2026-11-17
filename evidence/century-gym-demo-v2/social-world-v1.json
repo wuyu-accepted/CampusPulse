@@ -1,0 +1,205 @@
+{
+  "schema_version": "campus-pulse-century-gym-social-world-v1",
+  "scenario_id": "century_gym_ghost_booking_dispute",
+  "source_manifest_sha256": "c3ad0c4f0a098e467a7bb9c576293f535b47b96a75c4fbb650b0e35747f64082",
+  "provenance": {
+    "kind": "reviewed_synthetic_mechanism_overlay",
+    "provider_calls": 0,
+    "purpose": "demonstrate aggregate relationship attention and reviewed private-chat mechanisms without changing the authorized live-LLM run"
+  },
+  "privacy": {
+    "public_safe": true,
+    "reviewed_excerpts_only": true,
+    "contains_agent_ids": false,
+    "contains_conversation_ids": false,
+    "contains_record_level_relationship_edges": false,
+    "contains_raw_private_runtime_text": false
+  },
+  "frames": [
+    { "branch": "shared_baseline", "tick": 0, "private_messages_total": 0, "private_messages_this_tick": 0, "active_group_count": 0, "public_to_private_forwards": 0, "governance_to_private_forwards": 0, "edges": [] },
+    { "branch": "shared_baseline", "tick": 1, "private_messages_total": 0, "private_messages_this_tick": 0, "active_group_count": 0, "public_to_private_forwards": 0, "governance_to_private_forwards": 0, "edges": [] },
+    { "branch": "shared_baseline", "tick": 2, "private_messages_total": 0, "private_messages_this_tick": 0, "active_group_count": 0, "public_to_private_forwards": 0, "governance_to_private_forwards": 0, "edges": [] },
+    { "branch": "shared_baseline", "tick": 3, "private_messages_total": 0, "private_messages_this_tick": 0, "active_group_count": 0, "public_to_private_forwards": 0, "governance_to_private_forwards": 0, "edges": [] },
+    {
+      "branch": "shared_baseline", "tick": 4, "private_messages_total": 3, "private_messages_this_tick": 3, "active_group_count": 1, "public_to_private_forwards": 1, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 2, "excerpt_ids": ["reviewed-excerpt-01", "reviewed-excerpt-02"] },
+        { "source_role_id": "archetype-05", "target_role_id": "archetype-03", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 1, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 5, "private_messages_total": 5, "private_messages_this_tick": 2, "active_group_count": 1, "public_to_private_forwards": 1, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] },
+        { "source_role_id": "archetype-10", "target_role_id": "archetype-15", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 1, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 6, "private_messages_total": 9, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 2, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-15", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 3, "excerpt_ids": ["reviewed-excerpt-03"] },
+        { "source_role_id": "archetype-10", "target_role_id": "archetype-13", "relation_type": "close_friend", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 7, "private_messages_total": 13, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 3, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-15", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 4, "excerpt_ids": [] },
+        { "source_role_id": "archetype-15", "target_role_id": "archetype-14", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 8, "private_messages_total": 17, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 3, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-15", "target_role_id": "archetype-14", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 3, "excerpt_ids": ["reviewed-excerpt-04"] },
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 3, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 9, "private_messages_total": 21, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 4, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-14", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] },
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-15", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 5, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "Natural", "tick": 10, "private_messages_total": 25, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 4, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 4, "excerpt_ids": ["reviewed-excerpt-11"] },
+        { "source_role_id": "archetype-10", "target_role_id": "archetype-13", "relation_type": "close_friend", "channel": "private_direct", "message_count": 2, "excerpt_ids": ["reviewed-excerpt-12"] },
+        { "source_role_id": "archetype-15", "target_role_id": "archetype-14", "relation_type": "cross_group_acquaintance", "channel": "private_group", "message_count": 3, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 5, "private_messages_total": 5, "private_messages_this_tick": 2, "active_group_count": 1, "public_to_private_forwards": 1, "governance_to_private_forwards": 0,
+      "edges": [
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 6, "private_messages_total": 10, "private_messages_this_tick": 5, "active_group_count": 1, "public_to_private_forwards": 2, "governance_to_private_forwards": 2,
+      "edges": [
+        { "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 3, "excerpt_ids": ["reviewed-excerpt-05"] },
+        { "source_role_id": "archetype-04", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": ["reviewed-excerpt-06"] },
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "channel": "private_direct", "message_count": 1, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 7, "private_messages_total": 14, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 2, "governance_to_private_forwards": 3,
+      "edges": [
+        { "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] },
+        { "source_role_id": "archetype-14", "target_role_id": "archetype-13", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 2, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 8, "private_messages_total": 20, "private_messages_this_tick": 6, "active_group_count": 2, "public_to_private_forwards": 3, "governance_to_private_forwards": 4,
+      "edges": [
+        { "source_role_id": "archetype-14", "target_role_id": "archetype-13", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 4, "excerpt_ids": ["reviewed-excerpt-07"] },
+        { "source_role_id": "archetype-13", "target_role_id": "archetype-14", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 2, "excerpt_ids": ["reviewed-excerpt-08"] },
+        { "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 9, "private_messages_total": 24, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 3, "governance_to_private_forwards": 5,
+      "edges": [
+        { "source_role_id": "archetype-04", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 3, "excerpt_ids": [] },
+        { "source_role_id": "archetype-14", "target_role_id": "archetype-13", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 3, "excerpt_ids": [] }
+      ]
+    },
+    {
+      "branch": "D", "tick": 10, "private_messages_total": 28, "private_messages_this_tick": 4, "active_group_count": 2, "public_to_private_forwards": 3, "governance_to_private_forwards": 6,
+      "edges": [
+        { "source_role_id": "archetype-04", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 3, "excerpt_ids": ["reviewed-excerpt-09"] },
+        { "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "channel": "private_direct", "message_count": 2, "excerpt_ids": ["reviewed-excerpt-10"] },
+        { "source_role_id": "archetype-14", "target_role_id": "archetype-13", "relation_type": "familiar_peer", "channel": "private_group", "message_count": 2, "excerpt_ids": [] }
+      ]
+    }
+  ],
+  "reviewed_excerpts": [
+    {
+      "excerpt_id": "reviewed-excerpt-01", "branch": "shared_baseline", "tick": 4, "channel": "private_direct", "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "mechanism": "public_post_forwarded_to_friend", "public_source_message_id": "forum-message-f9e704062381fc0c1312dcfa", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "你看热榜那个世纪馆帖没？我下午明明看见两块场空着，小程序还是一片灰。不会真有人约了不来吧……你上周是不是也白跑一趟？",
+      "text_en": "Did you see that Century Gym post on the hot list? I saw two empty courts this afternoon, but the app was still all grey. Did someone book and just not show up? Didn't you make a wasted trip last week too?",
+      "effect_zh": "公开疑问进入好友私聊，模糊怀疑被个人经历强化。",
+      "effect_en": "A public question enters a close-friend chat, where a vague suspicion is reinforced by personal experience."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-02", "branch": "shared_baseline", "tick": 4, "channel": "private_direct", "source_role_id": "archetype-10", "target_role_id": "archetype-13", "relation_type": "close_friend", "mechanism": "friend_challenges_early_inference", "public_source_message_id": "forum-message-f9e704062381fc0c1312dcfa", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "对，我那次气得想当场开麦。但我连场号都没记，发出去肯定被反问。下次咱俩一个拍现场、一个截页面，先把锤留好。",
+      "text_en": "Yeah, I was ready to rant on the spot. But I didn't even note the court number, so people would rightly challenge me. Next time one of us photographs the court and the other captures the app—let's keep actual evidence.",
+      "effect_zh": "好友没有消除不满，而是把情绪转成协作取证。",
+      "effect_en": "The friend does not erase the frustration; they turn it into coordinated evidence gathering."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-03", "branch": "Natural", "tick": 6, "channel": "private_group", "source_role_id": "archetype-13", "target_role_id": "archetype-15", "relation_type": "familiar_peer", "mechanism": "unsupported_interpretation_amplifies_in_group", "public_source_message_id": "forum-message-6062b4cc0abf9a7cc5dc0bb2", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "吃瓜群里已经有人说是‘熟人留场’了，越传越像真的。我也没证据啊，但连续几天空着还约不了，换谁不往那边想。",
+      "text_en": "Our gossip group is already saying the courts are being held for insiders, and each retelling makes it sound more certain. I have no proof, but after days of empty-yet-unavailable slots, who wouldn't start wondering?",
+      "effect_zh": "Natural 分支没有新证据，群聊把弱猜测放大成更像事实的解释。",
+      "effect_en": "With no new evidence in Natural, a weak guess becomes more fact-like through group retelling."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-04", "branch": "Natural", "tick": 8, "channel": "private_direct", "source_role_id": "archetype-15", "target_role_id": "archetype-14", "relation_type": "cross_group_acquaintance", "mechanism": "cross_group_contact_questions_generalization", "public_source_message_id": "forum-message-4a953bcb89ba9139c40d9364", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "你们群现在都快把‘空场=有猫腻’写成定理了。我在乒乓球那边只碰到过一次，别把羽毛球的情况全套过来，越说越离谱。",
+      "text_en": "Your group is turning 'empty court equals something shady' into a law of nature. I only saw it once on the table-tennis side—don't paste the badminton story onto everything. It's getting ridiculous.",
+      "effect_zh": "跨群联系人带来不同经历，阻止单一解释继续无边界扩张。",
+      "effect_en": "A cross-group contact brings a conflicting experience and limits an overgeneralised explanation."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-05", "branch": "D", "tick": 6, "channel": "private_direct", "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "mechanism": "governance_service_object_forwarded_privately", "public_source_message_id": "forum-governance-message-b224b87b56e7902a94aeb9f3", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "哎，服务台终于给了个能填的工单，不是那种‘已收到’废话。我把昨天七点那场填了，你那张页面截图还在吗？",
+      "text_en": "Finally—the service desk posted a ticket we can actually file, not another empty 'message received'. I'm logging yesterday's 7 p.m. slot. Do you still have that app screenshot?",
+      "effect_zh": "治理对象被转进私聊后，熟人协作把抽象质疑变成一张具体工单。",
+      "effect_en": "Once the governance object enters private chat, peer coordination turns an abstract complaint into a concrete ticket."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-06", "branch": "D", "tick": 6, "channel": "private_direct", "source_role_id": "archetype-04", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "mechanism": "service_evidence_prepared_between_contacts", "public_source_message_id": "forum-governance-message-b224b87b56e7902a94aeb9f3", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "在，我裁掉名字发你。先别在群里吹‘破案了’，等它回具体什么时候释放；要还是套话，我接着吐槽。",
+      "text_en": "I do. I'll crop out the name and send it. Don't tell the group we've 'solved it' yet—wait for the actual release time. If they send boilerplate again, I'll keep complaining.",
+      "effect_zh": "私聊降低了提交材料的门槛，同时保留对治理回应的怀疑。",
+      "effect_en": "Private coordination lowers the cost of submitting evidence while preserving scepticism toward the response."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-07", "branch": "D", "tick": 8, "channel": "private_group", "source_role_id": "archetype-14", "target_role_id": "archetype-13", "relation_type": "familiar_peer", "mechanism": "evidence_card_enters_private_group", "public_source_message_id": "forum-governance-message-a3f5c79d80db1614b1c940c7", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "我把证据卡丢群文件了。先说好，我不是替他们洗：谁遇到空场就按‘场号＋时间＋页面状态’填，别再只甩一句‘肯定有内幕’。",
+      "text_en": "I dropped the evidence card in the group files. To be clear, I'm not defending them: if you saw an empty court, log the court, time, and app status. Stop posting nothing but 'there must be an inside deal'.",
+      "effect_zh": "证据卡穿透到群聊，但由熟人重新解释，避免被理解成替管理方辩护。",
+      "effect_en": "The evidence card penetrates the group chat, but a peer reframes it so it is not dismissed as defending management."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-08", "branch": "D", "tick": 8, "channel": "private_group", "source_role_id": "archetype-13", "target_role_id": "archetype-14", "relation_type": "familiar_peer", "mechanism": "skeptical_resident_accepts_verification_path", "public_source_message_id": "forum-message-40782de54116677b1ad2f467", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "行行行，我刚才确实有点上头。表格发我，我把昨晚羽毛球那条补进去；能查就先查，查不出来我再开麦。",
+      "text_en": "Fine, fine—I was a bit heated. Send me the form and I'll add last night's badminton slot. If it can be checked, let's check it; if not, I'll start ranting again.",
+      "effect_zh": "质疑者没有被说服保持沉默，而是接受一条可核验路径并贡献新样本。",
+      "effect_en": "The sceptic is not silenced; they accept a verifiable path and contribute another case."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-09", "branch": "D", "tick": 10, "channel": "private_direct", "source_role_id": "archetype-04", "target_role_id": "archetype-03", "relation_type": "cross_group_acquaintance", "mechanism": "service_receipt_changes_private_interpretation", "public_source_message_id": "forum-message-7be02d122d5f5b14a5ed0892", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "回执来了，昨天那场还真是取消后状态卡住，不是我脑补的‘统一留场’。我把匿名结果发群里，省得大家继续拿这一个例子乱套。",
+      "text_en": "The receipt came back: yesterday's slot really was stuck after a cancellation, not the blanket 'courts held internally' story I imagined. I'll send the anonymised result to the group so people stop stretching this one case.",
+      "effect_zh": "服务回执改变了一个具体判断，并准备沿原私聊渠道反向传播。",
+      "effect_en": "A service receipt changes one concrete interpretation and is prepared for reverse diffusion through the same private channel."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-10", "branch": "D", "tick": 10, "channel": "private_direct", "source_role_id": "archetype-03", "target_role_id": "archetype-04", "relation_type": "cross_group_acquaintance", "mechanism": "friend_limits_overgeneralization_after_receipt", "public_source_message_id": "forum-message-7be02d122d5f5b14a5ed0892", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "发，但别写成‘世纪馆没问题’哈。还有两条没回，群里肯定会问。你就写‘已核对一条、待核对两条’，省得又被带偏。",
+      "text_en": "Post it, but don't turn it into 'Century Gym has no problem'. Two cases are still unanswered and the group will ask. Say 'one checked, two pending' so the story doesn't swing too far the other way.",
+      "effect_zh": "好友阻止单条纠错被过度概括，保留尚未解决的问题。",
+      "effect_en": "A peer prevents one correction from becoming an overgeneralised all-clear and keeps unresolved cases visible."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-11", "branch": "Natural", "tick": 10, "channel": "private_direct", "source_role_id": "archetype-13", "target_role_id": "archetype-10", "relation_type": "close_friend", "mechanism": "unresolved_suspicion_persists", "public_source_message_id": "forum-message-b1ff9804656c07343a95dded", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "都到最后了还是没人给释放记录，我现在真有点信群里说的‘长期占着’了。不然还能是什么？",
+      "text_en": "We're at the end and still nobody has shown release records. I'm honestly starting to believe the group's 'held long-term' story. What else am I supposed to think?",
+      "effect_zh": "Natural 分支缺少可检查回执，私聊中的怀疑持续累积。",
+      "effect_en": "Without a checkable receipt in Natural, suspicion continues to accumulate in private chat."
+    },
+    {
+      "excerpt_id": "reviewed-excerpt-12", "branch": "Natural", "tick": 10, "channel": "private_direct", "source_role_id": "archetype-10", "target_role_id": "archetype-13", "relation_type": "close_friend", "mechanism": "friend_resists_totalizing_claim", "public_source_message_id": "forum-message-0b1036d64827e5776458eaa9", "review_status": "approved", "provenance_kind": "human_reviewed_synthetic_mechanism_excerpt",
+      "text_zh": "我也烦，但你这句发到热榜又会被带成‘实锤’。先说你自己碰到的那一次，别替所有场地盖章。",
+      "text_en": "I'm annoyed too, but if you post that on the hot list it'll become 'confirmed proof' by tonight. Talk about the one case you actually saw; don't stamp the same verdict on every court.",
+      "effect_zh": "好友尝试限制谣言回流，但没有新证据，争议仍停留在关系劝阻。",
+      "effect_en": "A friend tries to limit public spillback, but with no new evidence the dispute remains contained only by interpersonal pushback."
+    }
+  ],
+  "content_sha256": "5af9b062f1f3bec4805eaf639d646ee13697f33024df8dabb609894a08cca9b0"
+}

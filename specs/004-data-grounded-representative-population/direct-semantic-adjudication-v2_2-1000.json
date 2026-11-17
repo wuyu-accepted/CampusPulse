@@ -1,0 +1,918 @@
+{
+  "adjudication_schema_version": "1.0.0",
+  "reviewer": "codex_direct_semantic_review",
+  "review_protocol": {
+    "primary_rule": "逐条对照脱敏原帖、语义卡、两次不同批大小的分类和正反序辅助意见，由直接文本理解裁决主要互动行为。",
+    "automatic_metrics_role": "批次不一致、候选顺序一致率和置信度只用于筛查，不是拟真度真值。",
+    "uncertainty_rule": "允许次级类别和语境不明，不因出现关键词而补写不存在的行动诉求。",
+    "full_cluster_membership_reviewed": false,
+    "stratified_cross_time_evidence_read_count": 128,
+    "all_primary_disagreements_read_individually": true,
+    "primary_disagreement_count": 74,
+    "raw_text_persisted": false
+  },
+  "expected_inputs": {
+    "semantic_run_fingerprint": "1e15a1005987d6fa3d9f20bf0eae2b59833fe93ab54dfaa03cda658a2d71ee85",
+    "taxonomy_run_fingerprint": "e9fe80e6509b44ab487eaa690c68778a92dd67ce497dbac2be4bb481178e6f6e",
+    "taxonomy_fingerprint": "75a75fe38fcb0d1dbf4042948cabe98951d4e81c21fc4b29fafb392b976037cc",
+    "hard_pair_run_fingerprint": "4d14355b3ce1dc54a8cda24318a28f5b2a82889cbc7d678bf3c3a8c37dc6dcc6"
+  },
+  "taxonomy_amendments": [
+    {
+      "archetype_id": "archetype-08",
+      "fields": {
+        "inclusion_rules": [
+          "明确提供、出售、求购、转让、赠送或置换一般物品、资料、票券或权益",
+          "出现有偿、带价、报价、拼单、收或出等成交表达，且标的可正常流通",
+          "往年题、课堂笔记、教学大纲等普通学习资料可进入本类",
+          "帖子核心是获得或提供可交付标的并完成成交",
+          "标的和履约方式未明显触及学术不端或资格规则"
+        ],
+        "exclusion_rules": [
+          "没有成交表达、主要请特定同学补发遗漏信息时归入任务资源匹配者",
+          "当次答案、代写、代课、课程名额或绕过规则服务归入风险交易推广者",
+          "仅询问产品或活动建议归入生活方案咨询者"
+        ],
+        "distinguish_from_nearest": "本类有可交付标的和成交语言；任务资源匹配者以互助协作为主，风险交易推广者的标的或履约本身明显越界。"
+      },
+      "reason": "跨批次最不稳定的是普通资料求购、互助和风险交易；直接阅读显示是否存在成交语言与标的风险应分别判断。"
+    },
+    {
+      "archetype_id": "archetype-11",
+      "fields": {
+        "inclusion_rules": [
+          "寻找学习搭子、监督伙伴、竞赛团队或可承担具体任务的成员",
+          "寻找同项目参与者、当堂同学或有特定经历者进行信息互助",
+          "因漏课、漏群或临时缺口，请特定同学补发信息或资料",
+          "发布失物寻找并请求社区执行具体检查或归还动作",
+          "主要价值在完成明确任务或互助，而非泛社交陪伴"
+        ],
+        "exclusion_rules": [
+          "休闲结伴、交友或恋爱导向归入社交同伴匹配者",
+          "以有偿、带价、报价、收购等成交语言获取可交付标的时归入交易类",
+          "提供正式岗位并筛选受雇者时归入机会发布招募者",
+          "代课、代做或违规资格服务归入风险交易推广者"
+        ],
+        "distinguish_from_nearest": "本类以协作、补缺和互助为中心；出现明确商品化成交时进入交易类，产出只是陪伴和归属时进入社交同伴匹配者。"
+      },
+      "reason": "不同批大小把同类课程资料帖随机分入学习、互助和风险交易，需要以成交语言、互助关系和标的风险三步划界。"
+    },
+    {
+      "archetype_id": "archetype-13",
+      "fields": {
+        "exclusion_rules": [
+          "纯玩梗、歌词或无法确认真实情绪意图时归入语境不明表演者",
+          "提出明确学习方法请求时归入学习行动求助者",
+          "有明确关系沟通决策时归入关系与协作边界协商者",
+          "出现具体身心问题并主要请求风险判断、缓解方法或专业路径时归入身心健康求助者"
+        ],
+        "distinguish_from_nearest": "本类首先需要倾听和承接；失眠、头疼等身体词若只是情绪后果仍属本类，只有行动型健康求助才进入身心健康求助者。"
+      },
+      "reason": "健康类新增后出现见身体词就过度医疗化的问题，必须以是否请求健康行动而非是否出现症状词划界。"
+    },
+    {
+      "archetype_id": "archetype-15",
+      "fields": {
+        "label": "社区体验交流者",
+        "core_need": "分享或征询无需外部处置的校园、生活、文化与情感体验，并获得轻量共鸣或主观经验",
+        "inclusion_rules": [
+          "分享祝福、欣赏、感谢、喜悦或明确正面评价",
+          "分享语义清楚的校园、论坛、文化、消费或考试见闻，包括正负观感",
+          "征询低风险生活或关系体验的主观感受，但不要求决策方案",
+          "表达简短观感或遭遇，未要求退款、整改、专业判断或行动",
+          "核心是体验传播和社区轻量互动"
+        ],
+        "exclusion_rules": [
+          "寻找同好或伴侣建立持续互动时归入社交同伴匹配者",
+          "提出公共价值主张或争辩邀请归入公共规范讨论者",
+          "期待解释、修复或追责时归入公共服务投诉者",
+          "只有口号、歌词或残片且交流目的不可判断时归入语境不明表演者"
+        ],
+        "distinguish_from_nearest": "本类的体验、态度或主观经验交流目的可辨且不要求处置；投诉者期待改变，语境不明类连交流目的也不能稳定判断。"
+      },
+      "reason": "直接阅读发现低强度差评、考试观感、口号助威和主观体验询问具有共同的轻量社区交流角色。"
+    },
+    {
+      "archetype_id": "archetype-17",
+      "fields": {
+        "inclusion_rules": [
+          "描述胸闷、心悸、失眠、疼痛、异常疲劳等具体问题并求风险判断",
+          "怀疑抑郁、声音敏感等身心问题并询问评估或专业帮助",
+          "征求医院、科室、挂号方式或可靠医疗服务建议",
+          "询问经期、慢性不适等反复问题的缓解与求助经验",
+          "主要期待是健康安全行动，而不是只获得安慰"
+        ],
+        "exclusion_rules": [
+          "身体词仅是考试、论文或一般情绪压力的伴随表达且未求健康行动时归入情绪承接者",
+          "只询问校医院营业、报销、转诊等固定流程时归入校园规则办事询问者",
+          "只分享生病或过敏体验而未求判断和行动时归入社区体验交流者",
+          "对医疗服务失责要求整改或追责时归入公共服务投诉者"
+        ],
+        "distinguish_from_nearest": "本类必须同时有具体身心问题和行动型求助；只有不适表达时归情绪承接或体验交流，只有固定流程事实时归校园办事。"
+      },
+      "reason": "逐条审阅18个健康类成员后确认类别成立，但4个仅出现身体词的帖子被过度医疗化，需要收紧最低证据。"
+    }
+  ],
+  "adjudications": [
+    {
+      "record_id": "sample-000009",
+      "primary_archetype_id": "archetype-01",
+      "secondary_archetype_id": "archetype-09",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "只询问督导如何核查以及代签被发现的风险，尚未发起代到交易。"
+    },
+    {
+      "record_id": "sample-000012",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "主要征集是否有人遇到相同室友现象，未提出边界协商或行动请求。"
+    },
+    {
+      "record_id": "sample-000044",
+      "primary_archetype_id": "archetype-12",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "机会已经确定，核心是处理提前离开实习的承诺、责任和沟通边界。"
+    },
+    {
+      "record_id": "sample-000111",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-02",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确以有偿和自主定价方式求购往年题型与复习资料，标的未显示学术违规。"
+    },
+    {
+      "record_id": "sample-000113",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-08",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "复习深度和目标成绩指导是主问题，购买历年题是辅助资源需求。"
+    },
+    {
+      "record_id": "sample-000116",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "以带价方式求购普通课程笔记，成交意图明确且标的不是答案或代做。"
+    },
+    {
+      "record_id": "sample-000152",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "问题用于决定复习范围与行动优先级，不是在核实正式考核制度。"
+    },
+    {
+      "record_id": "sample-000165",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "建立统计楼主动收集同课成绩样本，主要行为是社区信息协作。"
+    },
+    {
+      "record_id": "sample-000211",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "已经完成岗位申请，仅核实校内面试通知是否发出。"
+    },
+    {
+      "record_id": "sample-000233",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "重点是抱怨长期获得相同分数并寻求共鸣，没有提出评分规则核实。"
+    },
+    {
+      "record_id": "sample-000239",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "原帖主要表达失误后的愧疚与道歉，没有明确请求如何修复协作关系。"
+    },
+    {
+      "record_id": "sample-000243",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "以自我调侃方式分享一段择偶教训，当前没有可协商的既有关系。"
+    },
+    {
+      "record_id": "sample-000323",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-17",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "用反讽分享春季鼻炎体验并求共鸣，没有请求健康判断或照护行动。"
+    },
+    {
+      "record_id": "sample-000327",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问创新项目申报字数及评审后果，属于项目申请办事规则。"
+    },
+    {
+      "record_id": "sample-000351",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "仅核实校内岗位申请通知状态，不是在权衡职业路径。"
+    },
+    {
+      "record_id": "sample-000407",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "使用收购式表达寻找指定课程笔记，主要目标是获得可成交资源。"
+    },
+    {
+      "record_id": "sample-000409",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-17",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "虽列出感冒症状，主要是表达难受并期待关心，没有求诊断或照护方案。"
+    },
+    {
+      "record_id": "sample-000465",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "花粉隐喻和玩笑含义足够清楚，属于轻量社区体验交流。"
+    },
+    {
+      "record_id": "sample-000469",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-17",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "短帖主要表达考前失眠的焦虑无奈，没有提出健康行动请求。"
+    },
+    {
+      "record_id": "sample-000472",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问课外竞赛结果是否发布，属于校内活动状态而非课程考核规则。"
+    },
+    {
+      "record_id": "sample-000475",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "核心是定位校内食堂的具体窗口，期待准确设施位置。"
+    },
+    {
+      "record_id": "sample-000482",
+      "primary_archetype_id": "archetype-09",
+      "secondary_archetype_id": "archetype-08",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "有偿求购往届完整竞赛成果用于借鉴，学术与知识产权风险明显。"
+    },
+    {
+      "record_id": "sample-000493",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问校内餐饮窗口即时营业状态，不是比较消费方案。"
+    },
+    {
+      "record_id": "sample-000510",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "虽是简短口号，阵营认同和助威互动目的清楚。"
+    },
+    {
+      "record_id": "sample-000513",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-10",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "寻找同程者是为完成返程拼车任务，费用和路线协作重于社交。"
+    },
+    {
+      "record_id": "sample-000519",
+      "primary_archetype_id": "archetype-10",
+      "secondary_archetype_id": "archetype-06",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "活动的实际产出是交友与关系匹配，而非岗位或正式项目招募。"
+    },
+    {
+      "record_id": "sample-000523",
+      "primary_archetype_id": "archetype-05",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "核心是评估改变转专业意向对申请机会的影响，不是一般办事步骤。"
+    },
+    {
+      "record_id": "sample-000526",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-10",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "固定路线和费用分摊构成明确拼车任务，不以陪伴归属为主。"
+    },
+    {
+      "record_id": "sample-000575",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "内容主要宣泄对他人的愤怒并求附和，没有公共规范论证。"
+    },
+    {
+      "record_id": "sample-000592",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "以泛化方式讨论校园内某类关系实践的可行性与合理性，不是协商既有关系。"
+    },
+    {
+      "record_id": "sample-000594",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确有偿求购往年试卷，成交意图清楚且未显示违规标的。"
+    },
+    {
+      "record_id": "sample-000614",
+      "primary_archetype_id": "archetype-09",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "有偿招募他人代为到课录音拍摄，履约方式具有代课规避性质。"
+    },
+    {
+      "record_id": "sample-000643",
+      "primary_archetype_id": "archetype-02",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "问题用于决定知识点复习优先级，而非核实正式公布的考核规则。"
+    },
+    {
+      "record_id": "sample-000654",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "主要行为是展示个人网络互动并求围观附和，风险内容应作为独立安全标签保留。"
+    },
+    {
+      "record_id": "sample-000670",
+      "primary_archetype_id": "archetype-07",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "按妆面风格和技术标准筛选生活服务，不是学习或项目协作者匹配。"
+    },
+    {
+      "record_id": "sample-000677",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "主要是公开祈愿并期待轻量共鸣，未形成审批状态查询。"
+    },
+    {
+      "record_id": "sample-000687",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "分享考试太难的即时观感并征求同学共鸣，不是深度情绪求助。"
+    },
+    {
+      "record_id": "sample-000704",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问学院整体期末考试日程是否结束，而非具体课程考核规则。"
+    },
+    {
+      "record_id": "sample-000724",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问一夜情主观体验的交流目的可辨，属于社区经验交流。"
+    },
+    {
+      "record_id": "sample-000746",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "核心是确认课程通知群和加入渠道状态，不是考核规则。"
+    },
+    {
+      "record_id": "sample-000762",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-15",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "主要表达未能与心仪对象建立联系的遗憾，未实际招募对象。"
+    },
+    {
+      "record_id": "sample-000772",
+      "primary_archetype_id": "archetype-07",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问校外剧院演出的入场服务规则，属于生活出行方案。"
+    },
+    {
+      "record_id": "sample-000786",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "使用收购式表达获取往年试题，属于一般学习资料求购。"
+    },
+    {
+      "record_id": "sample-000789",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-02",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "请求当堂同学补齐缺课信息，特定经历者互助比泛化学习建议更准确。"
+    },
+    {
+      "record_id": "sample-000791",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "残句无法确定拉踩的主体、对象与论点，尚不足以形成公共讨论。"
+    },
+    {
+      "record_id": "sample-000795",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-02",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "因漏看通知请求同学补发模拟题与答案，可有偿只是次要获取方式。"
+    },
+    {
+      "record_id": "sample-000799",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "收资料的表述以获得可交付标的为中心，属于一般资料求购。"
+    },
+    {
+      "record_id": "sample-000801",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "连续收多门课程期末资料表现为求购清单，未显示当次答案或代做风险。"
+    },
+    {
+      "record_id": "sample-000802",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确带价求购笔记、开卷资料和往年题，标的是一般备考资料。"
+    },
+    {
+      "record_id": "sample-000807",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确带价求购多门历年题，成交意图强且未显示违规来源。"
+    },
+    {
+      "record_id": "sample-000811",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确有偿求购复习资料，标的普通且以成交为主。"
+    },
+    {
+      "record_id": "sample-000814",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "有偿获取指定班级教学大纲属于一般资料求购，不是学术违规。"
+    },
+    {
+      "record_id": "sample-000815",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "带价求购多门往年题，交易线索明确且不是当次答案。"
+    },
+    {
+      "record_id": "sample-000824",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "使用收购式表达并留下联系入口，主要是获得可交付真题资源。"
+    },
+    {
+      "record_id": "sample-000827",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "有偿求购往年题是主轴，附带询问难度不改变交易角色。"
+    },
+    {
+      "record_id": "sample-000829",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "虽然对象简称依赖语境，强烈赞叹和求共鸣的互动目的清楚。"
+    },
+    {
+      "record_id": "sample-000835",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "按质量标准带价求购整理资料，属于一般资料交易。"
+    },
+    {
+      "record_id": "sample-000836",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确有偿求购完整课件，成交意图比互助关系更突出。"
+    },
+    {
+      "record_id": "sample-000838",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-17",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "只陈述焦虑导致失眠并期待承接，没有提出症状判断或专业求助。"
+    },
+    {
+      "record_id": "sample-000849",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "问题聚焦三方解约手续和条件，属于就业行政办事流程。"
+    },
+    {
+      "record_id": "sample-000895",
+      "primary_archetype_id": "archetype-07",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问校外送站场景的可行方案，不是校园设施办事。"
+    },
+    {
+      "record_id": "sample-000897",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-06",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "提供租住权益并寻找承接者，属于一般权益交易而不是岗位招募。"
+    },
+    {
+      "record_id": "sample-000906",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-06",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "寻找同项目伙伴共同参与，未体现正式机会提供方或岗位条件。"
+    },
+    {
+      "record_id": "sample-000917",
+      "primary_archetype_id": "archetype-04",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "虽使用公共价值论述，主要仍要求管理者回应具体事件并改进处理。"
+    },
+    {
+      "record_id": "sample-000932",
+      "primary_archetype_id": "archetype-05",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "核实升学选拔面试经验以准备申请，不属于课程考核规则。"
+    },
+    {
+      "record_id": "sample-000934",
+      "primary_archetype_id": "archetype-05",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "询问直博录取来源占比用于判断升学机会结构，未发起规范辩论。"
+    },
+    {
+      "record_id": "sample-000953",
+      "primary_archetype_id": "archetype-11",
+      "secondary_archetype_id": "archetype-06",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "为竞赛补齐编程队友，属于平等组队而非正式岗位招募。"
+    },
+    {
+      "record_id": "sample-000954",
+      "primary_archetype_id": "archetype-04",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "已主张评分不透明且不公平并要求解释，超出中性规则核实。"
+    },
+    {
+      "record_id": "sample-000964",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "商品和价格已经确定，目标是撮合拼单成交。"
+    },
+    {
+      "record_id": "sample-000966",
+      "primary_archetype_id": "archetype-09",
+      "secondary_archetype_id": "archetype-08",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "论文参考与文档代制服务可能替代学术任务，风险履约优先。"
+    },
+    {
+      "record_id": "sample-000967",
+      "primary_archetype_id": "archetype-03",
+      "secondary_archetype_id": "archetype-01",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "查询专业分流公示的发布时间与入口，属于行政公示流程。"
+    },
+    {
+      "record_id": "sample-000969",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "medium",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "虽有沟通挫败，仍在表达院校专业比较立场并期待公共判断。"
+    },
+    {
+      "record_id": "sample-000983",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "即时校园场景和自嘲接梗目的可以识别，不是无意义残片。"
+    },
+    {
+      "record_id": "sample-000991",
+      "primary_archetype_id": "archetype-08",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "hard_pair_primary_disagreement_direct_review",
+      "reason": "明确有偿获取首课录音和材料，属于一般资料求购。"
+    },
+    {
+      "record_id": "sample-000017",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "具体急性症状伴随猝死担忧，明确需要紧急风险判断和就医建议。"
+    },
+    {
+      "record_id": "sample-000055",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "持续声音刺激造成明显身心不适且常规措施无效，明确求缓解办法。"
+    },
+    {
+      "record_id": "sample-000058",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": null,
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "描述具体生理反应并请求严重程度判断、缓解方法与专业路径。"
+    },
+    {
+      "record_id": "sample-000134",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-04",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "以个人负面修课体验提醒他人，未要求调查、解释或整改。"
+    },
+    {
+      "record_id": "sample-000199",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "主要询问身体亲密偏好是否正常或需要改变，同时应避免将偏好病理化。"
+    },
+    {
+      "record_id": "sample-000245",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "明确寻找可靠口腔医疗机构，专业健康服务路径是核心。"
+    },
+    {
+      "record_id": "sample-000278",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": "archetype-05",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "公司规模、人员数量和亲属安排组合明显夸张且自称可能是玩笑，不宜当真。"
+    },
+    {
+      "record_id": "sample-000296",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "主要发布游戏活动码供社区互动，未明确提出需协作者完成的任务。"
+    },
+    {
+      "record_id": "sample-000301",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "持续痤疮且已有治疗无效，核心是寻找专业就医路径。"
+    },
+    {
+      "record_id": "sample-000303",
+      "primary_archetype_id": "archetype-14",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "询问校内团体相关瓜的来龙去脉，属于公共事件核实而非办事流程。"
+    },
+    {
+      "record_id": "sample-000336",
+      "primary_archetype_id": "archetype-09",
+      "secondary_archetype_id": "archetype-16",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "校园地点、时间、有偿和代课黑话共同指向代课，但因任务缺失保留不确定性。"
+    },
+    {
+      "record_id": "sample-000371",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "明确怀疑抑郁并询问下一步，需要评估与专业求助路径。"
+    },
+    {
+      "record_id": "sample-000408",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-04",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "只是分享餐食难吃的观感，没有退款、整改或追责诉求。"
+    },
+    {
+      "record_id": "sample-000504",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "长期痤疮困扰并寻找正规诊治地点，健康服务路径是主诉求。"
+    },
+    {
+      "record_id": "sample-000540",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-03",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "多次正规挂号失败后询问更有效预约方法，核心是就医可达性。"
+    },
+    {
+      "record_id": "sample-000577",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-07",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "为决定是否预约心理咨询而征求服务体验，专业支持路径是核心。"
+    },
+    {
+      "record_id": "sample-000615",
+      "primary_archetype_id": "archetype-15",
+      "secondary_archetype_id": "archetype-02",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "原帖只是抱怨作业全为外文，没有明确请求翻译、解释或学习方案。"
+    },
+    {
+      "record_id": "sample-000668",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-12",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "困扰已影响专注和睡眠并明确求安全缓解方法，同时强调亲密边界。"
+    },
+    {
+      "record_id": "sample-000676",
+      "primary_archetype_id": "archetype-09",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "有偿请求配置绕过访问限制的网络工具，风险履约清楚。"
+    },
+    {
+      "record_id": "sample-000686",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "异常疲劳、呼吸费力和持续腰痛构成具体健康行动求助。"
+    },
+    {
+      "record_id": "sample-000731",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-17",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "主轴是论文提交后的学术焦虑和自我怀疑，头疼是伴随症状而非健康求诊。"
+    },
+    {
+      "record_id": "sample-000780",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "持续失眠伴随异常闭眼体验，明确需要症状判断和求助方向。"
+    },
+    {
+      "record_id": "sample-000800",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-10",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "只表达想恋爱的向往和失落，尚未形成寻找对象的招募行动。"
+    },
+    {
+      "record_id": "sample-000884",
+      "primary_archetype_id": "archetype-16",
+      "secondary_archetype_id": "archetype-14",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "虽询问能否报警，但事件对象完全缺失，无法判断法律或治理问题。"
+    },
+    {
+      "record_id": "sample-000910",
+      "primary_archetype_id": "archetype-17",
+      "secondary_archetype_id": "archetype-13",
+      "reviewer_certainty": "high",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "经期身心问题反复影响学习并明确求方法，健康行动需求更核心。"
+    },
+    {
+      "record_id": "sample-000957",
+      "primary_archetype_id": "archetype-13",
+      "secondary_archetype_id": "archetype-11",
+      "reviewer_certainty": "medium",
+      "review_source": "cross_time_stratified_direct_review",
+      "reason": "挂科楼主要召集同类受挫者共鸣，任务协作并非明确主轴。"
+    }
+  ]
+}

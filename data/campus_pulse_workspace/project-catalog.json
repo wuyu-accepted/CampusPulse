@@ -1,0 +1,36 @@
+{
+  "schema_version": "campus-pulse-final-project-catalog-v1",
+  "project_count": 3,
+  "projects": [
+    {
+      "project_id": "housing-allocation-legitimacy",
+      "title": "暑期住宿床位分配正当性争议",
+      "scenario_id": "governance_legitimacy_dispute",
+      "role": "primary_policy_experiment",
+      "status": "completed",
+      "branches": ["Natural", "D"],
+      "ticks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result_asset": "src/frontend/public/campus-pulse-data/resource-v5-formal-summary-v1.json"
+    },
+    {
+      "project_id": "century-gym-ghost-booking",
+      "title": "世纪馆‘幽灵预约’争议",
+      "scenario_id": "century_gym_ghost_booking_dispute",
+      "role": "live_system_demo",
+      "status": "completed_replay_and_rerunnable",
+      "branches": ["Natural", "D"],
+      "ticks": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "result_asset": "evidence/century-gym-live-v1/public-progress/latest.json"
+    },
+    {
+      "project_id": "lecture-incident-governance",
+      "title": "讲座冲突事件传播",
+      "scenario_id": "lecture_external_incident_shock",
+      "role": "cross_topic_transfer_case",
+      "status": "completed",
+      "branches": ["Natural", "D"],
+      "ticks": [3, 4, 5, 6, 7, 8, 9, 10],
+      "result_asset": "src/frontend/public/campus-pulse-data/lecture-open-choice-r4.json"
+    }
+  ]
+}

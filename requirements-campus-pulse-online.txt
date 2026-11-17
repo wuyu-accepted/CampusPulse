@@ -1,0 +1,8 @@
+# Dedicated CampusPulse workbench API runtime.
+# Kept separate from the upstream OneSim Python 3.10 simulation environment.
+fastapi==0.115.12
+cryptography==50.0.0
+httpx==0.28.1
+numpy==2.2.6
+pydantic==2.13.4
+uvicorn==0.34.2

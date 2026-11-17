@@ -1,0 +1,29 @@
+{
+  "schema": "campus-pulse-old-release-hashes-v1",
+  "recorded_at": "2026-08-03",
+  "workspace_has_git_metadata": false,
+  "artifacts": [
+    {
+      "name": "CampusPulse-MassSim-v1.zip",
+      "bytes": 11114046,
+      "sha256": "36fdcc17ff09420e8c75dc6d7ac0abef9bb9ec37b13df735cf24e19ee4d7f52e",
+      "scope": "local immutable baseline"
+    },
+    {
+      "name": "CampusPulse-Governance-Arena-v2.zip",
+      "bytes": 16985519,
+      "sha256": "7e6dcd3eeb39fe3a68aadf737d3ccd36e0b6ba4cc9c060da37c6b73784810b7e",
+      "scope": "local immutable baseline"
+    }
+  ],
+  "excluded_private_reference": {
+    "name": "CAPER-private-empirical-data-20260730.zip",
+    "reason": "clean-room review input, not a CampusPulse release"
+  },
+  "pending_remote_artifacts": [
+    "Competition Final",
+    "Competition RC",
+    "Governance Arena v1",
+    "YuLan-Scale v1"
+  ]
+}

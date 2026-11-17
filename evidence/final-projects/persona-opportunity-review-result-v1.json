@@ -1,0 +1,37 @@
+{
+  "schema_version": "campus-pulse-persona-opportunity-review-result-v1",
+  "review_scope": "12 fixed synthetic agents at Tick 4; judgments were sealed before answer-key access",
+  "reviewer": "internal_blind_review",
+  "independent_human_review": false,
+  "case_count": 12,
+  "expression_case_count": 6,
+  "silent_read_case_count": 6,
+  "historical_slots_reused": 21,
+  "new_provider_requests": 7,
+  "new_provider_tokens": 39497,
+  "exact_profile_match_expression_cases": {
+    "correct": 3,
+    "total": 6,
+    "rate": 0.5,
+    "four_choice_random_baseline": 0.25
+  },
+  "silent_cases_withheld_as_cannot_tell": {
+    "count": 6,
+    "total": 6,
+    "rate": 1.0
+  },
+  "context_uptake_expression_cases": {
+    "count": 6,
+    "total": 6,
+    "rate": 1.0
+  },
+  "distinct_public_actions": 5,
+  "distinct_stances": 3,
+  "unique_public_texts": 16,
+  "private_actions": 15,
+  "unsupported_fact_cases": 0,
+  "template_like_cases": 0,
+  "interpretation": "The run produced varied, context-aware behavior without unsupported facts or repeated templates. Persona recovery among agents who expressed themselves exceeded the four-choice chance baseline, but is not strong enough to claim high persona identifiability. Silent reading remains valid behavior.",
+  "governance_effect_claimed": false,
+  "publication_eligible": false
+}

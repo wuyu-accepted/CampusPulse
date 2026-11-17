@@ -1,0 +1,29 @@
+{
+  "scenario_id": "campus_safety",
+  "version": "1.1.0",
+  "title": "校园安全事件压力测试",
+  "description": "模拟安全与权益类诉求集中出现时的平台触达、风险分流和保卫服务队列。",
+  "parameters": {
+    "rounds": {"value": 48, "source_type": "operator_input", "evidence": "MVP演示采用48个合成决策轮次。", "limitations": "轮次不对应真实时间。"},
+    "base_arrival_rate": {"value": 4.5, "source_type": "derived", "evidence": "依据2026-07-11共66条安全权益关键词代理帖和高累计参与度进行缩放。", "limitations": "无法由现有评论时间校准传播速度。"},
+    "shock_curve": {"value": [0.25, 0.35, 0.75, 1.8, 3.2, 3.6, 2.8, 2.0, 1.4, 1.0, 0.7, 0.5], "source_type": "assumption", "evidence": "突发事件的合成陡峭冲击轮廓。"},
+    "need_mix": {"value": {"academic_information": 0.18, "emotional_support": 0.10, "safety_report": 0.62, "campus_service": 0.10}, "source_type": "operator_input", "evidence": "安全事件功能性诉求组合。"},
+    "urgency_mix": {"value": {"low": 0.12, "medium": 0.28, "high": 0.42, "critical": 0.18}, "source_type": "assumption", "evidence": "风险场景压力测试输入，不代表真实案件等级。"},
+    "natural_response_probability": {"value": {"academic_information": 0.6173, "emotional_support": 0.8172, "safety_report": 0.7284, "campus_service": 0.7303}, "source_type": "empirical_proxy", "evidence": "稳定采集制度内训练窗（2026-05-01至2026-06-15）关键词代理类别的最终非零评论比例；留出窗从2026-06-16开始。", "limitations": "高评论量不等于风险得到处置；关键词类别未经人工金标准验证。"},
+    "mean_replies_if_responded": {"value": {"academic_information": 4.20, "emotional_support": 6.93, "safety_report": 7.94, "campus_service": 4.20}, "source_type": "derived", "evidence": "稳定采集制度内训练窗各关键词代理类别的有评论帖子条件均值。", "limitations": "长尾形状另由假设的离散参数控制。"},
+    "reply_dispersion": {"value": 1.5, "source_type": "assumption", "evidence": "Gamma-Poisson过度离散参数。"},
+    "natural_resolution_probability": {"value": {"academic_information": 0.32, "emotional_support": 0.18, "safety_report": 0.10, "campus_service": 0.25}, "source_type": "assumption", "evidence": "安全问题解决状态未观测，采用保守情景值。"},
+    "work_units_by_urgency": {"value": {"low": 1, "medium": 1, "high": 2, "critical": 3}, "source_type": "operator_input", "evidence": "服务工作量抽象。"},
+    "routing": {"value": {"academic_information": "academic_services", "emotional_support": "student_support", "safety_report": "campus_security", "campus_service": "facilities"}, "source_type": "derived", "evidence": "按治理职能建立的部门映射。"},
+    "department_capacity": {"value": {"academic_services": 2, "student_support": 3, "campus_security": 6, "facilities": 2}, "source_type": "operator_input", "evidence": "安全事件MVP容量假设。"},
+    "faq_eligible_need_types": {"value": ["academic_information", "campus_service"], "source_type": "derived", "evidence": "FAQ仅处理标准流程信息，不替代安全处置。"},
+    "faq_effectiveness": {"value": {"academic_information": 0.50, "emotional_support": 0.05, "safety_report": 0.12, "campus_service": 0.40}, "source_type": "assumption", "evidence": "安全类FAQ仅提供渠道信息，效果保守。"},
+    "peer_boost_capacity": {"value": 6, "source_type": "operator_input", "evidence": "每轮同伴信息补位名额。"},
+    "peer_boost_success": {"value": {"academic_information": 0.35, "emotional_support": 0.42, "safety_report": 0.12, "campus_service": 0.28}, "source_type": "assumption", "evidence": "同伴回应不替代正式安全服务。"},
+    "dynamic_backlog_threshold": {"value": 6, "source_type": "operator_input", "evidence": "安全服务队列触发扩容阈值。"},
+    "dynamic_capacity_increment": {"value": 4, "source_type": "operator_input", "evidence": "应急扩容工作单元。"},
+    "dynamic_capacity_limit": {"value": 4, "source_type": "operator_input", "evidence": "应急扩容上限。"},
+    "cost_weights": {"value": {"faq_reach": 0.15, "peer_action": 0.6, "service_work_unit": 1.0, "dynamic_capacity_unit": 1.7, "routing_action": 0.1}, "source_type": "operator_input", "evidence": "无量纲治理成本权重。"}
+  },
+  "limitations": ["v1不模拟真实谣言级联、案件真值、处置时长或跨用户传播网络。"]
+}

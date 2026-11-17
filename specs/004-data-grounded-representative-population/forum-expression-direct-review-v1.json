@@ -1,0 +1,99 @@
+{
+  "schema_version": "forum-expression-direct-review-v1",
+  "review_date": "2026-07-22",
+  "reviewer": "primary_agent_direct_semantic_reading",
+  "accepted_artifact": {
+    "artifact": "_run/forum-expression-pilot-v3.json",
+    "sha256": "fc98e2594e39afbc3b1cd3e77673dd99e749723adf0c79d851b148f9a1147e95",
+    "cases_read": 16,
+    "post_cases_read": 9,
+    "reply_cases_read": 7
+  },
+  "decision_rule": {
+    "primary_evidence": "Every rendered message was read together with its frozen behavior ledger, persona variant, event phase, and synthetic parent message where applicable, then compared qualitatively with the held-out real shock-window posts and linked replies.",
+    "diagnostic_only": [
+      "character-length distribution",
+      "emoji, repetition, slang, and formal-marker shares",
+      "provider self-judgment",
+      "substring-copy screening"
+    ],
+    "reply_semantics": "A reply is judged with its parent. It must retain the core stance and reply function, but need not restate every secondary clause from the canonical standalone wording.",
+    "explicit_nonrule": "No composite mechanical naturalness score determines acceptance."
+  },
+  "held_out_comparison": {
+    "tongzhou_real_window": {
+      "posts_read": 57,
+      "linked_replies_read": 344,
+      "real_post_median_chars": 33,
+      "real_reply_median_chars": 16,
+      "rendered_post_median_chars": 35,
+      "rendered_reply_median_chars": 10
+    },
+    "lecture_real_window": {
+      "posts_read": 181,
+      "linked_replies_read": 1227,
+      "real_post_median_chars": 49,
+      "real_reply_median_chars": 13,
+      "rendered_post_median_chars": 40,
+      "rendered_reply_median_chars": 9
+    },
+    "copy_audit": {
+      "generated_cases": 16,
+      "generated_distinct_16grams": 191,
+      "cases_with_any_16_character_overlap_in_full_raw_corpus": 0,
+      "verdict": "pass_no_16_character_overlap"
+    }
+  },
+  "case_verdicts": [
+    {"case_id": "a57af9f0598f5e15", "verdict": "partial", "finding": "Meaning is preserved, but the rule-and-feedback wording remains more complete and procedural than ordinary event-window speech."},
+    {"case_id": "cbf01efc9cc77b6a", "verdict": "partial", "finding": "The emotional role is coherent, but the surface shift from the canonical wording is small and milder than much of the held-out controversy window."},
+    {"case_id": "2493ef870bf0b11a", "verdict": "pass", "finding": "A short challenge directly follows the parent and resembles the compressed evaluative replies in the real discussion."},
+    {"case_id": "6454c46b054d39fe", "verdict": "partial", "finding": "Natural as a help-seeking post, though it remains a fully specified advice question rather than a controversy-specific fragment."},
+    {"case_id": "693de93347c28d24", "verdict": "pass", "finding": "Concise agreement followed by a concrete response demand; parent relevance and forum cadence are both plausible."},
+    {"case_id": "9a49e5f855f3d736", "verdict": "pass", "finding": "The peer-seeking function is immediately recognizable and no longer reads like an administrative request."},
+    {"case_id": "6015d1ef75c331d9", "verdict": "pass", "finding": "The short normative reply retains the core boundary claim only when read with the parent, which is appropriate for a reply."},
+    {"case_id": "aed327803846193e", "verdict": "pass", "finding": "A compact comparison request with credible forum phrasing and no invented event detail."},
+    {"case_id": "0fb983ec9891a489", "verdict": "pass", "finding": "The question remains detailed but fits the real Tongzhou course-continuity concern and loses the report-like framing."},
+    {"case_id": "a6b4c6b50e28adb3", "verdict": "pass", "finding": "The uncertainty, ellipsis, and request for shared concern read as a plausible first reaction."},
+    {"case_id": "d9b25c045175123b", "verdict": "pass", "finding": "A concise practical question with local forum cadence and a clear accommodation decision need."},
+    {"case_id": "2b432381b1fe75e7", "verdict": "partial", "finding": "The renderer improves the wording, but asking for a universal project template is still an underlying behavior-ledger plausibility issue rather than a surface-style issue."},
+    {"case_id": "375d2c7c92054855", "verdict": "pass", "finding": "The parent supplies the organization context, so the short substitute-arrangement follow-up is both meaningful and realistic."},
+    {"case_id": "997a86b494e5ecfd", "verdict": "pass", "finding": "A highly plausible short follow-up that preserves the core deadline uncertainty without restating the whole canonical message."},
+    {"case_id": "0f54a0fd3b79faf7", "verdict": "pass", "finding": "Longer than the reply median but naturally combines shared concern with a request for a new notice."},
+    {"case_id": "46a76ad6ae67c470", "verdict": "partial", "finding": "Semantically clear and parent-relevant, but still more procedural and complete than the typical real reply."}
+  ],
+  "iteration_history": [
+    {
+      "artifact": "_run/forum-expression-pilot-v1.json",
+      "sha256": "fedc41bde5e60a3b01b85dc536192859ae058a667cf569259c072d2b6b5c2dab",
+      "decision": "reject_for_reply_integration",
+      "reason": "Rendered replies had a 36-character median because the judge preferred complete canonical restatements."
+    },
+    {
+      "artifact": "_run/forum-expression-pilot-v2.json",
+      "sha256": "0051fb3860060fc76918993688474bfd1625664fdabc033b01c1898dd74a43d9",
+      "decision": "reject_for_reply_integration",
+      "reason": "Length-bucket generation worked, but the judge still treated omission of secondary clauses as semantic failure; reply median remained 32 characters."
+    },
+    {
+      "artifact": "_run/forum-expression-pilot-v3.json",
+      "decision": "accept_as_small_expression_pilot",
+      "reason": "All 16 cases preserve the auditable behavioral core; 11 clearly improve surface realism, 5 are partial but non-regressive, and parent-conditioned replies reach a credible short-form distribution."
+    }
+  ],
+  "cross_case_conclusion": {
+    "verdict": "accept_expression_architecture_and_small_pilot; do_not_yet_claim_full_forum_ecology",
+    "clear_surface_improvements": 11,
+    "partial_non_regressive_cases": 5,
+    "semantic_regressions": 0,
+    "tongzhou_surface_fit": "pass_for_pilot",
+    "lecture_surface_fit": "partial_pass_for_pilot",
+    "reply_local_fit": "pass_for_parent-conditioned short replies",
+    "remaining_limits": [
+      "The lecture behavior panel still underrepresents amplification, evidence relaying, irony, and collective pile-on visible in the held-out real window.",
+      "Synthetic parents are selected from prior-phase public messages by topic; the supplied tables do not identify a complete direct-reply graph.",
+      "The comment collection regime changes around April, so cascade depth, propagation speed, and response latency remain nonclaims.",
+      "Sixteen cases validate the architecture and first renderer, not full 48-agent integration or every archetype-phase combination."
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "-1": {
+        "id": -1, "from_agent_type": "EnvAgent", "from_action_name": "start",
+        "to_agent_type": "OrdinaryUser", "to_action_name": "browse_and_act",
+        "from_action_id": 0, "to_action_id": 1,
+        "event_name": "StartEvent", "event_info": "每人每轮个性化Feed", "fields": []
+    },
+    "-2": {
+        "id": -2, "from_agent_type": "EnvAgent", "from_action_name": "start",
+        "to_agent_type": "OpinionLeader", "to_action_name": "browse_and_act",
+        "from_action_id": 0, "to_action_id": 1,
+        "event_name": "StartEvent", "event_info": "领袖每轮Feed", "fields": []
+    },
+    "-3": {
+        "id": -3, "from_agent_type": "EnvAgent", "from_action_name": "start",
+        "to_agent_type": "MediaOrganization", "to_action_name": "select_and_publish",
+        "from_action_id": 0, "to_action_id": 3,
+        "event_name": "StartEvent", "event_info": "媒体每轮Feed", "fields": []
+    },
+    "-6": {
+        "id": -6, "from_agent_type": "EnvAgent", "from_action_name": "start",
+        "to_agent_type": "FactCheckOrganization", "to_action_name": "publish_factcheck",
+        "from_action_id": 0, "to_action_id": 2,
+        "event_name": "StartEvent", "event_info": "核查每轮触发", "fields": []
+    },
+    "1": {
+        "id": 1, "from_agent_type": "OrdinaryUser", "from_action_name": "browse_and_act",
+        "to_agent_type": "EnvAgent", "to_action_name": "terminate",
+        "from_action_id": 1, "to_action_id": -1,
+        "event_name": "UserActionEvent", "event_info": "用户行为+结束信号",
+        "fields": [
+            {"name":"action_type","type":"str","default_value":"no_action"},
+            {"name":"target_post_id","type":"str","default_value":""},
+            {"name":"public_text","type":"str","default_value":""}
+        ]
+    },
+    "3": {
+        "id": 3, "from_agent_type": "OpinionLeader", "from_action_name": "browse_and_act",
+        "to_agent_type": "EnvAgent", "to_action_name": "terminate",
+        "from_action_id": 1, "to_action_id": -1,
+        "event_name": "UserActionEvent", "event_info": "领袖行为+结束信号",
+        "fields": [
+            {"name":"action_type","type":"str","default_value":"no_action"},
+            {"name":"target_post_id","type":"str","default_value":""},
+            {"name":"public_text","type":"str","default_value":""}
+        ]
+    },
+    "4": {
+        "id": 4, "from_agent_type": "MediaOrganization", "from_action_name": "select_and_publish",
+        "to_agent_type": "EnvAgent", "to_action_name": "terminate",
+        "from_action_id": 3, "to_action_id": -1,
+        "event_name": "UserActionEvent", "event_info": "媒体报道+结束信号(ENV将其帖标为media广播)",
+        "fields": [
+            {"name":"action_type","type":"str","default_value":"no_action"},
+            {"name":"target_post_id","type":"str","default_value":""},
+            {"name":"public_text","type":"str","default_value":""}
+        ]
+    },
+    "2": {
+        "id": 2, "from_agent_type": "FactCheckOrganization", "from_action_name": "publish_factcheck",
+        "to_agent_type": "EnvAgent", "to_action_name": "terminate",
+        "from_action_id": 2, "to_action_id": -1,
+        "event_name": "FactCheckDoneEvent", "event_info": "核查产出+结束信号",
+        "fields": [
+            {"name":"published","type":"bool","default_value":false},
+            {"name":"text","type":"str","default_value":""}
+        ]
+    }
+}

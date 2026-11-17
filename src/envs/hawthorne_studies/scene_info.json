@@ -1,0 +1,98 @@
+{
+  "domain": "Organization",
+  "scene_name": "hawthorne_studies",
+  "odd_protocol": {
+    "overview": {
+      "system_goal": "Simulate the Hawthorne experiments using LLM to study how employee productivity, job satisfaction, and motivation change under different work environments and social interaction conditions. The simulation includes employee reactions to being observed, the impact of leader attention on productivity, and how team interactions affect overall performance. The goal is to understand the role of social factors in work performance through emotional responses and social interactions.",
+      "agent_types": "Worker Agents: Represent employees whose behavior and performance are influenced by leadership attention, team atmosphere, and social interactions. Leader Agents: Manage and guide employees, enhancing productivity through care and attention. Team Agents: Represent different team members, simulating how interaction, cooperation, and emotional support affect work performance.",
+      "environment_description": "Physical Environment: Simulates various physical environment changes (e.g., lighting, work hours) from the Hawthorne experiments and analyzes how these changes interact with social factors like leadership attention. Leadership Attention: Simulates how leaders motivate employees through attention, feedback, and communication to improve productivity. Team Interaction: Simulates interaction and cooperation among team members to study how social relations and team atmosphere enhance overall work efficiency."
+    },
+    "design_concepts": {
+      "interaction_patterns": "Employees respond to leadership attention and feedback, and engage in team interactions and cooperation. Leaders provide care and feedback to motivate employees. Teams support each other through communication and collaboration.",
+      "communication_protocols": "Leaders communicate with employees through regular feedback and assistance, while employees interact through team discussions and cooperative efforts.",
+      "decision_mechanisms": "Leaders decide on feedback and task assignments based on employee performance. Employees adjust their behavior and productivity in response to leadership attention and team support."
+    },
+    "details": {
+      "agent_behaviors": "Worker Agents show emotional responses and productivity changes based on leadership attention and team dynamics. Leader Agents provide feedback and care to motivate workers. Team Agents engage in cooperative interactions to boost group performance.",
+      "decision_algorithms": "Task allocation and feedback mechanisms are used by leaders to influence employee task completion and motivation. Emotional analysis tools assess employee emotional changes in different scenarios.",
+      "specific_constraints": "Minimum of 3 agents required for basic leader-employee interaction, recommended 10 agents for complex team dynamics. Initial states set for agents, with leaders providing tasks and feedback to employees."
+    }
+  },
+  "agent_types": {
+    "WorkerAgent": "Represents employees whose behavior and performance are influenced by leadership attention, team atmosphere, and social interactions.",
+    "LeaderAgent": "Manages and guides employees, enhancing productivity through care, attention, feedback, and communication.",
+    "TeamAgent": "Simulates different team members and their interactions, cooperation, and emotional support to affect work performance."
+  },
+  "portrait": {
+    "WorkerAgent": 3,
+    "LeaderAgent": 1,
+    "TeamAgent": 5
+  },
+  "metrics": [
+    {
+      "id": "average_worker_productivity",
+      "name": "average_worker_productivity",
+      "description": "Measures the average productivity level of all Worker Agents.",
+      "visualization_type": "line",
+      "update_frequency": 5,
+      "variables": [
+        {
+          "name": "productivity_level",
+          "source_type": "agent",
+          "agent_type": "WorkerAgent",
+          "path": "profile.productivity_level",
+          "required": true,
+          "is_list": true
+        }
+      ],
+      "calculation_logic": "Calculate the average of the 'productivity_level' values from all Worker Agents. Handle edge cases by skipping None values and empty lists. If all values are None or the list is empty, return a default average of 0.",
+      "function_name": "average_worker_productivity"
+    },
+    {
+      "id": "leadership_attention_impact",
+      "name": "leadership_attention_impact",
+      "description": "Assesses the correlation between leadership attention levels and worker productivity.",
+      "visualization_type": "bar",
+      "update_frequency": 5,
+      "variables": [
+        {
+          "name": "leadership_attention_level",
+          "source_type": "agent",
+          "agent_type": "WorkerAgent",
+          "path": "profile.leadership_attention_level",
+          "required": true,
+          "is_list": true
+        },
+        {
+          "name": "productivity_level",
+          "source_type": "agent",
+          "agent_type": "WorkerAgent",
+          "path": "profile.productivity_level",
+          "required": true,
+          "is_list": true
+        }
+      ],
+      "calculation_logic": "Compute the average productivity for different ranges of leadership attention levels. Group 'leadership_attention_level' values into categories (e.g., low, medium, high) and calculate average 'productivity_level' for each category. Handle edge cases by ignoring None values and ensuring lists are of equal length. If data is insufficient, return an empty result set.",
+      "function_name": "leadership_attention_impact"
+    },
+    {
+      "id": "emotional_state_distribution",
+      "name": "emotional_state_distribution",
+      "description": "Shows the distribution of emotional states among Worker Agents.",
+      "visualization_type": "pie",
+      "update_frequency": 5,
+      "variables": [
+        {
+          "name": "emotional_state",
+          "source_type": "agent",
+          "agent_type": "WorkerAgent",
+          "path": "profile.emotional_state",
+          "required": true,
+          "is_list": true
+        }
+      ],
+      "calculation_logic": "Count occurrences of each unique 'emotional_state' value among Worker Agents. Handle edge cases by ignoring None values and empty lists. If all values are None or the list is empty, return an empty distribution.",
+      "function_name": "emotional_state_distribution"
+    }
+  ]
+}

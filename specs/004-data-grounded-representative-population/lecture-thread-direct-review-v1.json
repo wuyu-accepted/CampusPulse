@@ -1,0 +1,108 @@
+{
+  "schema_version": "lecture-thread-direct-review-v1",
+  "reviewed_artifact": {
+    "path_persisted": false,
+    "sha256": "09cbe57f92a04c40bb0b73ecbbcc2b7a82ad58f4398deb82cc235bcf09d8033e"
+  },
+  "review_method": {
+    "reviewer": "direct_semantic_reading_by_development_agent",
+    "unit": "root, direct parent, canonical ledger, assigned reply function, rendered reply, and ordered recent thread context",
+    "model_judge_treated_as_final_verdict": false,
+    "mechanical_naturalness_score_used": false,
+    "ratings": [
+      "clear",
+      "partial_non_regressive",
+      "fail"
+    ]
+  },
+  "case_reviews": [
+    {
+      "case_id": "cbfd61569720165d",
+      "rating": "clear",
+      "note": "Short pile-on signal naturally amplifies the root request without adding facts."
+    },
+    {
+      "case_id": "dd160bf559bd9a5e",
+      "rating": "clear",
+      "note": "Preserves discomfort while explicitly requesting source and original context."
+    },
+    {
+      "case_id": "184d15e39538b07b",
+      "rating": "clear",
+      "note": "A concise evidence request that remains within the canonical uncertainty boundary."
+    },
+    {
+      "case_id": "c841d3c19cc0f62b",
+      "rating": "clear",
+      "note": "Directly requests an authoritative public explanation and reads like a local reply."
+    },
+    {
+      "case_id": "e2dfdef9c9d37a38",
+      "rating": "clear",
+      "note": "The 'career bible' metaphor is recognizable light irony aimed at an idea, not a person."
+    },
+    {
+      "case_id": "65200684236ebd72",
+      "rating": "partial_non_regressive",
+      "note": "Coherent and safe, but behaves partly as another evidence request rather than pure clarification."
+    },
+    {
+      "case_id": "a85cb657b37a4b91",
+      "rating": "clear",
+      "note": "A genuinely short signal-only turn that does not reopen the full argument."
+    },
+    {
+      "case_id": "f05bf01910dd1295",
+      "rating": "partial_non_regressive",
+      "note": "Natural and stance-preserving, but its speech function leans emotional support rather than amplification."
+    },
+    {
+      "case_id": "bfed7e318227131d",
+      "rating": "partial_non_regressive",
+      "note": "The evidence-request function is correct, but the target shifts from feedback-status follow-up to the original text."
+    },
+    {
+      "case_id": "5b800df2a22d6485",
+      "rating": "clear",
+      "note": "First-person evidence-status relay avoids turning absence of visible evidence into an objective claim."
+    },
+    {
+      "case_id": "7ee931c73af7106f",
+      "rating": "clear",
+      "note": "Personal experience is specific enough to be recognizable while remaining synthetic and non-identifying."
+    },
+    {
+      "case_id": "80fdc71ecb297618",
+      "rating": "clear",
+      "note": "Brief emotional support directly follows the prior experience turn and closes the local thread naturally."
+    }
+  ],
+  "summary": {
+    "case_count": 12,
+    "clear_count": 9,
+    "partial_non_regressive_count": 3,
+    "fail_count": 0,
+    "parent_coherence_pass_count": 12,
+    "new_external_fact_regression_count": 0,
+    "key_functions_observed_in_pilot": [
+      "evidence_request",
+      "evidence_relay",
+      "irony_or_meme",
+      "amplification_or_pile_on"
+    ],
+    "verdict": "accepted_small_pilot_with_function_boundary_caveats"
+  },
+  "observed_data_interpretation": {
+    "reference_pair_sample": 48,
+    "lecture_holdout_pair_sample": 48,
+    "lecture_holdout_was_used_for_generation": false,
+    "finding": "All four target interaction functions occur in both the comparable reference sample and the held-out lecture sample. Their inclusion is data-supported, while the 12-case synthetic mix deliberately over-samples them for coverage and is not a frequency calibration."
+  },
+  "claim_boundary": {
+    "full_forum_diffusion_graph_validated": false,
+    "population_frequency_calibrated": false,
+    "causal_effect_identified": false,
+    "local_parent_conditioned_thread_behavior_supported": true,
+    "next_gate": "Do not scale to all 48 agents until clarification-versus-request and amplification-versus-support are separated in a larger 24-to-36-reply audit."
+  }
+}

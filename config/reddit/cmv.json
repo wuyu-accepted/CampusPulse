@@ -1,0 +1,79 @@
+{
+  "community": "changemyview",
+  "language": "en",
+  "source": {
+    "url": "https://zissou.infosci.cornell.edu/convokit/datasets/subreddit-corpus/corpus-zipped/cats3~-~changemyview/changemyview.corpus.zip",
+    "archive_path": "data/private/reddit/cmv/changemyview.corpus.zip",
+    "extraction_path": "data/private/reddit/cmv/extracted",
+    "database_path": "data/private/reddit/cmv/corpus.sqlite",
+    "author_salt_path": "data/private/reddit/cmv/author-salt.bin",
+    "minimum_free_gib": 20,
+    "download_retries": 3,
+    "import_batch_size": 2000
+  },
+  "world": {
+    "compiled_dir": "data/private/reddit/cmv/lightweight-v3/world-runtime-r2",
+    "population_size": 24,
+    "seed": 20260924,
+    "particles_per_agent": 10,
+    "min_history": 12,
+    "min_threads": 4,
+    "min_span_days": 60,
+    "evidence_limit": 12
+  },
+  "author_analysis_dir": "data/private/reddit/cmv/analysis",
+  "lightweight": {
+    "output_dir": "data/private/reddit/cmv/lightweight-v3",
+    "background_start_utc": "2017-01-01T00:00:00Z",
+    "background_end_exclusive_utc": "2017-07-01T00:00:00Z",
+    "development_end_exclusive_utc": "2018-01-01T00:00:00Z",
+    "background_target_rows": [20000, 50000],
+    "candidate_author_target": [150, 300],
+    "episode_count": 3
+  },
+  "clustering": {
+    "candidate_k": [4, 6, 8],
+    "min_cluster_authors": 30,
+    "content_weight": 0.7,
+    "silhouette_sample_size": 1500,
+    "stability_repeats": 3
+  },
+  "embedding": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "model_dir": "data/private/reddit/cmv/model",
+    "shards_dir": "data/private/reddit/cmv/embeddings-directml",
+    "python_libs": "data/private/reddit/cmv/python-libs",
+    "python_libs_directml": "data/private/reddit/cmv/python-libs-directml",
+    "execution_provider": "directml",
+    "dimensions": 384,
+    "window_tokens": 384,
+    "overlap_tokens": 64,
+    "normalize": true
+  },
+  "temporal_split": {
+    "train_end_utc": "2016-12-31T23:59:59Z",
+    "development_end_utc": "2017-12-31T23:59:59Z"
+  },
+  "run": {
+    "ticks": 10,
+    "branches": ["Natural", "D"],
+    "mode": "budgeted_pps",
+    "resident_budget": 12
+  },
+  "provider": {
+    "endpoint": "https://api.openlux.ai/v1/chat/completions",
+    "model": "gpt-6-luna",
+    "reasoning": "none",
+    "concurrency": 2,
+    "timeout_seconds": 90,
+    "max_resident_output_tokens": 1536,
+    "max_governance_output_tokens": 1024,
+    "tokenizer_release": null
+  },
+  "budget": {
+    "campaign_id": "cmv-implementation",
+    "max_tokens_all_stages": 2000000,
+    "max_http_generation_requests_all_stages": 1056
+  }
+}

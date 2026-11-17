@@ -1,0 +1,175 @@
+{
+  "schema_version": "cross-shock-variant-direct-review-v1",
+  "review_date": "2026-07-22",
+  "alignment_audit": "cross-shock-population-alignment-audit-v1",
+  "source_artifacts": {
+    "lecture_baseline_sha256": "2006ad5745fed0231e39fc3e88eef515a4ad40356e2d043f94ea81b89aaee5e5",
+    "tongzhou_baseline_sha256": "838857b3d0a9572d81d78703a514105ae8aea5f9a3b7779551e82e4b05a0a0bb",
+    "tongzhou_policy_sha256": "8392fa5344fdc7d64f9d4d59f4361e24957974d4c2ec7765d168f58547274bc4"
+  },
+  "review_method": {
+    "reviewer": "direct_semantic_reading_by_development_agent",
+    "selection_unit": "reviewed persona_variant_id shared across the March and June population snapshots",
+    "trajectory_unit": "daily baseline plus burst, spread, and decay decisions; selected March exemplars additionally read under the combined policy branch",
+    "mechanical_similarity_metric_decided_rating": false,
+    "silence_counted_as_behavior": true,
+    "dimensions": [
+      "core behavioral tendency persists",
+      "content adapts to the actual shock",
+      "irrelevant shocks do not force universal participation",
+      "forum expression remains natural rather than becoming a policy essay",
+      "the response does not invent external facts",
+      "governance changes the next need without replacing the persona"
+    ],
+    "ratings": [
+      "clear",
+      "partial_non_regressive",
+      "fail"
+    ]
+  },
+  "coverage": {
+    "selected_variant_count": 10,
+    "selected_archetype_count": 10,
+    "lecture_agents_read": 12,
+    "tongzhou_natural_agents_read": 13,
+    "tongzhou_combined_exemplars_read": 10,
+    "decisions_read": 130,
+    "nonempty_public_messages_read": 104,
+    "selection_includes_positive_transfer_cases": true,
+    "selection_includes_selective_nonresponse_controls": true,
+    "selection_includes_a_challenging_partial_case": true
+  },
+  "variant_reviews": [
+    {
+      "variant_id": "archetype-01-v2",
+      "archetype": "课程规则核实者",
+      "variant": "考核安排确认型",
+      "lecture_exemplar_agent": "sim-agent-001",
+      "tongzhou_exemplar_agent": "sim-agent-001",
+      "coverage_intent": "selective_nonresponse_control",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The June agent ignores the unrelated lecture controversy and continues asking for formal exam rules, while the March variant activates strongly around course-campus, timetable, add-drop, and publication deadlines. Under combined governance it recognizes the offered options but keeps asking for the application entry and review node. Stable information-threshold logic is stronger evidence than reacting to every event."
+    },
+    {
+      "variant_id": "archetype-03-v2",
+      "archetype": "校园规则办事询问者",
+      "variant": "规则步骤核实型",
+      "lecture_exemplar_agent": "sim-agent-031",
+      "tongzhou_exemplar_agent": "sim-agent-027",
+      "coverage_intent": "procedural_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "Across daily services, the lecture controversy, and Tongzhou, this variant repeatedly seeks the authoritative channel, required step, reply timing, receipt, and query state. Different local episode focuses do not erase the same procedural behavior mechanism."
+    },
+    {
+      "variant_id": "archetype-04-v3",
+      "archetype": "公共服务投诉者",
+      "variant": "服务升级申诉型",
+      "lecture_exemplar_agent": "sim-agent-044",
+      "tongzhou_exemplar_agent": "sim-agent-032",
+      "coverage_intent": "accountability_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The stable move is from an unresolved service problem to an accountable intake and escalation path. The combined branch does not turn the complainant into a supporter; it advances the complaint from missing entry and deadline to responsibility, progress, and surge-capacity disclosure."
+    },
+    {
+      "variant_id": "archetype-14-v3",
+      "archetype": "公共规范讨论者",
+      "variant": "结构反思讨论型",
+      "lecture_exemplar_agent": "sim-agent-041",
+      "tongzhou_exemplar_agent": "sim-agent-002",
+      "coverage_intent": "normative_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The variant consistently moves beyond a single outcome to the comparison standard, procedural fairness, and public justification. It adapts from ranking logic, to occupational respect and evidence status, to allocation and service-capacity criteria without becoming generic praise."
+    },
+    {
+      "variant_id": "archetype-13-v3",
+      "archetype": "情绪承接者",
+      "variant": "急性不适承接型",
+      "lecture_exemplar_agent": "sim-agent-038",
+      "tongzhou_exemplar_agent": "sim-agent-029",
+      "coverage_intent": "affective_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "Immediate bodily and emotional discomfort remains the organizing response across exam stress, career-related offense, and prolonged governance uncertainty. Combined governance produces plausible partial relief while leaving waiting fatigue unresolved; trust movement and text meaning remain compatible."
+    },
+    {
+      "variant_id": "archetype-15-v2",
+      "archetype": "社区体验交流者",
+      "variant": "即时观感与接梗",
+      "lecture_exemplar_agent": "sim-agent-016",
+      "tongzhou_exemplar_agent": "sim-agent-040",
+      "coverage_intent": "style_and_social_function_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "Short, image-rich hooks persist from pollen jokes to a 'job-search bible', 'new map', and 'campus relay run'. The content follows the event, while the social function stays as immediate shared observation rather than formal policy analysis. Its satisfied combined-branch outcome is specifically tied to a concrete daily-life option."
+    },
+    {
+      "variant_id": "archetype-02-v1",
+      "archetype": "学习行动求助者",
+      "variant": "临考范围压缩型",
+      "lecture_exemplar_agent": "sim-agent-014",
+      "tongzhou_exemplar_agent": "sim-agent-033",
+      "coverage_intent": "challenging_specificity_case",
+      "cross_snapshot_rating": "partial_non_regressive",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The March trajectory stays specific to near-term study sequencing, timetable freeze, and revision planning. The June lecture reaction remains an actionable help request but broadens into career-direction and project prioritization, weakening the exam-scope variant's distinctive signature. This is not a category collapse, but it should not be presented as a clean cross-shock pass."
+    },
+    {
+      "variant_id": "archetype-12-v3",
+      "archetype": "关系与协作边界协商者",
+      "variant": "共处援助设限型",
+      "lecture_exemplar_agent": "sim-agent-021",
+      "tongzhou_exemplar_agent": "sim-agent-039",
+      "coverage_intent": "boundary_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The concrete relationship changes from roommate, to collaboration chat, to student-organization duty, but the stable act is negotiating support and obligation without escalating conflict. Governance appropriately changes the next need toward alternatives, exit, feedback, and communication records."
+    },
+    {
+      "variant_id": "archetype-10-v1",
+      "archetype": "社交同伴匹配者",
+      "variant": "情绪陪伴寻求",
+      "lecture_exemplar_agent": "sim-agent-045",
+      "tongzhou_exemplar_agent": "sim-agent-009",
+      "coverage_intent": "peer_matching_transfer",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The desired peer changes with the situation, but the action remains low-pressure matching for mutual conversation and adaptation. It does not drift into institutional recruitment, expert advice, or a universal public-opinion claim."
+    },
+    {
+      "variant_id": "archetype-07-v2",
+      "archetype": "生活方案咨询者",
+      "variant": "时效服务搜寻型",
+      "lecture_exemplar_agent": "sim-agent-035",
+      "tongzhou_exemplar_agent": "sim-agent-008",
+      "coverage_intent": "selective_nonresponse_control",
+      "cross_snapshot_rating": "clear",
+      "within_tongzhou_policy_rating": "clear",
+      "review_note": "The June variant does not force the lecture controversy into its service-search frame and continues a time-sensitive laundry query. Tongzhou creates a genuine daily-life decision, so it asks for commute duration, housing timing, adjustment days, and the adjustment entry. This is coherent selective activation."
+    }
+  ],
+  "summary": {
+    "clear": 9,
+    "partial_non_regressive": 1,
+    "fail": 0,
+    "within_tongzhou_policy_clear": 10,
+    "strongest_evidence": [
+      "procedural transfer without topic copying",
+      "selective nonresponse to irrelevant shocks",
+      "governance changes the next need without replacing the persona",
+      "forum social function and language style persist across contexts"
+    ],
+    "identified_failure_mode": "A broad event association can activate the parent archetype while weakening a narrow persona variant's situational signature.",
+    "recommended_model_improvement": "Add a variant-level relevance gate before generation: distinguish direct activation, adjacent spillover, and irrelevant shock; adjacent spillover should preserve the variant's action horizon or stay silent."
+  },
+  "claim_boundary": {
+    "cross_snapshot_same_individual_claimed": false,
+    "cross_snapshot_behavior_mechanism_transfer_claimed": true,
+    "human_like_population_frequency_claimed": false,
+    "observational_causal_effect_claimed": false,
+    "release_claim": "Nine of ten deliberately heterogeneous shared variants clearly preserved their behavior mechanism under direct semantic reading; one retained its parent help-seeking category but lost variant-level specificity under the lecture spillover."
+  }
+}
