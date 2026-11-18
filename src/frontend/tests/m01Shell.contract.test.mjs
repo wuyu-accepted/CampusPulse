@@ -40,11 +40,12 @@ test('M01 shell and migrated product views parse and compile', () => {
   }
 })
 
-test('M01 navigation preserves five product entries and adds team credits', () => {
+test('M01 navigation preserves the five product entries without a team credits page', () => {
   const navigation = read('src/campus-pulse/app/navigation.js')
   const router = read('src/router/index.js')
-  assert.equal((navigation.match(/Object\.freeze\(\{ id:/g) || []).length, 6)
-  assert.match(router, /path: '\/campus-pulse\/acknowledgements'/)
+  assert.equal((navigation.match(/Object\.freeze\(\{ id:/g) || []).length, 5)
+  assert.doesNotMatch(router, /acknowledgements|团队与致谢/)
+  assert.doesNotMatch(navigation, /acknowledgements|团队与致谢/)
   assert.match(navigation, /id: 'overview'.*label: '产品首页'/)
   assert.match(navigation, /id: 'overview'.*to: '\/campus-pulse\/overview'/)
   assert.match(router, /path: '\/campus-pulse'[\s\S]*standaloneCover: true/)

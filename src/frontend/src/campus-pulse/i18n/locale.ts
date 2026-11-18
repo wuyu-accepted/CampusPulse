@@ -7,8 +7,6 @@ export type CampusPulseLocale = 'zh-CN' | 'en-US'
 // Route-level copy added after the original catalog snapshot. Keep these as
 // exact matches so the phrase fallback cannot produce mixed-language labels.
 const supplementalTranslations: Readonly<Record<string, string>> = Object.freeze({
-  '团队与致谢': 'Team & acknowledgements',
-  'CampusPulse 与开源贡献': 'CampusPulse and open-source contributions',
   "运行参数": "Run parameters",
   "事件设置": "Incident settings",
   "查看事件内容": "View incident details",

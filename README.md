@@ -119,9 +119,9 @@ npm run build -- --configLoader runner
 
 端到端测试见[用户指南](docs/USER_GUIDE.md)。提交修改前请运行相关测试，并在 Pull Request 中说明改动、验证方法及界面截图。问题反馈请附操作步骤、预期行为与实际结果；分享配置时请移除密钥及个人信息。
 
-### 许可与致谢
+### 许可证与来源
 
-本项目基于 [YuLan-OneSim](https://github.com/RUC-GSAI/YuLan-OneSim) 扩展，沿用 [Apache License 2.0](LICENSE)。感谢玉兰-万象团队及项目贡献者。仓库提供脱敏派生数据与合成案例；原始论坛语料由其持有方管理。
+本项目基于 [YuLan-OneSim](https://github.com/RUC-GSAI/YuLan-OneSim) 扩展，并依 [Apache License 2.0](LICENSE) 发布。仓库提供脱敏派生数据与合成案例；原始论坛语料由其持有方管理。
 
 ---
 
@@ -236,6 +236,6 @@ npm run build -- --configLoader runner
 
 See the [User guide](docs/USER_GUIDE.md) for end-to-end tests. Contributions should include relevant tests, a description of changes and UI screenshots where appropriate. Bug reports should include reproduction steps, expected behaviour and actual behaviour. Remove credentials and personal information before sharing configuration.
 
-### License and acknowledgements
+### License and source
 
-CampusPulse extends [YuLan-OneSim](https://github.com/RUC-GSAI/YuLan-OneSim) under the [Apache License 2.0](LICENSE). We thank the YuLan-OneSim team and contributors. This repository includes de-identified derived assets and synthetic cases; the source forum corpus is managed by its data holders.
+CampusPulse extends [YuLan-OneSim](https://github.com/RUC-GSAI/YuLan-OneSim) and is distributed under the [Apache License 2.0](LICENSE). This repository includes de-identified derived assets and synthetic cases; the source forum corpus is managed by its data holders.

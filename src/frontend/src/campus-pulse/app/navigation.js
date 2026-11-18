@@ -4,7 +4,6 @@ const PRODUCT_ROUTE_IDS = new Set([
   'results',
   'workbench',
   'system',
-  'acknowledgements',
 ])
 
 export const productNavigation = Object.freeze([
@@ -13,7 +12,6 @@ export const productNavigation = Object.freeze([
   Object.freeze({ id: 'forum', label: '实时演化', description: '逐时间步观察平行论坛', to: '/campus-pulse/forum', icon: 'fa-comments' }),
   Object.freeze({ id: 'results', label: '案例中心', description: '机制链与分支差异', to: '/campus-pulse/results', icon: 'fa-chart-column' }),
   Object.freeze({ id: 'system', label: '系统与数据', description: '模型、证据与就绪状态', to: '/campus-pulse/system', icon: 'fa-shield-halved' }),
-  Object.freeze({ id: 'acknowledgements', label: '团队与致谢', description: 'CampusPulse 与开源贡献', to: '/campus-pulse/acknowledgements', icon: 'fa-people-group' }),
 ])
 
 export function defineProductRouteMeta({ navId, title, source }) {

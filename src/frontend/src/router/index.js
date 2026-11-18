@@ -296,12 +296,6 @@ const routes = [
     meta: productRouteMeta.workbench,
   },
   {
-    path: '/campus-pulse/acknowledgements',
-    name: 'campus-pulse-acknowledgements',
-    component: () => import('../campus-pulse/system/AcknowledgementsPage.vue'),
-    meta: { ...productRouteMeta.system, title: '团队与致谢', navId: 'acknowledgements' },
-  },
-  {
     path: '/campus-pulse/:pathMatch(.*)*',
     name: 'campus-pulse-not-found',
     component: ProductNotFound,
